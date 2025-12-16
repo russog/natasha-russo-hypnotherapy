@@ -13,9 +13,8 @@ export default function Navbar() {
                     <Image
                         src="/logo.webp"
                         alt="Natasha Russo Hypnotherapy"
-                        width={96}
-                        height={96}
-                        className="h-14 w-auto"
+                        width={120}
+                        height={120}
                         priority
                     />
                     <span className="text-base md:text-lg font-light leading-tight whitespace-nowrap">
