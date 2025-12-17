@@ -33,6 +33,14 @@ export default function RootLayout({
             <section className="flex-1 px-6 py-8">
                 {children}
             </section>
+            <footer className="mt-auto border-t border-[#4F5A54]/20 px-6 py-6 text-sm text-neutral-600">
+                <div className="mx-auto max-w-6xl text-center">
+                    <p>
+                        © {new Date().getFullYear()} Natasha Russo Hypnotherapy · BSc Psychology · MSc Cross-Cultural
+                        Psychology · Level 5 Diploma in Cognitive Behavioural Hypnotherapy
+                    </p>
+                </div>
+            </footer>
         </main>
         </body>
         </html>
