@@ -3,14 +3,74 @@ import Image from "next/image";
 
 export default function Home() {
     return (<>
-        <h1 className="mx-auto mt-3 max-w-4xl text-center leading-tight font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
+        <section className="relative overflow-hidden">
+            <div className="absolute inset-0  bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat" aria-hidden/>
+            <div className="absolute inset-0 bg-white/35" aria-hidden />
+            <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
+                <h1 className="mx-auto max-w-4xl text-3xl leading-tight font-semibold tracking-tight text-neutral-900 sm:text-5xl">
+                    Calm, evidence-based hypnotherapy
+                    <br />
+                    to help you worry less and live more
+                </h1>
+
+                <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+                    Gentle, structured support for anxiety, overthinking, and confidence issues — online, from the comfort of your own home.
+                </p>
+
+                <div className="mt-10 flex justify-center">
+                    <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center rounded-xl bg-neutral-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2">
+                        Book a free 20-minute chat
+                    </Link>
+                </div>
+            </div>
+        </section>
+
+        <section className="py-6 sm:py-10">
+            <div className="mx-auto max-w-5xl px-4">
+                <div className="grid gap-8 md:grid-cols-2 md:grid-rows-[auto_auto_auto] md:gap-12">
+                    <div className="relative w-full aspect-4/5 md:aspect-auto md:h-100 md:row-start-1 md:col-start-1">
+                    <Image
+                            src="/natasha.png"
+                            alt="Natasha Russo"
+                            fill
+                            className="rounded-sm object-cover object-top"
+                            sizes="(min-width: 768px) 50vw, 100vw"
+                            priority
+                        />
+                    </div>
+
+                    <div className="text-left md:row-start-1 md:col-start-2">
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            I’m Natasha Russo, a cognitive behavioural hypnotherapist
+                        </h2>
+
+                        <p className="mb-6 text-lg leading-relaxed text-neutral-700">
+                            I work in a calm, structured, and collaborative way, helping people
+                            reduce anxiety, overthinking, and self-doubt using evidence-based
+                            approaches.
+                        </p>
+
+                        <p className="text-lg leading-relaxed text-neutral-700">
+                            Sessions are practical, focused, and adapted to your pace — with no
+                            pressure to revisit anything you don’t want to.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        {/*<h1 className="mx-auto mt-3 max-w-4xl text-center leading-tight font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
             Calm, evidence-based hypnotherapy
             <br/>
             to help you worry less and live more.
         </h1>
 
-        <br/>
-        <section className="py-16 sm:py-20">
+        <br/>*/}
+        {/*<section className="py-16 sm:py-20">
             <div className="mx-auto max-w-5xl px-4">
                 <div className="grid gap-8 md:grid-cols-2 md:grid-rows-[auto_auto_auto] md:gap-12">
                     <div className="relative w-full aspect-4/5 md:aspect-auto md:h-full md:row-start-1 md:col-start-1">
@@ -50,7 +110,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    {/* Row 2, Col 2: Button aligned left */}
+                     Row 2, Col 2: Button aligned left
                     <div className="md:row-start-2 md:col-start-2 flex justify-start">
                         <Link
                             href="/working-with-me"
@@ -66,7 +126,7 @@ export default function Home() {
 
                 </div>
             </div>
-        </section>
+        </section>*/}
 
 
 
