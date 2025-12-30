@@ -44,7 +44,7 @@ export default function RootLayout({
         <body className="min-h-screen flex flex-col">
         <main className="m-5 flex flex-1 flex-col border border-[#4F5A54] bg-white rounded-lg">
             <Navbar />
-            <section className="flex-1 px-6 py-8 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat">
+            <section>
                 {children}
             </section>
             <footer className="mt-auto border-t border-[#4F5A54]/20 px-6 py-6 text-sm text-neutral-600">
