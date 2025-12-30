@@ -1,80 +1,76 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
-  return (<>
-            <section className="py-16 sm:py-20 bg-[#FEFCFB]">
-                <div className="mx-auto max-w-6xl px-4">
-                    <div className="grid items-start gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-                        <div>
-                            <div className="text-sm font-semibold tracking-wide text-neutral-600">
-                                Online cognitive-behavioural hypnotherapy
-                            </div>
+    return (<>
+        <h1 className="mx-auto mt-3 max-w-4xl text-center leading-tight font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
+            Calm, evidence-based hypnotherapy
+            <br/>
+            to help you worry less and live more.
+        </h1>
 
-                            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
-                                Calm, evidence-based hypnotherapy to help you worry less and live more.
-                            </h1>
-
-                            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-700">
-                                I’m <strong className="font-semibold text-neutral-900">Natasha Russo</strong>, a
-                                cognitive-behavioural hypnotherapist offering gentle, structured support for anxiety,
-                                overthinking and confidence issues – online, from the comfort of your own home.
-                            </p>
-
-                            <div className="mt-7 flex flex-wrap gap-3">
-                                <Link
-                                    href="/contact"
-                                    className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2"
-                                >
-                                    Book a free 20-minute chat
-                                </Link>
-
-                                <Link
-                                    href="/working-with-me"
-                                    className="inline-flex items-center justify-center rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2"
-                                >
-                                    How I work
-                                </Link>
-                            </div>
-
-                            <p className="mt-4 text-sm text-neutral-600">
-                                No pressure, no obligation – just a chance to ask questions and see whether it feels like
-                                a good fit.
-                            </p>
-                        </div>
-
-                        <aside className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-                            <h2 className="text-xl font-semibold text-neutral-900">Does this sound familiar?</h2>
-
-                            <p className="mt-3 text-neutral-700">
-                                You’re thoughtful and capable, but your mind won’t switch off – and you’re tired of anxiety,
-                                guilt or self-doubt running the show.
-                            </p>
-
-                            <div className="mt-5 flex flex-wrap gap-2">
-                                {["Anxiety", "Overthinking", "Confidence", "Stress", "Sleep"].map((label) => (
-                                    <span
-                                        key={label}
-                                        className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-semibold text-neutral-700"
-                                    >
-                  {label}
-                </span>
-                                ))}
-                            </div>
-
-                            <p className="mt-5 text-neutral-700">
-                                Together we’ll calm your nervous system, untangle unhelpful patterns, and rehearse new ways
-                                of thinking and responding – so change feels possible in everyday life.
-                            </p>
-
-                            <div className="mt-6 rounded-xl bg-neutral-50 p-4 text-sm text-neutral-700">
-                                Sessions are held online via secure video, so you can work from your own space (blanket, tea
-                                and dog welcome).
-                            </div>
-                        </aside>
+        <br/>
+        <section className="py-16 sm:py-20">
+            <div className="mx-auto max-w-5xl px-4">
+                <div className="grid gap-8 md:grid-cols-2 md:grid-rows-[auto_auto_auto] md:gap-12">
+                    <div className="relative w-full aspect-4/5 md:aspect-auto md:h-full md:row-start-1 md:col-start-1">
+                        <Image
+                            src="/natasha.png"
+                            alt="Natasha Russo"
+                            fill
+                            className="rounded-sm object-cover object-top"
+                            sizes="(min-width: 768px) 50vw, 100vw"
+                            priority
+                        />
                     </div>
+
+                    <div className="text-left md:row-start-1 md:col-start-2">
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            I’m Natasha Russo, a cognitive behavioural hypnotherapist.
+                        </h2>
+
+                        <p className="mb-6 text-lg leading-relaxed text-neutral-700">
+                            I work in a calm, structured, and collaborative way, helping people
+                            reduce anxiety, overthinking, and self-doubt using evidence-based
+                            approaches.
+                        </p>
+
+                        <p className="text-lg leading-relaxed text-neutral-700">
+                            Sessions are practical, focused, and adapted to your pace — with no
+                            pressure to revisit anything you don’t want to.
+                        </p>
+                    </div>
+
+                    <div className="md:row-start-2 md:col-start-1 flex justify-end">
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center justify-center rounded-xl bg-neutral-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2"
+                        >
+                            Book a free 20-minute chat
+                        </Link>
+                    </div>
+
+                    {/* Row 2, Col 2: Button aligned left */}
+                    <div className="md:row-start-2 md:col-start-2 flex justify-start">
+                        <Link
+                            href="/working-with-me"
+                            className="inline-flex items-center justify-center rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2">
+                            How I work
+                        </Link>
+                    </div>
+
+                    <p className="text-base leading-relaxed text-neutral-800 md:row-start-3 md:col-span-2 text-center">
+                        No pressure, no obligation – just a chance to ask questions and see whether it feels like a good fit.
+                    </p>
+
+
                 </div>
-            </section>
-            <section className="py-16 sm:py-20 bg-[#FBF6F0]">
+            </div>
+        </section>
+
+
+
+        {/*<section className="py-16 sm:py-20 bg-[#FBF6F0]">
                 <div className="mx-auto max-w-6xl px-4">
                     <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
                         How I can help
@@ -208,6 +204,6 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section>*/}
     </>);
 }
