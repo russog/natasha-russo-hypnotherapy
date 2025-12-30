@@ -42,7 +42,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
         <body className="min-h-screen flex flex-col">
-        <main className="m-5 flex flex-1 flex-col border border-[#4F5A54] bg-white rounded-lg">
+        <main className="flex flex-1 flex-col border-[#4F5A54] bg-white">
             <Navbar />
             <section>
                 {children}
