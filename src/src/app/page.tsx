@@ -177,28 +177,6 @@ export default function Home() {
                 </Card>
             </div>
         </section>
-
-        {/*<section className="py-16 sm:py-20 bg-[#FBF6F0] text-[#2E4F4F]">
-            <div className="mx-auto max-w-3xl px-4 text-center">
-                <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                    Ready to see whether this could help?
-                </h2>
-
-                <p className="mt-4">
-                    We can start with a free, no-pressure 20-minute chat. You can ask questions, get a feel for
-                    how I work, and decide in your own time whether you’d like to book sessions.
-                </p>
-
-                <div className="mt-8 flex justify-center">
-                    <Link
-                        href="/contact"
-                        className="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900"
-                    >
-                        Book a free 20-minute chat
-                    </Link>
-                </div>
-            </div>
-        </section>*/}
     </>);
 }
 
