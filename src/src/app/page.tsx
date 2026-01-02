@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import React from "react";
+import {Card} from "@/app/card";
+import {MiniCard} from "@/app/miniCard";
 
 export default function Home() {
     return (<>
         <section className="relative overflow-hidden">
-            <div className="absolute inset-0  bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat" aria-hidden/>
+            <div className="absolute inset-0  bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-bottom"
+                 aria-hidden/>
             <div className="absolute inset-0 bg-white/35" aria-hidden/>
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
                 <h1 className="mx-auto max-w-4xl text-3xl leading-tight font-semibold tracking-tight text-neutral-900 sm:text-5xl">
@@ -33,10 +37,11 @@ export default function Home() {
                 <div className="grid gap-8 md:grid-cols-2 md:gap-12">
                     <div className="relative w-full aspect-4/5 md:aspect-auto md:h-100 md:row-start-1 md:col-start-1">
                         <Image
-                            src="/natasha.png"
+                            src="/me.webp"
                             alt="Natasha Russo"
-                            fill
-                            className="rounded-sm object-cover object-top"
+                            width={267}
+                            height={400}
+                            className="rounded-sm"
                             sizes="(min-width: 768px) 50vw, 100vw"
                             priority
                         />
@@ -61,121 +66,119 @@ export default function Home() {
             </div>
         </section>
 
-        {/*<section className="py-16 sm:py-20 bg-[#FBF6F0]">
-            <div className="mx-auto max-w-6xl px-4">
-                <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
-                    How I can help
-                </h2>
+        <section className="relative py-16 overflow-hidden isolate">
+            <div
+                aria-hidden
+                className="absolute inset-0 -z-20 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-top"
+            />
+            <div
+                aria-hidden
+                className="absolute inset-0 -z-10 bg-linear-to-b via-stone-50 to-emerald-50/40"
+            />
 
-                <p className="mt-3 max-w-2xl text-neutral-700">
-                    People come to see me for many reasons. Here are some of the most common themes.
-                </p>
+            <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-10">
+                <Card>
+                    <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                        Does this sound familiar?
+                    </h2>
 
-                <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {[
-                        {
-                            title: "Anxiety & overthinking",
-                            text:
-                                "Persistent “what ifs”, dread before certain situations, a mind that won’t switch off.",
-                        },
-                        {
-                            title: "Stress & burnout",
-                            text:
-                                "Feeling constantly on edge, exhausted, guilty for resting, or like you’re always behind.",
-                        },
-                        {
-                            title: "Confidence & self-doubt",
-                            text:
-                                "Imposter feelings, fear of being judged, performance nerves, or difficulty speaking up.",
-                        },
-                        {
-                            title: "Habits & unhelpful patterns",
-                            text:
-                                "Procrastination, avoidance, people-pleasing, or doing things that don’t really serve you any more.",
-                        },
-                        {
-                            title: "Sleep & body tension",
-                            text:
-                                "Lying awake with your mind racing, or carrying chronic tension in your body.",
-                        },
-                    ].map((item) => (
-                        <div
-                            key={item.title}
-                            className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm"
-                        >
-                            <h3 className="text-lg font-semibold text-neutral-900">
-                                {item.title}
-                            </h3>
-                            <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-                                {item.text}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                    <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>
+                You find yourself caught in cycles of worry, “what ifs”, or worst-case thinking.
+              </span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>
+                You feel stuck in patterns of anxiety, overthinking, or self-doubt that you’d really
+                like to change.
+              </span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>
+                You struggle to fully switch off or stay present, even when things are going well.
+              </span>
+                        </li>
+                    </ul>
 
-                <p className="mt-6 max-w-xl text-sm text-neutral-600">
-                    If you’re not sure whether your situation fits neatly into one of these, that’s completely fine.
-                    We can talk it through in a free call and see whether this approach feels right for you.
-                </p>
-            </div>
-        </section>
-        <section className="py-16 sm:py-20  bg-[#FEFCFB]">
-            <div className="mx-auto max-w-6xl px-4">
-                <div className="grid gap-10 lg:grid-cols-2">
-                    <div>
-                        <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
-                            A calm, structured way of working
-                        </h2>
+                    <p className="mt-6 text-center text-stone-700">
+                        If any of this resonates, you’re not alone — and{" "}
+                        <em className="not-italic font-medium">it doesn’t have to stay this way.</em>
+                    </p>
+                </Card>
 
-                        <p className="mt-3 max-w-2xl text-neutral-700">
-                            Cognitive-behavioural hypnotherapy combines CBT strategies with focused, imaginative work
-                            in hypnosis – without any mystery or loss of control.
-                        </p>
+                <Card className="bg-white/70">
+                    <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                        How I can help
+                    </h2>
 
-                        <p className="mt-4 text-neutral-700">
-                            We’ll map out how your difficulty works for you now, agree on realistic goals, and then
-                            use a mix of discussion, behavioural experiments and hypnosis exercises to help you
-                            respond differently.
-                        </p>
+                    <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
+                        I work with adults who want practical, evidence-based support for emotional and
+                        cognitive difficulties such as:
+                    </p>
 
-                        <p className="mt-4 text-neutral-700">
-                            Hypnosis here isn’t a special “trance state”. It’s more like guided, focused imagination
-                            while your body is physically calmer – a chance to rehearse new responses from a steadier
-                            place.
-                        </p>
-
-                        <p className="mt-3 text-sm text-neutral-700">
-                            You can read more about this on the{" "}
-                            <Link
-                                href="/working-with-me"
-                                className="font-semibold text-neutral-900 underline underline-offset-4 hover:text-neutral-700"
-                            >
-                                Working with me
-                            </Link>{" "}
-                            page.
-                        </p>
+                    <div className="mt-8 grid gap-6 md:grid-cols-3">
+                        <MiniCard
+                            title="Anxiety"
+                            body="Learn ways to calm your nervous system, reduce constant worry, and feel more at ease in everyday life."
+                        />
+                        <MiniCard
+                            title="Overthinking"
+                            body="Step out of rumination and mental loops, and develop a more balanced, flexible relationship with your thoughts."
+                        />
+                        <MiniCard
+                            title="Confidence & self-doubt"
+                            body="Build inner confidence, reduce self-criticism, and feel more able to trust yourself and your decisions."
+                        />
                     </div>
 
-                    <div>
-                        <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
-                            What it’s like to work together
-                        </h2>
+                    <p className="mt-8 text-center text-stone-700">
+                        If you recognise yourself here, we can explore this{" "}
+                        <em className="not-italic font-medium">together</em>.
+                    </p>
+                </Card>
 
-                        <p className="mt-4 text-neutral-700">
-                            Clients often describe me as calm, clear and gently persistent. I won’t push you into
-                            anything you don’t want to do, but I also won’t just nod and say “mm-hmm” for an hour.
-                        </p>
+                <Card className="bg-emerald-50/50">
 
-                        <p className="mt-4 text-neutral-700">
-                            We’ll think together, experiment together, and sometimes laugh at how inventive the
-                            human brain can be. Underneath it all is a simple aim: to help you feel safer in your own
-                            mind and body, and more able to live the kind of life that matters to you.
-                        </p>
-                    </div>
-                </div>
+                    <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                        A calm, structured way of working
+                    </h2>
+
+                    <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
+                        My approach is grounded, collaborative, and tailored to you. I combine hypnotherapy
+                        with proven cognitive-behavioural techniques to help you understand your patterns,
+                        develop practical skills, and create lasting change — at a pace that feels right for you.
+                    </p>
+
+                    <ul className="mt-6 space-y-4 text-stone-700">
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Understand the root of your concerns and how they’re maintained.</span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>
+                Develop practical tools to manage thoughts, emotions, and behaviours more effectively.
+              </span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Feel supported, respected, and in control throughout the process.</span>
+                        </li>
+                    </ul>
+
+                    <p className="mt-6 text-stone-700">
+                        Sessions are focused and <em className="not-italic font-medium">structured</em>, with no
+                        pressure to revisit anything you’re not ready to explore.
+                    </p>
+                </Card>
             </div>
         </section>
-        <section className="py-16 sm:py-20 bg-[#FBF6F0] text-[#2E4F4F]">
+
+        {/*<section className="py-16 sm:py-20 bg-[#FBF6F0] text-[#2E4F4F]">
             <div className="mx-auto max-w-3xl px-4 text-center">
                 <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
                     Ready to see whether this could help?
@@ -198,3 +201,4 @@ export default function Home() {
         </section>*/}
     </>);
 }
+
