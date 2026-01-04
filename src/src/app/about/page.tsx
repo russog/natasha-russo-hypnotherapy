@@ -11,8 +11,8 @@ export default function About() {
             <div className="absolute inset-0  bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-bottom"
                  aria-hidden/>
             <div className="absolute inset-0 bg-white/35" aria-hidden/>
-            <div className="grid grid-cols-2">
-                <div className="mt-10 ml-5">
+            <div className="md:grid md:grid-cols-2">
+                <div className="md:mt-10 ml-5">
                     <div className="relative w-full aspect-square overflow-hidden rounded-full">
                         <Image
                             src="/about.webp"
@@ -25,7 +25,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="relative z-10 mt-15 mx-auto max-w-5xl px-6 space-y-10">
+                <div className="relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 space-y-10">
                     <Card>
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Meet Natasha
@@ -42,7 +42,7 @@ export default function About() {
 
                         </p>
                     </Card>
-                    <Card className="mt-20">
+                    <Card className="md:mt-20">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             How I came to this work
                         </h2>
@@ -66,7 +66,7 @@ export default function About() {
 
                 </div>
 
-                <div className="relative z-10 mt-5 mx-auto max-w-5xl px-6 space-y-10">
+                <div className="relative z-10 mt-5 md:mt-5 mx-auto max-w-5xl px-6 space-y-10">
                     <Card>
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             My style
@@ -90,13 +90,13 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="relative z-10 mt-20 mx-auto max-w-5xl px-6 space-y-10">
+                <div className="relative z-10 mt-5 md:mt-20 mx-auto max-w-5xl px-6 space-y-10">
                     <Card>
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Where next
                         </h2>
 
-                        <p className="mt-6 text-stone-700">
+                        <p className="mt:5 md:mt-6 text-stone-700">
                             If you’d like to understand more about how sessions work in practice, you can read more on
                             the<Link href={"/working-with-me"} className="font-bold">&nbsp;working with me page</Link>.
 
