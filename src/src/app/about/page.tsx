@@ -1,84 +1,113 @@
+import Image from "next/image";
 import Link from "next/link";
+import {Card} from "@/app/card";
+import {MiniCard} from "@/app/miniCard";
+import React from "react";
 
-export default function About(){
+export default function About() {
     return (<>
-            <section className="y-16 sm:py-20 bg-[#FEFCFB]">
-                <div className="mx-auto max-w-3xl px-4 text-center">
-                    <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
-                        Meet Natasha
-                    </h1>
 
-                    <p className="mt-4 text-lg leading-relaxed text-neutral-700">
-                        I’m Natasha – a cognitive-behavioural hypnotherapist who works with thoughtful, caring
-                        people whose minds never quite seem to switch off.
-                    </p>
-                </div>
-            </section>
-
-            <section className="py-16 sm:py-20 bg-[#FBF6F0]">
-                <div className="mx-auto max-w-3xl px-4 space-y-6 text-neutral-700">
-                    <p>
-                        I’ve always been curious about why we think, feel, and behave the way we do. That curiosity
-                        led me to complete a{" "}
-                        <strong className="font-semibold text-neutral-900">
-                            Bachelor of Science in Psychology
-                        </strong>
-                        , followed by a{" "}
-                        <strong className="font-semibold text-neutral-900">
-                            Master’s in Cross-Cultural Psychology
-                        </strong>
-                        , exploring how our beliefs, identities, and environments shape experience.
-                    </p>
-
-                    <p>
-                        Later, after a good amount of real-life stress, family life, and “I should be coping better
-                        than this” moments, I trained in a very practical, evidence-based approach to hypnosis. I
-                        hold a{" "}
-                        <strong className="font-semibold text-neutral-900">
-                            Level 5 Diploma in Cognitive Behavioural Hypnotherapy
-                        </strong>
-                        , which integrates cognitive-behavioural models with modern, non-mystical hypnotherapy.
-                    </p>
-
-                    <p>
-                        I don’t see clients as “cases” or diagnoses. I see real humans who are trying to do their
-                        best with the tools they have – often while juggling work, family, health and a very loud
-                        inner critic. My job is to offer a calm, structured space where we can gently examine what’s
-                        going on and build new ways of responding.
-                    </p>
-
-                    {/* Highlight box */}
-                    <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
-                        <div className="mb-2 inline-block rounded-full bg-neutral-900 px-3 py-1 text-xs font-semibold text-white">
-                            My style
-                        </div>
-
-                        <p className="text-neutral-700">
-                            In sessions, you can expect a clear framework (so you understand why you feel how you
-                            do), practical tools (not just talking in circles), and a therapist who is warm, honest,
-                            and occasionally a little bit wry – because sometimes being human is so absurd that you
-                            have to smile at it.
-                        </p>
+        <section className="relative overflow-hidden">
+            <div className="absolute inset-0  bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-bottom"
+                 aria-hidden/>
+            <div className="absolute inset-0 bg-white/35" aria-hidden/>
+            <div className="grid grid-cols-2">
+                <div className="mt-10 ml-5">
+                    <div className="relative w-full aspect-square overflow-hidden rounded-full">
+                        <Image
+                            src="/about.webp"
+                            alt="Natasha Russo"
+                            fill
+                            className="object-cover fixed"
+                            sizes="(min-width: 768px) 40vw, 100vw"
+                            priority
+                        />
                     </div>
-
-                    <p>
-                        If your mind runs like a browser with countless tabs open and several of them are frozen,
-                        you’re not alone. You’re welcome to bring the mess, the doubts, the “I shouldn’t be
-                        struggling with this” thoughts. We’ll work with all of it, at a pace that feels safe for
-                        you.
-                    </p>
-
-                    <p>
-                        You can read more about how I work in practice on the{" "}
-                        <Link
-                            href="/working-with-me"
-                            className="font-semibold text-neutral-900 underline underline-offset-4 hover:text-neutral-700"
-                        >
-                            Working with me
-                        </Link>{" "}
-                        page.
-                    </p>
                 </div>
-            </section>
-        </>);
+
+                <div className="relative z-10 mt-15 mx-auto max-w-5xl px-6 space-y-10">
+                    <Card>
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            Meet Natasha
+                        </h2>
+
+                        <p className="mt-6 text-stone-700">
+                            I’m Natasha — a cognitive-behavioural hypnotherapist who works with people whose minds never
+                            quite seem to switch off, and whose inner worlds can feel busy or hard to quiet.
+
+                            Many of the people I work with are used to holding things together on the outside, while
+                            privately feeling stuck in loops of worry, overthinking, or quiet self-doubt. My role isn’t
+                            to tell you what to think or how to “fix” yourself, but to help you understand what’s going
+                            on and find ways of responding that feel steadier and more manageable.
+
+                        </p>
+                    </Card>
+                    <Card className="mt-20">
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            How I came to this work
+                        </h2>
+
+                        <p className="mt-6 text-stone-700">
+                            I’ve always been curious about why we think, feel, and behave the way we do. That curiosity
+                            led me to study psychology, completing a Bachelor of Science in Psychology followed by a
+                            Master’s degree in Cross-Cultural Psychology, exploring how beliefs, identity, and
+                            environment shape our experience of the world.
+
+                            Like many people, my interest in how the mind works didn’t stay theoretical. Real-life
+                            stress, family life, and those familiar “I should be coping better than this” moments
+                            deepened my understanding of how easily even capable people can feel overwhelmed — and how
+                            unhelpful it can be when support focuses only on reassurance or advice.
+
+                            That combination of academic training and lived experience is what shaped how I work today:
+                            practical, grounded, and collaborative.
+
+                        </p>
+                    </Card>
+
+                </div>
+
+                <div className="relative z-10 mt-5 mx-auto max-w-5xl px-6 space-y-10">
+                    <Card>
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            My style
+                        </h2>
+
+                        <p className="mt-6 text-stone-700">
+                            In sessions, you can expect a clear framework — so you understand why you feel the way you
+                            do — alongside practical tools that help you work with your thoughts and emotions more
+                            effectively, rather than just talking in circles.
+
+                            My style is warm, honest, and collaborative, with a touch of wry humour where it fits. I
+                            take the work seriously, but not the idea that you need to be endlessly analysed or “fixed”
+                            in order to move forward.
+
+                            You don’t need to arrive with everything neatly explained. You’re welcome to bring the mess,
+                            the doubts, and the thoughts you’re not proud of. We’ll work with all of it, at a pace that
+                            feels safe and manageable for you.
+
+
+                        </p>
+                    </Card>
+                </div>
+
+                <div className="relative z-10 mt-20 mx-auto max-w-5xl px-6 space-y-10">
+                    <Card>
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            Where next
+                        </h2>
+
+                        <p className="mt-6 text-stone-700">
+                            If you’d like to understand more about how sessions work in practice, you can read more on
+                            the<Link href={"/working-with-me"} className="font-bold">&nbsp;working with me page</Link>.
+
+                        </p>
+                    </Card>
+                </div>
+            </div>
+            <div className="mb-20"></div>
+
+
+        </section>
+
+    </>);
 }
