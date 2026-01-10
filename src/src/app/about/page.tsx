@@ -13,12 +13,12 @@ export default function About() {
             <div className="absolute inset-0 bg-white/35" aria-hidden/>
             <div className="md:grid md:grid-cols-2">
                 <div className="md:mt-10 ml-5">
-                    <div className="relative w-full aspect-square overflow-hidden rounded-full">
+                    <div className="relative w-[85%] aspect-square overflow-hidden rounded-full mx-auto">
                         <Image
                             src="/about.webp"
                             alt="Natasha Russo"
                             fill
-                            className="object-cover fixed"
+                            className="object-cover"
                             sizes="(min-width: 768px) 40vw, 100vw"
                             priority
                         />
@@ -32,15 +32,15 @@ export default function About() {
                         </h2>
 
                         <p className="mt-6 text-stone-700">
-                            I’m Natasha — a cognitive-behavioural hypnotherapist who works with people whose minds never
-                            quite seem to switch off, and whose inner worlds can feel busy or hard to quiet.
-
-                            Many of the people I work with are used to holding things together on the outside, while
-                            privately feeling stuck in loops of worry, overthinking, or quiet self-doubt. My role isn’t
-                            to tell you what to think or how to “fix” yourself, but to help you understand what’s going
-                            on and find ways of responding that feel steadier and more manageable.
-
+                            I’m Natasha, a cognitive-behavioural hypnotherapist with a background in psychology and a long-standing interest in how people make sense of their inner experiences.
                         </p>
+                        <p className="mt-6 text-stone-700">
+                            I’m naturally curious about what goes on beneath the surface – particularly when thoughts feel repetitive, confusing, or harder to manage than we’d like. I tend to work thoughtfully and deliberately, valuing clarity, structure, and understanding over quick solutions or dramatic techniques.
+                        </p>
+                        <p className="mt-6 text-stone-700">
+                            My aim is to offer a space that feels calm, steady and collaborative, where things can be explored without pressure or judgement.
+                        </p>
+
                     </Card>
                     <Card className="md:mt-20">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
@@ -48,19 +48,22 @@ export default function About() {
                         </h2>
 
                         <p className="mt-6 text-stone-700">
-                            I’ve always been curious about why we think, feel, and behave the way we do. That curiosity
-                            led me to study psychology, completing a Bachelor of Science in Psychology followed by a
-                            Master’s degree in Cross-Cultural Psychology, exploring how beliefs, identity, and
-                            environment shape our experience of the world.
-
-                            Like many people, my interest in how the mind works didn’t stay theoretical. Real-life
-                            stress, family life, and those familiar “I should be coping better than this” moments
-                            deepened my understanding of how easily even capable people can feel overwhelmed — and how
-                            unhelpful it can be when support focuses only on reassurance or advice.
-
-                            That combination of academic training and lived experience is what shaped how I work today:
-                            practical, grounded, and collaborative.
-
+                            My interest in this work didn’t begin only in textbooks. Like many people, I’ve had periods of anxiety myself – the kind where your mind feels busy, reactive, and difficult to settle, especially under pressure.
+                        </p>
+                        <p className="mt-6 text-stone-700">
+                            Not long before I trained formally, I found myself drawn to practical ways of working with attention and awareness, including mindfulness-based approaches I explored on my own. What struck me was not just that these methods helped, but why they helped.
+                        </p>
+                        <p className="mt-6 text-stone-700">
+                            Alongside that, real-life stress, family life, and those familiar “I should be coping better than this” moments deepened my understanding of how easily even capable people can feel overwhelmed – and how unhelpful it can be when support focuses only on reassurance or advice.
+                        </p>
+                        <p className="mt-6 text-stone-700">
+                            I became increasingly curious about what keeps people feeling stuck – why certain patterns of thought, interpretation, and behaviour persist even when we understand them logically, and why stress or uncertainty can make those patterns feel so much stronger.
+                        </p>
+                        <p className="mt-6 text-stone-700">
+                            That curiosity led me to train in cognitive-behavioural hypnotherapy. The approach appealed to me because it brings together evidence-based cognitive and behavioural principles with an understanding of attention, expectation, and imagination, in a way that is structured, collaborative, and transparent.
+                        </p>
+                        <p className="mt-6 text-stone-700">
+                            What mattered most to me was that this way of working doesn’t treat hypnosis as something done to a person. Instead, it offers a practical framework for understanding how the mind works, and for learning how to respond differently, with more choice and clarity.
                         </p>
                     </Card>
 
