@@ -116,7 +116,7 @@ export default function About() {
                 </div>
 
 
-                <div className="relative z-10 mt-5 md:mt-10 md:col-span-2 px-6 mb-10">
+                <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-15">
                     <Card className="mx-auto max-w-3xl text-center">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Where next

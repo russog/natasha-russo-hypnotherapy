@@ -182,7 +182,7 @@ export default function Home() {
                     </ul>
 
                     <p className="mt-6 text-stone-700 italic">
-                        You are welcome to <Link href={"/working-with-me"} className="font-semibold">get in touch,</Link>even if what you are dealing with doesn’t fit neatly into a box
+                        You are welcome to <Link href={"/contact"} className="font-semibold">get in touch,</Link>even if what you are dealing with doesn’t fit neatly into a box
                     </p>
                 </Card>
 
