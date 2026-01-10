@@ -12,14 +12,19 @@ export default function Home() {
             <div className="absolute inset-0 bg-white/35" aria-hidden/>
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
                 <h1 className="mx-auto max-w-4xl text-3xl leading-tight font-semibold tracking-tight text-neutral-900 sm:text-5xl">
-                    Calm, evidence-based hypnotherapy
+                    Calm, evidence-based therapy
                     <br/>
                     to help you worry less and live more
                 </h1>
 
+
+                <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                    Integrating cognitive-behavioural therapy, hypnotherapy, and mindfulness in a calm, structured,
+                    collaborative way.
+                </p>
+
                 <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    Gentle, structured support for anxiety, overthinking, and confidence issues — online, from the
-                    comfort of your own home.
+                    Sessions are held online from the comfort of your own home
                 </p>
 
                 <div className="mt-10 flex justify-center">
@@ -34,7 +39,7 @@ export default function Home() {
 
         <section className="py-6 sm:py-10">
             <div className="mx-auto max-w-5xl px-4">
-                <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+                <div className="grid gap-8 md:grid-cols-[5fr_7fr] md:gap-12">
                     <div className="relative w-full aspect-4/5 md:aspect-auto md:h-100 md:row-start-1 md:col-start-1">
                         <Image
                             src="/me.webp"
@@ -46,20 +51,23 @@ export default function Home() {
                             priority
                         />
                     </div>
-                    <div className="text-left md:row-start-1 md:col-start-2">
+                    <div className="text-left md:row-start-1 md:col-start-2 space-y-6">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-                            I’m Natasha Russo, a cognitive behavioural hypnotherapist
+                            My approach is grounded, practical, and collaborative.
                         </h2>
 
                         <p className="mb-6 text-lg leading-relaxed text-neutral-700">
-                            I work in a calm, structured, and collaborative way, helping people
-                            reduce anxiety, overthinking, and self-doubt using evidence-based
+                            I work with people who experience anxiety, overthinking, and self-doubt using evidence-based
                             approaches.
                         </p>
 
                         <p className="text-lg leading-relaxed text-neutral-700">
-                            Sessions are practical, focused, and adapted to your pace — with no
-                            pressure to revisit anything you don’t want to.
+                            Sessions are focused and purposeful, and adapted to your pace, with no pressure to revisit
+                            anything you don’t want to.
+                        </p>
+
+                        <p className="text-lg leading-relaxed text-neutral-700">
+                            <Link href={"/working-with-me"} className="font-semibold">Learn more about I work</Link>.
                         </p>
                     </div>
                 </div>
@@ -86,27 +94,25 @@ export default function Home() {
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You find yourself caught in cycles of worry, “what ifs”, or worst-case thinking.
+                You find yourself caught in cycles of worry, what-ifs, or worse-case thinking that are hard to interrupt
               </span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You feel stuck in patterns of anxiety, overthinking, or self-doubt that you’d really
-                like to change.
+                You notice the same patterns of anxiety, overthinking or self-doubt repeating, even when you understand them logically
               </span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You struggle to fully switch off or stay present, even when things are going well.
+                You struggle to fully switch off or stay present, even when things are going well
               </span>
                         </li>
                     </ul>
 
                     <p className="mt-6 text-center text-stone-700">
-                        If any of this resonates, you’re not alone — and{" "}
-                        <em className="not-italic font-medium">it doesn’t have to stay this way.</em>
+                        If any of this feels familiar, you are not alone – and change is possible
                     </p>
                 </Card>
 
@@ -123,21 +129,61 @@ export default function Home() {
                     <div className="mt-8 grid gap-6 md:grid-cols-3">
                         <MiniCard
                             title="Anxiety"
-                            body="Learn ways to calm your nervous system, reduce constant worry, and feel more at ease in everyday life."
+                            body="Learn ways to calm your nervous system, reduce ongoing worry, and feel more at ease in day-to-day life"
                         />
                         <MiniCard
                             title="Overthinking"
-                            body="Step out of rumination and mental loops, and develop a more balanced, flexible relationship with your thoughts."
+                            body="Step out of rumination and mental loops, and develop a more balanced, flexible relationship with your thoughts"
                         />
                         <MiniCard
                             title="Confidence & self-doubt"
-                            body="Build inner confidence, reduce self-criticism, and feel more able to trust yourself and your decisions."
+                            body="Build inner confidence, reduce self-criticism, and feel more able to trust yourself and your decisions"
                         />
                     </div>
 
-                    <p className="mt-8 text-center text-stone-700">
-                        If you recognise yourself here, we can explore this{" "}
-                        <em className="not-italic font-medium">together</em>.
+                </Card>
+
+                <Card className="bg-emerald-50/50">
+
+                    <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                        Areas people often seek support for
+                    </h2>
+
+                    <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
+                        People come to therapy for many different reasons. Often, the concern that brings someone here
+                        is just the surface expression of deeper patterns we work with together
+                    </p>
+
+                    <ul className="mt-6 space-y-4 text-stone-700">
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Stress and life transitions</span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Phobias and specific fears
+              </span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Habits you’d like to change</span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Difficulty sleeping or switching off</span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Difficulty being assertive, setting boundaries, or speaking up</span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Feeling stuck, overwhelmed or emotionally drained</span>
+                        </li>
+                    </ul>
+
+                    <p className="mt-6 text-stone-700">
+                        You are welcome to <strong><em>get in touch</em></strong>, even if what you are dealing with doesn’t fit neatly into a box
                     </p>
                 </Card>
 
@@ -148,31 +194,27 @@ export default function Home() {
                     </h2>
 
                     <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
-                        My approach is grounded, collaborative, and tailored to you. I combine hypnotherapy
-                        with proven cognitive-behavioural techniques to help you understand your patterns,
-                        develop practical skills, and create lasting change — at a pace that feels right for you.
+                        My approach is calm, collaborative, and adapted to you. I combine hypnotherapy with cognitive-behavioural approaches to help you understand what’s keeping difficulties going, develop practical skills, and move forward at a pace that feels right for you
                     </p>
 
                     <ul className="mt-6 space-y-4 text-stone-700">
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>Understand the root of your concerns and how they’re maintained.</span>
+                            <span>Make sense of what’s going on for you, and how certain patterns are being maintained</span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>
-                Develop practical tools to manage thoughts, emotions, and behaviours more effectively.
+                            <span>Develop practical tools to work more effectively with your thoughts, emotions, and behaviours
               </span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>Feel supported, respected, and in control throughout the process.</span>
+                            <span>Feel supported, respected, and in control throughout the process</span>
                         </li>
                     </ul>
 
                     <p className="mt-6 text-stone-700">
-                        Sessions are focused and <em className="not-italic font-medium">structured</em>, with no
-                        pressure to revisit anything you’re not ready to explore.
+                        Hypnotherapy here involves using your own focused attention and imagination in supportive ways – it is safe, evidence-based, and always led by you and your goals
                     </p>
                 </Card>
             </div>
