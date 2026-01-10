@@ -12,7 +12,7 @@ export default function About() {
                  aria-hidden/>
             <div className="absolute inset-0 bg-white/35" aria-hidden/>
             <div className="md:grid md:grid-cols-2">
-                <div className="md:mt-10 ml-5">
+                <div className="md:mt-30 ml-5">
                     <div className="relative w-[85%] aspect-square overflow-hidden rounded-full mx-auto border-2">
                         <Image
                             src="/about.webp"
@@ -24,7 +24,7 @@ export default function About() {
                         />
                     </div>
 
-                    <div className="relative z-10 mt-40">
+                    <div className="relative z-10 mt-22">
                         <Card>
                             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                                 My style
@@ -53,7 +53,7 @@ export default function About() {
                 </div>
 
                 <div className="relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 space-y-10">
-                    <Card>
+                    <Card className="ml-10">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Meet Natasha
                         </h2>
@@ -74,7 +74,7 @@ export default function About() {
                         </p>
 
                     </Card>
-                    <Card className="md:mt-20">
+                    <Card className="mt-15 ml-10">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             How I came to this work
                         </h2>
@@ -116,7 +116,7 @@ export default function About() {
                 </div>
 
 
-                <div className="relative z-10 mt-5 md:mt-20 md:col-span-2 px-6 mb-20">
+                <div className="relative z-10 mt-5 md:mt-10 md:col-span-2 px-6 mb-10">
                     <Card className="mx-auto max-w-3xl text-center">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Where next
