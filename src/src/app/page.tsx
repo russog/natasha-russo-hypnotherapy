@@ -37,7 +37,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="py-6 sm:py-10">
+        <section className="py- sm:py-10">
             <div className="mx-auto max-w-5xl px-4">
                 <div className="grid gap-8 md:grid-cols-[5fr_7fr] md:gap-12">
                     <div className="relative w-full aspect-4/5 md:aspect-auto md:h-100 md:row-start-1 md:col-start-1">
@@ -66,15 +66,15 @@ export default function Home() {
                             anything you don’t want to.
                         </p>
 
-                        <p className="text-lg leading-relaxed text-neutral-700">
-                            <Link href={"/working-with-me"} className="font-semibold">Learn more about I work</Link>.
+                        <p className="text-lg leading-relaxed text-neutral-700 italic">
+                            <Link href={"/working-with-me"} className="font-semibold">Learn more about how I work</Link>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section className="relative py-16 overflow-hidden isolate">
+        <section className="relative pb-12 overflow-hidden isolate">
             <div
                 aria-hidden
                 className="absolute inset-0 -z-20 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-top"
@@ -111,7 +111,7 @@ export default function Home() {
                         </li>
                     </ul>
 
-                    <p className="mt-6 text-center text-stone-700">
+                    <p className="mt-6 text-center text-stone-700 italic">
                         If any of this feels familiar, you are not alone – and change is possible
                     </p>
                 </Card>
@@ -122,8 +122,7 @@ export default function Home() {
                     </h2>
 
                     <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
-                        I work with adults who want practical, evidence-based support for emotional and
-                        cognitive difficulties such as:
+                        I work with adults who want practical, evidence-based support for difficulties that show up in thoughts, emotions, and everyday life.
                     </p>
 
                     <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -182,8 +181,8 @@ export default function Home() {
                         </li>
                     </ul>
 
-                    <p className="mt-6 text-stone-700">
-                        You are welcome to <strong><em>get in touch</em></strong>, even if what you are dealing with doesn’t fit neatly into a box
+                    <p className="mt-6 text-stone-700 italic">
+                        You are welcome to <Link href={"/working-with-me"} className="font-semibold">get in touch,</Link>even if what you are dealing with doesn’t fit neatly into a box
                     </p>
                 </Card>
 
@@ -213,7 +212,7 @@ export default function Home() {
                         </li>
                     </ul>
 
-                    <p className="mt-6 text-stone-700">
+                    <p className="mt-6 text-stone-700 italic">
                         Hypnotherapy here involves using your own focused attention and imagination in supportive ways – it is safe, evidence-based, and always led by you and your goals
                     </p>
                 </Card>
