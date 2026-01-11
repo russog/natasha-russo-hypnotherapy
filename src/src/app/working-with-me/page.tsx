@@ -106,15 +106,26 @@ export default function WorkingWithMe() {
                             Your role and my role
                         </h2>
 
-                        <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
-                            My role is to provide structure, guidance, and evidence-based methods to help you understand
-                            and change unhelpful patterns.
-                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                        <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
-                            Your role is to bring curiosity, honesty, and a willingness to experiment – even when things
-                            feel uncertain or imperfect.
-                        </p>
+                            <div className="border-r  border-dashed border-black mr-6">
+
+                                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
+                                    My role is to provide structure, guidance, and evidence-based methods to help you understand
+                                    and change unhelpful patterns.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
+                                    Your role is to bring curiosity, honesty, and a willingness to experiment – even when things
+                                    feel uncertain or imperfect.
+                                </p>
+                            </div>
+                        </div>
+
+
+
 
 
                     </Card>
