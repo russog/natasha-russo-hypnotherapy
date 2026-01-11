@@ -80,7 +80,7 @@ export default function WorkingWithMe() {
                         <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
                             <li className="flex gap-3">
                                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                                <span>We begin by developing a shared understanding of what’s been happening for you and what you’d like to change. This may take more than one session and isn’t rushed.</span>
+                                <span>We begin by developing a shared understanding of what’s been happening for you and what you’d like to change. This may take more than one session and shouldn&#39;t be rushed.</span>
                             </li>
                             <li className="flex gap-3">
                                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
@@ -96,7 +96,7 @@ export default function WorkingWithMe() {
                             </li>
                             <li className="flex gap-3">
                                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                                <span>Endings are planned thoughtfully, with an emphasis on consolidating learning and supporting ongoing independence.</span>
+                                <span>End of therapy is planned thoughtfully, with an emphasis on consolidating learning and supporting ongoing independence.</span>
                             </li>
                         </ul>
                     </Card>
@@ -109,24 +109,21 @@ export default function WorkingWithMe() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                             <div className="border-r  border-dashed border-black mr-6">
-
-                                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
-                                    My role is to provide structure, guidance, and evidence-based methods to help you understand
+                                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
+                                    <em className="italic">My role</em> is to provide structure, guidance, and
+                                    evidence-based methods to help you understand
                                     and change unhelpful patterns.
                                 </p>
                             </div>
 
                             <div>
-                                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
-                                    Your role is to bring curiosity, honesty, and a willingness to experiment – even when things
+                                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
+                                    <em className="italic">Your role</em> is to bring curiosity, honesty, and a
+                                    willingness to experiment – even when things
                                     feel uncertain or imperfect.
                                 </p>
                             </div>
                         </div>
-
-
-
-
 
                     </Card>
 
@@ -188,16 +185,14 @@ export default function WorkingWithMe() {
                         trying things out between sessions. If you are unsure whether it’s right for you, that’s
                         something we can talk through in our initial conversation.
                     </p>
-                    <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
+                    <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
                         If you’d like to explore whether this approach fits you, the next step is usually a brief,
-                        no-pressure conversation.
+                        no-pressure conversation - <Link href="/contact" className="font-bold">
+                        Get in touch
+                    </Link>
                     </p>
 
-                    <p className="mt-6 text-center text-stone-700 italic">
-                        <Link href="/contact" className="font-bold">
-                            Get in touch
-                        </Link>
-                    </p>
+
                 </div>
             </section>}
     </>);
