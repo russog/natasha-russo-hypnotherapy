@@ -13,7 +13,7 @@ export default function About() {
             <div className="absolute inset-0 bg-white/35" aria-hidden />
 
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
-                <div className="md:mt-30 ml-5 md:row-start-1 md:col-start-1">
+                <div className="md:mt-15 ml-5 md:row-start-1 md:col-start-1">
                     <div className="relative w-[85%] aspect-square overflow-hidden rounded-full mx-auto border-2">
                         <Image
                             src="/about.webp"
@@ -86,7 +86,7 @@ export default function About() {
                 </div>
 
                 <div className="relative z-10 mt-22 md:mt-0 md:row-start-2 md:col-start-1 ml-5">
-                    <Card className="h-full flex flex-col justify-end">
+                    <Card className="h-full flex flex-col">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             My style
                         </h2>
@@ -111,18 +111,13 @@ export default function About() {
                 </div>
 
                 <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-15">
-                    <Card className="mx-auto max-w-3xl text-center">
-                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-                            Where next
-                        </h2>
-
-                        <p className="mt-6 text-stone-700">
-                            If you’d like to understand more about how sessions work in practice, you can read more on
-                            <Link href="/working-with-me" className="font-bold">
-                                &nbsp;the working with me page.
-                            </Link>
-                        </p>
-                    </Card>
+                    <p className="mt-6 mx-auto text-stone-700 italic text-center max-w-xl">
+                        If you’d like to understand more about how sessions work in practice,
+                        <br/>you can read more on the
+                        <Link href="/working-with-me" className="font-bold">
+                            &nbsp;Working with me page.
+                        </Link>
+                    </p>
                 </div>
             </div>
         </section>
