@@ -12,9 +12,7 @@ export default function About() {
             />
             <div className="absolute inset-0 bg-white/35" aria-hidden />
 
-            {/* Grid */}
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
-                {/* Left column: Image (row 1) */}
                 <div className="md:mt-30 ml-5 md:row-start-1 md:col-start-1">
                     <div className="relative w-[85%] aspect-square overflow-hidden rounded-full mx-auto border-2">
                         <Image
@@ -28,7 +26,6 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Right column: spans rows 1–2 so it defines the overall height */}
                 <div className="relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 space-y-10 md:row-span-2 md:col-start-2">
                     <Card className="ml-10">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
@@ -88,7 +85,6 @@ export default function About() {
                     </Card>
                 </div>
 
-                {/* Left column: My style (row 2) — pushed to the bottom of the “row” on desktop */}
                 <div className="relative z-10 mt-22 md:mt-0 md:row-start-2 md:col-start-1 ml-5">
                     <Card className="h-full flex flex-col justify-end">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
@@ -114,7 +110,6 @@ export default function About() {
                     </Card>
                 </div>
 
-                {/* Full-width centered footer card */}
                 <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-15">
                     <Card className="mx-auto max-w-3xl text-center">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
