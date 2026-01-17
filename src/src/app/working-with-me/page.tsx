@@ -132,7 +132,7 @@ export default function WorkingWithMe() {
                     is a serious risk of harm to you or someone else. These limits are discussed clearly at the start of
                     our work together, so you know where you stand.
                     <br/>
-                    For further details, please refer to my <Link href="/faq" className="font-bold">Privacy
+                    For further details, please refer to my <Link href="/privacy-policy" className="font-bold">Privacy
                     Notice</Link>
                     <br/>
                     <br/>
@@ -153,7 +153,7 @@ export default function WorkingWithMe() {
                     conceptualisation.
                     A block of four sessions is available at <strong>£220.</strong>
                     Fees are payable in advance, and cancellation arrangements are outlined clearly before we begin. For
-                    further detail, please refer to the <Link href="/fees-and-cancellation" className="font-bold">Fees &
+                    further detail, please refer to the <Link href="/fees-cancellation" className="font-bold">Fees &
                     Cancellation Policy</Link>
 
                 </p>
