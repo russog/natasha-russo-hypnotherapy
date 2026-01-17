@@ -136,8 +136,6 @@ export default function WorkingWithMe() {
                     Notice</Link>
                     <br/>
                     <br/>
-                    Different approaches suit different people, and part of the work is making sure that this feels
-                    like a good fit for you.
                     Different approaches suit different people, and part of the work is making sure that this feels like
                     a good fit for you.
                     This way of working tends to suit people who are open to reflecting on their experiences and trying
@@ -149,9 +147,9 @@ export default function WorkingWithMe() {
                     <br/>
                     <br/>
                     Standard sessions last <strong>60 minutes</strong> and are charged at <strong>£60</strong> per hour.
-                    The first session lasts approximately 90 minutes and is £90, allowing time for assessment and
+                    The first session lasts approximately <strong>90</strong> minutes and is <strong>£90</strong>, allowing time for assessment and
                     conceptualisation.
-                    A block of four sessions is available at <strong>£220.</strong>
+                    <strong>A block of four</strong> sessions is available at <strong>£220.</strong>
                     Fees are payable in advance, and cancellation arrangements are outlined clearly before we begin. For
                     further detail, please refer to the <Link href="/fees-cancellation" className="font-bold">Fees &
                     Cancellation Policy</Link>
