@@ -6,10 +6,8 @@ export default function Footer() {
         <footer className="border-t border-[#4F5A54]/20 px-6 py-10 text-sm text-neutral-800">
             <div className="mx-auto max-w-6xl">
 
-                {/* Top section */}
                 <div className="grid gap-8 md:grid-cols-2">
 
-                    {/* Left column */}
                     <div className="space-y-4">
                         <div>
                             <p className="font-medium">Natasha Russo Hypnotherapy</p>
@@ -19,15 +17,13 @@ export default function Footer() {
                         <div className="flex flex-wrap gap-x-2 gap-y-1">
                             <Link
                                 href="/privacy-policy"
-                                className="hover:underline"
-                            >
+                                className="hover:underline font-bold">
                                 Privacy Policy
                             </Link>
                             <span>•</span>
                             <Link
                                 href="/fees-cancellation"
-                                className="hover:underline"
-                            >
+                                className="hover:underline font-bold">
                                 Fees & Cancellation Policy
                             </Link>
                         </div>
