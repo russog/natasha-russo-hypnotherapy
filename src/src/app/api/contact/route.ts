@@ -5,7 +5,6 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-    // Visit /api/contact in the browser. If you don't see this, your route isn't deployed/running.
     return NextResponse.json({ ok: true, route: "contact", runtime: "nodejs" });
 }
 
@@ -42,16 +41,14 @@ export async function POST(req: Request) {
 
         const resend = new Resend(RESEND_API_KEY);
 
-        // IMPORTANT: keep 'from' on resend.dev until your domain is verified in Resend.
-        const sendResult = await resend.emails.send({
+        await resend.emails.send({
             from: "Website Contact <onboarding@resend.dev>",
             to: CONTACT_TO_EMAIL,
             subject: `New contact form message from ${name}`,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
-            // leave reply-to out for now to remove one more possible failure source
         });
 
-        return NextResponse.json({ ok: true, id: sendResult.data?.id });
+        return new Response("OK", {status: 200});
     } catch (err: unknown) {
         console.error("CONTACT_FORM_ERROR:", err);
 
