@@ -1,53 +1,69 @@
-import {Resend} from "resend";
-import {NextResponse} from "next/dist/server/web/spec-extension/response";
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+export async function GET() {
+    // Visit /api/contact in the browser. If you don't see this, your route isn't deployed/running.
+    return NextResponse.json({ ok: true, route: "contact", runtime: "nodejs" });
+}
 
 export async function POST(req: Request) {
-
     try {
-        const formData = await req.formData();
+        const RESEND_API_KEY = process.env.RESEND_API_KEY;
+        const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL;
 
-        if (formData.get("company")) {
-            return new Response("OK");
-        }
-
-        if (!process.env.RESEND_API_KEY) {
-            console.error("Missing RESEND_API_KEY");
+        if (!RESEND_API_KEY) {
             return NextResponse.json({ error: "Missing RESEND_API_KEY" }, { status: 500 });
         }
-        if (!process.env.CONTACT_TO_EMAIL) {
-            console.error("Missing CONTACT_TO_EMAIL");
+        if (!CONTACT_TO_EMAIL) {
             return NextResponse.json({ error: "Missing CONTACT_TO_EMAIL" }, { status: 500 });
         }
 
-        const name = formData.get("name")?.toString() || "";
-        const email = formData.get("email")?.toString() || "";
-        const phone = formData.get("phone")?.toString() || "";
-        const message = formData.get("message")?.toString() || "";
+        const formData = await req.formData();
 
-        if (!name || !email || !message) {
-            return new Response("Missing required fields", {status: 400});
+        // honeypot
+        if (formData.get("company")) {
+            return NextResponse.json({ ok: true, spam: true });
         }
 
-        await resend.emails.send({
-            from: "Website Contact <onboarding@resend.dev>",
-            to: process.env.CONTACT_TO_EMAIL!,
-            replyTo: email,
-            subject: `New contact form message from ${name}`,
-            text: `
-Name: ${name}
-Email: ${email}
-Phone: ${phone || "Not provided"}
+        const name = String(formData.get("name") ?? "").trim();
+        const email = String(formData.get("email") ?? "").trim();
+        const phone = String(formData.get("phone") ?? "").trim();
+        const message = String(formData.get("message") ?? "").trim();
 
-Message:
-${message}
-      `,
+        if (!name || !email || !message) {
+            return NextResponse.json(
+                { error: "Please provide name, email, and message." },
+                { status: 400 }
+            );
+        }
+
+        const resend = new Resend(RESEND_API_KEY);
+
+        // IMPORTANT: keep 'from' on resend.dev until your domain is verified in Resend.
+        const sendResult = await resend.emails.send({
+            from: "Website Contact <onboarding@resend.dev>",
+            to: CONTACT_TO_EMAIL,
+            subject: `New contact form message from ${name}`,
+            text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
+            // leave reply-to out for now to remove one more possible failure source
         });
 
-        return new Response("OK", {status: 200});
-    } catch (error) {
-        console.error(error);
-        return new Response("Error sending message", {status: 500});
+        return NextResponse.json({ ok: true, id: sendResult.data?.id });
+    } catch (err: unknown) {
+        console.error("CONTACT_FORM_ERROR:", err);
+
+        let message = "Internal Server Error";
+
+        if (err instanceof Error) {
+            message = err.message;
+        }
+
+        return NextResponse.json(
+            { error: message },
+            { status: 500 }
+        );
     }
 }
