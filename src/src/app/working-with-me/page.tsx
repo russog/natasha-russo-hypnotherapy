@@ -146,11 +146,10 @@ export default function WorkingWithMe() {
                     <strong>Fees</strong>
                     <br/>
                     <br/>
-                    Standard sessions last <strong>60 minutes</strong> and are charged at <strong>£60</strong> per hour.
-                    The first session lasts approximately <strong>90</strong> minutes and is <strong>£90</strong>, allowing time for assessment and
-                    conceptualisation.
-                    <strong>A block of four</strong> sessions is available at <strong>£220.</strong>
-                    Fees are payable in advance, and cancellation arrangements are outlined clearly before we begin. For
+                    Standard sessions last <strong>60 minutes</strong> and are charged at <strong>£60.</strong>
+                    The first session lasts approximately <strong>90 minutes</strong> and is <strong>£90</strong>, allowing time for assessment and
+                    conceptualisation.&nbsp;<strong>A block of four</strong> sessions is available at <strong>£220.</strong>
+                    &nbsp;Fees are payable in advance, and cancellation arrangements are outlined clearly before we begin. For
                     further detail, please refer to the <Link href="/fees-cancellation" className="font-bold">Fees &
                     Cancellation Policy</Link>
 

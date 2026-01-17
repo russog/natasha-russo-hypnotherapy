@@ -49,7 +49,8 @@ export async function POST(req: Request) {
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
         });
 
-        return NextResponse.redirect(new URL("/contact/thanks", req.url), { status: 303 });
+        return NextResponse.redirect("/contact/thanks", 303);
+
 
     } catch (err: unknown) {
         console.error("CONTACT_FORM_ERROR:", err);
