@@ -1,4 +1,5 @@
 import {Resend} from "resend";
+import {NextResponse} from "next/dist/server/web/spec-extension/response";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -9,6 +10,15 @@ export async function POST(req: Request) {
 
         if (formData.get("company")) {
             return new Response("OK");
+        }
+
+        if (!process.env.RESEND_API_KEY) {
+            console.error("Missing RESEND_API_KEY");
+            return NextResponse.json({ error: "Missing RESEND_API_KEY" }, { status: 500 });
+        }
+        if (!process.env.CONTACT_TO_EMAIL) {
+            console.error("Missing CONTACT_TO_EMAIL");
+            return NextResponse.json({ error: "Missing CONTACT_TO_EMAIL" }, { status: 500 });
         }
 
         const name = formData.get("name")?.toString() || "";
