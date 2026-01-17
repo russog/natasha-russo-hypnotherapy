@@ -1,69 +1,141 @@
-export default function Contact(){
+import Link from "next/link";
+import React from "react";
+
+export default function Contact() {
     return (
         <>
-            <section className="py-16 sm:py-20 bg-[#FEFCFB]">
-                <div className="mx-auto max-w-3xl px-4 text-center">
-                    <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
-                        Contact
-                    </h1>
+            <section className="relative overflow-hidden">
+                <div className="absolute inset-0  bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-bottom"
+                     aria-hidden/>
+                <div className="absolute inset-0 bg-white/35" aria-hidden/>
+                <div className="relative mx-auto max-w-6xl px-4 py-10 sm:py-14 text-center">
+                <section className="px-6 py-10">
+                        <div
+                            className="mx-auto max-w-6xl overflow-hidden rounded-2xl border border-[#4F5A54]/15 bg-[#f6f4ef]">
+                            <div className="grid md:grid-cols-2">
+                                <div className="relative p-10 md:p-12">
+                                    <div className="pointer-events-none absolute inset-0 opacity-30">
+                                        <div
+                                            className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-[#4F5A54]/10 blur-2xl"/>
+                                        <div
+                                            className="absolute left-10 top-10 h-40 w-40 rounded-full bg-[#4F5A54]/10 blur-2xl"/>
+                                    </div>
 
-                    <p className="mt-4 text-lg leading-relaxed text-neutral-700">
-                        If something here resonates, the next step is a simple, free 20-minute chat where you can
-                        ask questions and see whether we feel like a good fit.
-                    </p>
+                                    <div className="relative z-10 max-w-md space-y-6 text-neutral-800">
+                                        <h1 className="text-5xl font-medium tracking-tight">Get in touch</h1>
+
+                                        <p>
+                                            If you&apos;re considering hypnotherapy and would like to ask a few
+                                            questions, you&apos;re very welcome to get in touch.
+                                        </p>
+
+                                        <p>
+                                            This is simply a space to make initial contact — there&apos;s no
+                                            obligation to book, and no need to have everything worked out yet.
+                                        </p>
+
+                                        <p>
+                                            I&apos;m happy to briefly discuss what you&apos;re dealing with, how
+                                            cognitive behavioural hypnotherapy works, and whether this approach
+                                            feels like a good fit for you.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    className="border-t border-[#4F5A54]/15 bg-[#f8f7f3] p-10 md:border-t-0 md:border-l md:p-12">
+                                    <form className="space-y-6" method="post" action="/api/contact">
+                                        <input
+                                            type="text"
+                                            name="company"
+                                            className="hidden"
+                                            tabIndex={-1}
+                                            autoComplete="off"
+                                        />
+                                        <Field label="Name">
+                                            <Input name="name" autoComplete="name" required />
+                                        </Field>
+
+                                        <Field label="Email address">
+                                            <Input name="email" type="email" autoComplete="email" required/>
+                                        </Field>
+
+                                        <Field label="Phone number (optional)">
+                                            <Input name="phone" type="tel" autoComplete="tel"/>
+                                        </Field>
+
+                                        <Field label="Message">
+                                            <Textarea
+                                                name="message"
+                                                placeholder={
+                                                    "You can share as much or as little as you'd like.\n\nFor example, you might tell me what's prompted you to get in touch, or what you're hoping to understand or change."
+                                                }
+                                            required/>
+                                        </Field>
+
+                                        <button
+                                            type="submit"
+                                            className="inline-flex items-center justify-center rounded-lg bg-[#4F6B5A] px-6 py-3 text-sm font-medium text-white shadow-sm transition hover:bg-[#3f5b4d] focus:outline-none focus:ring-2 focus:ring-[#4F6B5A]/40"
+                                        >
+                                            Send message
+                                        </button>
+
+                                        <p className="pt-2 text-sm text-neutral-600">
+                                            Messages sent through this form are treated as confidential and handled in
+                                            line with my{" "}
+                                            <Link href="/privacy-policy"
+                                                  className="underline underline-offset-2 hover:no-underline">
+                                                privacy policy
+                                            </Link>
+                                            .
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
-            <section className="py-16 sm:py-20 bg-[#FBF6F0]">
-                <div className="mx-auto max-w-3xl px-4 space-y-6 text-neutral-700">
-                    <h2 className="text-xl font-semibold text-neutral-900">
-                        Book a free 20-minute chat
-                    </h2>
 
-                    <p>
-                        To book a brief initial conversation, you can email me directly or use the details below.
-                        There’s no pressure to commit – it’s simply a chance to talk things through and decide
-                        whether you’d like to work together.
-                    </p>
-
-                    {/* Contact details */}
-                    <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-                        <div className="space-y-3">
-                            <p className="text-sm">
-                                <strong className="font-semibold text-neutral-900">Email:</strong>{" "}
-                                <a
-                                    href="mailto:contact@natasharussohypnotherapy.co.uk"
-                                    className="font-semibold text-neutral-900 underline underline-offset-4 hover:text-neutral-700"
-                                >
-                                    contact@natasharussohypnotherapy.co.uk
-                                </a>
-                            </p>
-
-                            <p className="text-sm">
-                                <strong className="font-semibold text-neutral-900">Phone:</strong>{" "}
-                                <span>07xxx xxxxxx (business number – to be confirmed)</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
-                        <div className="mb-2 inline-block rounded-full bg-neutral-900 px-3 py-1 text-xs font-semibold text-white">
-                            Before we meet
-                        </div>
-
-                        <p>
-                            I’ll usually ask a few brief questions by email first, just to check that what you’re
-                            looking for is within my scope of practice and that online hypnotherapy is likely to be
-                            appropriate for you. If not, I’ll do my best to signpost you to other options.
-                        </p>
-                    </div>
-
-                    <p>
-                        Sessions take place online via secure video. Once we agree a time, I’ll send you a link
-                        along with a short intake form and privacy information so you know exactly how your data is
-                        handled.
-                    </p>
-                </div>
-            </section>
         </>
     );
+
+    /** Small helpers (keep in same file or move out) */
+    function Field({label, children}: { label: string; children: React.ReactNode }) {
+        return (
+            <label className="block space-y-2">
+                <span className="text-sm font-medium text-neutral-700">{label}</span>
+                {children}
+            </label>
+        );
+    }
+
+    function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
+        return (
+            <input
+                {...props}
+                className={[
+                    "w-full rounded-lg border border-[#4F5A54]/20 bg-white/60 px-4 py-3 text-sm text-neutral-900",
+                    "placeholder:text-neutral-400",
+                    "shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]",
+                    "focus:outline-none focus:ring-2 focus:ring-[#4F6B5A]/30",
+                ].join(" ")}
+            />
+        );
+    }
+
+    function Textarea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
+        return (
+            <textarea
+                {...props}
+                rows={6}
+                className={[
+                    "w-full resize-none rounded-lg border border-[#4F5A54]/20 bg-white/60 px-4 py-3 text-sm text-neutral-900",
+                    "placeholder:text-neutral-400",
+                    "shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]",
+                    "focus:outline-none focus:ring-2 focus:ring-[#4F6B5A]/30",
+                ].join(" ")}
+            />
+        );
+    }
 }

@@ -1,3 +1,4 @@
+// app/faq/page.tsx (or wherever your FAQ page lives)
 'use client';
 
 import React, { useLayoutEffect, useRef, useState } from 'react';
@@ -152,11 +153,9 @@ function AccordionItem({
     const innerRef = useRef<HTMLDivElement | null>(null);
     const [height, setHeight] = useState<number>(0);
 
-    // Measure content height when open/close or content changes
     useLayoutEffect(() => {
         if (!innerRef.current) return;
-        if (isOpen) setHeight(innerRef.current.scrollHeight);
-        else setHeight(0);
+        setHeight(isOpen ? innerRef.current.scrollHeight : 0);
     }, [isOpen, children]);
 
     return (
@@ -167,7 +166,7 @@ function AccordionItem({
                 onClick={onToggle}
                 className="flex w-full items-start justify-between gap-4 text-left"
             >
-                <span className="text-base font-medium text-neutral-900 sm:text-[17px]">{question}</span>
+                <span className="text-[17px] font-medium leading-snug text-neutral-800">{question}</span>
 
                 <span
                     aria-hidden="true"
@@ -177,31 +176,27 @@ function AccordionItem({
         </span>
             </button>
 
-            {/* Animated container */}
-            <div
-                className="overflow-hidden transition-[height] duration-300 ease-out"
-                style={{ height }}
-            >
+            <div className="overflow-hidden transition-[height] duration-300 ease-out" style={{ height }}>
                 <div
                     ref={innerRef}
-                    className={`pt-3 text-sm leading-6 text-neutral-700 sm:text-[15px] ${
+                    className={`pt-3 text-[15px] leading-relaxed text-stone-700 ${
                         isOpen ? 'opacity-100' : 'opacity-0'
                     } transition-opacity duration-200`}
                 >
-                    <div className="space-y-3">{children}</div>
+                    <div className="space-y-4">{children}</div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default function Faq() {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
+export default function FaqPage() {
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
         <section className="relative overflow-hidden">
             <div
-                className="absolute inset-0 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat"
+                className="absolute inset-0 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-bottom"
                 aria-hidden
             />
             <div className="absolute inset-0 bg-white/35" aria-hidden />
