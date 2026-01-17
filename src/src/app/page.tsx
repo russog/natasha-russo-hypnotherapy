@@ -114,7 +114,19 @@ export default function Home() {
                     <p className="mt-6 text-center text-stone-700 italic">
                         If any of this feels familiar, you are not alone – and change is possible
                     </p>
+
+
                 </Card>
+
+                <div>
+                    <video
+                        src="/intro.mp4"
+                        controls
+                        muted
+                        loop
+                        width="450"
+                    />
+                </div>
 
                 <Card className="bg-white/70">
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
