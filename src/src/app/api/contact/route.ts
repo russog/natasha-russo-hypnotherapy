@@ -5,6 +5,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
+    // Visit /api/contact in the browser. If you don't see this, your route isn't deployed/running.
     return NextResponse.json({ ok: true, route: "contact", runtime: "nodejs" });
 }
 
@@ -48,7 +49,8 @@ export async function POST(req: Request) {
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
         });
 
-        return new Response("OK", {status: 200});
+        return NextResponse.redirect(new URL("/contact/thanks", req.url), { status: 303 });
+
     } catch (err: unknown) {
         console.error("CONTACT_FORM_ERROR:", err);
 
