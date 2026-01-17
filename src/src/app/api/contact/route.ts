@@ -49,7 +49,8 @@ export async function POST(req: Request) {
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
         });
 
-        return NextResponse.redirect("/contact/thanks", 303);
+        const origin = req.headers.get("origin")!;
+        return NextResponse.redirect(`${origin}/contact/thanks`, 303);
 
 
     } catch (err: unknown) {
