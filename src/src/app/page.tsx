@@ -124,6 +124,7 @@ export default function Home() {
                         controls
                         muted
                         loop
+                        playsInline
                         width="450"
                     />
                 </div>
