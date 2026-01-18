@@ -123,7 +123,6 @@ export default function Home() {
                         playsInline
                         webkit-playsinline="true"
                         muted
-                        autoPlay
                         loop
                         controls
                         preload="metadata"
