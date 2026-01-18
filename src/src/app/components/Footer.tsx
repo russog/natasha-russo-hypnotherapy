@@ -29,15 +29,11 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Right column */}
                     <div className="space-y-2 md:justify-self-end">
-                        {/* Line 1 */}
                         <p>
                             BSc Psychology <span className="mx-1">•</span> MSc Cross-Cultural Psychology
                         </p>
-
-                        {/* Line 2 */}
-                        <p>
+    <p>
                             Level 5 Diploma in Cognitive Behavioural Hypnotherapy
                         </p>
 

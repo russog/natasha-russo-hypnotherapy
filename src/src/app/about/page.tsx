@@ -13,21 +13,22 @@ export default function About() {
             <div className="absolute inset-0 bg-white/35" aria-hidden />
 
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
-                <div className="md:mt-15 ml-5 md:row-start-1 md:col-start-1">
-                    <div className="relative w-[85%] aspect-square overflow-hidden rounded-full mx-auto border-2">
+                <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full">
+                    <div className="relative mx-auto w-[90%] sm:w-[75%] md:w-[85%] aspect-square overflow-hidden rounded-full border-2">
                         <Image
                             src="/about.webp"
                             alt="Natasha Russo"
                             fill
                             className="object-cover"
-                            sizes="(min-width: 768px) 40vw, 100vw"
+                            sizes="(min-width: 768px) 40vw, 90vw"
                             priority
                         />
                     </div>
                 </div>
 
+                {/* Main text */}
                 <div className="relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 space-y-10 md:row-span-2 md:col-start-2">
-                    <Card className="ml-10">
+                    <Card className="mx-auto md:ml-10">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Meet Natasha
                         </h2>
@@ -47,7 +48,7 @@ export default function About() {
                         </p>
                     </Card>
 
-                    <Card className="mt-15 ml-10">
+                    <Card className="mt-15 mx-auto md:ml-10">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             How I came to this work
                         </h2>
@@ -85,7 +86,8 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="relative z-10 mt-22 md:mt-0 md:row-start-2 md:col-start-1 ml-5">
+                {/* My style */}
+                <div className="relative z-10 mt-22 md:mt-0 mx-auto md:ml-5 md:row-start-2 md:col-start-1 w-full">
                     <Card className="h-full flex flex-col">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             My style
@@ -110,10 +112,12 @@ export default function About() {
                     </Card>
                 </div>
 
+                {/* Footer link */}
                 <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-15">
                     <p className="mt-6 mx-auto text-stone-700 italic text-center max-w-xl">
                         If you’d like to understand more about how sessions work in practice,
-                        <br/>you can read more on the
+                        <br />
+                        you can read more on the
                         <Link href="/working-with-me" className="font-bold">
                             &nbsp;Working with me page.
                         </Link>
@@ -121,5 +125,6 @@ export default function About() {
                 </div>
             </div>
         </section>
+
     );
 }
