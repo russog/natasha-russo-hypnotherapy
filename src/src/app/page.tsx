@@ -16,17 +16,13 @@ export default function Home() {
                     <br/>
                     to help you worry less and live more
                 </h1>
-
-
                 <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
                     Integrating cognitive-behavioural therapy, hypnotherapy, and mindfulness in a calm, structured,
                     collaborative way.
                 </p>
-
                 <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
                     Sessions are held online from the comfort of your own home
                 </p>
-
                 <div className="mt-10 flex justify-center">
                     <Link
                         href="/contact"
@@ -75,15 +71,8 @@ export default function Home() {
         </section>
 
         <section className="relative pb-12 overflow-hidden isolate">
-            <div
-                aria-hidden
-                className="absolute inset-0 -z-20 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-top"
-            />
-            <div
-                aria-hidden
-                className="absolute inset-0 -z-10 bg-linear-to-b via-stone-50 to-emerald-50/40"
-            />
-
+            <div aria-hidden className="absolute inset-0 -z-20 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-top"/>
+            <div aria-hidden className="absolute inset-0 -z-10 bg-linear-to-b via-stone-50 to-emerald-50/40"/>
             <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-10">
                 <Card>
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
