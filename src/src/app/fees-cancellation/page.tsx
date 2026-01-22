@@ -1,5 +1,5 @@
 import React from "react";
-import {Card} from "@/app/card";
+import {Card} from "@/app/components/card";
 import Link from "next/link";
 
 export default function FeesCancellation() {

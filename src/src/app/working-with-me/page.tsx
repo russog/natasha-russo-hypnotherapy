@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {Card} from "@/app/card";
+import {Card} from "@/app/components/card";
 import React from "react";
 
 export default function WorkingWithMe() {
@@ -37,25 +37,57 @@ export default function WorkingWithMe() {
 
                     <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>We begin by developing a shared understanding of what’s been happening for you and what you’d like to change. This may take more than one session and shouldn&#39;t be rushed.</span>
+
+                            <span>
+    1. Initial contact<br/>
+    You’re welcome to get in touch by email or book a brief introductory
+    conversation. This is a chance to ask questions, get a sense of how I work,
+    and decide whether it feels like a good fit — with no pressure to commit.
+  </span>
                         </li>
+
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>From there, we agree on realistic goals and priorities, rather than trying to work on everything at once.</span>
+
+                            <span>
+    2. First session: understanding and focus<br/>
+    The first session is slightly longer and gives us time to understand what’s
+    been happening for you, what you’d like help with, and how we might work
+    together. We begin shaping a clear focus for the work at a pace that feels
+    manageable.
+  </span>
                         </li>
+
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>Sessions then focus on actively working with thoughts, emotions, and behavioural responses, both in-session and between sessions where appropriate.</span>
+
+                            <span>
+    3. Ongoing sessions: working with patterns<br/>
+    Subsequent sessions focus on actively working with thoughts, emotions, and
+    behavioural responses. We use practical, evidence-based methods, both in
+    session and, where appropriate, through small experiments or reflections
+    between sessions.
+  </span>
                         </li>
+
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>We regularly pause to review how the work is landing for you, what’s helping, and what may need adjusting.</span>
+
+                            <span>
+    4. Reviewing and adjusting<br/>
+    We regularly pause to review how the work is going — what’s helping, what
+    feels less useful, and whether anything needs adjusting. The work remains
+    collaborative and responsive to you.
+  </span>
                         </li>
+
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>End of therapy is planned thoughtfully, with an emphasis on consolidating learning and supporting ongoing independence.</span>
+
+                            <span>
+    5. Finishing well<br/>
+    Endings are planned thoughtfully, with an emphasis on consolidating learning,
+    strengthening confidence, and supporting ongoing independence beyond
+    therapy.
+  </span>
                         </li>
+
                     </ul>
                 </Card>
 
@@ -147,9 +179,12 @@ export default function WorkingWithMe() {
                     <br/>
                     <br/>
                     Standard sessions last <strong>60 minutes</strong> and are charged at <strong>£60.</strong>
-                    The first session lasts approximately <strong>90 minutes</strong> and is <strong>£90</strong>, allowing time for assessment and
-                    conceptualisation.&nbsp;<strong>A block of four</strong> sessions is available at <strong>£220.</strong>
-                    &nbsp;Fees are payable in advance, and cancellation arrangements are outlined clearly before we begin. For
+                    The first session lasts approximately <strong>90 minutes</strong> and is <strong>£90</strong>,
+                    allowing time for assessment and
+                    conceptualisation.&nbsp;<strong>A block of four</strong> sessions is available
+                    at <strong>£220.</strong>
+                    &nbsp;Fees are payable in advance, and cancellation arrangements are outlined clearly before we
+                    begin. For
                     further detail, please refer to the <Link href="/fees-cancellation" className="font-bold">Fees &
                     Cancellation Policy</Link>
 
