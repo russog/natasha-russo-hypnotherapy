@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 :root {
@@ -23,6 +25,35 @@
     --background: #FFF;
     --foreground: #000;
   }
+}
+
+@layer utilities {
+    .nav-reset a {
+        all: unset;
+        cursor: pointer;
+        color: inherit;
+        font: inherit;
+    }
+}
+
+@layer base {
+    a {
+        color: #000;
+        text-decoration: underline;
+        transition: color 0.2s ease, border-color 0.2s ease, font-weight 0.2s ease;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+@layer components {
+    .no-link-underline a,
+    .no-link-underline a:hover {
+        text-decoration: none;
+    }
 }
 
 body {

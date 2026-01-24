@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     return (
-        <nav className="border-b border-[#4F5A54]">
+        <nav className="border-b border-[#4F5A54] nav-reset">
             <div className="px-6 py-4 flex items-center gap-4">
                 <Link href="/" className="flex items-center gap-4">
                     <Image
@@ -26,6 +26,7 @@ export default function Navbar() {
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
                     <Link href="/working-with-me">Working with me</Link>
+                    <Link href="/blog">Blog</Link>
                     <Link href="/faq">FAQ</Link>
                     <Link href="/contact">Contact</Link>
                 </div>

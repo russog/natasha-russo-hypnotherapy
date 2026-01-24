@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Card } from "@/app/card";
+import { Card } from "@/app/components/card";
 import React from "react";
 
 export default function About() {
@@ -34,17 +34,16 @@ export default function About() {
                         </h2>
 
                         <p className="mt-6 text-stone-700">
-                            I’m Natasha, a cognitive-behavioural hypnotherapist with a background in psychology and a long-standing
-                            interest in how people make sense of their inner experiences.
+                            Hi, I’m Natasha — a cognitive-behavioural hypnotherapist.
                         </p>
                         <p className="mt-6 text-stone-700">
-                            I’m naturally curious about what goes on beneath the surface – particularly when thoughts feel repetitive,
-                            confusing, or harder to manage than we’d like. I tend to work thoughtfully and deliberately, valuing
-                            clarity, structure, and understanding over quick solutions or dramatic techniques.
+                            I’m someone who tends to listen carefully, think things through, and take people seriously. I’m interested in how our inner worlds work, particularly when thoughts feel repetitive, confusing, or harder to manage than we’d like.
                         </p>
                         <p className="mt-6 text-stone-700">
-                            My aim is to offer a space that feels calm, steady and collaborative, where things can be explored without
-                            pressure or judgement.
+                            People who meet me often notice that I’m calm, attentive, and direct in a gentle way. I value clarity and understanding over quick solutions or dramatic techniques.
+                        </p>
+                        <p className="mt-6 text-stone-700">
+                            My aim is to offer a space that feels steady and respectful — somewhere you can slow things down, think more clearly, and explore what’s going on without pressure or judgement.
                         </p>
                     </Card>
 
@@ -54,35 +53,21 @@ export default function About() {
                         </h2>
 
                         <p className="mt-6 text-stone-700">
-                            My interest in this work didn’t begin only in textbooks. Like many people, I’ve had periods of anxiety
-                            myself – the kind where your mind feels busy, reactive, and difficult to settle, especially under
-                            pressure.
+                            My route into this work developed gradually, shaped by both psychology training and real-life experience.
                         </p>
                         <p className="mt-6 text-stone-700">
-                            Not long before I trained formally, I found myself drawn to practical ways of working with attention and
-                            awareness, including mindfulness-based approaches I explored on my own. What struck me was not just that
-                            these methods helped, but why they helped.
+                            With a background in psychology, I’ve always been interested in how people think, interpret their experiences, and respond under pressure. Over time, what stood out wasn’t diagnosis or labels, but how easily capable, thoughtful people can become stuck in the same patterns of worry, overthinking, or self-doubt — especially when life feels demanding.
                         </p>
                         <p className="mt-6 text-stone-700">
-                            Alongside that, real-life stress, family life, and those familiar “I should be coping better than this”
-                            moments deepened my understanding of how easily even capable people can feel overwhelmed – and how
-                            unhelpful it can be when support focuses only on reassurance or advice.
+                            Earlier in my career, working in school settings with neurodivergent children reinforced how much context, expectations, and environment shape how people cope, and how important it is that support is flexible, respectful, and led by the individual.
                         </p>
                         <p className="mt-6 text-stone-700">
-                            I became increasingly curious about what keeps people feeling stuck – why certain patterns of thought,
-                            interpretation, and behaviour persist even when we understand them logically, and why stress or
-                            uncertainty can make those patterns feel so much stronger.
+                            Alongside this, experiencing periods of anxiety and everyday stress myself made it clear that reassurance or advice alone often isn’t enough. Understanding what’s happening and learning how to respond differently — matters!
                         </p>
                         <p className="mt-6 text-stone-700">
-                            That curiosity led me to train in cognitive-behavioural hypnotherapy. The approach appealed to me because
-                            it brings together evidence-based cognitive and behavioural principles with an understanding of attention,
-                            expectation, and imagination, in a way that is structured, collaborative, and transparent.
+                            Cognitive-behavioural hypnotherapy brought these strands together. It offered an evidence-based, practical way of working with attention, thinking patterns, and responses, without force or pressure — and that’s the framework I work from today.
                         </p>
-                        <p className="mt-6 text-stone-700">
-                            What mattered most to me was that this way of working doesn’t treat hypnosis as something done to a
-                            person. Instead, it offers a practical framework for understanding how the mind works, and for learning
-                            how to respond differently, with more choice and clarity.
-                        </p>
+
                     </Card>
                 </div>
 
@@ -94,20 +79,15 @@ export default function About() {
                         </h2>
 
                         <p className="mt-6 text-stone-700">
-                            In sessions, you can expect a clear framework – so you understand why certain thoughts, feelings, or
-                            responses show up – alongside practical tools that help you work with them more effectively, rather than
-                            just talking in circles.
+                            In sessions, I aim to offer a clear and steady way of working, so you can begin to understand why certain thoughts, feelings, or responses keep showing up. We don’t just talk things through for the sake of it — we look at what’s happening and gently work with it, using practical tools that can make a real difference over time.
                         </p>
 
                         <p className="mt-6 text-stone-700">
-                            I aim to create a way of working that feels steady and collaborative, without pressure to analyse
-                            everything in depth or to ‘fix’ yourself in order to move forward. The focus is on understanding patterns,
-                            experimenting with new responses, and finding what genuinely helps.
+                            My style is collaborative and thoughtful. There’s no pressure to analyse everything in depth, no expectation that you need to “fix” yourself, and no requirement to arrive with things neatly worked out.
                         </p>
 
                         <p className="mt-6 text-stone-700">
-                            You don’t need to arrive with everything neatly explained. We will work with what’s there, at a pace that
-                            feels manageable for you.
+                            You’re welcome to bring whatever feels present — even if it’s unclear or messy. We take things at a pace that feels manageable, experimenting carefully with new ways of responding and noticing together what genuinely helps.
                         </p>
                     </Card>
                 </div>
