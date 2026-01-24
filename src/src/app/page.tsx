@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import {Card} from "@/app/components/card";
-import {MiniCard} from "@/app/components/miniCard";
 import ExpandableMiniCard from "@/app/components/ExpandableMiniCard";
 
 export default function Home() {
@@ -31,8 +30,8 @@ export default function Home() {
                     </Link>
                 </div>
             </div>
-        </section>
 
+        </section>
         <section className="py- sm:py-10">
             <div className="mx-auto max-w-5xl px-4">
                 <div className="grid gap-8 md:grid-cols-[5fr_7fr] md:gap-12">
@@ -67,10 +66,11 @@ export default function Home() {
                 </div>
             </div>
         </section>
-
         <section className="relative pb-12 overflow-hidden isolate">
-            <div aria-hidden className="absolute inset-0 -z-20 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-top"/>
-            <div aria-hidden className="absolute inset-0 -z-10 bg-linear-to-b via-stone-50 to-emerald-50/40"/>
+            <div className="absolute inset-0  bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-top"
+                 aria-hidden/>
+            <div className="absolute inset-0 bg-white/35" aria-hidden/>
+
             <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-10">
                 <Card>
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">

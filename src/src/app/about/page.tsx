@@ -95,7 +95,7 @@ export default function About() {
                 </div>
 
                 {/* Footer link */}
-                <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-15">
+                <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-15 mb-5">
                     <p className="mt-6 mx-auto text-stone-700 italic text-center max-w-xl">
                         If you’d like to understand more about how sessions work in practice,
                         <br />
