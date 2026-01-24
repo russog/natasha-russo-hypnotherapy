@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
-import type { Metadata } from "next";
-import { site } from "@/lib/site";
+import {notFound} from "next/navigation";
+import {MDXRemote} from "next-mdx-remote/rsc";
+import {getAllPostSlugs, getPostBySlug} from "@/lib/posts";
+import type {Metadata} from "next";
+import {site} from "@/lib/site";
 
 function formatDate(dateStr: string) {
     const d = new Date(dateStr);
@@ -16,13 +16,13 @@ function formatDate(dateStr: string) {
 }
 
 export function generateStaticParams() {
-    return getAllPostSlugs().map((slug) => ({ slug }));
+    return getAllPostSlugs().map((slug) => ({slug}));
 }
 
 export async function generateMetadata(
-    { params }: { params: Promise<{ slug: string }> }
+    {params}: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
-    const { slug } = await params;
+    const {slug} = await params;
 
     let post;
     try {
@@ -41,14 +41,14 @@ export async function generateMetadata(
     return {
         title,
         description,
-        alternates: { canonical: `/blog/${slug}` },
+        alternates: {canonical: `/blog/${slug}`},
         openGraph: {
             type: "article",
             url,
             title,
             description,
             publishedTime: post.frontmatter.date,
-            images: image ? [{ url: image }] : undefined,
+            images: image ? [{url: image}] : undefined,
         },
         twitter: {
             card: "summary_large_image",
@@ -60,14 +60,12 @@ export async function generateMetadata(
     };
 }
 
-
-// ✅ params is async in your Next version
 export default async function BlogPostPage({
                                                params,
                                            }: {
     params: Promise<{ slug: string }>;
 }) {
-    const { slug } = await params;
+    const {slug} = await params;
 
     let post;
     try {
@@ -76,6 +74,9 @@ export default async function BlogPostPage({
         notFound();
     }
 
+    // Debug: Check if line breaks are in the content
+    console.log('Content preview:', post.content.substring(0, 500));
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -83,25 +84,26 @@ export default async function BlogPostPage({
         description: post.frontmatter.excerpt,
         datePublished: post.frontmatter.date,
         dateModified: post.frontmatter.date,
-        author: [{ "@type": "Person", name: "Natasha Russo" }],
-        publisher: { "@type": "Organization", name: site.name },
+        author: [{"@type": "Person", name: "Natasha Russo"}],
+        publisher: {"@type": "Organization", name: site.name},
         mainEntityOfPage: `${site.url}/blog/${slug}`,
         image: post.frontmatter.coverImage
             ? [new URL(post.frontmatter.coverImage, site.url).toString()]
             : undefined,
     };
 
-
     return (
-
         <main className="min-h-screen bg-neutral-50">
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
             />
 
             <div className="mx-auto max-w-3xl px-4 py-12">
-                <Link href="/blog" className="text-sm text-neutral-600 hover:text-neutral-900">
+                <Link
+                    href="/blog"
+                    className="text-sm text-stone-600 hover:text-neutral-800"
+                >
                     ← Back to blog
                 </Link>
 
@@ -119,29 +121,39 @@ export default async function BlogPostPage({
                     ) : null}
 
                     <div className="p-7 md:p-10">
-                        <div className="text-sm text-neutral-500">{formatDate(post.frontmatter.date)}</div>
-                        <h1 className="mt-2 text-3xl font-semibold tracking-tight no-underline">
+                        <div className="text-sm text-stone-500">
+                            {formatDate(post.frontmatter.date)}
+                        </div>
+
+                        <h1 className="mt-2 text-3xl font-medium tracking-tight text-neutral-800">
                             {post.frontmatter.title}
                         </h1>
-                        <p className="mt-4 text-neutral-600 no-underline">
-                            {post.frontmatter.excerpt}
-                        </p>
+
+                        <p className="mt-4 text-stone-700">{post.frontmatter.excerpt}</p>
 
                         {post.frontmatter.tags?.length ? (
-                            <div className="mt-5 flex flex-wrap gap-2">
+                            <div className="mt-6 flex flex-wrap gap-2">
                                 {post.frontmatter.tags.map((t) => (
                                     <span
                                         key={t}
-                                        className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs text-neutral-700"
+                                        className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs text-stone-600"
                                     >
-                    {t}
-                  </span>
+                                        {t}
+                                    </span>
                                 ))}
                             </div>
                         ) : null}
 
-                        <div className="prose prose-neutral mt-10 max-w-none prose-a:no-underline prose-strong:no-underline prose-em:no-underline ">
-                            <MDXRemote source={post.content} />
+                        <div className="prose prose-stone mt-10 max-w-none prose-a:no-underline prose-h2:mb-4 prose-h3:mb-3 [&_p]:mb-6 [&_p]:leading-relaxed">
+                            <MDXRemote
+                                source={post.content}
+                                options={{
+                                    mdxOptions: {
+                                        remarkPlugins: [],
+                                        rehypePlugins: [],
+                                    }
+                                }}
+                            />
                         </div>
                     </div>
                 </article>

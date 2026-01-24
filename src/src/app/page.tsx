@@ -12,7 +12,7 @@ export default function Home() {
                  aria-hidden/>
             <div className="absolute inset-0 bg-white/35" aria-hidden/>
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
-                <h1 className="mx-auto max-w-4xl text-3xl leading-tight font-semibold tracking-tight text-neutral-900 sm:text-5xl">
+                <h1 className="mx-auto max-w-4xl text-3xl leading-tight tracking-tight text-neutral-800 sm:text-5xl">
                     Calm, evidence-based therapy
                     <br/>
                     for people whose minds feel busy, repetitive, or hard to switch off

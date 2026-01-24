@@ -13,18 +13,20 @@ export default function About() {
             <div className="absolute inset-0 bg-white/35" aria-hidden />
 
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
-                <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full">
-                    <div className="relative mx-auto w-[90%] sm:w-[75%] md:w-[85%] aspect-square overflow-hidden rounded-full border-2">
+
+                <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
+                    <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-full border-2 mt-3">
                         <Image
                             src="/about.webp"
                             alt="Natasha Russo"
                             fill
                             className="object-cover"
-                            sizes="(min-width: 768px) 40vw, 90vw"
+                            sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
                             priority
                         />
                     </div>
                 </div>
+
 
                 {/* Main text */}
                 <div className="relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 space-y-10 md:row-span-2 md:col-start-2">
@@ -72,7 +74,7 @@ export default function About() {
                 </div>
 
                 {/* My style */}
-                <div className="relative z-10 mt-22 md:mt-0 mx-auto md:ml-5 md:row-start-2 md:col-start-1 w-full">
+                <div className="relative z-10 mt-22 md:mt-5 mx-auto md:ml-5 md:row-start-2 md:col-start-1 w-full">
                     <Card className="h-full flex flex-col">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             My style

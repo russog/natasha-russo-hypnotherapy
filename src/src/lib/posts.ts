@@ -2,13 +2,15 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+
+
 export type PostFrontmatter = {
     title: string;
     date: string;
     excerpt: string;
     coverImage?: string;
-    tags?: string[];      // ← add this
-    featured?: boolean;  // ← optional, if you’re using it
+    tags?: string[];
+    featured?: boolean;
 };
 
 export type Post = {
