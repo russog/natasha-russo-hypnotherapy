@@ -10,12 +10,8 @@ export default function Footer() {
 
                     <div className="space-y-4">
                         <div>
-                            <p className="font-medium">Natasha Russo HDip CBH</p>
-                            <p><Link
-                                href="mailto:contact@natasharussohypnotherapy.co.uk"
-                                className="hover:underline font-bold">
-                                contact@natasharussohypnotherapy.co.uk
-                            </Link></p>
+                            <p className="font-medium">Natasha Russo Hypnotherapy</p>
+                            <p>Cognitive Behavioural Hypnotherapist</p>
                         </div>
 
                         <div className="flex flex-wrap gap-x-2 gap-y-1">
