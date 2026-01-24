@@ -1,12 +1,11 @@
 import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/components/Footer";
+import { site } from "@/lib/site";
 
 const headingFont = Playfair_Display({
     subsets: ["latin"],
@@ -31,8 +30,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Natasha Russo Hypnotherapy",
-    description: "Online cognitive-behavioural hypnotherapy",
+    metadataBase: new URL(site.url),
+    title: {
+        default: site.name,
+        template: `%s | ${site.name}`,
+    },
+    description: site.description,
     icons: {
         icon: [
             { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -40,7 +43,14 @@ export const metadata: Metadata = {
         ],
         apple: "/apple-touch-icon.png",
     },
-    manifest: "/site.webmanifest"
+    manifest: "/site.webmanifest",
+    openGraph: {
+        type: "website",
+        url: site.url,
+        siteName: site.name,
+        title: site.name,
+        description: site.description,
+    }
 };
 
 export default function RootLayout({

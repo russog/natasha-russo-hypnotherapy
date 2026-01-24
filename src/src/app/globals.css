@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 :root {
@@ -44,6 +46,13 @@
 
     a:hover {
         text-decoration: underline;
+    }
+}
+
+@layer components {
+    .no-link-underline a,
+    .no-link-underline a:hover {
+        text-decoration: none;
     }
 }
 
