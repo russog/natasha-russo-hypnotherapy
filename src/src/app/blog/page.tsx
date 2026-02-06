@@ -31,14 +31,6 @@ export default function BlogIndexPage() {
     const posts = getAllPosts();
 
     return (
-
-        <section className="relative overflow-hidden">
-            <div
-                className="absolute inset-0 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-bottom"
-                aria-hidden
-            />
-            <div className="absolute inset-0 bg-white/35" aria-hidden />
-
             <main className="relative z-10 mx-auto max-w-5xl px-4 py-12">
                 <header className="mb-12">
                     <h1 className="text-3xl font-medium tracking-tight text-neutral-800">
@@ -89,6 +81,5 @@ export default function BlogIndexPage() {
                     ))}
                 </section>
             </main>
-        </section>
     );
 }

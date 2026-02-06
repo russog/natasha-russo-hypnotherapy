@@ -63,7 +63,12 @@ export default function RootLayout({
         <body className="min-h-screen flex flex-col">
         <main className="flex flex-1 flex-col border-[#4F5A54] bg-white">
             <Navbar />
-            <section>
+            <section className="relative overflow-hidden">
+                <div
+                    className="absolute inset-0 bg-[url('/bkg.png')] bg-fixed bg-center bg-no-repeat opacity-40"
+                    style={{backgroundSize: 'cover', imageRendering: 'crisp-edges'}}
+                    aria-hidden
+                />
                 {children}
             </section>
             <Footer />

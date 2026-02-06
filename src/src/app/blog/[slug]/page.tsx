@@ -94,78 +94,72 @@ export default async function BlogPostPage({
 
     return (
         <>
-            <section className="relative overflow-hidden">
-                <div
-                    className="absolute inset-0 bg-[url('/bkg.png')] bg-fixed bg-center bg-no-repeat opacity-40"
-                    style={{backgroundSize: 'cover', imageRendering: 'crisp-edges'}}
-                    aria-hidden
-                />
 
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
-                />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
+            />
 
-                <div className="relative z-10 mx-auto max-w-3xl px-4 py-12">
-                    <Link
-                        href="/blog"
-                        className="text-sm text-stone-600 hover:text-neutral-800"
-                    >
-                        ← Back to blog
-                    </Link>
+            <div className="relative z-10 mx-auto max-w-3xl px-4 py-12">
+                <Link
+                    href="/blog"
+                    className="text-sm text-stone-600 hover:text-neutral-800"
+                >
+                    ← Back to blog
+                </Link>
 
-                    <article className="mt-6 overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm">
-                        {post.frontmatter.coverImage ? (
-                            <div className="relative aspect-[16/10] w-full">
-                                <Image
-                                    src={post.frontmatter.coverImage}
-                                    alt={post.frontmatter.title}
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                />
+                <article className="mt-6 overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm">
+                    {post.frontmatter.coverImage ? (
+                        <div className="relative aspect-[16/10] w-full">
+                            <Image
+                                src={post.frontmatter.coverImage}
+                                alt={post.frontmatter.title}
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
+                    ) : null}
+
+                    <div className="p-7 md:p-10">
+                        <div className="text-sm text-stone-500">
+                            {formatDate(post.frontmatter.date)}
+                        </div>
+
+                        <h1 className="mt-2 text-3xl font-medium tracking-tight text-neutral-800">
+                            {post.frontmatter.title}
+                        </h1>
+
+                        <p className="mt-4 text-stone-700">{post.frontmatter.excerpt}</p>
+
+                        {post.frontmatter.tags?.length ? (
+                            <div className="mt-6 flex flex-wrap gap-2">
+                                {post.frontmatter.tags.map((t) => (
+                                    <span
+                                        key={t}
+                                        className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs text-stone-600"
+                                    >
+                                            {t}
+                                        </span>
+                                ))}
                             </div>
                         ) : null}
 
-                        <div className="p-7 md:p-10">
-                            <div className="text-sm text-stone-500">
-                                {formatDate(post.frontmatter.date)}
-                            </div>
-
-                            <h1 className="mt-2 text-3xl font-medium tracking-tight text-neutral-800">
-                                {post.frontmatter.title}
-                            </h1>
-
-                            <p className="mt-4 text-stone-700">{post.frontmatter.excerpt}</p>
-
-                            {post.frontmatter.tags?.length ? (
-                                <div className="mt-6 flex flex-wrap gap-2">
-                                    {post.frontmatter.tags.map((t) => (
-                                        <span
-                                            key={t}
-                                            className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs text-stone-600"
-                                        >
-                                            {t}
-                                        </span>
-                                    ))}
-                                </div>
-                            ) : null}
-
-                            <div className="prose prose-stone mt-10 max-w-none prose-a:no-underline prose-h2:mb-4 prose-h3:mb-3 [&_p]:mb-6 [&_p]:leading-relaxed">
-                                <MDXRemote
-                                    source={post.content}
-                                    options={{
-                                        mdxOptions: {
-                                            remarkPlugins: [],
-                                            rehypePlugins: [],
-                                        }
-                                    }}
-                                />
-                            </div>
+                        <div
+                            className="prose prose-stone mt-10 max-w-none prose-a:no-underline prose-h2:mb-4 prose-h3:mb-3 [&_p]:mb-6 [&_p]:leading-relaxed">
+                            <MDXRemote
+                                source={post.content}
+                                options={{
+                                    mdxOptions: {
+                                        remarkPlugins: [],
+                                        rehypePlugins: [],
+                                    }
+                                }}
+                            />
                         </div>
-                    </article>
-                </div>
-            </section>
+                    </div>
+                </article>
+            </div>
         </>
     );
 }

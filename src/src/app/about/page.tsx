@@ -6,12 +6,6 @@ import React from "react";
 export default function About() {
     return (
         <section className="relative overflow-hidden">
-            <div
-                className="absolute inset-0 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-bottom"
-                aria-hidden
-            />
-            <div className="absolute inset-0 bg-white/35" aria-hidden />
-
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
 
                 <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
@@ -73,8 +67,9 @@ export default function About() {
                     </Card>
                 </div>
 
-                {/* My style */}
-                <div className="relative z-10 mt-22 md:mt-5 mx-auto md:ml-5 md:row-start-2 md:col-start-1 w-full">
+
+                {/*<div className="relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 space-y-10 md:row-span-2 md:col-start-2">*/}
+                <div className="mt-5 md:mt-15 mx-auto max-w-5xl px-6 space-y-10 md:row-span-1 md:col-start-1 md:w-full">
                     <Card className="h-full flex flex-col">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             My style
