@@ -115,12 +115,13 @@ export default function Home() {
                 <div>
                     <video
                         playsInline
+                        webkit-playsinline="true"
                         muted
                         loop
                         controls
                         preload="metadata"
                         className="w-full max-w-md rounded-lg">
-                        <source src="/intro.mp4" type="video/mp4"/>
+                        <source src="/intro.mp4#t=0.001" type="video/mp4" />
                     </video>
                 </div>
 
