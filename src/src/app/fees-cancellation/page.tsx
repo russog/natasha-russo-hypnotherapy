@@ -13,15 +13,6 @@ export default function FeesCancellation() {
             </div>
         </section>
         <section className="relative pb-12 overflow-hidden isolate">
-            <div
-                aria-hidden
-                className="absolute inset-0 -z-20 bg-[url('/bkg.png')] bg-cover bg-center bg-no-repeat fade-top"
-            />
-            <div
-                aria-hidden
-                className="absolute inset-0 -z-10 bg-linear-to-b via-stone-50 to-emerald-50/40"
-            />
-
             <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-10">
                 <section className="space-y-2">
                     <h2 className="font-medium">

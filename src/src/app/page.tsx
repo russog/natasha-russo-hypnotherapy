@@ -30,7 +30,7 @@ export default function Home() {
             </div>
 
         </section>
-        <section className="py-10 sm:py-14">
+        <section className="py-10 sm:py-14 relative z-10">
             <div className="mx-auto max-w-5xl px-4">
                 <div className="grid gap-10 md:grid-cols-[5fr_7fr] md:gap-12 md:items-start">
                     <div className="flex md:block justify-center">
@@ -115,7 +115,6 @@ export default function Home() {
                 <div>
                     <video
                         playsInline
-                        webkit-playsinline="true"
                         muted
                         loop
                         controls
