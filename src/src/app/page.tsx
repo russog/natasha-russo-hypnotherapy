@@ -49,16 +49,16 @@ export default function Home() {
                     </div>
 
                     <div className="space-y-6 text-left">
-                        <h2 className="text-3xl sm:text-4xl font-medium leading-snug text-neutral-800">
+                        <h2 className="text-3xl sm:text-4xl font-medium leading-snug ">
                             My approach is grounded, practical, and collaborative
                         </h2>
 
-                        <p className="text-lg leading-relaxed text-neutral-700">
+                        <p className="text-lg leading-relaxed">
                             Sessions are structured, thoughtful and shaped around your goals. The work moves at a pace
                             that feels manageable, with no expectation to explore anything before you are ready.
                         </p>
 
-                        <p className="text-lg leading-relaxed text-neutral-700">
+                        <p className="text-lg leading-relaxed">
                             The focus is on making sense of what’s been going on for you and working together to find
                             ways of responding that feel steadier and more deliberate.
                         </p>
@@ -215,7 +215,7 @@ export default function Home() {
 
                     <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
                         People come to therapy for many different reasons. Often, what brings someone here is just the
-                        surface expression of deeper patterns that we can explore and work with together
+                        surface expression of deeper patterns that we can explore and work with together.
                     </p>
 
                     <ul className="mt-6 space-y-4 text-stone-700">
@@ -247,8 +247,8 @@ export default function Home() {
                     </ul>
 
                     <p className="mt-6 text-stone-700 italic">
-                        You are welcome to <Link href={"/contact"} className="font-semibold">get in touch,</Link>even if
-                        what you are dealing with doesn’t fit neatly into a box
+                        You are welcome to <Link href={"/contact"} className="font-semibold">Get in touch,</Link> even if
+                        what you are dealing with doesn’t fit neatly into a box.
                     </p>
                 </Card>
 
@@ -282,7 +282,7 @@ export default function Home() {
 
                     <p className="mt-6 text-stone-700 italic">
                         Hypnotherapy here involves using your own focused attention and imagination in supportive ways –
-                        it is safe, evidence-based, and always led by you and your goals
+                        it is safe, evidence-based, and always led by you and your goals.
                     </p>
                 </Card>
             </div>

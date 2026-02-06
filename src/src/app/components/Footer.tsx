@@ -6,39 +6,53 @@ export default function Footer() {
         <footer className="border-t border-[#4F5A54]/20 px-6 py-10 text-sm text-neutral-800">
             <div className="mx-auto max-w-6xl">
 
-                <div className="grid gap-8 md:grid-cols-2">
-
-                    <div className="space-y-4">
-                        <div>
+                <div className="grid gap-8 md:grid-cols-2 items-start">
+                    {/* LEFT */}
+                    <div className="flex flex-col gap-4">
+                        <div className="space-y-1">
                             <p className="font-medium">Natasha Russo Hypnotherapy</p>
                             <p>Cognitive Behavioural Hypnotherapist</p>
+                            <p>
+                                <Link
+                                    href="mailto:contact@natasharussohypnotherapy.co.uk"
+                                    className="font-bold hover:underline"
+                                >
+                                    contact@natasharussohypnotherapy.co.uk
+                                </Link>
+                            </p>
                         </div>
 
-                        <div className="flex flex-wrap gap-x-2 gap-y-1">
-                            <Link
-                                href="/privacy-policy"
-                                className="hover:underline font-bold">
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                            <Link href="/privacy-policy" className="font-bold hover:underline">
                                 Privacy Policy
                             </Link>
-                            <span>•</span>
-                            <Link
-                                href="/fees-cancellation"
-                                className="hover:underline font-bold">
-                                Fees & Cancellation Policy
+                            <span aria-hidden>•</span>
+                            <Link href="/fees-cancellation" className="font-bold hover:underline">
+                                Fees &amp; Cancellation Policy
                             </Link>
                         </div>
                     </div>
 
-                    <div className="space-y-2 md:justify-self-end">
+                    {/* RIGHT */}
+                    <div className="flex flex-col gap-2 md:items-end md:justify-self-end text-left md:text-right">
                         <p>
                             BSc Psychology <span className="mx-1">•</span> MSc Cross-Cultural Psychology
                         </p>
-    <p>
-                            Level 5 Diploma in Cognitive Behavioural Hypnotherapy
+                        <p>Level 5 Diploma in Cognitive Behavioural Hypnotherapy</p>
+
+                        <p>
+                            Listed on the <Link
+                                href="https://www.hypnotherapy-directory.org.uk/hypnotherapists/natasha-russo"
+                                className="font-bold hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Hypnotherapy Directory
+                            </Link>
                         </p>
 
-                        {/* Line 3 – badge */}
-                        <div className="flex justify-center pt-1">
+                        {/* Badge aligned right on desktop, centered on mobile */}
+                        <div className="pt-1 flex justify-center md:justify-end w-full">
                             <Link
                                 href="https://www.the-ncip.org/member-of-ncip/natasha-russo?from=badge"
                                 target="_blank"
@@ -55,17 +69,14 @@ export default function Footer() {
                             </Link>
                         </div>
                     </div>
-
-
-
                 </div>
 
-                {/* Bottom copyright */}
+
                 <div className="mt-10 text-center text-neutral-600">
                     <p>© {new Date().getFullYear()} Natasha Russo Hypnotherapy</p>
                 </div>
 
             </div>
         </footer>
-    );
+);
 }
