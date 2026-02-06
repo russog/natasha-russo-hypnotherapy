@@ -32,16 +32,6 @@ export default function BlogIndexPage() {
 
     return (
             <main className="relative z-10 mx-auto max-w-5xl px-4 py-12">
-                <header className="mb-12">
-                    <h1 className="text-3xl font-medium tracking-tight text-neutral-800">
-                        Blog
-                    </h1>
-                    <p className="mt-3 max-w-2xl text-stone-700">
-                        Practical, plain-English writing on hypnotherapy, anxiety, habits, and
-                        evidence-based change.
-                    </p>
-                </header>
-
                 <section className="grid gap-8 sm:grid-cols-2">
                     {posts.map((post) => (
                         <Link
