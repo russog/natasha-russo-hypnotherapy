@@ -18,7 +18,7 @@ export default function Home() {
                     – supporting clearer, more manageable change
                 </p>
                 <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    Sessions are held online from the comfort of your own home
+                    Online Session | UK &amp; Worldwide
                 </p>
                 <div className="mt-10 flex justify-center">
                     <Link
@@ -88,7 +88,7 @@ export default function Home() {
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You find yourself caught in cycles of worry, what-ifs, or worse-case thinking that are hard to interrupt
+                You find yourself caught in cycles of worry, what-ifs, or worst-case thinking that are hard to interrupt
               </span>
                         </li>
                         <li className="flex gap-3">
@@ -121,7 +121,7 @@ export default function Home() {
                         controls
                         preload="metadata"
                         className="w-full max-w-md rounded-lg">
-                        <source src="/intro.mp4#t=0.001" type="video/mp4" />
+                        <source src="/intro.mp4#t=0.001" type="video/mp4"/>
                     </video>
                 </div>
 
@@ -144,7 +144,7 @@ export default function Home() {
                                     <p>
                                         Anxiety doesn’t always look dramatic. For many people, it shows up as constant
                                         background worry, tension in the body, difficulty switching off, or a sense that
-                                        something is always slightly’ wrong’, even when life looks fine on the outside.
+                                        something is always slightly ’wrong’, even when life looks fine on the outside.
                                     </p>
                                     <p className="mt-2">
                                         In my work, anxiety is approached by understanding what’s keeping it going – the
@@ -247,7 +247,8 @@ export default function Home() {
                     </ul>
 
                     <p className="mt-6 text-stone-700 italic">
-                        You are welcome to <Link href={"/contact"} className="font-semibold">Get in touch,</Link> even if
+                        You are welcome to <Link href={"/contact"} className="font-semibold">Get in touch,</Link> even
+                        if
                         what you are dealing with doesn’t fit neatly into a box.
                     </p>
                 </Card>
@@ -283,6 +284,37 @@ export default function Home() {
                     <p className="mt-6 text-stone-700 italic">
                         Hypnotherapy here involves using your own focused attention and imagination in supportive ways –
                         it is safe, evidence-based, and always led by you and your goals.
+                    </p>
+                </Card>
+
+                <Card className="bg-emerald-50/50">
+
+                    <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                        What clients say
+                    </h2>
+
+                    <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
+                        “Natasha was calm, supportive, and completely non-judgemental. She taught me practical
+                        techniques that genuinely help when I feel anxious.”
+                        — Laura
+                    </p>
+
+                    <p className="mt-6 text-stone-700 italic">
+                        “Our work on assertiveness gave me practical tools I still use today. Natasha combines warmth
+                        with real professionalism, and I’d happily recommend her.”
+                        — Su
+                    </p>
+
+                    <p className="mt-6 text-stone-700 italic">
+                        “Natasha helped me feel safe, supported, and in control throughout. Her calm, professional
+                        approach gave me practical tools and powerful insights that led to real progress.”
+                        — S.
+                    </p>
+                    <p className="mt-6 text-stone-700 italic">
+                        Read more in <Link
+                        href="/testimonials">
+                        Client Testimonials
+                    </Link>
                     </p>
                 </Card>
             </div>
