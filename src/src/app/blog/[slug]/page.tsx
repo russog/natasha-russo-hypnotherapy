@@ -149,11 +149,23 @@ export default async function BlogPostPage({
                             className="prose prose-stone mt-10 max-w-none prose-a:no-underline prose-h2:mb-4 prose-h3:mb-3 [&_p]:mb-6 [&_p]:leading-relaxed">
                             <MDXRemote
                                 source={post.content}
+                                components={{
+                                    ul: (props) => (
+                                        <ul
+                                            {...props}
+                                            style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}
+                                        />
+                                    ),
+                                    ol: (props) => (
+                                        <ol
+                                            {...props}
+                                            style={{ listStyleType: "decimal", paddingLeft: "1.5rem" }}
+                                        />
+                                    ),
+                                    li: (props) => <li {...props} style={{ margin: "0.25rem 0" }} />,
+                                }}
                                 options={{
-                                    mdxOptions: {
-                                        remarkPlugins: [],
-                                        rehypePlugins: [],
-                                    }
+                                    mdxOptions: { remarkPlugins: [], rehypePlugins: [] },
                                 }}
                             />
                         </div>
