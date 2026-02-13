@@ -149,21 +149,18 @@ export default function WorkingWithMe() {
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         Confidentiality & Suitability
                     </h2>
-                    What you share in sessions is treated as confidential. This means that, in most circumstances, what
-                    we discuss stays between us.
-                    There are a small number of legal and ethical exceptions to confidentiality – for example, if there
-                    is a serious risk of harm to you or someone else. These limits are discussed clearly at the start of
-                    our work together, so you know where you stand.
+                    What you share in sessions is treated as confidential. In most circumstances, what we discuss stays
+                    between us. There are a small number of legal and ethical exceptions to confidentiality — for
+                    example, if there is a serious risk of harm to you or someone else. These limits are discussed
+                    clearly at the start, so you know where you stand.
                     <br/>
-                    For further details, please refer to my <Link href="/privacy-policy" className="font-bold">Privacy
+                    For further details, please refer to my <Link href="/privacy-policy" className="font-bold italic">Privacy
                     Notice</Link>
                     <br/>
                     <br/>
-                    Different approaches suit different people, and part of the work is making sure that this feels like
-                    a good fit for you.
-                    This way of working tends to suit people who are open to reflecting on their experiences and trying
-                    things out between sessions. If you are unsure whether it’s right for you, that’s something we can
-                    talk through in our initial conversation.
+                    Different approaches suit different people, and part of the process is making sure this way of
+                    working feels like a good fit for you. If you are unsure whether this is right for you, we can
+                    discuss it in an initial conversation.
                 </Card>
 
                 <Card className="bg-emerald-50/50">
@@ -172,22 +169,33 @@ export default function WorkingWithMe() {
                     </h2>
                     <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
 
-                        Standard sessions last <strong>60 minutes</strong> and are charged at <strong>£60.</strong>
-                        The first session lasts approximately <strong>90 minutes</strong> and is <strong>£90</strong>,
-                        allowing time for assessment and
-                        conceptualisation.&nbsp;<strong>A block of four</strong> sessions is available
-                        at <strong>£220.</strong>
-                        &nbsp;Fees are payable in advance, and cancellation arrangements are outlined clearly before we
-                        begin. For
-                        further detail, please refer to the <Link href="/fees-cancellation" className="font-bold">Fees &
-                        Cancellation Policy</Link>
+                        <ul>
+                            <li className="flex gap-3">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                                <span>Standard sessions <strong>(60 minutes): £60</strong></span>
+                            </li>
+                            <li className="flex gap-3">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                                <span>First session <strong>(90 minutes): £90</strong></span>
+                            </li>
+                            <li className="flex gap-3">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                                <span>Block of 4 sessions: <strong>£240</strong></span>
+                            </li>
+                        </ul>
+
+                        Fees are payable in advance. Cancellation arrangements are outlined clearly before we
+                        begin. For full details, please refer to the <Link href="/fees-cancellation"
+                                                                           className="font-bold">Fees &
+                        Cancellation Policy.</Link>
 
                     </p>
                     <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
-                        If you’d like to explore whether this approach fits you, the next step is usually a brief,
-                        no-pressure conversation - <Link href="/contact" className="font-bold">
-                        Get in touch
-                    </Link>
+                        If you’d like to explore whether this approach feels right for you, you’re welcome to get in touch for a &nbsp;
+                        <Link
+                            href="/contact">
+                            Free 20-minute initial chat.
+                        </Link>
                     </p>
                 </Card>
 

@@ -196,7 +196,7 @@ export default function FaqPage() {
     return (
         <section className="relative overflow-hidden">
             <div className="relative mx-auto max-w-5xl px-4 py-10 text-center sm:py-14">
-                <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">FAQ’s</h1>
+                <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">FAQs</h1>
 
                 <div className="divide-y divide-neutral-200 rounded-2xl border border-neutral-200 bg-white/60 text-left">
                     {faqs.map((faq, index) => (
