@@ -47,8 +47,8 @@ export default function Home() {
                             <Image
                                 src="/me.webp"
                                 alt="Natasha Russo"
-                                width={267}
-                                height={400}
+                                width={300}
+                                height={450}
                                 sizes="(min-width: 768px) 40vw, 80vw"
                                 className="rounded-sm"
                                 priority
