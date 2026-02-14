@@ -1,6 +1,7 @@
 // app/faq/page.tsx (or wherever your FAQ page lives)
 'use client';
 
+import Link from 'next/link';
 import React, { useLayoutEffect, useRef, useState } from 'react';
 
 type FAQ = {
@@ -210,6 +211,14 @@ export default function FaqPage() {
                         </AccordionItem>
                     ))}
                 </div>
+
+                <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-neutral-700">
+                    If you&apos;re unsure whether this approach is right for you, you&apos;re welcome to{' '}
+                    <Link href="/contact" className="underline underline-offset-2 hover:no-underline">
+                        get in touch
+                    </Link>
+                    .
+                </p>
             </div>
         </section>
     );
