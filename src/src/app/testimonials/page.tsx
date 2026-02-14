@@ -62,6 +62,17 @@ export default function WorkingWithMe() {
                     </p>
                 </Card>
 
+                <Card className="h-full flex flex-col mt-20">
+                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                        “Natasha helped me build trust and feel at ease in sessions. I am feeling a lot less guilty
+                        when I want to relax, and we set a goal that was achievable and realistic. She was very
+                        willing to be flexible with the different exercises and made sure I was getting the most out
+                        of the sessions.”
+                        <br/>
+                        — Izzy
+                    </p>
+                </Card>
+
                 <p className="mx-auto mt-10 max-w-3xl text-base leading-relaxed text-neutral-700">
                     If you&apos;d like to take the next step, you&apos;re welcome to book a{' '}
                     <Link href="/contact" className="italic underline underline-offset-2 hover:no-underline">
