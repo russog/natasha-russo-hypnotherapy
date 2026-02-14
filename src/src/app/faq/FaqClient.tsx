@@ -10,27 +10,6 @@ type FAQ = {
 
 const faqs: FAQ[] = [
     {
-        question: 'Who do I help?',
-        answer: (
-            <>
-                <p>I work with adults experiencing things like:</p>
-                <ul className="list-disc pl-5">
-                    <li>Anxiety and worry</li>
-                    <li>Overthinking</li>
-                    <li>Stress and emotional overwhelm</li>
-                    <li>Confidence and self-doubt</li>
-                    <li>Difficulty switching off / sleep-related mental overactivity</li>
-                    <li>Assertiveness and boundaries</li>
-                    <li>Habits you’d like to change</li>
-                    <li>Phobias and specific fears</li>
-                </ul>
-                <p>
-                    If you’re unsure whether your situation fits, you’re welcome to get in touch.
-                </p>
-            </>
-        ),
-    },
-    {
         question: 'What is hypnotherapy?',
         answer: (
             <>
@@ -125,6 +104,27 @@ const faqs: FAQ[] = [
                 microphone. It helps to choose a setting where you won’t be interrupted and where you feel able to focus for
                 the session.
             </p>
+        ),
+    },
+    {
+        question: 'Who do I help?',
+        answer: (
+            <>
+                <p>I work with adults experiencing things like:</p>
+                <ul className="list-disc pl-5">
+                    <li>Anxiety and worry</li>
+                    <li>Overthinking</li>
+                    <li>Stress and emotional overwhelm</li>
+                    <li>Confidence and self-doubt</li>
+                    <li>Difficulty switching off / sleep-related mental overactivity</li>
+                    <li>Assertiveness and boundaries</li>
+                    <li>Habits you’d like to change</li>
+                    <li>Phobias and specific fears</li>
+                </ul>
+                <p>
+                    If you’re unsure whether your situation fits, you’re welcome to get in touch.
+                </p>
+            </>
         ),
     },
     {
