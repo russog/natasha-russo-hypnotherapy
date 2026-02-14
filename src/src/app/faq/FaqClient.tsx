@@ -107,7 +107,7 @@ const faqs: FAQ[] = [
         ),
     },
     {
-        question: 'Who do I help?',
+        question: 'Who do you help?',
         answer: (
             <>
                 <p>I work with adults experiencing things like:</p>
