@@ -180,7 +180,7 @@ export default function WorkingWithMe() {
                             </li>
                             <li className="flex gap-3">
                                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                                <span>Block of 4 sessions: <strong>£240</strong></span>
+                                <span>Block of 4 sessions: <strong>£220</strong></span>
                             </li>
                         </ul>
 

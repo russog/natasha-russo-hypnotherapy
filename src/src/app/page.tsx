@@ -18,7 +18,7 @@ export default function Home() {
                     – supporting clearer, more manageable change
                 </p>
                 <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    Online Session | UK &amp; Worldwide
+                    Online Session | UK &amp; other locations where permitted.
                 </p>
                 <div className="mt-10 flex justify-center">
                     <Link
