@@ -73,7 +73,7 @@ export default function Footer() {
                             <Link
                                 href="https://www.linkedin.com/in/natasha-russo-5700863a8/"
                                 aria-label="LinkedIn"
-                                className="text-neutral-700 hover:text-neutral-900 transition"
+                                className="text-[#0A66C2] hover:text-[#084f96] transition"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -84,7 +84,7 @@ export default function Footer() {
                             <Link
                                 href="https://www.instagram.com/natasharussohypnotherapy/"
                                 aria-label="Instagram"
-                                className="text-neutral-700 hover:text-neutral-900 transition"
+                                className="text-[#C13584] hover:text-[#a12a6d] transition"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -97,7 +97,7 @@ export default function Footer() {
                             <Link
                                 href="https://www.facebook.com/natasharussohypnotherapy"
                                 aria-label="Facebook"
-                                className="text-neutral-700 hover:text-neutral-900 transition"
+                                className="text-[#1877F2] hover:text-[#125ec0] transition"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
