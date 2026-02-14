@@ -32,7 +32,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 md:row-start-1 md:col-start-2">
+                <div className="relative z-10 mt-5 md:mt-24 mx-auto max-w-5xl px-6 md:row-start-1 md:col-start-2">
                     <Card className="mx-auto md:ml-10">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Meet Natasha
