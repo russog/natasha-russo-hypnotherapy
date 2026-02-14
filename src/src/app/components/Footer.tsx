@@ -36,7 +36,40 @@ export default function Footer() {
 
                     {/* RIGHT */}
                     <div className="flex flex-col gap-3 md:items-end md:justify-self-end text-left md:text-right">
-                        <div className="flex items-center gap-4 md:justify-end">
+                        <p>
+                            BSc Psychology <span className="mx-1">•</span> MSc Cross-Cultural Psychology
+                        </p>
+                        <p>Level 5 Diploma in Cognitive Behavioural Hypnotherapy</p>
+
+                        <p>
+                            Listed on the <Link
+                                href="https://www.hypnotherapy-directory.org.uk/hypnotherapists/natasha-russo"
+                                className="font-bold hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Hypnotherapy Directory
+                            </Link>
+                        </p>
+
+                        <div className="pt-1 flex justify-center md:justify-end w-full">
+                            <Link
+                                href="https://www.the-ncip.org/member-of-ncip/natasha-russo?from=badge"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Find me on The National Council of Integrative Psychotherapists"
+                            >
+                                <Image
+                                    src="https://www.the-ncip.org/images/NCIP-logo.jpeg"
+                                    alt="Member of The National Council of Integrative Psychotherapists (NCIP)"
+                                    width={120}
+                                    height={50}
+                                    className="h-10 w-auto opacity-90 hover:opacity-100 transition"
+                                />
+                            </Link>
+                        </div>
+
+                        <div className="flex items-center gap-4 md:justify-end pt-2">
                             <Link
                                 href="https://www.linkedin.com/in/natasha-russo-5700863a8/"
                                 aria-label="LinkedIn"
@@ -71,39 +104,6 @@ export default function Footer() {
                                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                     <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.87.24-1.46 1.49-1.46H16.8V3.98c-.33-.04-1.46-.14-2.77-.14-2.74 0-4.62 1.67-4.62 4.74V10H6.3v3h3.11v8h4.09z"/>
                                 </svg>
-                            </Link>
-                        </div>
-
-                        <p>
-                            BSc Psychology <span className="mx-1">•</span> MSc Cross-Cultural Psychology
-                        </p>
-                        <p>Level 5 Diploma in Cognitive Behavioural Hypnotherapy</p>
-
-                        <p>
-                            Listed on the <Link
-                                href="https://www.hypnotherapy-directory.org.uk/hypnotherapists/natasha-russo"
-                                className="font-bold hover:underline"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Hypnotherapy Directory
-                            </Link>
-                        </p>
-
-                        <div className="pt-1 flex justify-center md:justify-end w-full">
-                            <Link
-                                href="https://www.the-ncip.org/member-of-ncip/natasha-russo?from=badge"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                title="Find me on The National Council of Integrative Psychotherapists"
-                            >
-                                <Image
-                                    src="https://www.the-ncip.org/images/NCIP-logo.jpeg"
-                                    alt="Member of The National Council of Integrative Psychotherapists (NCIP)"
-                                    width={120}
-                                    height={50}
-                                    className="h-10 w-auto opacity-90 hover:opacity-100 transition"
-                                />
                             </Link>
                         </div>
                     </div>
