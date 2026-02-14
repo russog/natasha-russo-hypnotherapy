@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -77,11 +78,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img
-                                    src="https://cdn.simpleicons.org/linkedin/FFFFFF"
-                                    alt=""
-                                    className="h-4 w-4"
-                                />
+                                <FaLinkedinIn className="h-4 w-4" aria-hidden="true" />
                             </Link>
                             <Link
                                 href="https://www.instagram.com/natasharussohypnotherapy/"
@@ -90,11 +87,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img
-                                    src="https://cdn.simpleicons.org/instagram/FFFFFF"
-                                    alt=""
-                                    className="h-4 w-4"
-                                />
+                                <FaInstagram className="h-4 w-4" aria-hidden="true" />
                             </Link>
                             <Link
                                 href="https://www.facebook.com/natasharussohypnotherapy"
@@ -103,11 +96,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img
-                                    src="https://cdn.simpleicons.org/facebook/FFFFFF"
-                                    alt=""
-                                    className="h-4 w-4"
-                                />
+                                <FaFacebookF className="h-4 w-4" aria-hidden="true" />
                             </Link>
                         </div>
                     </div>
