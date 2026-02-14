@@ -12,6 +12,7 @@ export default function Footer() {
                         <div className="space-y-1">
                             <p className="font-medium">Natasha Russo Hypnotherapy</p>
                             <p>Cognitive Behavioural Hypnotherapist</p>
+                            <p>Online sessions: UK and other locations where permitted.</p>
                             <p>
                                 <Link
                                     href="mailto:contact@natasharussohypnotherapy.co.uk"
@@ -20,6 +21,35 @@ export default function Footer() {
                                     contact@natasharussohypnotherapy.co.uk
                                 </Link>
                             </p>
+                        </div>
+
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                            <Link
+                                href="https://www.linkedin.com/in/natasha-russo-5700863a8/"
+                                className="font-bold hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </Link>
+                            <span aria-hidden>•</span>
+                            <Link
+                                href="https://www.instagram.com/natasharussohypnotherapy/"
+                                className="font-bold hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Instagram
+                            </Link>
+                            <span aria-hidden>•</span>
+                            <Link
+                                href="https://www.facebook.com/natasharussohypnotherapy"
+                                className="font-bold hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Facebook
+                            </Link>
                         </div>
 
                         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
