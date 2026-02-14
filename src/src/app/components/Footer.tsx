@@ -77,9 +77,11 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.67-1.27 2.31-2.6 4.76-2.6 5.09 0 6.03 3.35 6.03 7.71V24h-5v-7.6c0-1.81-.03-4.14-2.52-4.14-2.53 0-2.92 1.98-2.92 4.01V24h-5V8z" />
-                                </svg>
+                                <img
+                                    src="https://cdn.simpleicons.org/linkedin/FFFFFF"
+                                    alt=""
+                                    className="h-4 w-4"
+                                />
                             </Link>
                             <Link
                                 href="https://www.instagram.com/natasharussohypnotherapy/"
@@ -88,11 +90,11 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5z"/>
-                                    <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5A3.5 3.5 0 1 0 12 15a3.5 3.5 0 0 0 0-7z"/>
-                                    <circle cx="17.5" cy="6.5" r="1"/>
-                                </svg>
+                                <img
+                                    src="https://cdn.simpleicons.org/instagram/FFFFFF"
+                                    alt=""
+                                    className="h-4 w-4"
+                                />
                             </Link>
                             <Link
                                 href="https://www.facebook.com/natasharussohypnotherapy"
@@ -101,9 +103,11 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.87.24-1.46 1.49-1.46H16.8V3.98c-.33-.04-1.46-.14-2.77-.14-2.74 0-4.62 1.67-4.62 4.74V10H6.3v3h3.11v8h4.09z"/>
-                                </svg>
+                                <img
+                                    src="https://cdn.simpleicons.org/facebook/FFFFFF"
+                                    alt=""
+                                    className="h-4 w-4"
+                                />
                             </Link>
                         </div>
                     </div>
