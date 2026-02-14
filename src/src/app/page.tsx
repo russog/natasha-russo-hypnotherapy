@@ -1,15 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import type { Metadata } from "next";
 import {Card} from "@/app/components/card";
 import ExpandableMiniCard from "@/app/components/ExpandableMiniCard";
+
+export const metadata: Metadata = {
+    title: "Cognitive Behavioural Hypnotherapy | Natasha Russo",
+    description:
+        "Calm, evidence-based cognitive behavioural hypnotherapy for anxiety, overthinking, confidence and emotional wellbeing.",
+    alternates: { canonical: "/" },
+};
 
 export default function Home() {
     return (<>
         <section className="relative overflow-hidden">
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
                 <h1 className="mx-auto max-w-4xl text-3xl leading-tight tracking-tight text-neutral-800 sm:text-5xl">
-                    Calm, evidence-based therapy
+                    Calm, evidence-based therapy{" "}
                     <br/>
                     for people whose minds feel busy, repetitive, or hard to switch off
                 </h1>
@@ -144,7 +152,7 @@ export default function Home() {
                                     <p>
                                         Anxiety doesn’t always look dramatic. For many people, it shows up as constant
                                         background worry, tension in the body, difficulty switching off, or a sense that
-                                        something is always slightly ’wrong’, even when life looks fine on the outside.
+                                        something is always slightly ‘wrong’, even when life looks fine on the outside.
                                     </p>
                                     <p className="mt-2">
                                         In my work, anxiety is approached by understanding what’s keeping it going – the
@@ -247,7 +255,7 @@ export default function Home() {
                     </ul>
 
                     <p className="mt-6 text-stone-700 italic">
-                        You are welcome to <Link href={"/contact"} className="font-semibold">Get in touch,</Link> even
+                        You are welcome to <Link href={"/contact"} className="font-semibold italic">Get in touch</Link> even
                         if
                         what you are dealing with doesn’t fit neatly into a box.
                     </p>

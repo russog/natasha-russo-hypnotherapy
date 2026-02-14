@@ -1,6 +1,14 @@
 import React from "react";
 import {Card} from "@/app/components/card";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Fees & Cancellation Policy",
+    description:
+        "Session fees and cancellation policy for Natasha Russo Hypnotherapy.",
+    alternates: { canonical: "/fees-cancellation" },
+};
 
 export default function FeesCancellation() {
     return (<>

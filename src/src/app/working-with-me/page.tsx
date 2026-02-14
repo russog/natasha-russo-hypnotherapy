@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { Card } from "@/app/components/card";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Working with me",
+  description:
+    "Learn how sessions work, what to expect, confidentiality, format and fees for cognitive behavioural hypnotherapy.",
+  alternates: { canonical: "/working-with-me" },
+};
 
 export default function WorkingWithMe() {
   return (

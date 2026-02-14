@@ -1,5 +1,13 @@
 import Link from "next/link";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact",
+    description:
+        "Get in touch with Natasha Russo Hypnotherapy. Free 20-minute initial chat available. Online sessions and confidential support.",
+    alternates: { canonical: "/contact" },
+};
 
 export default function Contact() {
     return (

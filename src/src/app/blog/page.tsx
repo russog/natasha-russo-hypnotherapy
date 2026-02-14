@@ -32,7 +32,12 @@ export default function BlogIndexPage() {
 
     return (
             <main className="relative z-10 mx-auto max-w-5xl px-4 py-12">
-                <section className="grid gap-8 sm:grid-cols-2">
+                <h1 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">Blog</h1>
+                <p className="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+                    Practical reflections on anxiety, overthinking, confidence, and emotional wellbeing.
+                </p>
+
+                <section className="mt-8 grid gap-8 sm:grid-cols-2">
                     {posts.map((post) => (
                         <Link
                             key={post.slug}

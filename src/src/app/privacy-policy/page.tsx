@@ -1,6 +1,14 @@
 import React from "react";
 import {Card} from "@/app/components/card";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Privacy Policy",
+    description:
+        "Privacy policy for Natasha Russo Hypnotherapy, including how personal data is collected, used and protected.",
+    alternates: { canonical: "/privacy-policy" },
+};
 
 export default function PrivacyPolicy() {
     return (<>

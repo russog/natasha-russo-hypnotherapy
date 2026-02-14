@@ -2,10 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import {Card} from "@/app/components/card";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Natasha Russo",
+    description:
+        "Meet Natasha Russo, Cognitive Behavioural Hypnotherapist. Learn about her background, approach, and therapeutic style.",
+    alternates: { canonical: "/about" },
+};
 
 export default function About() {
     return (
         <section className="relative overflow-hidden">
+            <div className="mx-auto max-w-5xl px-6 pt-10 text-center sm:pt-14">
+                <h1 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">About</h1>
+            </div>
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
 
                 <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
@@ -122,9 +133,9 @@ export default function About() {
                     <p className="mt-6 mx-auto text-stone-700 italic text-center max-w-xl">
                         If you’d like to understand more about how sessions work in practice,
                         <br/>
-                        you can read more on the
-                        <Link href="/working-with-me" className="font-bold">
-                            &nbsp;Working with me page.
+                        you can read more on the{' '}
+                        <Link href="/working-with-me" className="font-bold italic">
+                            Working with me page.
                         </Link>
                     </p>
                 </div>

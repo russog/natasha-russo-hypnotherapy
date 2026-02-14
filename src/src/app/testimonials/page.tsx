@@ -1,13 +1,21 @@
 import Link from "next/link";
 import {Card} from "@/app/components/card";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Client Testimonials",
+    description:
+        "Read client testimonials for Natasha Russo Hypnotherapy, including experiences with anxiety, assertiveness, and confidence support.",
+    alternates: { canonical: "/testimonials" },
+};
 
 export default function WorkingWithMe() {
     return (<>
         <section className="relative overflow-hidden">
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
                 <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-                    Client testimonials
+                    Client Testimonials
                 </h1>
                 <Card className="h-full flex flex-col mt-10">
                     <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
