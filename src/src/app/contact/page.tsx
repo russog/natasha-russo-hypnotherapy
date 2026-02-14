@@ -36,6 +36,22 @@ export default function Contact() {
                                             cognitive behavioural hypnotherapy works, and whether this approach
                                             feels like a good fit for you.
                                         </p>
+
+                                        <p>
+                                            Free 20-minute initial chat available.
+                                        </p>
+
+                                        <p>
+                                            Email:{" "}
+                                            <a
+                                                href="mailto:contact@natasharussohypnotherapy.co.uk"
+                                                className="underline underline-offset-2 hover:no-underline"
+                                            >
+                                                contact@natasharussohypnotherapy.co.uk
+                                            </a>
+                                        </p>
+
+                                        <p>I usually reply within 1 working day.</p>
                                     </div>
                                 </div>
 
