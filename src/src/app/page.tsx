@@ -318,6 +318,12 @@ export default function Home() {
                         approach gave me practical tools and powerful insights that led to real progress.”
                         — S.
                     </p>
+
+                    <p className="mt-6 text-stone-700 italic">
+                        “I feel much less guilty when I want to relax. Natasha helped me set an achievable, realistic
+                        goal and was flexible with exercises, making sure I got the most from each session.”
+                        — Izzy
+                    </p>
                     <p className="mt-6 text-stone-700 italic">
                         Read more in <Link
                         href="/testimonials">
