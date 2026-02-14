@@ -5,7 +5,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Natasha Russo",
+    title: "About me | Natasha Russo",
     description:
         "Meet Natasha Russo, Cognitive Behavioural Hypnotherapist. Learn about her background, approach, and therapeutic style.",
     alternates: { canonical: "/about" },
@@ -15,7 +15,7 @@ export default function About() {
     return (
         <section className="relative overflow-hidden">
             <div className="mx-auto max-w-5xl px-6 pt-10 text-center sm:pt-14">
-                <h1 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">About</h1>
+                <h1 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">About me</h1>
             </div>
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
 
