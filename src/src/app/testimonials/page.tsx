@@ -53,6 +53,14 @@ export default function WorkingWithMe() {
                         — S.
                     </p>
                 </Card>
+
+                <p className="mx-auto mt-10 max-w-3xl text-base leading-relaxed text-neutral-700">
+                    If you&apos;d like to take the next step, you&apos;re welcome to book a{' '}
+                    <Link href="/contact" className="italic underline underline-offset-2 hover:no-underline">
+                        Free 20-minute initial chat
+                    </Link>
+                    .
+                </p>
             </div>
         </section>
     </>);
