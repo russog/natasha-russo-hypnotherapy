@@ -214,8 +214,8 @@ export default function FaqPage() {
 
                 <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-neutral-700">
                     If you&apos;re unsure whether this approach is right for you, you&apos;re welcome to{' '}
-                    <Link href="/contact" className="underline underline-offset-2 hover:no-underline">
-                        get in touch
+                    <Link href="/contact" className="italic underline underline-offset-2 hover:no-underline">
+                        Get in touch
                     </Link>
                     .
                 </p>
