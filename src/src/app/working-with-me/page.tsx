@@ -156,6 +156,11 @@ export default function WorkingWithMe() {
               Hypnotherapy may be used as part of the work where it’s relevant and agreed. If you’d like a brief
               explanation of how it’s used in my practice, you can read more in the <Link href="/faq" className="font-bold">FAQs.</Link>
             </p>
+
+            <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
+              If you’d like to explore whether this approach feels right for you, you’re welcome to get in touch for a{' '}
+              <Link href="/contact" className="font-bold">Free 20-minute initial chat.</Link>
+            </p>
           </Card>
 
           <Card className="bg-emerald-50/50">
@@ -211,11 +216,6 @@ export default function WorkingWithMe() {
               details, please refer to the <Link href="/fees-cancellation" className="font-bold">Fees &amp; Cancellation Policy.</Link>
             </p>
 
-            <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
-              If you’d like to explore whether this approach feels right for you, you’re welcome to get in touch for a
-              &nbsp;
-              <Link href="/contact">Free 20-minute initial chat.</Link>
-            </p>
           </Card>
         </div>
       </section>
