@@ -23,7 +23,7 @@ export default function Home() {
                 </h1>
                 <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
                     A thoughtful integration of cognitive-behavioural therapy, hypnotherapy, and mindfulness techniques
-                    – supporting clearer, more manageable change
+                    - supporting clearer, more manageable change
                 </p>
                 <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
                     Online sessions: UK and other locations where permitted.
@@ -67,7 +67,7 @@ export default function Home() {
                         </p>
 
                         <p className="text-lg leading-relaxed">
-                            The focus is on making sense of what’s been going on for you and working together to find
+                            The focus is on making sense of what's been going on for you and working together to find
                             ways of responding that feel steadier and more deliberate.
                         </p>
 
@@ -150,12 +150,12 @@ export default function Home() {
                             details={
                                 <>
                                     <p>
-                                        Anxiety doesn’t always look dramatic. For many people, it shows up as constant
+                                        Anxiety doesn't always look dramatic. For many people, it shows up as constant
                                         background worry, tension in the body, difficulty switching off, or a sense that
-                                        something is always slightly ‘wrong’, even when life looks fine on the outside.
+                                        something is always slightly 'wrong', even when life looks fine on the outside.
                                     </p>
                                     <p className="mt-2">
-                                        In my work, anxiety is approached by understanding what’s keeping it going – the
+                                        In my work, anxiety is approached by understanding what's keeping it going - the
                                         patterns of thought, attention, and response that have developed over time. We
                                         work collaboratively to change how you relate to these patterns, so anxiety has
                                         less space to take over.
@@ -169,18 +169,18 @@ export default function Home() {
                             details={
                                 <>
                                     <p>
-                                        Overthinking often isn’t about thinking too much – it’s about feeling stuck in
+                                        Overthinking often isn't about thinking too much - it's about feeling stuck in
                                         the same thoughts. You might find your mind constantly analysing, replaying
                                         conversations, second-guessing decisions, or trying to anticipate every possible
-                                        outcome. Even when you understand something logically, your mind doesn’t seem to
-                                        let it go. Rest doesn’t always feel restful, because the thinking carries on in
+                                        outcome. Even when you understand something logically, your mind doesn't seem to
+                                        let it go. Rest doesn't always feel restful, because the thinking carries on in
                                         the background.
                                     </p>
                                     <p className="mt-2">
                                         I approach overthinking by understanding how patterns of attention and
-                                        interpretation develop – and why the mind gets pulled back into the same loops.
+                                        interpretation develop - and why the mind gets pulled back into the same loops.
                                         We work collaboratively to change how you relate to your thoughts, so they have
-                                        less power to pull you in or run the show. The aim isn’t to stop thinking, but
+                                        less power to pull you in or run the show. The aim isn't to stop thinking, but
                                         to develop more choice and flexibility in how you respond.
                                     </p>
                                 </>
@@ -196,15 +196,15 @@ export default function Home() {
                                         You might appear capable and functioning, yet privately question your decisions,
                                         downplay your strengths, or feel unsure of yourself even when things are going
                                         well. You may find yourself comparing, over-preparing, or worrying about getting
-                                        things ‘wrong’, while others assume you’re coping just fine.
+                                        things 'wrong', while others assume you're coping just fine.
                                     </p>
                                     <p className="mt-2">
-                                        Here, with me, confidence is not treated as something you either have or don’t
+                                        Here, with me, confidence is not treated as something you either have or don't
                                         have. Instead, we look at the patterns of thinking, expectation, and
                                         self-evaluation that shape how you relate to yourself. By understanding how
                                         self-doubt is maintained, we work on developing a more balanced and realistic
-                                        relationship with your thoughts – one that allows confidence to grow gradually,
-                                        without pressure to ‘perform’ or push yourself beyond what feels manageable.
+                                        relationship with your thoughts - one that allows confidence to grow gradually,
+                                        without pressure to 'perform' or push yourself beyond what feels manageable.
                                     </p>
                                 </>
                             }
@@ -238,7 +238,7 @@ export default function Home() {
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>Habits you’d like to change</span>
+                            <span>Habits you'd like to change</span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
@@ -257,7 +257,7 @@ export default function Home() {
                     <p className="mt-6 text-stone-700 italic">
                         You are welcome to <Link href={"/contact"} className="font-semibold italic">Get in touch</Link> even
                         if
-                        what you are dealing with doesn’t fit neatly into a box.
+                        what you are dealing with doesn't fit neatly into a box.
                     </p>
                 </Card>
 
@@ -268,7 +268,7 @@ export default function Home() {
                     </h2>
 
                     <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
-                        I combine hypnotherapy with cognitive-behavioural approaches to help you understand what’s
+                        I combine hypnotherapy with cognitive-behavioural approaches to help you understand what's
                         keeping difficulties going, develop practical skills, and move forward at a pace that feels
                         right for you.
                     </p>
@@ -276,7 +276,7 @@ export default function Home() {
                     <ul className="mt-6 space-y-4 text-stone-700">
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>Make sense of what’s going on, and how certain patterns are being maintained</span>
+                            <span>Make sense of what's going on, and how certain patterns are being maintained</span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
@@ -290,7 +290,7 @@ export default function Home() {
                     </ul>
 
                     <p className="mt-6 text-stone-700 italic">
-                        Hypnotherapy here involves using your own focused attention and imagination in supportive ways –
+                        Hypnotherapy here involves using your own focused attention and imagination in supportive ways -
                         it is safe, evidence-based, and always led by you and your goals.
                     </p>
                 </Card>
@@ -301,28 +301,28 @@ export default function Home() {
                         What clients say
                     </h2>
 
-                    <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
+                    <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl italic">
                         “Natasha was calm, supportive, and completely non-judgemental. She taught me practical
-                        techniques that genuinely help when I feel anxious.”
+                        techniques that genuinely help when I feel anxious."
                         — Laura
                     </p>
 
                     <p className="mt-6 text-stone-700 italic">
-                        “Our work on assertiveness gave me practical tools I still use today. Natasha combines warmth
-                        with real professionalism, and I’d happily recommend her.”
-                        — Su
+                        "Our work on assertiveness gave me practical tools I still use today. Natasha combines warmth
+                        with real professionalism, and I'd happily recommend her."
+                        - Su
                     </p>
 
                     <p className="mt-6 text-stone-700 italic">
-                        “Natasha helped me feel safe, supported, and in control throughout. Her calm, professional
-                        approach gave me practical tools and powerful insights that led to real progress.”
-                        — S.
+                        "Natasha helped me feel safe, supported, and in control throughout. Her calm, professional
+                        approach gave me practical tools and powerful insights that led to real progress."
+                        - S.
                     </p>
 
                     <p className="mt-6 text-stone-700 italic">
-                        “I feel much less guilty when I want to relax. Natasha helped me set an achievable, realistic
-                        goal and was flexible with exercises, making sure I got the most from each session.”
-                        — Izzy
+                        "I feel much less guilty when I want to relax. Natasha helped me set an achievable, realistic
+                        goal and was flexible with exercises, making sure I got the most from each session."
+                        - Izzy
                     </p>
                     <p className="mt-6 text-stone-700 italic">
                         Read more in <Link
