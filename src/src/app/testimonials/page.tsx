@@ -18,7 +18,7 @@ export default function WorkingWithMe() {
                     Client Testimonials
                 </h1>
                 <Card className="h-full flex flex-col mt-10">
-                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “My hypnotherapy sessions with Natasha were calm, open, and supportive. I felt at ease with her
                         straight away. Over time, we built a positive therapeutic relationship, and I felt very
                         comfortable sharing my reflections and anxiety-related experiences. Even when things seemed
@@ -30,7 +30,7 @@ export default function WorkingWithMe() {
                     </p>
                 </Card>
                 <Card className="h-full flex flex-col mt-20">
-                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “I had the opportunity to work with Natasha, and the experience was genuinely insightful. She
                         created a calm, supportive space while also helping me look at situations in a practical and
                         empowering way. Our work on assertiveness gave me useful tools to approach conversations with
@@ -42,7 +42,7 @@ export default function WorkingWithMe() {
                     </p>
                 </Card>
                 <Card className="h-full flex flex-col mt-20">
-                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “Natasha was patient, reassuring, and an excellent listener. Her calm manner helped me feel
                         relaxed and safe in a confidential space. I really valued the way she used thoughtful questions
                         and pauses to help me gain powerful insights, challenge negative thinking, and build more
@@ -63,7 +63,7 @@ export default function WorkingWithMe() {
                 </Card>
 
                 <Card className="h-full flex flex-col mt-20">
-                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “Natasha helped me build trust and feel at ease in sessions. I am feeling a lot less guilty
                         when I want to relax, and we set a goal that was achievable and realistic. She was very
                         willing to be flexible with the different exercises and made sure I was getting the most out
