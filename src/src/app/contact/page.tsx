@@ -18,7 +18,7 @@ export default function Contact() {
                         <div
                             className="mx-auto max-w-6xl overflow-hidden rounded-2xl border border-[#4F5A54]/15 bg-[#f6f4ef]">
                             <div className="grid md:grid-cols-2">
-                                <div className="relative p-10 md:p-12">
+                                <div className="relative p-6 sm:p-10 md:p-12">
                                     <div className="pointer-events-none absolute inset-0 opacity-30">
                                         <div
                                             className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-[#4F5A54]/10 blur-2xl"/>
@@ -27,7 +27,7 @@ export default function Contact() {
                                     </div>
 
                                     <div className="relative z-10 max-w-md space-y-6 text-neutral-800">
-                                        <h1 className="text-5xl font-medium tracking-tight">Get in touch</h1>
+                                        <h1 className="text-3xl sm:text-5xl font-medium tracking-tight">Get in touch</h1>
 
                                         <p>
                                             If you&apos;re considering hypnotherapy and would like to ask a few
@@ -53,7 +53,7 @@ export default function Contact() {
                                             Email:{" "}
                                             <a
                                                 href="mailto:contact@natasharussohypnotherapy.co.uk"
-                                                className="underline underline-offset-2 hover:no-underline"
+                                                className="break-all underline underline-offset-2 hover:no-underline"
                                             >
                                                 contact@natasharussohypnotherapy.co.uk
                                             </a>
@@ -64,7 +64,7 @@ export default function Contact() {
                                 </div>
 
                                 <div
-                                    className="border-t border-[#4F5A54]/15 bg-[#f8f7f3] p-10 md:border-t-0 md:border-l md:p-12">
+                                    className="border-t border-[#4F5A54]/15 bg-[#f8f7f3] p-6 sm:p-10 md:border-t-0 md:border-l md:p-12">
                                     <form className="space-y-6" method="post" action="/api/contact">
                                         <input
                                             type="text"
