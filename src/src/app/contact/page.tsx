@@ -59,6 +59,16 @@ export default function Contact() {
                                             </a>
                                         </p>
 
+                                        <p>
+                                            Business phone:{" "}
+                                            <a
+                                                href="tel:+447719695769"
+                                                className="underline underline-offset-2 hover:no-underline"
+                                            >
+                                                +44 7719 695769
+                                            </a>
+                                        </p>
+
                                         <p>I usually reply within 1 working day.</p>
                                     </div>
                                 </div>
