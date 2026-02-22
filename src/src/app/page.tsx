@@ -304,7 +304,7 @@ export default function Home() {
                     <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl italic">
                         “Natasha was calm, supportive, and completely non-judgemental. She taught me practical
                         techniques that genuinely help when I feel anxious."
-                        — Laura
+                        — L.W
                     </p>
 
                     <p className="mt-6 text-stone-700 italic">
@@ -316,13 +316,13 @@ export default function Home() {
                     <p className="mt-6 text-stone-700 italic">
                         "Natasha helped me feel safe, supported, and in control throughout. Her calm, professional
                         approach gave me practical tools and powerful insights that led to real progress."
-                        - S.
+                        - S.C
                     </p>
 
                     <p className="mt-6 text-stone-700 italic">
                         "I feel much less guilty when I want to relax. Natasha helped me set an achievable, realistic
                         goal and was flexible with exercises, making sure I got the most from each session."
-                        - Izzy
+                        - I.D
                     </p>
                     <p className="mt-6 text-stone-700 italic">
                         Read more in <Link

@@ -26,7 +26,7 @@ export default function WorkingWithMe() {
                         practical techniques that genuinely help when I feel anxious. I would definitely recommend
                         Natasha to anyone struggling with anxiety.”
                         <br/>
-                        — Laura
+                        — L.W
                     </p>
                 </Card>
                 <Card className="h-full flex flex-col mt-20">
@@ -58,7 +58,7 @@ export default function WorkingWithMe() {
                         use her services again and would not hesitate to recommend her to anyone looking for caring,
                         professional, and effective therapy.”
                         <br/>
-                        — S.
+                        — S.C
                     </p>
                 </Card>
 
@@ -69,7 +69,7 @@ export default function WorkingWithMe() {
                         willing to be flexible with the different exercises and made sure I was getting the most out
                         of the sessions.”
                         <br/>
-                        — Izzy
+                        — I.D
                     </p>
                 </Card>
 
