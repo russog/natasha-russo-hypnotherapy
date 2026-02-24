@@ -1,4 +1,5 @@
 import type {Metadata} from "next";
+import Script from "next/script";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
@@ -70,6 +71,8 @@ const navSchema = {
     })),
 };
 
+const GA_MEASUREMENT_ID = "G-9K50BFF40N";
+
 export const metadata: Metadata = {
     metadataBase: new URL(site.url),
     title: {
@@ -103,6 +106,18 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
         <body className="min-h-screen flex flex-col">
+        <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `}
+        </Script>
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
