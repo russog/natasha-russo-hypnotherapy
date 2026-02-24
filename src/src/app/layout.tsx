@@ -29,6 +29,47 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
+const mainNav = [
+    { name: "Home", url: `${site.url}/` },
+    { name: "About me", url: `${site.url}/about` },
+    { name: "Working with me", url: `${site.url}/working-with-me` },
+    { name: "Blog", url: `${site.url}/blog` },
+    { name: "Client Testimonials", url: `${site.url}/testimonials` },
+    { name: "FAQ", url: `${site.url}/faq` },
+    { name: "Contact", url: `${site.url}/contact` },
+];
+
+const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: site.name,
+    url: site.url,
+    logo: site.logo,
+};
+
+const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: site.name,
+    url: site.url,
+    description: site.description,
+    publisher: {
+        "@type": "Organization",
+        name: site.name,
+    },
+};
+
+const navSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: mainNav.map((item, index) => ({
+        "@type": "SiteNavigationElement",
+        position: index + 1,
+        name: item.name,
+        url: item.url,
+    })),
+};
+
 export const metadata: Metadata = {
     metadataBase: new URL(site.url),
     title: {
@@ -36,6 +77,7 @@ export const metadata: Metadata = {
         template: `%s | ${site.name}`,
     },
     description: site.description,
+    alternates: { canonical: "/" },
     icons: {
         icon: [
             { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -50,7 +92,7 @@ export const metadata: Metadata = {
         siteName: site.name,
         title: site.name,
         description: site.description,
-    }
+    },
 };
 
 export default function RootLayout({
@@ -61,6 +103,18 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
         <body className="min-h-screen flex flex-col">
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(navSchema) }}
+        />
         <main className="flex flex-1 flex-col border-[#4F5A54] bg-white">
             <Navbar />
             <section className="relative overflow-hidden">
