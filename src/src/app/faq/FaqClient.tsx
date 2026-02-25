@@ -20,7 +20,7 @@ const faqs: FAQ[] = [
                 <p>
                     In CBH, hypnosis is not treated as a special or altered state. Instead, it is understood as a natural,
                     learnable way of engaging attention and mental imagery to support therapeutic goals in a clear and
-                    collaborative way.
+                    collaborative way. If useful, you can read more in <Link href="/blog/making-sense-of-hypnotherapy" className="underline underline-offset-2 hover:no-underline">Making Sense of Hypnotherapy</Link>.
                 </p>
             </>
         ),
