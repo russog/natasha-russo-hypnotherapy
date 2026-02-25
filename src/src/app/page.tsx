@@ -96,7 +96,7 @@ export default function Home() {
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You find yourself caught in cycles of worry, what-ifs, or worst-case thinking that are hard to interrupt
+                You find yourself caught in <Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">cycles of worry</Link>, what-ifs, or worst-case thinking that are hard to interrupt
               </span>
                         </li>
                         <li className="flex gap-3">
@@ -108,7 +108,7 @@ export default function Home() {
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You struggle to fully switch off or stay present, even when things are going well
+                You struggle to fully <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">switch off</Link> or stay present, even when things are going well
               </span>
                         </li>
                     </ul>
@@ -151,12 +151,13 @@ export default function Home() {
                                 <>
                                     <p>
                                         Anxiety doesn't always look dramatic. For many people, it shows up as constant
-                                        background worry, tension in the body, difficulty switching off, or a sense that
+                                        background worry, tension in the body, <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">difficulty switching off</Link>, or a sense that
                                         something is always slightly 'wrong', even when life looks fine on the outside.
                                     </p>
                                     <p className="mt-2">
                                         In my work, anxiety is approached by understanding what's keeping it going - the
-                                        patterns of thought, attention, and response that have developed over time. We
+                                        patterns of thought, attention, and response that have developed over time. This can include{' '}
+                                        <Link href="/blog/understanding-the-safety-behaviours-that-keep-anxiety-going" className="underline underline-offset-2 hover:no-underline">safety behaviours that keep anxiety going</Link>. We
                                         work collaboratively to change how you relate to these patterns, so anxiety has
                                         less space to take over.
                                     </p>

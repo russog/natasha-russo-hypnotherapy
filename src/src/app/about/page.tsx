@@ -102,7 +102,7 @@ export default function About() {
                             With a background in psychology, I’ve always been interested in how people think, interpret
                             their experiences, and respond under pressure. Over time, what stood out wasn’t diagnosis or
                             labels, but how easily capable, thoughtful people can become stuck in the same patterns of
-                            worry, overthinking, or self-doubt — especially when life feels demanding.
+                            worry, <Link href="/blog/why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping" className="underline underline-offset-2 hover:no-underline">overthinking</Link>, or self-doubt — especially when life feels demanding.
                         </p>
                         <p className="mt-6 text-stone-700">
                             Earlier in my career, working in school settings with neurodivergent children reinforced how

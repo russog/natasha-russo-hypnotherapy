@@ -57,7 +57,7 @@ export default function WorkingWithMe() {
                   <br />
                   Subsequent sessions focus on actively working with thoughts, emotions, and behavioural responses. We
                   use practical, evidence-based methods, both in session and, where helpful, through small reflections
-                  or experiments between sessions.
+                  or experiments between sessions. This can include recognising <Link href="/blog/understanding-the-safety-behaviours-that-keep-anxiety-going" className="underline underline-offset-2 hover:no-underline">safety behaviours</Link> that unintentionally maintain anxiety.
                 </span>
               </li>
 
