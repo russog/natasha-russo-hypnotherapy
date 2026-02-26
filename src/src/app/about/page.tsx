@@ -83,7 +83,7 @@ export default function About() {
                         </p>
 
                         <p className="mt-6 text-stone-700">
-                            If it feels helpful, we can begin with a <Link href="/contact" className="font-bold italic">Free 20-minute initial chat</Link>
+                            If it feels helpful, we can begin with a <Link href="/contact" className="font-bold italic">free 20-minute initial chat</Link>
                         </p>
                     </Card>
                 </div>
