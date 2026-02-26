@@ -50,6 +50,10 @@ export default function Contact() {
                                         </p>
 
                                         <p>
+                                            You can also listen to a <Link href="/free-relaxation-audio" className="underline underline-offset-2 hover:no-underline">free relaxation audio</Link>.
+                                        </p>
+
+                                        <p>
                                             Email:{" "}
                                             <a
                                                 href="mailto:contact@natasharussohypnotherapy.co.uk"

@@ -161,6 +161,9 @@ export default function WorkingWithMe() {
               If you’d like to explore whether this approach feels right for you, you’re welcome to get in touch for a{' '}
               <Link href="/contact" className="font-bold">Free 20-minute initial chat.</Link>
             </p>
+            <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
+              You can also try the <Link href="/free-relaxation-audio" className="font-bold">free relaxation audio</Link>.
+            </p>
           </Card>
 
           <Card className="bg-emerald-50/50">
