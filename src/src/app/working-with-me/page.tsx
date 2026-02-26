@@ -126,8 +126,8 @@ export default function WorkingWithMe() {
               <li className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
                 <span>
-                  <strong>First session:</strong> Approximately 90 minutes, allowing time for assessment and
-                  conceptualisation.
+                  <strong>First session:</strong> Approximately 90 minutes, allowing time to understand what has been
+                  happening for you and agree a clear focus for our work.
                 </span>
               </li>
               <li className="flex gap-3">
