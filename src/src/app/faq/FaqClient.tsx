@@ -124,6 +124,9 @@ const faqs: FAQ[] = [
                 <p>
                     If you’re unsure whether your situation fits, you’re welcome to get in touch.
                 </p>
+                <p>
+                    You may also find this helpful: <Link href="/blog/why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen" className="underline underline-offset-2 hover:no-underline">Why Anxiety Feels So Convincing — And How It Starts to Loosen</Link>.
+                </p>
             </>
         ),
     },

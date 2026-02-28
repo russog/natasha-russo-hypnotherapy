@@ -99,7 +99,7 @@ export default function Home() {
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You find yourself caught in <Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">cycles of worry</Link>, what-ifs, or worst-case thinking that are hard to interrupt
+                You find yourself caught in <Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">cycles of worry</Link>, what-ifs, or worst-case thinking that are hard to interrupt, and may recognise <Link href="/blog/why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen" className="underline underline-offset-2 hover:no-underline">why anxiety can feel so convincing</Link>
               </span>
                         </li>
                         <li className="flex gap-3">
