@@ -17,9 +17,9 @@ export default function Home() {
         <section className="relative overflow-hidden">
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
                 <h1 className="mx-auto max-w-5xl text-3xl leading-tight tracking-tight text-neutral-800 sm:text-5xl">
-                    Support for adults with anxiety, overthinking and self‑doubt
+                    Support for adults experiencing
                     <br />
-                    using a practical, evidence-based approach
+                    anxiety, overthinking, or self-doubt
                 </h1>
                 <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
                     A thoughtful integration of cognitive-behavioural therapy, hypnotherapy, and mindfulness techniques
