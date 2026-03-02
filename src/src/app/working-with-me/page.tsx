@@ -153,7 +153,7 @@ export default function WorkingWithMe() {
               </li>
             </ul>
             <p className="mt-6 text-stone-700 italic">
-              Hypnotherapy may be used as part of the work where it’s relevant and agreed. If you’d like a brief
+              Hypnosis is used as a brief, focused technique to support cognitive and behavioural strategies - for example, to practice new responses or strengthen helpful coping skills. If you’d like a brief
               explanation of how it’s used in my practice, you can read more in the <Link href="/faq" className="font-bold">FAQs.</Link>
             </p>
 
@@ -186,7 +186,7 @@ export default function WorkingWithMe() {
             <p className="text-stone-700 leading-relaxed mt-4">
               Different approaches suit different people, and part of the process is making sure this way of working
               feels like a good fit for you. If you are unsure whether this is right for you, we can discuss it in an
-              initial conversation.
+              initial conversation. Where longer-term or specialist support would be more appropriate, this can also be discussed during the consultation.
             </p>
           </Card>
 

@@ -17,9 +17,9 @@ export default function Home() {
         <section className="relative overflow-hidden">
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
                 <h1 className="mx-auto max-w-4xl text-3xl leading-tight tracking-tight text-neutral-800 sm:text-5xl">
-                    Calm, evidence-based therapy{" "}
+                    Support for anxiety, overthinking, and self-doubt
                     <br/>
-                    for people whose minds feel busy, repetitive, or hard to switch off
+                    using practical, evidence-based strategies for everyday challenges
                 </h1>
                 <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
                     A thoughtful integration of cognitive-behavioural therapy, hypnotherapy, and mindfulness techniques
@@ -142,8 +142,10 @@ export default function Home() {
                     </h2>
 
                     <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
-                        I help adults make sense of difficulties that show up in thoughts, emotions, and everyday life,
-                        using practical, evidence-based approaches.
+                        I support adults in managing difficulties that show up in thoughts, emotions, and everyday life,
+                        using practical, evidence-based approaches. These approaches are typically suited to present-day
+                        difficulties. They focus on helping you change patterns in how you think and respond, rather than
+                        exploring past experiences in depth.
                     </p>
 
                     <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -226,8 +228,8 @@ export default function Home() {
                     </h2>
 
                     <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
-                        People come to therapy for many different reasons. Often, what brings someone here is just the
-                        surface expression of deeper patterns that we can explore and work with together.
+                        People come to therapy for many different reasons. Often, what brings someone here is part of a
+                        pattern that can be understood and changed using practical cognitive and behavioural strategies.
                     </p>
 
                     <ul className="mt-6 space-y-4 text-stone-700">
