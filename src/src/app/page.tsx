@@ -70,7 +70,7 @@ export default function Home() {
                         </p>
 
                         <p className="text-lg leading-relaxed">
-                            The focus is on making sense of what's been going on for you and working together to find
+                            The focus is on understanding what's been going on for you and working together to find
                             ways of responding that feel steadier and more deliberate.
                         </p>
 
