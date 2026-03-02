@@ -18,9 +18,10 @@ export default function Home() {
             <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
                 <h1 className="mx-auto max-w-4xl text-3xl leading-tight tracking-tight text-neutral-800 sm:text-5xl">
                     Support for anxiety, overthinking, and self‑doubt
-                    <br className="hidden sm:block" />
-                    <span className="sm:hidden"> </span>
-                    using practical, evidence-based strategies for everyday challenges
+                    <br />
+                    using practical, evidence-based strategies
+                    <br />
+                    for everyday challenges
                 </h1>
                 <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
                     A thoughtful integration of cognitive-behavioural therapy, hypnotherapy, and mindfulness techniques
