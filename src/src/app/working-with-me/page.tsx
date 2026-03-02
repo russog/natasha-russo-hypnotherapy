@@ -153,7 +153,7 @@ export default function WorkingWithMe() {
               </li>
             </ul>
             <p className="mt-6 text-stone-700 italic">
-              Hypnosis is used as a brief, focused technique to support cognitive and behavioural strategies - for example, to practice new responses or strengthen helpful coping skills. If you’d like a brief
+              Hypnosis is used as a brief, focused technique to support cognitive and behavioural strategies - for example, to practise new responses or strengthen helpful coping skills. If you’d like a brief
               explanation of how it’s used in my practice, you can read more in the <Link href="/faq" className="font-bold">FAQs.</Link>
             </p>
 
