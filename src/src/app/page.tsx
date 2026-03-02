@@ -145,9 +145,7 @@ export default function Home() {
 
                     <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
                         I support adults in managing difficulties that show up in thoughts, emotions, and everyday life,
-                        using practical, evidence-based approaches. These approaches are typically suited to present-day
-                        difficulties. They focus on helping you change patterns in how you think and respond, rather than
-                        exploring past experiences in depth.
+                        using practical, evidence-based approaches. These approaches are typically suited to present-day difficulties and focus on helping you change patterns in how you think and respond, rather than exploring past experiences in depth.
                     </p>
 
                     <div className="mt-8 grid gap-6 md:grid-cols-3">
