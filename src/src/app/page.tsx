@@ -29,7 +29,7 @@ export default function Home() {
                     Online sessions: UK and worldwide.
                 </p>
                 <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    You can also access a <Link href="/free-relaxation-audio" className="underline underline-offset-2 hover:no-underline">free relaxation audio</Link>.
+                    <Link href="/free-relaxation-audio" className="underline underline-offset-2 hover:no-underline">Free relaxation audio</Link>
                 </p>
                 <div className="mt-10 flex justify-center">
                     <Link
