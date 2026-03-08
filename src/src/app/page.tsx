@@ -25,8 +25,8 @@ export default function Home() {
                     A thoughtful integration of cognitive-behavioural therapy, hypnotherapy, and mindfulness techniques
                     - supporting clearer, more manageable change
                 </p>
-                <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    Helping people understand and gradually change the patterns that keep unhelpful cycles going.
+                <p className="mx-auto mt-5 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                    Helping people understand and gradually change the patterns that keep unhelpful cycles going
                 </p>
                 <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
                     Online sessions: UK and worldwide
