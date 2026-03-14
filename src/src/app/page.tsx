@@ -249,7 +249,7 @@ export default function Home() {
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span><Link href="/smoking-cessation" className="underline underline-offset-2 hover:no-underline">Smoking cessation</Link></span>
+                            <span><Link href="/smoking-cessation" className="underline underline-offset-2 hover:no-underline">Smoking cessation</Link> (stopping smoking or reducing nicotine dependence)</span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
