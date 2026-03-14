@@ -249,6 +249,10 @@ export default function Home() {
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span>Stopping smoking or reducing nicotine dependence</span>
+                        </li>
+                        <li className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>Difficulty sleeping or switching off</span>
                         </li>
                         <li className="flex gap-3">
