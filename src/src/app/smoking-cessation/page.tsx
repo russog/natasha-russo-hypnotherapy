@@ -93,7 +93,7 @@ export default function SmokingCessationPage() {
               Getting started
             </h2>
             <p className="text-stone-700 leading-relaxed italic">
-              If you are considering stopping smoking and would like to explore whether this approach may be helpful, you are welcome to <Link href="/contact" className="font-bold">get in touch</Link> for a free 20-minute chat.
+              If you are considering stopping smoking and would like to explore whether this approach may be helpful, you are welcome to get in touch for a <Link href="/contact" className="font-bold">free 20-minute chat</Link>.
             </p>
           </Card>
         </div>
