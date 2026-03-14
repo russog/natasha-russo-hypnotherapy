@@ -181,7 +181,7 @@ export default function Home() {
                                         conversations, second-guessing decisions, or trying to anticipate every possible
                                         outcome. Even when you understand something logically, your mind doesn't seem to
                                         let it go. Rest doesn't always feel restful, because the thinking carries on in
-                                        the background.
+                                        the background. You can read more in <Link href="/blog/when-thinking-becomes-overthinking" className="underline underline-offset-2 hover:no-underline">When Thinking Becomes Overthinking</Link>.
                                     </p>
                                     <p className="mt-2">
                                         I approach overthinking by understanding how patterns of attention and
