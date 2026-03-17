@@ -90,6 +90,35 @@ export default function SmokingCessationPage() {
 
           <Card className="bg-emerald-50/50">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+              Smoking Cessation Programme &amp; Fee
+            </h2>
+
+            <p className="text-stone-700 leading-relaxed">
+              This is offered as a structured two-session programme:
+            </p>
+
+            <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
+              <li className="flex gap-3">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
+                <span><strong>Main session:</strong> 2 hours</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
+                <span><strong>Follow-up session:</strong> 1 hour (one week later)</span>
+              </li>
+            </ul>
+
+            <p className="mt-6 text-stone-700 leading-relaxed">
+              <strong>Total programme fee: £230</strong>
+            </p>
+
+            <p className="mt-4 text-stone-700 leading-relaxed">
+              This structure allows for focused initial work and a planned follow-up to reinforce progress and address any remaining difficulties.
+            </p>
+          </Card>
+
+          <Card className="bg-emerald-50/50">
+            <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Getting started
             </h2>
             <p className="text-stone-700 leading-relaxed italic">
