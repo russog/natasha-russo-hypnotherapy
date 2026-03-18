@@ -133,7 +133,7 @@ export default function Home() {
                         muted
                         loop
                         controls
-                        preload="metadata"
+                        preload="none"
                         poster="/intro-poster.jpg?v=2"
                         className="w-full max-w-md rounded-lg">
                         <source src="/intro.mp4#t=0.001" type="video/mp4"/>
