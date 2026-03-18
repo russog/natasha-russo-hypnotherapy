@@ -134,9 +134,9 @@ export default function Home() {
                         loop
                         controls
                         preload="none"
-                        poster="/intro-poster.jpg?v=2"
+                        poster="/intro-poster-openeyes.jpg?v=3"
                         className="w-full max-w-md rounded-lg">
-                        <source src="/intro.mp4#t=0.001" type="video/mp4"/>
+                        <source src="/intro.mp4" type="video/mp4"/>
                     </video>
                 </div>
 
