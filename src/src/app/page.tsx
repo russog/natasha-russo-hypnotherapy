@@ -134,7 +134,7 @@ export default function Home() {
                         loop
                         controls
                         preload="metadata"
-                        poster="/intro-poster-16.jpg"
+                        poster="/intro-poster.jpg?v=2"
                         className="w-full max-w-md rounded-lg">
                         <source src="/intro.mp4#t=1.2" type="video/mp4"/>
                     </video>
