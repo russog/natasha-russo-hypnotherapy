@@ -137,6 +137,13 @@ export default function Home() {
                         poster="/intro-poster-openeyes.jpg?v=3"
                         className="w-full max-w-md rounded-lg">
                         <source src="/intro.mp4" type="video/mp4"/>
+                        <track
+                            kind="captions"
+                            src="/intro-captions.vtt"
+                            srcLang="en"
+                            label="English"
+                            default
+                        />
                     </video>
                 </div>
 
