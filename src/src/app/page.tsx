@@ -133,7 +133,7 @@ export default function Home() {
                         muted
                         loop
                         controls
-                        preload="none"
+                        preload="metadata"
                         poster="/intro-poster-openeyes.jpg?v=3"
                         className="w-full max-w-md rounded-lg">
                         <source src="/intro.mp4" type="video/mp4"/>
