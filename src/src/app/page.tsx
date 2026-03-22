@@ -193,7 +193,7 @@ export default function Home() {
                                     </p>
                                     <p className="mt-2">
                                         I approach overthinking by understanding how patterns of attention and
-                                        interpretation develop - and why the mind gets pulled back into the same loops.
+                                        interpretation develop - and why the mind gets pulled back into the <Link href="/blog/why-overthinking-turns-toward-what-if-scenarios" className="underline underline-offset-2 hover:no-underline">same loops</Link>.
                                         We work collaboratively to change how you relate to your thoughts, so they have
                                         less power to pull you in or run the show. The aim isn't to stop thinking, but
                                         to develop more choice and flexibility in how you respond.
