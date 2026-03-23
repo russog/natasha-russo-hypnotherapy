@@ -160,9 +160,6 @@ export default function WorkingWithMe() {
             <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
               The process usually begins with a <Link href="/contact" className="font-bold">free 20-minute initial chat</Link>, allowing us to consider whether this type of structured support is likely to be suitable before arranging a first session.
             </p>
-            <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
-              You can also try the <Link href="/free-relaxation-audio" className="font-bold">free relaxation audio</Link>.
-            </p>
           </Card>
 
           <Card className="bg-emerald-50/50">
