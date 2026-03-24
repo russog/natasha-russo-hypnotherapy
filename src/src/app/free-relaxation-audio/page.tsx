@@ -23,7 +23,7 @@ export default function FreeRelaxationAudioPage() {
 
             <div className="relative z-10 mx-auto mb-16 max-w-3xl rounded-2xl border border-neutral-200 bg-white/70 px-6 py-8">
                 <audio controls preload="none" className="w-full" aria-label="Free relaxation audio">
-                    <source src="/audio/natasha-russo-relaxation-audio.mp3" type="audio/mpeg" />
+                    <source src="/audio/natasha-russo-relaxation-audio-v2.mp3" type="audio/mpeg" />
                     Your browser does not support the audio player.
                 </audio>
 
