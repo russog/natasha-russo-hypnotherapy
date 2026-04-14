@@ -207,7 +207,7 @@ export default function Home() {
                             details={
                                 <>
                                     <p>
-                                        Confidence and self-doubt often show up internally rather than on the surface.
+                                        Confidence and <Link href="/blog/when-you-know-you-can-but-still-feel-unsure" className="underline underline-offset-2 hover:no-underline">self-doubt</Link> often show up internally rather than on the surface.
                                         You might appear capable and functioning, yet privately question your decisions,
                                         downplay your strengths, or feel unsure of yourself even when things are going
                                         well. You may find yourself comparing, over-preparing, or worrying about getting
