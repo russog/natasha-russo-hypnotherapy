@@ -144,11 +144,10 @@ export default function WorkingWithMe() {
                   These are collaborative, manageable, and always agreed together.
                 </span>
               </li>
-              <li className="flex gap-3">
+              <li id="format" className="flex gap-3 scroll-mt-24">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
                 <span>
-                  <strong>Format:</strong> Sessions are held online via secure video, so you can take part from your own
-                  space.
+                  <strong>Format:</strong> Sessions are held online via secure video, so you can take part from your own space. Many people find that being in a familiar environment makes it easier to settle into the process and engage with the work. The sessions remain structured and focused, in the same way as they would be in person.
                 </span>
               </li>
             </ul>
