@@ -88,9 +88,7 @@ const faqs: FAQ[] = [
         question: 'Are online hypnotherapy sessions effective?',
         answer: (
             <p>
-                Yes. Research and clinical experience suggest that hypnotherapy can be effective when delivered online.
-                Because the work relies on attention, imagination, and communication – rather than physical presence – many
-                people find online sessions just as engaging and sometimes even more comfortable.
+                Yes — for this kind of work, online sessions are just as effective as in-person. Both research and clinical experience support this, and because the process relies on attention, communication, and guided techniques rather than physical presence, many people find it just as engaging — and often more comfortable working from their own space.
             </p>
         ),
     },
