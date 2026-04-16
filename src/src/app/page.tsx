@@ -328,21 +328,18 @@ export default function Home() {
                         “Natasha was calm, supportive, and completely non-judgemental. She taught me practical techniques that genuinely help when I feel anxious.”
                         <br />— L.W
                     </p>
-                    <p className="mt-3 text-stone-700">____</p>
 
                     <p className="mt-4 text-stone-700 font-medium">Assertiveness and communication</p>
                     <p className="mt-2 text-stone-700 italic max-w-3xl">
                         “Our work on assertiveness gave me practical tools I still use today. Natasha combines warmth with real professionalism, and I’d happily recommend her.”
                         <br />— Su
                     </p>
-                    <p className="mt-3 text-stone-700">____</p>
 
                     <p className="mt-4 text-stone-700 font-medium">Feeling more in control</p>
                     <p className="mt-2 text-stone-700 italic max-w-3xl">
                         “Natasha helped me feel safe, supported, and in control throughout. Her calm, professional approach gave me practical tools and powerful insights that led to real progress.”
                         <br />— S.C
                     </p>
-                    <p className="mt-3 text-stone-700">____</p>
 
                     <p className="mt-4 text-stone-700 font-medium">Letting go of guilt and pressure</p>
                     <p className="mt-2 text-stone-700 italic max-w-3xl">
