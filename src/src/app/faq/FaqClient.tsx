@@ -109,9 +109,9 @@ const faqs: FAQ[] = [
                 <p>I work with adults experiencing things like:</p>
                 <ul className="list-disc pl-5">
                     <li><Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">Anxiety and worry</Link></li>
-                    <li>Overthinking</li>
-                    <li>Stress and emotional overwhelm</li>
-                    <li>Confidence and self-doubt</li>
+                    <li><Link href="/blog/when-thinking-becomes-overthinking" className="underline underline-offset-2 hover:no-underline">Overthinking</Link></li>
+                    <li><Link href="/blog/feeling-stuck-even-when-trying-to-move-forward" className="underline underline-offset-2 hover:no-underline">Stress and emotional overwhelm</Link></li>
+                    <li>Confidence and <Link href="/blog/when-you-know-you-can-but-still-feel-unsure" className="underline underline-offset-2 hover:no-underline">self-doubt</Link></li>
                     <li><Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">Difficulty switching off / sleep-related mental overactivity</Link></li>
                     <li>Assertiveness and boundaries</li>
                     <li>Habits you’d like to change</li>
