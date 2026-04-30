@@ -22,10 +22,10 @@ export default function About() {
                 <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
                     <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-full border-2 mt-3">
                         <Image
-                            src="/about-new.jpg"
+                            src="/about-new-square.jpg"
                             alt="Natasha Russo"
                             fill
-                            className="object-cover object-[56%_38%]"
+                            className="object-cover object-center"
                             sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
                             priority
                         />
