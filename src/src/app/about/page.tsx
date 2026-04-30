@@ -22,7 +22,7 @@ export default function About() {
                 <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
                     <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-full border-2 mt-3">
                         <Image
-                            src="/about.webp"
+                            src="/about-new.jpg"
                             alt="Natasha Russo"
                             fill
                             className="object-cover"
