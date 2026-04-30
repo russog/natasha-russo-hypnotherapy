@@ -20,12 +20,12 @@ export default function About() {
 
             <div className="md:grid md:grid-cols-2 md:auto-rows-min">
                 <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
-                    <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-full border-2 mt-3">
+                    <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-full border-2 mt-3 bg-neutral-100">
                         <Image
                             src="/about-new.jpg"
                             alt="Natasha Russo"
                             fill
-                            className="object-cover object-top"
+                            className="object-contain object-top scale-95"
                             sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
                             priority
                         />
