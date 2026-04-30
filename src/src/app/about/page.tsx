@@ -25,7 +25,7 @@ export default function About() {
                             src="/about-new.jpg"
                             alt="Natasha Russo"
                             fill
-                            className="object-cover"
+                            className="object-cover object-top"
                             sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
                             priority
                         />
