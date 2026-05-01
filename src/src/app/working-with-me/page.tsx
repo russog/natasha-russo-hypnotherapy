@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card } from "@/app/components/card";
 import React from "react";
 import type { Metadata } from "next";
@@ -85,6 +86,16 @@ export default function WorkingWithMe() {
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Your role and my role
             </h2>
+
+            <div className="mt-6 mb-6">
+              <Image
+                src="/working-with-me-inline.jpg"
+                alt="Natasha Russo in session"
+                width={1200}
+                height={675}
+                className="w-full rounded-lg"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border-r  border-dashed border-black mr-6">
