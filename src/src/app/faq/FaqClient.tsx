@@ -113,7 +113,7 @@ const faqs: FAQ[] = [
                     <li><Link href="/blog/feeling-stuck-even-when-trying-to-move-forward" className="underline underline-offset-2 hover:no-underline">Stress and emotional overwhelm</Link></li>
                     <li><Link href="/blog/how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing" className="underline underline-offset-2 hover:no-underline">Confidence</Link> and <Link href="/blog/when-you-know-you-can-but-still-feel-unsure" className="underline underline-offset-2 hover:no-underline">self-doubt</Link></li>
                     <li><Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">Difficulty switching off / sleep-related mental overactivity</Link></li>
-                    <li>Assertiveness and boundaries</li>
+                    <li><Link href="/blog/why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life" className="underline underline-offset-2 hover:no-underline">Assertiveness</Link> and boundaries</li>
                     <li>Habits you’d like to change</li>
                     <li>Phobias and specific fears</li>
                     <li>Stopping smoking (<Link href="/smoking-cessation" className="underline underline-offset-2 hover:no-underline">smoking cessation</Link>)</li>
