@@ -117,7 +117,7 @@ export default function Home() {
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
                             <span>
-                You struggle to fully <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">switch off</Link> or stay present, even when things are going well
+                You struggle to fully <Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">switch off</Link> or stay present, even when things are going well
               </span>
                         </li>
                     </ul>
@@ -264,7 +264,7 @@ export default function Home() {
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>Difficulty sleeping or <Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">switching off</Link></span>
+                            <span>Difficulty sleeping or <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">switching off</Link></span>
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
