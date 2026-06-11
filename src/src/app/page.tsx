@@ -137,16 +137,9 @@ export default function Home() {
                         loop
                         controls
                         preload="metadata"
-                        poster="/intro-poster-openeyes.jpg?v=3"
-                        className="w-full max-w-md rounded-lg">
-                        <source src="/intro.mp4" type="video/mp4"/>
-                        <track
-                            kind="captions"
-                            src="/intro-captions.vtt"
-                            srcLang="en"
-                            label="English"
-                            default
-                        />
+                        poster="/intro-poster-openeyes.jpg?v=5"
+                        className="w-full max-w-sm rounded-lg">
+                        <source src="/intro.mp4?v=5" type="video/mp4"/>
                     </video>
                 </div>
 
@@ -357,4 +350,3 @@ export default function Home() {
         </section>
     </>);
 }
-
