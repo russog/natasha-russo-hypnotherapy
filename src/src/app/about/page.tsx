@@ -122,6 +122,40 @@ export default function About() {
                     </Card>
                 </div>
 
+                <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6">
+                    <Card className="mx-auto max-w-5xl">
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            Qualifications and professional memberships
+                        </h2>
+
+                        <p className="text-stone-700">
+                            My professional background and training include:
+                        </p>
+
+                        <ul className="mt-5 list-disc space-y-3 pl-6 text-stone-700">
+                            <li>BSc Psychology</li>
+                            <li>MSc Cross-Cultural Psychology</li>
+                            <li>Graduate Member of the British Psychological Society (BPS)</li>
+                            <li>Level 5 Diploma in Cognitive Behavioural Hypnotherapy</li>
+                            <li>
+                                Cognitive Behavioural Hypnotherapy training completed with the UK College of Hypnosis
+                                and Hypnotherapy on a BPS CPD-approved programme
+                            </li>
+                            <li>
+                                Member of the{" "}
+                                <Link
+                                    href="https://www.the-ncip.org/member-of-ncip/natasha-russo?from=badge"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    National Council of Integrative Psychotherapists
+                                </Link>{" "}
+                                (NCIP)
+                            </li>
+                        </ul>
+                    </Card>
+                </div>
+
                 <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-10">
                     <p className="mt-6 mx-auto text-stone-700 italic text-center max-w-xl">
                         If you’d like to understand more about how sessions work in practice,
