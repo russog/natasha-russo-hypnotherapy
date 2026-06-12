@@ -40,7 +40,9 @@ export default function Footer() {
                         <p>
                             BSc Psychology <span className="mx-1">•</span> MSc Cross-Cultural Psychology
                         </p>
-                        <p>Level 5 Diploma in Cognitive Behavioural Hypnotherapy</p>
+                        <p>
+                            Level 5 Diploma in Cognitive Behavioural Hypnotherapy (BPS CPD-approved training programme)
+                        </p>
 
                         <p>
                             Listed on the <Link
