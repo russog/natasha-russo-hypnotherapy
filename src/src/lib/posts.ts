@@ -19,7 +19,95 @@ export type Post = {
     content: string;
 };
 
+export type RelatedPostLink = {
+    slug: string;
+    title: string;
+};
+
 const postsDir = path.join(process.cwd(), "src", "content", "posts");
+
+const relatedPostSlugs: Record<string, string[]> = {
+    "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it": [
+        "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
+        "why-switching-off-at-night-Is-harder-than-it-should-be",
+        "when-everything-feels-like-it-needs-your-attention",
+    ],
+    "why-switching-off-at-night-Is-harder-than-it-should-be": [
+        "does-rest-feel-uncomfortable-even-when-you-desperately-need-it",
+        "why-overthinking-is-so-hard-to-stop",
+        "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
+    ],
+    "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping": [
+        "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
+        "does-rest-feel-uncomfortable-even-when-you-desperately-need-it",
+        "when-everything-feels-like-it-needs-your-attention",
+    ],
+    "when-thinking-becomes-overthinking": [
+        "why-overthinking-is-so-hard-to-stop",
+        "why-overthinking-turns-toward-what-if-scenarios",
+        "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
+    ],
+    "why-overthinking-is-so-hard-to-stop": [
+        "when-thinking-becomes-overthinking",
+        "why-overthinking-turns-toward-what-if-scenarios",
+        "understanding-the-safety-behaviours-that-keep-anxiety-going",
+    ],
+    "why-overthinking-turns-toward-what-if-scenarios": [
+        "why-overthinking-is-so-hard-to-stop",
+        "understanding-the-safety-behaviours-that-keep-anxiety-going",
+        "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
+    ],
+    "understanding-the-safety-behaviours-that-keep-anxiety-going": [
+        "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
+        "why-overthinking-is-so-hard-to-stop",
+        "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
+    ],
+    "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen": [
+        "understanding-the-safety-behaviours-that-keep-anxiety-going",
+        "why-overthinking-is-so-hard-to-stop",
+        "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
+    ],
+    "does-rest-feel-uncomfortable-even-when-you-desperately-need-it": [
+        "why-switching-off-at-night-Is-harder-than-it-should-be",
+        "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
+        "when-everything-feels-like-it-needs-your-attention",
+    ],
+    "when-everything-feels-like-it-needs-your-attention": [
+        "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
+        "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
+        "does-rest-feel-uncomfortable-even-when-you-desperately-need-it",
+    ],
+    "when-you-know-you-can-but-still-feel-unsure": [
+        "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
+        "feeling-stuck-even-when-trying-to-move-forward",
+        "when-conversations-start-feeling-too-self-conscious",
+    ],
+    "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing": [
+        "when-you-know-you-can-but-still-feel-unsure",
+        "feeling-stuck-even-when-trying-to-move-forward",
+        "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life",
+    ],
+    "feeling-stuck-even-when-trying-to-move-forward": [
+        "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
+        "when-you-know-you-can-but-still-feel-unsure",
+        "why-overthinking-is-so-hard-to-stop",
+    ],
+    "when-conversations-start-feeling-too-self-conscious": [
+        "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life",
+        "when-you-know-you-can-but-still-feel-unsure",
+        "why-overthinking-turns-toward-what-if-scenarios",
+    ],
+    "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life": [
+        "when-conversations-start-feeling-too-self-conscious",
+        "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
+        "when-you-know-you-can-but-still-feel-unsure",
+    ],
+    "making-sense-of-hypnotherapy": [
+        "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
+        "why-overthinking-is-so-hard-to-stop",
+        "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life",
+    ],
+};
 
 
 
@@ -49,4 +137,17 @@ export function getAllPosts(): Post[] {
     // newest first
     posts.sort((a, b) => (a.frontmatter.date < b.frontmatter.date ? 1 : -1));
     return posts;
+}
+
+export function getRelatedPostsBySlug(slug: string): RelatedPostLink[] {
+    const relatedSlugs = relatedPostSlugs[slug] ?? [];
+
+    return relatedSlugs.map((relatedSlug) => {
+        const post = getPostBySlug(relatedSlug);
+
+        return {
+            slug: relatedSlug,
+            title: post.frontmatter.title,
+        };
+    });
 }

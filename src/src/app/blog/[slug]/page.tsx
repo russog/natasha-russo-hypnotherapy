@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import {notFound} from "next/navigation";
 import {MDXRemote} from "next-mdx-remote/rsc";
-import {getAllPostSlugs, getPostBySlug} from "@/lib/posts";
+import {getAllPostSlugs, getPostBySlug, getRelatedPostsBySlug} from "@/lib/posts";
 import type {Metadata} from "next";
 import {site} from "@/lib/site";
+import type {ComponentPropsWithoutRef} from "react";
 
 function formatDate(dateStr: string) {
     const d = new Date(dateStr);
@@ -13,6 +14,37 @@ function formatDate(dateStr: string) {
         month: "short",
         year: "numeric",
     });
+}
+
+const contactSectionPattern = /\n---\n\n(?=If this resonates)/;
+
+const mdxComponents = {
+    ul: (props: ComponentPropsWithoutRef<"ul">) => (
+        <ul
+            {...props}
+            style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}
+        />
+    ),
+    ol: (props: ComponentPropsWithoutRef<"ol">) => (
+        <ol
+            {...props}
+            style={{ listStyleType: "decimal", paddingLeft: "1.5rem" }}
+        />
+    ),
+    li: (props: ComponentPropsWithoutRef<"li">) => <li {...props} style={{ margin: "0.25rem 0" }} />,
+};
+
+const mdxOptions = {
+    mdxOptions: { remarkPlugins: [], rehypePlugins: [] },
+};
+
+function splitContactSection(content: string) {
+    const [body, contact] = content.split(contactSectionPattern);
+
+    return {
+        body,
+        contact,
+    };
 }
 
 export function generateStaticParams() {
@@ -74,8 +106,8 @@ export default async function BlogPostPage({
         notFound();
     }
 
-    // Debug: Check if line breaks are in the content
-    console.log('Content preview:', post.content.substring(0, 500));
+    const relatedPosts = getRelatedPostsBySlug(slug);
+    const {body, contact} = splitContactSection(post.content);
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -148,27 +180,51 @@ export default async function BlogPostPage({
                         <div
                             className="prose prose-stone mt-10 max-w-none prose-a:no-underline prose-h2:mb-4 prose-h3:mb-3 [&_p]:mb-6 [&_p]:leading-relaxed">
                             <MDXRemote
-                                source={post.content}
-                                components={{
-                                    ul: (props) => (
-                                        <ul
-                                            {...props}
-                                            style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}
-                                        />
-                                    ),
-                                    ol: (props) => (
-                                        <ol
-                                            {...props}
-                                            style={{ listStyleType: "decimal", paddingLeft: "1.5rem" }}
-                                        />
-                                    ),
-                                    li: (props) => <li {...props} style={{ margin: "0.25rem 0" }} />,
-                                }}
-                                options={{
-                                    mdxOptions: { remarkPlugins: [], rehypePlugins: [] },
-                                }}
+                                source={body}
+                                components={mdxComponents}
+                                options={mdxOptions}
                             />
                         </div>
+
+                        {relatedPosts.length ? (
+                            <section
+                                aria-labelledby="related-articles-heading"
+                                className="mt-10 border-t border-neutral-200 pt-8"
+                            >
+                                <h2
+                                    id="related-articles-heading"
+                                    className="text-xl font-medium leading-snug text-neutral-800"
+                                >
+                                    You may also find these articles helpful
+                                </h2>
+
+                                <ul className="mt-5 space-y-3">
+                                    {relatedPosts.map((relatedPost) => (
+                                        <li key={relatedPost.slug}>
+                                            <Link
+                                                href={`/blog/${relatedPost.slug}`}
+                                                className="text-stone-700 underline underline-offset-4 transition hover:text-neutral-900"
+                                            >
+                                                {relatedPost.title}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </section>
+                        ) : null}
+
+                        {contact ? (
+                            <div
+                                className="prose prose-stone mt-8 max-w-none prose-a:no-underline [&_p]:mb-6 [&_p]:leading-relaxed"
+                            >
+                                <hr />
+                                <MDXRemote
+                                    source={contact}
+                                    components={mdxComponents}
+                                    options={mdxOptions}
+                                />
+                            </div>
+                        ) : null}
                     </div>
                 </article>
             </div>
