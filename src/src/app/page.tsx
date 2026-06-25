@@ -210,6 +210,11 @@ export default function Home() {
                                         things 'wrong', while others assume you're coping just fine.
                                     </p>
                                     <p className="mt-2">
+                                        Many capable people also find themselves overlooking their own progress, quickly
+                                        moving on from achievements, or feeling as though what they have done is never
+                                        quite enough. You can read more about this in <Link href="/blog/why-it-never-feels-like-enough" className="underline underline-offset-2 hover:no-underline">Why It Never Feels Like Enough</Link>.
+                                    </p>
+                                    <p className="mt-2">
                                         Here, with me, confidence is not treated as something you either have or don't
                                         have. Instead, we look at the patterns of thinking, expectation, and
                                         self-evaluation that shape how you relate to yourself. By understanding how

@@ -24,9 +24,11 @@ export type RelatedPostLink = {
     title: string;
 };
 
+type RelatedPostRef = string | RelatedPostLink;
+
 const postsDir = path.join(process.cwd(), "src", "content", "posts");
 
-const relatedPostSlugs: Record<string, string[]> = {
+const relatedPostSlugs: Record<string, RelatedPostRef[]> = {
     "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it": [
         "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
         "why-switching-off-at-night-Is-harder-than-it-should-be",
@@ -40,7 +42,7 @@ const relatedPostSlugs: Record<string, string[]> = {
     "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping": [
         "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
         "does-rest-feel-uncomfortable-even-when-you-desperately-need-it",
-        "when-everything-feels-like-it-needs-your-attention",
+        "why-it-never-feels-like-enough",
     ],
     "when-thinking-becomes-overthinking": [
         "why-overthinking-is-so-hard-to-stop",
@@ -70,12 +72,21 @@ const relatedPostSlugs: Record<string, string[]> = {
     "does-rest-feel-uncomfortable-even-when-you-desperately-need-it": [
         "why-switching-off-at-night-Is-harder-than-it-should-be",
         "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
-        "when-everything-feels-like-it-needs-your-attention",
+        "why-it-never-feels-like-enough",
     ],
     "when-everything-feels-like-it-needs-your-attention": [
         "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
         "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
-        "does-rest-feel-uncomfortable-even-when-you-desperately-need-it",
+        "why-it-never-feels-like-enough",
+    ],
+    "why-it-never-feels-like-enough": [
+        {
+            slug: "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
+            title: "How Confidence Actually Builds",
+        },
+        "when-you-know-you-can-but-still-feel-unsure",
+        "feeling-stuck-even-when-trying-to-move-forward",
+        "when-everything-feels-like-it-needs-your-attention",
     ],
     "when-you-know-you-can-but-still-feel-unsure": [
         "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
@@ -140,9 +151,14 @@ export function getAllPosts(): Post[] {
 }
 
 export function getRelatedPostsBySlug(slug: string): RelatedPostLink[] {
-    const relatedSlugs = relatedPostSlugs[slug] ?? [];
+    const relatedRefs = relatedPostSlugs[slug] ?? [];
 
-    return relatedSlugs.map((relatedSlug) => {
+    return relatedRefs.map((relatedRef) => {
+        if (typeof relatedRef !== "string") {
+            return relatedRef;
+        }
+
+        const relatedSlug = relatedRef;
         const post = getPostBySlug(relatedSlug);
 
         return {
