@@ -10,7 +10,6 @@ export default function sitemap() {
         { url: `${site.url}/about`, lastModified: now },
         { url: `${site.url}/working-with-me`, lastModified: now },
         { url: `${site.url}/blog`, lastModified: now },
-        { url: `${site.url}/testimonials`, lastModified: now },
         { url: `${site.url}/faq`, lastModified: now },
         { url: `${site.url}/contact`, lastModified: now },
         { url: `${site.url}/fees-cancellation`, lastModified: now },
