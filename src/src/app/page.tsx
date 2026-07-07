@@ -315,6 +315,42 @@ export default function Home() {
                     </p>
                 </Card>
 
+                <Card className="bg-emerald-50/50">
+
+                    <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                        What clients say
+                    </h2>
+
+                    <p className="mt-4 text-stone-700 font-medium">Anxiety and overthinking</p>
+                    <p className="mt-2 text-stone-700 italic max-w-3xl">
+                        “Natasha was calm, supportive, and completely non-judgemental. She taught me practical techniques that genuinely help when I feel anxious.”
+                        <br />— L.W
+                    </p>
+
+                    <p className="mt-4 text-stone-700 font-medium">Assertiveness and communication</p>
+                    <p className="mt-2 text-stone-700 italic max-w-3xl">
+                        “Our work on assertiveness gave me practical tools I still use today. Natasha combines warmth with real professionalism, and I’d happily recommend her.”
+                        <br />— Su
+                    </p>
+
+                    <p className="mt-4 text-stone-700 font-medium">Feeling more in control</p>
+                    <p className="mt-2 text-stone-700 italic max-w-3xl">
+                        “Natasha helped me feel safe, supported, and in control throughout. Her calm, professional approach gave me practical tools and powerful insights that led to real progress.”
+                        <br />— S.C
+                    </p>
+
+                    <p className="mt-4 text-stone-700 font-medium">Letting go of guilt and pressure</p>
+                    <p className="mt-2 text-stone-700 italic max-w-3xl">
+                        “I feel much less guilty when I want to relax. Natasha helped me set an achievable, realistic goal and was flexible with exercises, making sure I got the most from each session.”
+                        <br />— I.D
+                    </p>
+                    <p className="mt-6 text-stone-700 italic">
+                        Read more in <Link
+                        href="/testimonials">
+                        Client Testimonials
+                    </Link>
+                    </p>
+                </Card>
             </div>
         </section>
     </>);
