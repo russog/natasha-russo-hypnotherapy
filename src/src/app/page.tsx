@@ -223,6 +223,16 @@ export default function Home() {
                                         relationship with your thoughts - one that allows confidence to grow gradually,
                                         without pressure to 'perform' or push yourself beyond what feels manageable.
                                     </p>
+                                    <p className="mt-2">
+                                        If you’ve ever wondered why small everyday experiences can gradually shape
+                                        confidence and self-doubt, you may also find this article helpful:{" "}
+                                        <Link
+                                            href="/blog/why-do-we-take-things-so-personally"
+                                            className="underline underline-offset-2 hover:no-underline"
+                                        >
+                                            Why Do We Take Things So Personally?
+                                        </Link>
+                                    </p>
                                 </>
                             }
                         />
