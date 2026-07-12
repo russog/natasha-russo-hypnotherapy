@@ -98,6 +98,14 @@ const relatedPostSlugs: Record<string, RelatedPostRef[]> = {
         "feeling-stuck-even-when-trying-to-move-forward",
         "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life",
     ],
+    "why-do-we-take-things-so-personally": [
+        "when-thinking-becomes-overthinking",
+        "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
+        {
+            slug: "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
+            title: "How Confidence Actually Builds (and Why It Doesn’t Start with Feeling Confident)",
+        },
+    ],
     "feeling-stuck-even-when-trying-to-move-forward": [
         "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
         "when-you-know-you-can-but-still-feel-unsure",
