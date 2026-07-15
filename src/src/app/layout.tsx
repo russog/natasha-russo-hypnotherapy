@@ -1,5 +1,4 @@
 import type {Metadata} from "next";
-import Script from "next/script";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
@@ -7,6 +6,7 @@ import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/components/Footer";
 import { site } from "@/lib/site";
+import CookieBanner from "@/app/components/CookieBanner";
 
 const headingFont = Playfair_Display({
     subsets: ["latin"],
@@ -71,8 +71,6 @@ const navSchema = {
     })),
 };
 
-const GA_MEASUREMENT_ID = "G-9K50BFF40N";
-
 export const metadata: Metadata = {
     metadataBase: new URL(site.url),
     title: {
@@ -106,18 +104,6 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
         <body className="min-h-screen flex flex-col">
-        <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}');
-            `}
-        </Script>
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -142,6 +128,7 @@ export default function RootLayout({
             </section>
             <Footer />
         </main>
+        <CookieBanner />
         </body>
         </html>
     );
