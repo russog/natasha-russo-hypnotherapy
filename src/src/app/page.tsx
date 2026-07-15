@@ -260,7 +260,7 @@ export default function Home() {
                         </li>
                         <li className="flex gap-3">
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>Phobias and specific fears
+                            <span>Managing specific fears
               </span>
                         </li>
                         <li className="flex gap-3">
