@@ -80,32 +80,32 @@ export default function CookieBanner() {
             {choice === null ? (
                 <section
                     aria-label="Cookie notice"
-                    className="fixed inset-x-0 bottom-0 z-50 border-t border-[#4F5A54]/20 bg-white/95 px-4 py-4 shadow-[0_-8px_30px_rgba(15,23,42,0.08)] backdrop-blur sm:px-6"
+                    className="fixed inset-x-0 bottom-0 z-50 border-t border-[#4F5A54]/20 bg-white/95 px-4 py-2.5 shadow-[0_-6px_20px_rgba(15,23,42,0.06)] backdrop-blur sm:px-5"
                 >
-                    <div className="mx-auto flex max-w-6xl flex-col gap-4 text-neutral-800 md:flex-row md:items-center md:justify-between">
-                        <div className="max-w-3xl space-y-1">
-                            <h2 className="text-lg font-medium text-neutral-900">Cookies</h2>
-                            <p className="text-sm leading-relaxed sm:text-base">
+                    <div className="mx-auto flex max-w-6xl flex-col gap-2.5 text-neutral-800 md:flex-row md:items-center md:justify-between">
+                        <div className="max-w-3xl">
+                            <h2 className="text-sm font-medium leading-snug text-neutral-900">Cookies</h2>
+                            <p className="text-xs leading-snug sm:text-sm">
                                 I use essential cookies to keep the website working and optional analytics cookies
                                 to understand how visitors use the site. You can accept or decline analytics cookies.
                             </p>
-                            <Link href="/privacy-policy" className="text-sm font-bold underline">
+                            <Link href="/privacy-policy" className="text-xs font-bold underline sm:text-sm">
                                 Read the privacy policy
                             </Link>
                         </div>
 
-                        <div className="flex flex-col gap-2 sm:flex-row md:justify-end">
+                        <div className="flex flex-col gap-1.5 sm:flex-row md:justify-end">
                             <button
                                 type="button"
                                 onClick={() => saveChoice("declined")}
-                                className="inline-flex min-h-11 items-center justify-center border border-[#4F5A54]/40 px-5 py-2 text-sm font-semibold text-[#4F5A54] transition hover:border-[#4F5A54] hover:bg-[#4F5A54]/5"
+                                className="inline-flex min-h-9 items-center justify-center border border-[#4F5A54]/40 px-4 py-1.5 text-xs font-semibold text-[#4F5A54] transition hover:border-[#4F5A54] hover:bg-[#4F5A54]/5 sm:text-sm"
                             >
                                 Decline
                             </button>
                             <button
                                 type="button"
                                 onClick={() => saveChoice("accepted")}
-                                className="inline-flex min-h-11 items-center justify-center bg-[#4F5A54] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#3f4843]"
+                                className="inline-flex min-h-9 items-center justify-center bg-[#4F5A54] px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-[#3f4843] sm:text-sm"
                             >
                                 Accept cookies
                             </button>
