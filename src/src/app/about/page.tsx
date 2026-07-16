@@ -20,12 +20,12 @@ export default function About() {
 
             <div className="mt-8 sm:mt-10 md:grid md:grid-cols-2 md:auto-rows-min">
                 <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
-                    <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-lg border border-white/70 mt-3 shadow-[0_18px_45px_rgba(79,90,84,0.18)]">
+                    <div className="relative w-[70%] sm:w-[60%] md:w-[52%] lg:w-[64%] aspect-[1/1.1] overflow-hidden rounded-lg border border-white/70 mt-3 shadow-[0_18px_45px_rgba(79,90,84,0.18)]">
                         <Image
-                            src="/me-sharpened-strong.webp"
+                            src="/about-natasha-green-cardigan-sharp.webp"
                             alt="Natasha Russo"
                             fill
-                            className="object-cover object-center"
+                            className="object-cover object-top"
                             sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
                             priority
                         />
