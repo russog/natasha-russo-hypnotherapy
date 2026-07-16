@@ -20,7 +20,7 @@ export default function SmokingCessationPage() {
           </h1>
         </div>
 
-        <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-10 mb-20">
+        <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-12 mb-20">
           <Card>
             <p className="text-stone-700 leading-relaxed">
               Many people want to stop smoking yet find that the habit can be difficult to change. Over time, smoking often becomes linked to daily routines, emotional cues, and expectations about relief or reward. Because of this, the habit can persist even when someone feels strongly motivated to stop.

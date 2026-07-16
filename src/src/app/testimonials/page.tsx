@@ -17,7 +17,7 @@ export default function WorkingWithMe() {
                 <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                     Client Testimonials
                 </h1>
-                <Card className="h-full flex flex-col mt-10">
+                <Card className="h-full flex flex-col mt-12">
                     <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “My hypnotherapy sessions with Natasha were calm, open, and supportive. I felt at ease with her
                         straight away. Over time, we built a positive therapeutic relationship, and I felt very
@@ -29,7 +29,7 @@ export default function WorkingWithMe() {
                         — L.W
                     </p>
                 </Card>
-                <Card className="h-full flex flex-col mt-20">
+                <Card className="h-full flex flex-col mt-12">
                     <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “I had the opportunity to work with Natasha, and the experience was genuinely insightful. She
                         created a calm, supportive space while also helping me look at situations in a practical and
@@ -41,7 +41,7 @@ export default function WorkingWithMe() {
                         — Su
                     </p>
                 </Card>
-                <Card className="h-full flex flex-col mt-20">
+                <Card className="h-full flex flex-col mt-12">
                     <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “Natasha was patient, reassuring, and an excellent listener. Her calm manner helped me feel
                         relaxed and safe in a confidential space. I really valued the way she used thoughtful questions
@@ -62,7 +62,7 @@ export default function WorkingWithMe() {
                     </p>
                 </Card>
 
-                <Card className="h-full flex flex-col mt-20">
+                <Card className="h-full flex flex-col mt-12">
                     <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 italic sm:text-2xl">
                         “Natasha helped me build trust and feel at ease in sessions. I am feeling a lot less guilty
                         when I want to relax, and we set a goal that was achievable and realistic. She was very

@@ -25,7 +25,7 @@ export default function WorkingWithMe() {
           </p>
         </div>
 
-        <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-10 mb-20">
+        <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-12 mb-20">
           <Card>
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               How the work usually unfolds

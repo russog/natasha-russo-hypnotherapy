@@ -18,46 +18,46 @@ export default function About() {
                 <h1 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">About me</h1>
             </div>
 
-            <div className="mt-8 sm:mt-10 md:grid md:grid-cols-2 md:auto-rows-min">
-                <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
-                    <div className="relative w-[70%] sm:w-[60%] md:w-[52%] lg:w-[64%] aspect-[1/1.1] overflow-hidden rounded-lg border border-white/70 mt-3 shadow-[0_18px_45px_rgba(79,90,84,0.18)]">
+            <div className="mx-auto mt-8 max-w-6xl px-5 sm:mt-10 md:grid md:grid-cols-2 md:auto-rows-min md:items-stretch md:gap-6 lg:px-6">
+                <div className="mx-auto flex w-full justify-center md:row-start-1 md:col-start-1">
+                    <div className="relative w-full max-w-[410px] aspect-[4/5] overflow-hidden rounded-lg border border-white/70 shadow-[0_18px_45px_rgba(79,90,84,0.18)] md:max-w-none">
                         <Image
                             src="/about-natasha-green-cardigan-sharp.webp"
                             alt="Natasha Russo"
                             fill
                             className="object-cover object-top"
-                            sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
+                            sizes="(min-width: 768px) 45vw, 80vw"
                             priority
                         />
                     </div>
                 </div>
 
-                <div className="relative z-10 mt-5 md:mt-24 mx-auto max-w-5xl px-6 md:row-start-1 md:col-start-2">
-                    <Card className="mx-auto md:ml-10">
-                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                <div className="relative z-10 mt-5 mx-auto flex w-full justify-center md:row-start-1 md:col-start-2 md:mt-0">
+                    <Card className="mx-auto flex w-full max-w-[410px] flex-col justify-center px-5 py-8 md:aspect-[4/5] md:max-w-none md:px-7 md:py-9">
+                        <h2 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Meet Natasha
                         </h2>
 
-                        <p className="mt-6 text-stone-700">
+                        <p className="mt-5 text-stone-700">
                             Hi, I’m Natasha — a cognitive-behavioural hypnotherapist.
                         </p>
-                        <p className="mt-6 text-stone-700">
+                        <p className="mt-4 text-stone-700">
                             I’m someone who tends to listen carefully, think things through, and take people seriously.
                             I’m interested in how our inner worlds work, particularly when thoughts feel repetitive,
                             confusing, or harder to manage than we’d like.
                         </p>
-                        <p className="mt-6 text-stone-700">
+                        <p className="mt-4 text-stone-700">
                             People who meet me often notice that I’m calm, attentive, and direct in a gentle way. I
                             value clarity and understanding over quick solutions or dramatic techniques.
                         </p>
-                        <p className="mt-6 text-stone-700">
+                        <p className="mt-4 text-stone-700">
                             My aim is to offer a space that feels steady and respectful — somewhere you can slow things
                             down, think more clearly, and explore what’s going on without pressure or judgement.
                         </p>
                     </Card>
                 </div>
 
-                <div className="order-4 md:order-none mt-8 sm:mt-10 md:mt-24 mx-auto max-w-5xl px-6 md:row-start-2 md:col-start-1 md:w-full">
+                <div className="order-4 md:order-none mt-12 mx-auto max-w-5xl md:row-start-2 md:col-start-1 md:w-full">
                     <Card className="h-full flex flex-col">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             My style
@@ -88,8 +88,8 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="order-3 md:order-none relative z-10 mt-8 sm:mt-10 md:mt-24 mx-auto max-w-5xl px-6 md:row-start-2 md:col-start-2">
-                    <Card className="h-full flex flex-col mt-0 md:ml-10">
+                <div className="order-3 md:order-none relative z-10 mt-12 mx-auto max-w-5xl md:row-start-2 md:col-start-2">
+                    <Card className="h-full flex flex-col mt-0 w-full">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             How I came to this work
                         </h2>
@@ -122,7 +122,7 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="relative z-10 mt-8 sm:mt-10 md:mt-24 md:col-span-2 px-6">
+                <div className="relative z-10 mt-12 md:col-span-2">
                     <Card className="mx-auto max-w-5xl">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Qualifications and professional memberships
@@ -156,7 +156,7 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6 mb-10">
+                <div className="relative z-10 mt-12 md:col-span-2 px-6 mb-10">
                     <p className="mt-6 mx-auto text-stone-700 italic text-center max-w-xl">
                         If you’d like to understand more about how sessions work in practice,
                         <br/>
