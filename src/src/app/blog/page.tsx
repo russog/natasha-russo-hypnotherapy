@@ -38,25 +38,26 @@ export default function BlogIndexPage() {
                     overthinking, confidence, and related patterns.
                 </p>
 
-                <section className="mt-8 grid gap-8 sm:grid-cols-2">
+                <section className="mt-10 grid gap-7 sm:grid-cols-2">
                     {posts.map((post) => (
                         <Link
                             key={post.slug}
                             href={`/blog/${post.slug}`}
-                            className="group overflow-hidden rounded-lg border border-[#DDE8DD] bg-white/82 shadow-[0_12px_30px_rgba(79,90,84,0.08)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_38px_rgba(79,90,84,0.12)] !no-underline"
+                            className="group overflow-hidden rounded-lg border border-[#D7E2D7] bg-white/86 shadow-[0_12px_30px_rgba(79,90,84,0.08)] transition hover:-translate-y-0.5 hover:border-[#C9D8CB] hover:shadow-[0_16px_38px_rgba(79,90,84,0.12)] !no-underline"
                         >
                             {post.frontmatter.coverImage ? (
-                                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#EEF4ED]">
+                                <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#EEF4ED]">
                                     <Image
                                         src={post.frontmatter.coverImage}
                                         alt={post.frontmatter.title}
                                         fill
-                                        className="object-cover saturate-[0.88] contrast-[0.98] transition duration-300 group-hover:scale-[1.015]"
+                                        className="object-cover saturate-[0.9] contrast-[0.98] transition duration-300 group-hover:scale-[1.015]"
+                                        sizes="(min-width: 640px) 50vw, 100vw"
                                     />
                                 </div>
                             ) : null}
 
-                            <div className="p-6">
+                            <div className="p-6 md:p-7">
                                 <div className="text-sm text-stone-500">
                                     {formatDate(post.frontmatter.date)}
                                 </div>

@@ -42,14 +42,14 @@ export default function Home() {
                 <div className="mt-10 flex justify-center">
                     <Link
                         href="/contact"
-                        className="inline-flex items-center justify-center rounded-lg bg-[#4F5A54] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#3F4843] focus:outline-none focus:ring-2 focus:ring-[#8EA095] focus:ring-offset-2">
+                        className="inline-flex items-center justify-center rounded-lg bg-[#4F5A54] px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(79,90,84,0.14)] transition hover:-translate-y-0.5 hover:bg-[#3F4843] hover:shadow-[0_14px_30px_rgba(79,90,84,0.18)] focus:outline-none focus:ring-2 focus:ring-[#8EA095] focus:ring-offset-2">
                         Book a free 20-minute chat
                     </Link>
                 </div>
             </div>
 
         </section>
-        <section className="py-10 sm:py-14 relative z-10">
+        <section className="py-12 sm:py-16 relative z-10">
             <div className="mx-auto max-w-5xl px-4">
                 <div className="grid gap-10 md:grid-cols-[5fr_7fr] md:gap-12 md:items-start">
                     <div className="flex md:block justify-center">
@@ -84,7 +84,7 @@ export default function Home() {
                         <div className="pt-2">
                             <Link
                                 href="/working-with-me"
-                                className="inline-flex items-center justify-center rounded-lg bg-[#4F5A54] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#3F4843] focus:outline-none focus:ring-2 focus:ring-[#8EA095] focus:ring-offset-2"
+                                className="inline-flex items-center justify-center rounded-lg bg-[#4F5A54] px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(79,90,84,0.14)] transition hover:-translate-y-0.5 hover:bg-[#3F4843] hover:shadow-[0_14px_30px_rgba(79,90,84,0.18)] focus:outline-none focus:ring-2 focus:ring-[#8EA095] focus:ring-offset-2"
                             >
                                 Learn more about how I work
                             </Link>
@@ -94,9 +94,9 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="relative pb-12 overflow-hidden isolate">
+        <section className="relative border-t border-[#E8DED7]/60 py-12 sm:py-14 overflow-hidden isolate">
 
-            <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-10 mt-5">
+            <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-12">
                 <Card>
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         Does any of this sound familiar?
