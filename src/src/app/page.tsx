@@ -347,7 +347,7 @@ export default function Home() {
                     </p>
                 </Card>
 
-                <Card className="border-[#EADCD6] !bg-[#FAF0EC] shadow-[0_18px_42px_rgba(112,82,68,0.05)]">
+                <Card className="border-[#EEE4DF] !bg-[#FCF5F1] shadow-[0_18px_42px_rgba(112,82,68,0.04)]">
 
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         What clients say
