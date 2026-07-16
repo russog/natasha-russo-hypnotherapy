@@ -18,11 +18,11 @@ export default function About() {
                 <h1 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">About me</h1>
             </div>
 
-            <div className="md:grid md:grid-cols-2 md:auto-rows-min">
+            <div className="mt-8 sm:mt-10 md:grid md:grid-cols-2 md:auto-rows-min">
                 <div className="md:mt-15 mx-auto md:ml-5 md:row-start-1 md:col-start-1 w-full flex justify-center">
-                    <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-full border-2 mt-3">
+                    <div className="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[75%] aspect-square overflow-hidden rounded-lg border border-white/70 mt-3 shadow-[0_18px_45px_rgba(79,90,84,0.18)]">
                         <Image
-                            src="/about-new-square.jpg"
+                            src="/me-sharpened-strong.webp"
                             alt="Natasha Russo"
                             fill
                             className="object-cover object-center"

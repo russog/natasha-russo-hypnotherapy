@@ -140,14 +140,14 @@ export default async function BlogPostPage({
                     ← Back to blog
                 </Link>
 
-                <article className="mt-6 overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm">
+                <article className="mt-6 overflow-hidden rounded-lg border border-[#DDE8DD] bg-white/85 shadow-[0_14px_34px_rgba(79,90,84,0.09)]">
                     {post.frontmatter.coverImage ? (
-                        <div className="relative aspect-[16/10] w-full">
+                        <div className="relative aspect-[4/3] w-full bg-[#EEF4ED] sm:aspect-[16/9]">
                             <Image
                                 src={post.frontmatter.coverImage}
                                 alt={post.frontmatter.title}
                                 fill
-                                className="object-cover"
+                                className="object-cover saturate-[0.88] contrast-[0.98]"
                                 priority
                             />
                         </div>
@@ -169,7 +169,7 @@ export default async function BlogPostPage({
                                 {post.frontmatter.tags.map((t) => (
                                     <span
                                         key={t}
-                                        className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs text-stone-600"
+                                    className="rounded-full border border-[#DDE8DD] bg-[#F5F8F2] px-3 py-1 text-xs text-stone-600"
                                     >
                                             {t}
                                         </span>

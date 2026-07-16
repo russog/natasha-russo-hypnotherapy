@@ -4,6 +4,7 @@ import React from "react";
 import type { Metadata } from "next";
 import {Card} from "@/app/components/card";
 import ExpandableMiniCard from "@/app/components/ExpandableMiniCard";
+import { FiCompass, FiMessageCircle, FiMoon, FiRepeat, FiSlash, FiTarget, FiWind } from "react-icons/fi";
 
 export const metadata: Metadata = {
     title: "Cognitive Behavioural Hypnotherapy | Natasha Russo",
@@ -41,7 +42,7 @@ export default function Home() {
                 <div className="mt-10 flex justify-center">
                     <Link
                         href="/contact"
-                        className="inline-flex items-center justify-center rounded-xl bg-neutral-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2">
+                        className="inline-flex items-center justify-center rounded-lg bg-[#4F5A54] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#3F4843] focus:outline-none focus:ring-2 focus:ring-[#8EA095] focus:ring-offset-2">
                         Book a free 20-minute chat
                     </Link>
                 </div>
@@ -53,14 +54,13 @@ export default function Home() {
                 <div className="grid gap-10 md:grid-cols-[5fr_7fr] md:gap-12 md:items-start">
                     <div className="flex md:block justify-center">
                         <div
-                            className="relative w-full aspect-4/5 md:aspect-auto md:h-100 md:row-start-1 md:col-start-1 flex items-center justify-center">
+                            className="relative w-full max-w-[340px] aspect-[4/5] overflow-hidden rounded-lg border border-white/70 shadow-[0_18px_45px_rgba(79,90,84,0.18)] md:row-start-1 md:col-start-1">
                             <Image
-                                src="/me.webp"
+                                src="/about-new.jpg"
                                 alt="Natasha Russo"
-                                width={360}
-                                height={540}
+                                fill
                                 sizes="(min-width: 768px) 40vw, 80vw"
-                                className="rounded-sm w-full max-w-[340px] h-auto"
+                                className="object-cover object-[50%_32%]"
                                 priority
                             />
                         </div>
@@ -84,7 +84,7 @@ export default function Home() {
                         <div className="pt-2">
                             <Link
                                 href="/working-with-me"
-                                className="inline-flex items-center justify-center rounded-xl bg-neutral-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2"
+                                className="inline-flex items-center justify-center rounded-lg bg-[#4F5A54] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#3F4843] focus:outline-none focus:ring-2 focus:ring-[#8EA095] focus:ring-offset-2"
                             >
                                 Learn more about how I work
                             </Link>
@@ -144,7 +144,8 @@ export default function Home() {
                     </video>
                 </div>
 
-                <Card className="bg-white/70">
+                <div id="support-icons" className="scroll-mt-8">
+                <Card className="bg-[#F3F8F2]/90">
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         How I can help
                     </h2>
@@ -157,6 +158,7 @@ export default function Home() {
                     <div className="mt-8 grid gap-6 md:grid-cols-3">
                         <ExpandableMiniCard
                             title="Anxiety"
+                            iconName="anxiety"
                             body="Support to reduce ongoing worry, calm your nervous system, and feel more at ease day-to-day."
                             details={
                                 <>
@@ -177,6 +179,7 @@ export default function Home() {
                         />
                         <ExpandableMiniCard
                             title="Overthinking"
+                            iconName="overthinking"
                             body="Help stepping out of mental loops and developing a more flexible relationship with your thoughts."
                             details={
                                 <>
@@ -200,6 +203,7 @@ export default function Home() {
                         />
                         <ExpandableMiniCard
                             title="Confidence & self-doubt"
+                            iconName="confidence"
                             body="Support to build inner confidence, reduce self-criticism, and trust your own judgement more."
                             details={
                                 <>
@@ -241,8 +245,10 @@ export default function Home() {
 
 
                 </Card>
+                </div>
 
-                <Card className="bg-emerald-50/50">
+                <div id="support-list" className="scroll-mt-8">
+                <Card className="bg-[#F7F4EE]/90">
 
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         Areas people often seek support for
@@ -255,32 +261,46 @@ export default function Home() {
 
                     <ul className="mt-6 space-y-4 text-stone-700">
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
+                                <FiWind className="h-4 w-4" aria-hidden="true" />
+                            </span>
                             <span>Stress and life transitions</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
+                                <FiTarget className="h-4 w-4" aria-hidden="true" />
+                            </span>
                             <span>Managing specific fears
               </span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
+                                <FiRepeat className="h-4 w-4" aria-hidden="true" />
+                            </span>
                             <span>Habits you'd like to change</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
+                                <FiSlash className="h-4 w-4" aria-hidden="true" />
+                            </span>
                             <span>Stopping smoking (<Link href="/smoking-cessation" className="underline underline-offset-2 hover:no-underline">smoking cessation</Link>)</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
+                                <FiMoon className="h-4 w-4" aria-hidden="true" />
+                            </span>
                             <span>Difficulty sleeping or <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">switching off</Link></span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
+                                <FiMessageCircle className="h-4 w-4" aria-hidden="true" />
+                            </span>
                             <span>Difficulty <Link href="/blog/why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life" className="underline underline-offset-2 hover:no-underline">being assertive</Link>, setting boundaries, or speaking up</span>
                         </li>
                         <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                            <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
+                                <FiCompass className="h-4 w-4" aria-hidden="true" />
+                            </span>
                             <span><Link href="/blog/feeling-stuck-even-when-trying-to-move-forward" className="underline underline-offset-2 hover:no-underline">Feeling stuck</Link>, overwhelmed or <Link href="/blog/why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping" className="underline underline-offset-2 hover:no-underline">emotionally drained</Link></span>
                         </li>
                     </ul>
@@ -291,8 +311,9 @@ export default function Home() {
                         what you are dealing with doesn't fit neatly into a box.
                     </p>
                 </Card>
+                </div>
 
-                <Card className="bg-emerald-50/50">
+                <Card className="bg-white/84">
 
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         A calm, structured way of working
@@ -326,7 +347,7 @@ export default function Home() {
                     </p>
                 </Card>
 
-                <Card className="bg-emerald-50/50">
+                <Card className="bg-[#F3F7F7]/90">
 
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         What clients say

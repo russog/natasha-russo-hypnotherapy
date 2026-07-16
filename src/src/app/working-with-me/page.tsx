@@ -82,18 +82,18 @@ export default function WorkingWithMe() {
             </ul>
           </Card>
 
-          <Card className="bg-white/70">
+          <Card className="bg-[#F3F8F2]/90">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Your role and my role
             </h2>
 
-            <div className="mt-6 mb-6">
+            <div className="mt-6 mb-6 overflow-hidden rounded-lg border border-white/70 shadow-[0_16px_40px_rgba(79,90,84,0.14)]">
               <Image
                 src="/working-with-me-inline.jpg"
                 alt="Natasha Russo in session"
                 width={1200}
                 height={675}
-                className="w-full rounded-lg"
+                className="w-full object-cover saturate-90 contrast-[0.96]"
               />
             </div>
 
@@ -114,7 +114,7 @@ export default function WorkingWithMe() {
             </div>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-white/84">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Session format and structure
             </h2>
@@ -172,7 +172,7 @@ export default function WorkingWithMe() {
             </p>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-[#F7F4EE]/90">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Confidentiality &amp; Suitability
             </h2>
@@ -196,7 +196,7 @@ export default function WorkingWithMe() {
             </p>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-[#F3F7F7]/90">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">Fees</h2>
 
             <ul className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic space-y-2">

@@ -35,7 +35,7 @@ export default function SmokingCessationPage() {
             </p>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-[#F3F8F2]/90">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               How the approach works
             </h2>
@@ -70,7 +70,7 @@ export default function SmokingCessationPage() {
             </p>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-white/84">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Who this may be suitable for
             </h2>
@@ -79,7 +79,7 @@ export default function SmokingCessationPage() {
             </p>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-[#F7F4EE]/90">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Training
             </h2>
@@ -88,7 +88,7 @@ export default function SmokingCessationPage() {
             </p>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-[#F3F7F7]/90">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Smoking Cessation Programme &amp; Fee
             </h2>
@@ -117,7 +117,7 @@ export default function SmokingCessationPage() {
             </p>
           </Card>
 
-          <Card className="bg-emerald-50/50">
+          <Card className="bg-[#F3F8F2]/90">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
               Getting started
             </h2>

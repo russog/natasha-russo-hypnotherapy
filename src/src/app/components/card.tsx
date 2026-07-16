@@ -10,9 +10,9 @@ export function Card({
     return (
         <div
             className={[
-                "rounded-2xl border border-stone-200/80 bg-white/60",
+                "rounded-lg border border-[#DDE8DD] bg-white/78 backdrop-blur-[1px]",
                 "px-6 py-10 md:px-10",
-                "shadow-[0_10px_30px_rgba(0,0,0,0.08)]",
+                "shadow-[0_14px_34px_rgba(79,90,84,0.09)]",
                 className,
             ].join(" ")}
         >

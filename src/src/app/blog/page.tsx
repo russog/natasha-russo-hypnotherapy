@@ -43,15 +43,15 @@ export default function BlogIndexPage() {
                         <Link
                             key={post.slug}
                             href={`/blog/${post.slug}`}
-                            className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:shadow-md !no-underline"
+                            className="group overflow-hidden rounded-lg border border-[#DDE8DD] bg-white/82 shadow-[0_12px_30px_rgba(79,90,84,0.08)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_38px_rgba(79,90,84,0.12)] !no-underline"
                         >
                             {post.frontmatter.coverImage ? (
-                                <div className="relative aspect-[16/10] w-full">
+                                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#EEF4ED]">
                                     <Image
                                         src={post.frontmatter.coverImage}
                                         alt={post.frontmatter.title}
                                         fill
-                                        className="object-cover transition duration-300 group-hover:scale-[1.02]"
+                                        className="object-cover saturate-[0.88] contrast-[0.98] transition duration-300 group-hover:scale-[1.015]"
                                     />
                                 </div>
                             ) : null}

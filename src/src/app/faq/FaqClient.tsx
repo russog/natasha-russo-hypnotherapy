@@ -188,7 +188,7 @@ function AccordionItem({
 
                 <span
                     aria-hidden="true"
-                    className="mt-0.5 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full border border-neutral-200 text-neutral-700"
+                    className="mt-0.5 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]"
                 >
           {isOpen ? '−' : '+'}
         </span>
@@ -216,7 +216,7 @@ export default function FaqClient() {
             <div className="relative mx-auto max-w-5xl px-4 py-10 text-center sm:py-14">
                 <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">FAQs</h1>
 
-                <div className="divide-y divide-neutral-200 rounded-2xl border border-neutral-200 bg-white/60 text-left">
+                <div className="divide-y divide-[#DDE8DD] rounded-lg border border-[#DDE8DD] bg-white/78 text-left shadow-[0_14px_34px_rgba(79,90,84,0.09)] backdrop-blur-[1px]">
                     {faqs.map((faq, index) => (
                         <AccordionItem
                             key={index}

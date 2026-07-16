@@ -116,12 +116,16 @@ export default function RootLayout({
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(navSchema) }}
         />
-        <main className="flex flex-1 flex-col border-[#4F5A54] bg-white">
+        <main className="flex flex-1 flex-col border-[#4F5A54] bg-[#F7F9F5]">
             <Navbar />
-            <section className="relative overflow-hidden">
+            <section className="relative overflow-hidden bg-[linear-gradient(180deg,#F8FAF6_0%,#FFFDF8_38%,#F2F6F4_72%,#F7F4EE_100%)]">
                 <div
-                    className="absolute inset-0 bg-[url('/bkg.png')] bg-fixed bg-center bg-no-repeat opacity-40"
-                    style={{backgroundSize: 'cover', imageRendering: 'crisp-edges'}}
+                    className="absolute inset-0 bg-[url('/bkg.webp')] bg-fixed bg-center bg-no-repeat opacity-[0.08] saturate-50"
+                    style={{backgroundSize: 'cover'}}
+                    aria-hidden
+                />
+                <div
+                    className="absolute inset-0 bg-white/30"
                     aria-hidden
                 />
                 {children}
