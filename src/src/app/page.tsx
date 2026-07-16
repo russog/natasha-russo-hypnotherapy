@@ -313,7 +313,7 @@ export default function Home() {
                 </Card>
                 </div>
 
-                <Card className="bg-white/84">
+                <Card className="border-[#CFAF94] bg-[#ECD9C7]/96 shadow-[0_18px_42px_rgba(112,87,65,0.13)]">
 
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         A calm, structured way of working
@@ -347,7 +347,7 @@ export default function Home() {
                     </p>
                 </Card>
 
-                <Card className="bg-[#F3F7F7]/90">
+                <Card className="border-[#E7D6CF] !bg-[#F7EAE4] shadow-[0_18px_42px_rgba(112,82,68,0.07)]">
 
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         What clients say

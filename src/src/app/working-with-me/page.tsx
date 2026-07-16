@@ -196,7 +196,7 @@ export default function WorkingWithMe() {
             </p>
           </Card>
 
-          <Card className="bg-[#F3F7F7]/90">
+          <Card className="border-[#E7D6CF] !bg-[#F7EAE4] shadow-[0_18px_42px_rgba(112,82,68,0.07)]">
             <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">Fees</h2>
 
             <ul className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic space-y-2">
