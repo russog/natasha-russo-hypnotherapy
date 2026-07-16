@@ -57,7 +57,7 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="order-4 md:order-none mt-5 md:mt-15 mx-auto max-w-5xl px-6 md:row-start-2 md:col-start-1 md:w-full">
+                <div className="order-4 md:order-none mt-8 sm:mt-10 md:mt-24 mx-auto max-w-5xl px-6 md:row-start-2 md:col-start-1 md:w-full">
                     <Card className="h-full flex flex-col">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             My style
@@ -88,7 +88,7 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="order-3 md:order-none relative z-10 mt-5 md:mt-15 mx-auto max-w-5xl px-6 md:row-start-2 md:col-start-2">
+                <div className="order-3 md:order-none relative z-10 mt-8 sm:mt-10 md:mt-24 mx-auto max-w-5xl px-6 md:row-start-2 md:col-start-2">
                     <Card className="h-full flex flex-col mt-0 md:ml-10">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             How I came to this work
@@ -122,7 +122,7 @@ export default function About() {
                     </Card>
                 </div>
 
-                <div className="relative z-10 mt-5 md:mt-15 md:col-span-2 px-6">
+                <div className="relative z-10 mt-8 sm:mt-10 md:mt-24 md:col-span-2 px-6">
                     <Card className="mx-auto max-w-5xl">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Qualifications and professional memberships
