@@ -123,7 +123,7 @@ export default function About() {
                 </div>
 
                 <div className="relative z-10 mt-12 md:col-span-2">
-                    <Card className="mx-auto max-w-5xl">
+                    <Card className="mx-auto w-full">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Qualifications and professional memberships
                         </h2>
