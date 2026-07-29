@@ -66,9 +66,7 @@ export function ContactForm() {
             >
                 <Textarea
                     name="message"
-                    placeholder={
-                        "You can share as much or as little as you'd like.\n\nFor example, you might tell me what's prompted you to get in touch, or what you're hoping to understand or change."
-                    }
+                    placeholder="Briefly tell me what prompted you to get in touch, or what you’re hoping to understand or change."
                     aria-describedby={error ? "contact-form-error" : undefined}
                     required
                 />
@@ -118,7 +116,7 @@ function Field({
         <label className="block space-y-2">
             <span className="block text-sm font-medium text-neutral-700">{label}</span>
             {description ? (
-                <span className="block text-sm leading-relaxed text-neutral-700">
+                <span className="block text-xs leading-relaxed text-neutral-600">
                     {description}
                 </span>
             ) : null}
