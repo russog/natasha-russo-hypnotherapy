@@ -123,16 +123,33 @@ export default function PrivacyPolicy() {
                 <section>
                     <h2 className="font-medium"><strong>Lawful basis for processing</strong></h2>
                     <p>
-                        Under UK GDPR, your data is processed on the basis of:
+                        I only collect and use personal information where there is a clear and
+                        lawful reason to do so.
                     </p>
-                    <ul className="list-disc pl-5">
-                        <li>Your consent</li>
-                        <li>The provision of therapeutic services</li>
-                        <li>Professional and legal obligations</li>
-                    </ul>
+                    <p>
+                        If you make an initial enquiry, I use the information you provide so
+                        that I can respond to you, answer your questions, and take any
+                        practical steps you ask me to take before therapeutic work begins.
+                    </p>
+                    <p>
+                        If you become a therapy client, I use your information where it is
+                        needed to provide and manage therapeutic services, communicate with
+                        you about appointments and practical arrangements, keep appropriate
+                        professional records, and meet any legal, professional, insurance,
+                        accounting or safeguarding responsibilities.
+                    </p>
                     <p className="mt-2">
-                        You may withdraw your consent at any time, subject to relevant legal
-                        and professional record-keeping requirements.
+                        Therapy-related information may include sensitive personal information,
+                        such as information about health, emotional wellbeing or personal
+                        circumstances. I only use this type of information where it is
+                        necessary for providing confidential therapeutic services, or where
+                        there is another lawful reason to use or retain it.
+                    </p>
+                    <p className="mt-2">
+                        Where I rely on your consent, you may withdraw that consent at any
+                        time. This will not affect information that has already been processed
+                        lawfully, or information I need to keep in order to meet legal,
+                        professional or safeguarding obligations.
                     </p>
                 </section>
 
