@@ -4,9 +4,19 @@ import { Resend } from "resend";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+const contactFormErrorMessage =
+    "We’re sorry, your message could not be sent. Please try again, or contact Natasha directly by email.";
+
 export async function GET() {
     // Visit /api/contact in the browser. If you don't see this, your route isn't deployed/running.
     return NextResponse.json({ ok: true, route: "contact", runtime: "nodejs" });
+}
+
+function logContactSendFailure(details?: { providerCode?: string; statusCode?: number | null }) {
+    console.error("CONTACT_FORM_SEND_FAILED", {
+        providerCode: details?.providerCode,
+        statusCode: details?.statusCode,
+    });
 }
 
 export async function POST(req: Request) {
@@ -15,10 +25,12 @@ export async function POST(req: Request) {
         const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL;
 
         if (!RESEND_API_KEY) {
-            return NextResponse.json({ error: "Missing RESEND_API_KEY" }, { status: 500 });
+            logContactSendFailure({ providerCode: "missing_server_configuration" });
+            return NextResponse.json({ error: contactFormErrorMessage }, { status: 500 });
         }
         if (!CONTACT_TO_EMAIL) {
-            return NextResponse.json({ error: "Missing CONTACT_TO_EMAIL" }, { status: 500 });
+            logContactSendFailure({ providerCode: "missing_server_configuration" });
+            return NextResponse.json({ error: contactFormErrorMessage }, { status: 500 });
         }
 
         const formData = await req.formData();
@@ -42,29 +54,29 @@ export async function POST(req: Request) {
 
         const resend = new Resend(RESEND_API_KEY);
 
-        await resend.emails.send({
+        const result = await resend.emails.send({
             from: "Website Contact <onboarding@resend.dev>",
             to: CONTACT_TO_EMAIL,
             subject: `New contact form message from ${name}`,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
         });
 
-        const origin = req.headers.get("origin")!;
+        if (result.error || !result.data?.id) {
+            logContactSendFailure({
+                providerCode: result.error?.name,
+                statusCode: result.error?.statusCode,
+            });
+
+            return NextResponse.json({ error: contactFormErrorMessage }, { status: 502 });
+        }
+
+        const origin = req.headers.get("origin") ?? new URL(req.url).origin;
         return NextResponse.redirect(`${origin}/contact/thanks`, 303);
 
 
-    } catch (err: unknown) {
-        console.error("CONTACT_FORM_ERROR:", err);
+    } catch {
+        logContactSendFailure({ providerCode: "unexpected_exception" });
 
-        let message = "Internal Server Error";
-
-        if (err instanceof Error) {
-            message = err.message;
-        }
-
-        return NextResponse.json(
-            { error: message },
-            { status: 500 }
-        );
+        return NextResponse.json({ error: contactFormErrorMessage }, { status: 500 });
     }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import {Card} from "@/app/components/card";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -82,6 +81,19 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section>
+                    <h2 className="font-medium"><strong>Website contact form</strong></h2>
+                    <p>
+                        When you submit the website contact form, the information you provide is sent to me by email through Resend, an email-delivery service. The website itself does not save contact-form submissions in a database, file, spreadsheet or content-management system.
+                    </p>
+                    <p>
+                        Resend processes the information required to deliver the email, which may include your name, email address, optional telephone number, message content and relevant delivery information. Resend may retain email data for up to 30 days in accordance with its service arrangements and data-processing terms.
+                    </p>
+                    <p>
+                        The enquiry is also retained in my business email account for as long as it is reasonably needed to respond to and manage your enquiry, after which it is securely deleted when it is no longer required.
+                    </p>
+                </section>
+
+                <section>
                     <h2 className="font-medium"><strong>How I use your information</strong></h2>
                     <ul className="list-disc pl-5">
                         <li>Provide hypnotherapy sessions</li>
@@ -135,8 +147,7 @@ export default function PrivacyPolicy() {
                 <section>
                     <h2 className="font-medium"><strong>Sharing your information</strong></h2>
                     <p>
-                        Your personal information is treated as confidential and is not
-                        shared with third parties unless:
+                        Your personal information is treated as confidential. It is not sold or used for unrelated purposes. It may be processed by trusted service providers acting on my behalf, such as providers used to deliver website contact-form emails and operate my business email. These providers may process information only for the relevant service and under their applicable data-protection terms.
                     </p>
                     <ul className="list-disc pl-5">
                         <li>You give explicit consent, or</li>

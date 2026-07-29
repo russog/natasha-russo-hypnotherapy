@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import type { Metadata } from "next";
+import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
     title: "Contact",
@@ -79,52 +80,7 @@ export default function Contact() {
 
                                 <div
                                     className="border-t border-[#4F5A54]/15 bg-[#f8f7f3] p-6 sm:p-10 md:border-t-0 md:border-l md:p-12">
-                                    <form className="space-y-6" method="post" action="/api/contact">
-                                        <input
-                                            type="text"
-                                            name="company"
-                                            className="hidden"
-                                            tabIndex={-1}
-                                            autoComplete="off"
-                                        />
-                                        <Field label="Name">
-                                            <Input name="name" autoComplete="name" required />
-                                        </Field>
-
-                                        <Field label="Email address">
-                                            <Input name="email" type="email" autoComplete="email" required/>
-                                        </Field>
-
-                                        <Field label="Phone number (optional)">
-                                            <Input name="phone" type="tel" autoComplete="tel"/>
-                                        </Field>
-
-                                        <Field label="Message">
-                                            <Textarea
-                                                name="message"
-                                                placeholder={
-                                                    "You can share as much or as little as you'd like.\n\nFor example, you might tell me what's prompted you to get in touch, or what you're hoping to understand or change."
-                                                }
-                                            required/>
-                                        </Field>
-
-                                        <button
-                                            type="submit"
-                                            className="inline-flex items-center justify-center rounded-lg bg-[#4F6B5A] px-6 py-3 text-sm font-medium text-white shadow-sm transition hover:bg-[#3f5b4d] focus:outline-none focus:ring-2 focus:ring-[#4F6B5A]/40"
-                                        >
-                                            Send message
-                                        </button>
-
-                                        <p className="pt-2 text-sm text-neutral-600">
-                                            Messages sent through this form are treated as confidential and handled in
-                                            line with my{" "}
-                                            <Link href="/privacy-policy"
-                                                  className="underline underline-offset-2 hover:no-underline">
-                                                privacy policy
-                                            </Link>
-                                            .
-                                        </p>
-                                    </form>
+                                    <ContactForm />
                                 </div>
                             </div>
                         </div>
@@ -134,43 +90,4 @@ export default function Contact() {
 
         </>
     );
-
-    /** Small helpers (keep in same file or move out) */
-    function Field({label, children}: { label: string; children: React.ReactNode }) {
-        return (
-            <label className="block space-y-2">
-                <span className="text-sm font-medium text-neutral-700">{label}</span>
-                {children}
-            </label>
-        );
-    }
-
-    function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
-        return (
-            <input
-                {...props}
-                className={[
-                    "w-full rounded-lg border border-[#4F5A54]/20 bg-white/60 px-4 py-3 text-sm text-neutral-900",
-                    "placeholder:text-neutral-400",
-                    "shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]",
-                    "focus:outline-none focus:ring-2 focus:ring-[#4F6B5A]/30",
-                ].join(" ")}
-            />
-        );
-    }
-
-    function Textarea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
-        return (
-            <textarea
-                {...props}
-                rows={6}
-                className={[
-                    "w-full resize-none rounded-lg border border-[#4F5A54]/20 bg-white/60 px-4 py-3 text-sm text-neutral-900",
-                    "placeholder:text-neutral-400",
-                    "shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]",
-                    "focus:outline-none focus:ring-2 focus:ring-[#4F6B5A]/30",
-                ].join(" ")}
-            />
-        );
-    }
 }
