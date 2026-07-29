@@ -40,42 +40,48 @@ export default function PrivacyPolicy() {
                 <section>
                     <h2 className="font-medium"><strong>The information I collect</strong></h2>
                     <p>
-                        In order to work with you safely and effectively, I may collect and
-                        process the following types of personal data:
+                        The information I collect depends on whether you are making an initial
+                        enquiry or working with me as a therapy client.
                     </p>
 
                     <div className="mt-2 space-y-2">
-                        <p className="font-medium">Personal details</p>
-                        <ul className="list-disc pl-5">
-                            <li>Your name</li>
-                            <li>Email address</li>
-                            <li>Basic contact information</li>
-                        </ul>
+                        <p>
+                            If you make an initial enquiry, I may collect your name, email
+                            address, optional telephone number, and the information you choose
+                            to include in your message. Please keep website contact-form
+                            messages brief and avoid including detailed medical, psychological
+                            or other sensitive personal information at this stage.
+                        </p>
 
-                        <p className="font-medium">Therapy-related information</p>
-                        <ul className="list-disc pl-5">
-                            <li>
-                                Information you choose to share about your experiences,
-                                difficulties, and goals
-                            </li>
-                            <li>Notes relating to sessions and therapeutic work</li>
-                        </ul>
+                        <p>
+                            If you become a therapy client, I may collect further information
+                            that is relevant to working with you safely and professionally. This
+                            may include contact details, intake and consent information,
+                            therapy-related information you choose to share, notes relating to
+                            sessions, and information about appointments, payments or practical
+                            arrangements.
+                        </p>
                     </div>
 
                     <p className="mt-2">
-                        I only collect information that is relevant to your therapy and
-                        necessary for providing a professional service.
+                        I only collect information that is relevant to the purpose for which it
+                        is provided and necessary for providing a professional service.
                     </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>How I collect your information</strong></h2>
+                    <p>
+                        I may collect information when:
+                    </p>
                     <ul className="list-disc pl-5">
-                        <li>You contact me via email or a website contact form</li>
-                        <li>Your completed intake, consent, or feedback forms</li>
+                        <li>You contact me by email or through the website contact form</li>
+                        <li>You arrange or attend an initial consultation</li>
+                        <li>You complete intake, consent, assessment or feedback forms</li>
                         <li>We work together during sessions</li>
                         <li>
-                            You correspond with me about appointments or therapy-related matters
+                            You correspond with me about appointments, payments or
+                            therapy-related matters
                         </li>
                     </ul>
                 </section>
@@ -89,7 +95,10 @@ export default function PrivacyPolicy() {
                         Resend processes the information required to deliver the email, which may include your name, email address, optional telephone number, message content and relevant delivery information. Resend may retain email data for up to 30 days in accordance with its service arrangements and data-processing terms.
                     </p>
                     <p>
-                        The enquiry is also retained in my business email account for as long as it is reasonably needed to respond to and manage your enquiry, after which it is securely deleted when it is no longer required.
+                        Enquiries sent through the contact form, and enquiries sent to me
+                        directly by email, are retained in my business email account for as
+                        long as reasonably needed to respond to and manage your enquiry, after
+                        which they are securely deleted when no longer required.
                     </p>
                 </section>
 
