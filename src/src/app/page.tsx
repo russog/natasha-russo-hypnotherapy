@@ -30,8 +30,7 @@ export default function Home() {
                     - supporting clearer, more manageable change
                 </p>
                 <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    Based in Putney, South West London, with{" "}
-                    <Link href="/working-with-me#format" className="underline underline-offset-2 hover:no-underline">online sessions available throughout the UK and worldwide</Link>.
+                    Based in Putney, South West London, with online sessions available throughout the UK and worldwide.
                 </p>
                 <p className="mx-auto mt-1 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
                     - Supporting you to work from a space where you already feel comfortable and at ease.
