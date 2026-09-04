@@ -94,8 +94,8 @@ export default function Home() {
         <section className="relative border-t border-[#E8DED7]/60 py-12 sm:py-14 overflow-hidden isolate">
 
             <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-12">
-                <div className="grid gap-8 md:grid-cols-[minmax(0,1.15fr)_minmax(260px,360px)] md:items-center">
-                    <Card>
+                <div id="familiar-video" className="grid scroll-mt-8 gap-8 md:grid-cols-[minmax(0,1fr)_minmax(230px,300px)] md:items-stretch">
+                    <Card className="h-full">
                         <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Does any of this sound familiar?
                         </h2>
@@ -126,7 +126,7 @@ export default function Home() {
                         </p>
                     </Card>
 
-                    <div className="flex justify-center md:justify-end">
+                    <div className="flex h-full justify-center rounded-lg border border-[#DDE8DD] bg-white/78 p-3 shadow-[0_14px_34px_rgba(79,90,84,0.09)] backdrop-blur-[1px]">
                         <video
                             playsInline
                             webkit-playsinline="true"
@@ -135,7 +135,7 @@ export default function Home() {
                             controls
                             preload="metadata"
                             poster="/intro-poster-openeyes.jpg?v=7"
-                            className="w-full max-w-sm rounded-lg">
+                            className="w-full max-h-[520px] rounded-md object-contain">
                             <source src="/intro.mp4?v=7" type="video/mp4"/>
                         </video>
                     </div>
