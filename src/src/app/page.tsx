@@ -29,15 +29,6 @@ export default function Home() {
                     A thoughtful integration of cognitive-behavioural therapy, hypnotherapy, and mindfulness techniques
                     - supporting clearer, more manageable change
                 </p>
-                <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    Based in Putney, South West London, with online sessions available throughout the UK and worldwide.
-                </p>
-                <p className="mx-auto mt-1 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    - Supporting you to work from a space where you already feel comfortable and at ease.
-                </p>
-                <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    <Link href="/free-relaxation-audio" className="underline underline-offset-2 hover:no-underline">Free relaxation audio</Link>
-                </p>
                 <div className="mt-10 flex justify-center">
                     <Link
                         href="/contact"
@@ -45,6 +36,13 @@ export default function Home() {
                         Book a free 20-minute chat
                     </Link>
                 </div>
+                <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+                    Based in Putney, South West London, with online sessions available throughout the UK and worldwide
+                    - supporting you to work from a space where you already feel comfortable and at ease.
+                </p>
+                <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+                    <Link href="/free-relaxation-audio" className="underline underline-offset-2 hover:no-underline">Free relaxation audio</Link>
+                </p>
             </div>
 
         </section>
