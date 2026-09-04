@@ -27,6 +27,21 @@ export default function FreeRelaxationAudioPage() {
                     Your browser does not support the audio player.
                 </audio>
 
+                <div className="mt-6 flex justify-center">
+                    <a
+                        href="/audio/natasha-russo-relaxation-audio-v2.mp3"
+                        download
+                        className="inline-flex items-center justify-center rounded-lg bg-[#4F5A54] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(79,90,84,0.14)] transition hover:-translate-y-0.5 hover:bg-[#3F4843] hover:shadow-[0_14px_30px_rgba(79,90,84,0.18)] focus:outline-none focus:ring-2 focus:ring-[#8EA095] focus:ring-offset-2"
+                    >
+                        Download audio
+                    </a>
+                </div>
+
+                <p className="mt-5 text-sm leading-relaxed text-neutral-600">
+                    Please only listen when it is safe to relax, and not while driving or doing anything that needs
+                    your full attention.
+                </p>
+
                 <p className="mt-5 text-sm leading-relaxed text-neutral-600">
                     This recording is for general relaxation and stress-management support. It is not a substitute for
                     personalised therapy, medical advice, or crisis support.
