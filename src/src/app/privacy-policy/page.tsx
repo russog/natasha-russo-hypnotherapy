@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
                     Privacy Policy
                 </h1>
                 <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
-                    This privacy notice explains how I collect, use, and protect your personal information when you
+                    This privacy policy explains how I collect, use, and protect your personal information when you
                     contact me or work with me.
                 </p>
             </div>
@@ -28,8 +28,9 @@ export default function PrivacyPolicy() {
                     <h2 className="font-medium"><strong>Who am I</strong></h2>
                     <p>
                         I am Natasha Russo, a Cognitive Behavioural Hypnotherapist, trading as
-                        Natasha Russo Hypnotherapy. I work with adult clients (18+) and offer
-                        online hypnotherapy sessions.
+                        Natasha Russo Hypnotherapy. I work with adult clients aged 18 and over
+                        and offer Cognitive Behavioural Hypnotherapy online and, where available,
+                        in person.
                     </p>
                     <p>
                         I am registered with the Information Commissioner’s Office (ICO) as a
@@ -40,79 +41,56 @@ export default function PrivacyPolicy() {
                 <section>
                     <h2 className="font-medium"><strong>The information I collect</strong></h2>
                     <p>
-                        The information I collect depends on whether you are making an initial
-                        enquiry or working with me as a therapy client.
+                        In order to provide my service safely, appropriately and effectively, I may
+                        collect and process the following types of personal information:
                     </p>
-
-                    <div className="mt-2 space-y-2">
-                        <p>
-                            If you make an initial enquiry, I may collect your name, email
-                            address, optional telephone number, and the information you choose
-                            to include in your message. Please keep website contact-form
-                            messages brief and avoid including detailed medical, psychological
-                            or other sensitive personal information at this stage.
-                        </p>
-
-                        <p>
-                            If you become a therapy client, I may collect further information
-                            that is relevant to working with you safely and professionally. This
-                            may include contact details, intake and consent information,
-                            therapy-related information you choose to share, notes relating to
-                            sessions, and information about appointments, payments or practical
-                            arrangements.
-                        </p>
-                    </div>
-
+                    <p className="mt-2 font-medium">Personal and contact information</p>
+                    <ul className="list-disc pl-5">
+                        <li>Your name</li>
+                        <li>Email address and telephone number</li>
+                        <li>Age</li>
+                        <li>Country in which you are currently based</li>
+                        <li>Emergency contact details, where provided</li>
+                    </ul>
+                    <p className="mt-2 font-medium">Therapy and health-related information</p>
+                    <ul className="list-disc pl-5">
+                        <li>Information you choose to share about your experiences, difficulties and therapeutic goals</li>
+                        <li>Relevant information about your physical or mental health, medication, and current or previous therapeutic or healthcare support</li>
+                        <li>Information relevant to assessing whether my service is appropriate for you</li>
+                        <li>Notes relating to sessions and therapeutic work</li>
+                    </ul>
                     <p className="mt-2">
-                        I only collect information that is relevant to the purpose for which it
-                        is provided and necessary for providing a professional service.
+                        I only collect information that is relevant and reasonably necessary for
+                        providing my service safely and professionally.
+                    </p>
+                    <p className="mt-2">
+                        You are not required to provide information that is not relevant to the
+                        service. However, if information necessary to assess suitability or provide
+                        therapy safely and appropriately is not provided, I may be unable to begin
+                        or continue working with you.
                     </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>How I collect your information</strong></h2>
-                    <p>
-                        I may collect information when:
-                    </p>
+                    <p>Your information may be collected when:</p>
                     <ul className="list-disc pl-5">
-                        <li>You contact me by email or through the website contact form</li>
-                        <li>You arrange or attend an initial consultation</li>
-                        <li>You complete intake, consent, assessment or feedback forms</li>
-                        <li>We work together during sessions</li>
-                        <li>
-                            You correspond with me about appointments, payments or
-                            therapy-related matters
-                        </li>
+                        <li>You contact me via email, telephone, or my website contact form</li>
+                        <li>You take part in an introductory consultation or other initial communication with me</li>
+                        <li>You complete intake, consent, or feedback forms</li>
+                        <li>We work together during therapy sessions, whether online or in person</li>
+                        <li>You correspond with me about appointments or therapy-related matters</li>
                     </ul>
-                </section>
-
-                <section>
-                    <h2 className="font-medium"><strong>Website contact form</strong></h2>
-                    <p>
-                        When you submit the website contact form, the information you provide is sent to me by email through Resend, an email-delivery service. The website itself does not save contact-form submissions in a database, file, spreadsheet or content-management system.
-                    </p>
-                    <p>
-                        Resend processes the information required to deliver the email, which may include your name, email address, optional telephone number, message content and relevant delivery information. Resend may retain email data for up to 30 days in accordance with its service arrangements and data-processing terms.
-                    </p>
-                    <p>
-                        Enquiries sent through the contact form, and enquiries sent to me
-                        directly by email, are retained in my business email account for as
-                        long as reasonably needed to respond to and manage your enquiry, after
-                        which they are securely deleted when no longer required.
-                    </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>How I use your information</strong></h2>
                     <ul className="list-disc pl-5">
-                        <li>Provide hypnotherapy sessions</li>
-                        <li>
-                            Communicate with you about appointments and practical arrangements
-                        </li>
+                        <li>Assess whether my service is appropriate for you</li>
+                        <li>Provide Cognitive Behavioural Hypnotherapy sessions</li>
+                        <li>Communicate with you about appointments and practical arrangements</li>
                         <li>Maintain appropriate professional records</li>
-                        <li>
-                            Support safe, ethical, and effective therapeutic work
-                        </li>
+                        <li>Support safe, ethical, and effective therapeutic work</li>
                     </ul>
                     <p className="mt-2">
                         Your information is not used for marketing purposes without your
@@ -123,78 +101,95 @@ export default function PrivacyPolicy() {
                 <section>
                     <h2 className="font-medium"><strong>Lawful basis for processing</strong></h2>
                     <p>
-                        I only collect and use personal information where there is a clear and
-                        lawful reason to do so.
+                        Under UK GDPR, I need a lawful reason to collect and use your personal
+                        information.
                     </p>
                     <p>
-                        If you make an initial enquiry, I use the information you provide so
-                        that I can respond to you, answer your questions, and take any
-                        practical steps you ask me to take before therapeutic work begins.
-                    </p>
-                    <p>
-                        If you become a therapy client, I use your information where it is
-                        needed to provide and manage therapeutic services, communicate with
-                        you about appointments and practical arrangements, keep appropriate
-                        professional records, and meet any legal, professional, insurance,
-                        accounting or safeguarding responsibilities.
+                        I process the personal information needed to assess whether my service is
+                        appropriate for you and to provide the therapeutic service we agree under
+                        the lawful basis of contract.
                     </p>
                     <p className="mt-2">
-                        Therapy-related information may include sensitive personal information,
-                        such as information about health, emotional wellbeing or personal
-                        circumstances. I only use this type of information where it is
-                        necessary for providing confidential therapeutic services, or where
-                        there is another lawful reason to use or retain it.
+                        Some of the information you choose to share with me, such as information
+                        about your physical or mental health, is classed as special category data
+                        and receives additional protection under UK GDPR. I process this
+                        information with your explicit consent where it is needed to assess
+                        suitability and provide therapy safely and appropriately.
                     </p>
                     <p className="mt-2">
-                        Where I rely on your consent, you may withdraw that consent at any
-                        time. This will not affect information that has already been processed
-                        lawfully, or information I need to keep in order to meet legal,
-                        professional or safeguarding obligations.
+                        You can withdraw this consent at any time by contacting me. If I need this
+                        information in order to assess suitability or work with you safely and
+                        appropriately, withdrawing consent may mean that I am unable to begin or
+                        continue therapy.
                     </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>How your data is stored and protected</strong></h2>
                     <p>
-                        Your information is stored securely and accessed only by me.
-                        Reasonable technical and organisational measures are in place to
-                        protect your data from unauthorised access, loss, or misuse.
+                        Your personal information is stored securely, and access is restricted to
+                        me. I take appropriate measures to protect your information from
+                        unauthorised access, accidental loss, disclosure or misuse.
+                    </p>
+                    <p>
+                        I regularly review how personal information is stored and protected to
+                        ensure that appropriate security measures remain in place.
                     </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>How long your data is kept</strong></h2>
                     <p>
-                        Client records are retained in line with professional and legal
-                        guidance and are securely deleted when they are no longer required.
+                        I keep personal information only for as long as it is reasonably necessary
+                        for the purposes for which it was collected, including any professional,
+                        insurance or legal requirements that apply to my practice.
+                    </p>
+                    <p>
+                        Records are reviewed periodically and securely deleted when they are no
+                        longer required.
                     </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>Sharing your information</strong></h2>
                     <p>
-                        Your personal information is treated as confidential. It is not sold or used for unrelated purposes. It may be processed by trusted service providers acting on my behalf, such as providers used to deliver website contact-form emails and operate my business email. These providers may process information only for the relevant service and under their applicable data-protection terms.
+                        Your personal information is treated as confidential and is not shared
+                        unnecessarily.
                     </p>
-                    <ul className="list-disc pl-5">
-                        <li>You give explicit consent, or</li>
-                        <li>
-                            There is a legal or safeguarding obligation to do so (for example,
-                            where there is a serious risk of harm)
-                        </li>
-                    </ul>
+                    <p>
+                        I may use trusted third-party services to support the secure operation of
+                        my practice, such as email, data storage, online communication and payment
+                        services. Where these services process personal information, I take
+                        appropriate steps to ensure that your information is handled in accordance
+                        with data protection requirements.
+                    </p>
+                    <p>
+                        I may also disclose information where you have given your consent, where I
+                        am required to do so by law, or where there is a serious safeguarding
+                        concern or risk of harm.
+                    </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>Your data protection rights</strong></h2>
+                    <p>Depending on the circumstances, you may have the right to:</p>
                     <ul className="list-disc pl-5">
-                        <li>Access the personal data I hold about you</li>
-                        <li>Request correction of inaccurate information</li>
-                        <li>Request deletion of your data where appropriate</li>
-                        <li>Raise concerns about how your data is handled</li>
+                        <li>Access the personal information I hold about you</li>
+                        <li>Ask me to correct information that is inaccurate or incomplete</li>
+                        <li>Ask me to delete your personal information in certain circumstances</li>
+                        <li>Ask me to restrict how your personal information is used in certain circumstances</li>
+                        <li>Object to certain uses of your personal information</li>
+                        <li>Ask for certain personal information to be transferred to you or another organisation, where the right to data portability applies</li>
+                        <li>Withdraw your consent at any time where I rely on consent to process your information</li>
                     </ul>
                     <p className="mt-2">
-                        You also have the right to make a complaint to the Information
-                        Commissioner’s Office (ICO).
+                        These rights do not apply in every circumstance, and some may be subject
+                        to legal or professional requirements.
+                    </p>
+                    <p className="mt-2">
+                        If you have concerns about how your personal information is handled, you
+                        can contact me directly. You also have the right to make a complaint to
+                        the Information Commissioner’s Office (ICO).
                     </p>
                 </section>
 
@@ -207,18 +202,19 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section>
-                    <h2 className="font-medium"><strong>Changes to this privacy notice</strong></h2>
+                    <h2 className="font-medium"><strong>Changes to this privacy policy</strong></h2>
                     <p>
-                        This privacy notice may be updated from time to time to reflect
-                        changes in practice or legal requirements.
+                        This privacy policy may be updated from time to time to reflect changes in
+                        my practice, the services I use, or legal and regulatory requirements.
                     </p>
                 </section>
 
                 <section>
                     <h2 className="font-medium"><strong>Contact</strong></h2>
                     <p>
-                        If you have any questions about this privacy notice or how your data
-                        is handled, you are welcome to contact me at:
+                        If you have any questions about this privacy policy, wish to exercise your
+                        data protection rights, or have concerns about how your personal
+                        information is handled, please contact me at:
                     </p>
                     <p className="mt-1 font-medium">
                         <Link className="font-bold"
@@ -226,6 +222,7 @@ export default function PrivacyPolicy() {
                             contact@natasharussohypnotherapy.co.uk
                         </Link>
                     </p>
+                    <p className="mt-2 text-sm text-neutral-600">Last updated: 02.09.2026</p>
                 </section>
 
 
