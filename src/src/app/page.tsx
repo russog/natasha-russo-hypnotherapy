@@ -94,51 +94,51 @@ export default function Home() {
         <section className="relative border-t border-[#E8DED7]/60 py-12 sm:py-14 overflow-hidden isolate">
 
             <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-12">
-                <Card>
-                    <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-                        Does any of this sound familiar?
-                    </h2>
+                <div className="grid gap-8 md:grid-cols-[minmax(0,1.15fr)_minmax(260px,360px)] md:items-center">
+                    <Card>
+                        <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
+                            Does any of this sound familiar?
+                        </h2>
 
-                    <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
-                        <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>
-                You find yourself caught in <Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">cycles of worry</Link>, what-ifs, or worst-case thinking that are hard to interrupt, and may recognise <Link href="/blog/why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen" className="underline underline-offset-2 hover:no-underline">why anxiety can feel so convincing</Link>
-              </span>
-                        </li>
-                        <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>
-                You notice familiar patterns repeating, even when you understand them logically
-              </span>
-                        </li>
-                        <li className="flex gap-3">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
-                            <span>
-                You struggle to fully <Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">switch off</Link> or stay present, even when things are going well
-              </span>
-                        </li>
-                    </ul>
+                        <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
+                            <li className="flex gap-3">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                                <span>
+                    You find yourself caught in <Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">cycles of worry</Link>, what-ifs, or worst-case thinking that are hard to interrupt, and may recognise <Link href="/blog/why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen" className="underline underline-offset-2 hover:no-underline">why anxiety can feel so convincing</Link>
+                  </span>
+                            </li>
+                            <li className="flex gap-3">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                                <span>
+                    You notice familiar patterns repeating, even when you understand them logically
+                  </span>
+                            </li>
+                            <li className="flex gap-3">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0"/>
+                                <span>
+                    You struggle to fully <Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">switch off</Link> or stay present, even when things are going well
+                  </span>
+                            </li>
+                        </ul>
 
-                    <p className="mt-6 text-center text-stone-700 italic">
-                        If this resonates, it may be a sign that a different way of responding could help
-                    </p>
+                        <p className="mt-6 text-center text-stone-700 italic">
+                            If this resonates, it may be a sign that a different way of responding could help
+                        </p>
+                    </Card>
 
-
-                </Card>
-
-                <div>
-                    <video
-                        playsInline
-                        webkit-playsinline="true"
-                        muted
-                        loop
-                        controls
-                        preload="metadata"
-                        poster="/intro-poster-openeyes.jpg?v=7"
-                        className="w-full max-w-sm rounded-lg">
-                        <source src="/intro.mp4?v=7" type="video/mp4"/>
-                    </video>
+                    <div className="flex justify-center md:justify-end">
+                        <video
+                            playsInline
+                            webkit-playsinline="true"
+                            muted
+                            loop
+                            controls
+                            preload="metadata"
+                            poster="/intro-poster-openeyes.jpg?v=7"
+                            className="w-full max-w-sm rounded-lg">
+                            <source src="/intro.mp4?v=7" type="video/mp4"/>
+                        </video>
+                    </div>
                 </div>
 
                 <div id="support-icons" className="scroll-mt-8">
