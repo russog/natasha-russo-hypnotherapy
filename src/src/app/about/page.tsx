@@ -39,7 +39,7 @@ export default function About() {
                         </h2>
 
                         <p className="mt-5 text-stone-700">
-                            Hi, I’m Natasha — a cognitive-behavioural hypnotherapist.
+                            Hi, I’m Natasha — a cognitive behavioural hypnotherapist.
                         </p>
                         <p className="mt-4 text-stone-700">
                             I’m someone who tends to listen carefully, think things through, and take people seriously.
