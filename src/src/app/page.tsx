@@ -250,7 +250,7 @@ export default function Home() {
                 <Card className="bg-[#F7F4EE]/90">
 
                     <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-                        Support from me
+                        Areas people often seek support from me
                     </h2>
 
                     <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl">
