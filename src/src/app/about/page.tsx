@@ -133,13 +133,12 @@ export default function About() {
                         </p>
 
                         <ul className="mt-5 list-disc space-y-3 pl-6 text-stone-700">
-                            <li>BSc Psychology</li>
-                            <li>MSc Cross-Cultural Psychology</li>
+                            <li>BSc (Hons) Psychology (The Open University)</li>
+                            <li>MSc Cross-Cultural Psychology (Brunel University)</li>
                             <li>Graduate Member of the British Psychological Society (BPS)</li>
-                            <li>Level 5 Diploma in Cognitive Behavioural Hypnotherapy</li>
                             <li>
-                                Cognitive Behavioural Hypnotherapy training completed with the UK College of Hypnosis
-                                and Hypnotherapy on a BPS CPD-approved programme
+                                Level 5 Diploma in Cognitive Behavioural Hypnotherapy (training completed with the UK
+                                College of Hypnosis and Hypnotherapy on a BPS CPD approved programme)
                             </li>
                             <li>
                                 Member of the{" "}
