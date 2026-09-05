@@ -15,7 +15,7 @@ const faqs: FAQ[] = [
             <>
                 <p>
                     Hypnotherapy is a way of working with focused attention, imagination, and expectation to help change
-                    unhelpful patterns of thought, feeling, and behaviour.
+                    unhelpful patterns of thoughts, feelings, and behaviour.
                 </p>
                 <p>
                     In this context, hypnosis is used to support practical cognitive and behavioural strategies, rather than explore past experiences. If useful, you can read more in <Link href="/blog/making-sense-of-hypnotherapy" className="underline underline-offset-2 hover:no-underline">Making Sense of Hypnotherapy</Link>.
