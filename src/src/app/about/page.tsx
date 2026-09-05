@@ -22,7 +22,7 @@ export default function About() {
                 <div className="mx-auto flex w-full justify-center md:row-start-1 md:col-start-1">
                     <div className="relative w-full max-w-[410px] aspect-[4/5] overflow-hidden rounded-lg border border-white/70 shadow-[0_18px_45px_rgba(79,90,84,0.18)]">
                         <Image
-                            src="/about-natasha-green-cardigan-sharp.webp"
+                            src="/about-natasha-close-green.jpg"
                             alt="Natasha Russo"
                             fill
                             className="object-cover object-top"
@@ -33,7 +33,7 @@ export default function About() {
                 </div>
 
                 <div className="relative z-10 mt-5 mx-auto flex w-full justify-center md:row-start-1 md:col-start-2 md:mt-0">
-                    <Card className="mx-auto flex w-full max-w-[410px] flex-col justify-center px-5 py-8 md:aspect-[4/5] md:px-7 md:py-9">
+                    <Card className="mx-auto flex w-full flex-col justify-center px-5 py-8 md:min-h-[512px] md:px-7 md:py-9">
                         <h2 className="text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                             Meet Natasha
                         </h2>
