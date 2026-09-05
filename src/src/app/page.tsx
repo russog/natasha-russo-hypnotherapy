@@ -36,13 +36,15 @@ export default function Home() {
                         Book a free 20-minute chat
                     </Link>
                 </div>
-                <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    Based in Putney, South West London, with online sessions available throughout the UK and worldwide
-                    - supporting you to work from a space where you already feel comfortable and at ease.
-                </p>
-                <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-                    <Link href="/free-relaxation-audio" className="underline underline-offset-2 hover:no-underline">Free relaxation audio</Link>
-                </p>
+                <div className="mt-8">
+                    <p className="mx-auto max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+                        Based in Putney, South West London, with online sessions available throughout the UK and worldwide
+                        - supporting you to work from a space where you already feel comfortable and at ease.
+                    </p>
+                    <p className="mx-auto mt-3 max-w-3xl text-base font-normal leading-relaxed text-neutral-700 sm:text-lg">
+                        <Link href="/free-relaxation-audio" className="font-normal underline underline-offset-2 hover:no-underline">Free relaxation audio</Link>
+                    </p>
+                </div>
             </div>
 
         </section>
