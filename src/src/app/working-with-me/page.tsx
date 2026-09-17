@@ -1,233 +1,136 @@
-import Link from "next/link";
 import Image from "next/image";
-import { Card } from "@/app/components/card";
-import React from "react";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Working with me",
-  description:
-    "Learn how sessions work, what to expect, confidentiality, format and fees for cognitive behavioural hypnotherapy.",
-  alternates: { canonical: "/working-with-me" },
+    title: "Working with me",
+    description:
+        "Learn how sessions work, what to expect, confidentiality, format and fees for cognitive behavioural hypnotherapy.",
+    alternates: { canonical: "/working-with-me" },
 };
 
-export default function WorkingWithMe() {
-  return (
-    <>
-      <section className="relative overflow-hidden">
-        <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-14 text-center">
-          <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-            Working with me
-          </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-neutral-600 sm:text-2xl">
-            Working together is a structured and collaborative process. This page gives a clear sense of
-            how sessions usually unfold, what the process involves, and how we each contribute to the work.
-          </p>
-        </div>
+const titleClass = "!font-sans text-4xl font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-5xl";
+const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8A8174]";
+const textClass = "text-base leading-7 text-[#5B554D]";
 
-        <div className="relative z-10 mx-auto max-w-5xl px-6 space-y-12 mb-20">
-          <Card>
-            <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-              How the work usually unfolds
-            </h2>
+const steps = [
+    ["1) Initial contact", "You’re welcome to get in touch by email or book a brief introductory conversation. This is a chance to ask questions, get a sense of how I work, and decide whether it feels like a good fit — with no pressure to commit."],
+    ["2) First session: understanding and focus", "The first session is slightly longer and gives us time to understand what has been happening for you, what you would like help with, and how we might work together. We begin shaping a clear focus at a pace that feels manageable."],
+    ["3) Ongoing sessions: working with patterns", "Subsequent sessions focus on actively working with thoughts, emotions, and behavioural responses. We use practical, evidence-based methods, both in session and, where helpful, through small reflections or experiments between sessions."],
+    ["4) Reviewing and adjusting", "We regularly pause to review how the work is going — what is helping, what feels less useful, and whether anything needs adjusting. The process remains collaborative and responsive to you."],
+    ["5) Finishing well", "Endings are planned thoughtfully, with an emphasis on consolidating learning, strengthening confidence, and supporting your independence beyond therapy."],
+];
 
-            <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
-              <li className="flex gap-3">
-                <span>
-                  <strong>1) Initial contact</strong>
-                  <br />
-                  You’re welcome to get in touch by email or book a brief introductory conversation. This is a chance
-                  to ask questions, get a sense of how I work, and decide whether it feels like a good fit — with no
-                  pressure to commit.
-                </span>
-              </li>
+export default function WorkingWithMeStylePreview() {
+    return (
+        <div className="bg-[#FBF8F2] text-[#25231F]">
+            <script dangerouslySetInnerHTML={{ __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');" }} />
+            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
-              <li className="flex gap-3">
-                <span>
-                  <strong>2) First session: understanding and focus</strong>
-                  <br />
-                  The first session is slightly longer and gives us time to understand what has been happening for you,
-                  what you would like help with, and how we might work together. We begin shaping a clear focus at a
-                  pace that feels manageable.
-                </span>
-              </li>
+            <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
+                <div className="absolute inset-0 z-0 opacity-100">
+                    <Image src="/working-with-me-inline.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[68%_20%]" />
+                </div>
+                <div className="absolute inset-y-0 right-0 z-30 hidden w-[60%] [mask-image:linear-gradient(to_right,transparent_0%,black_24%,black_100%)] md:block">
+                    <Image src="/working-with-me-inline.jpg" alt="Natasha Russo in session" fill priority sizes="60vw" className="object-cover object-[72%_top] contrast-[1.05] saturate-[1.04]" />
+                </div>
+                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/10" />
+                <div className="absolute inset-x-0 bottom-0 z-20 h-24 bg-gradient-to-t from-[#FBF8F2] to-transparent" />
+                <div className="relative z-40 mx-auto grid min-h-[580px] max-w-6xl px-6 py-20 md:grid-cols-[0.54fr_0.46fr] md:items-center">
+                    <div>
+                        <p className={eyebrowClass}>Working with me</p>
+                        <h1 className="mt-5 max-w-2xl !font-sans text-5xl font-semibold leading-[0.98] tracking-normal text-[#1F1D19] sm:text-6xl">
+                            A structured and collaborative process.
+                        </h1>
+                        <p className="mt-6 max-w-xl text-lg leading-7 text-[#524D45]">
+                            This page gives a clear sense of how sessions usually unfold, what the process involves,
+                            and how we each contribute to the work.
+                        </p>
+                        <div className="relative mt-8 h-72 overflow-hidden rounded-sm [mask-image:linear-gradient(to_bottom,black_84%,transparent_100%)] md:hidden">
+                            <Image src="/working-with-me-inline.jpg" alt="Natasha Russo in session" fill sizes="100vw" className="object-cover object-[68%_top] contrast-[1.05] saturate-[1.04]" />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-              <li className="flex gap-3">
-                <span>
-                  <strong>3) Ongoing sessions: working with patterns</strong>
-                  <br />
-                  Subsequent sessions focus on actively working with thoughts, emotions, and behavioural responses. We
-                  use practical, evidence-based methods, both in session and, where helpful, through small reflections
-                  or experiments between sessions.
-                </span>
-              </li>
+            <section className="mx-auto max-w-6xl px-6 py-16">
+                <p className={eyebrowClass}>How the work usually unfolds</p>
+                <h2 className={`${titleClass} mt-4 max-w-3xl`}>A clear path, with room to adjust.</h2>
+                <div className="mt-10 grid gap-5 md:grid-cols-5">
+                    {steps.map(([title, body]) => (
+                        <article key={title} className="border-t border-[#D8D1C6] pt-5">
+                            <h3 className="!font-sans text-xl font-semibold leading-tight tracking-normal text-[#1F1D19]">{title}</h3>
+                            <p className="mt-4 text-sm leading-6 text-[#5B554D]">{body}</p>
+                        </article>
+                    ))}
+                </div>
+            </section>
 
-              <li className="flex gap-3">
-                <span>
-                  <strong>4) Reviewing and adjusting</strong>
-                  <br />
-                  We regularly pause to review how the work is going — what is helping, what feels less useful, and
-                  whether anything needs adjusting. The process remains collaborative and responsive to you.
-                </span>
-              </li>
+            <section className="border-y border-[#EEE6DB] bg-[#FFFDF9] py-16">
+                <div className="mx-auto max-w-6xl px-6">
+                    <div>
+                        <p className={eyebrowClass}>Your role and my role</p>
+                        <h2 className={titleClass}>Structure, guidance, curiosity and honesty.</h2>
+                        <div className="mt-8 grid gap-6 md:grid-cols-2">
+                            <p className={textClass}>
+                                <em>My role</em> is to provide structure, guidance, and evidence-based methods to help you
+                                understand and change unhelpful patterns.
+                            </p>
+                            <p className={textClass}>
+                                <em>Your role</em> is to bring curiosity, honesty, and a willingness to experiment – even
+                                when things feel uncertain or imperfect.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-              <li className="flex gap-3">
-                <span>
-                  <strong>5) Finishing well</strong>
-                  <br />
-                  Endings are planned thoughtfully, with an emphasis on consolidating learning, strengthening
-                  confidence, and supporting your independence beyond therapy.
-                </span>
-              </li>
-            </ul>
-          </Card>
-
-          <Card className="bg-[#F3F8F2]/90">
-            <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-              Your role and my role
-            </h2>
-
-            <div className="mt-6 mb-6 overflow-hidden rounded-lg border border-white/70 shadow-[0_16px_40px_rgba(79,90,84,0.14)]">
-              <Image
-                src="/working-with-me-inline.jpg"
-                alt="Natasha Russo in session"
-                width={1200}
-                height={675}
-                className="w-full object-cover saturate-90 contrast-[0.96]"
-              />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="border-r  border-dashed border-black mr-6">
-                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
-                  <em className="italic">My role</em> is to provide structure, guidance, and evidence-based methods to
-                  help you understand and change unhelpful patterns.
+            <section className="mx-auto max-w-6xl px-6 py-16">
+                <p className={eyebrowClass}>Session format and structure</p>
+                <h2 className={`${titleClass} mt-4 max-w-3xl`}>What to expect practically.</h2>
+                <div className="mt-10 grid gap-5 md:grid-cols-3">
+                    {[
+                        "Number of sessions: Many people find that around 5-6 sessions are enough to work through a specific difficulty.",
+                        "Session length: Standard sessions are 60 minutes.",
+                        "First session: Approximately 90 minutes.",
+                        "Frequency: Sessions are often weekly to begin with.",
+                        "Between-session work: There may be simple things to notice or try between sessions.",
+                        "Format: Sessions are held online via secure video, so you can take part from your own space.",
+                    ].map((item) => (
+                        <p key={item} className="border-t border-[#D8D1C6] pt-4 text-sm leading-6 text-[#5B554D]">{item}</p>
+                    ))}
+                </div>
+                <p className="mt-10 max-w-3xl text-sm italic leading-6 text-[#5B554D]">
+                    The process usually begins with a <Link href="/contact" className="font-semibold">free 20-minute initial chat</Link>, allowing us to consider whether this type of structured support is likely to be suitable before arranging a first session.
                 </p>
-              </div>
+            </section>
 
-              <div>
-                <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl">
-                  <em className="italic">Your role</em> is to bring curiosity, honesty, and a willingness to experiment
-                  – even when things feel uncertain or imperfect.
-                </p>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="bg-white/84">
-            <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-              Session format and structure
-            </h2>
-
-            <ul className="mt-6 space-y-4 text-stone-700 leading-relaxed">
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  <strong>Number of sessions:</strong> Many people find that around 5-6 sessions are enough to work
-                  through a specific difficulty, though this varies depending on what you are bringing and how you’d
-                  like to work.
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  <strong>Session length:</strong> Standard sessions are 60 minutes.
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  <strong>First session:</strong> Approximately 90 minutes, allowing time to understand what has been
-                  happening for you and agree a clear focus for our work.
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  <strong>Frequency:</strong> Sessions are often weekly to begin with, as this supports continuity while
-                  allowing time to reflect and try things out between meetings.
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  <strong>Between-session work:</strong> There may be simple things to notice or try between sessions.
-                  These are collaborative, manageable, and always agreed together.
-                </span>
-              </li>
-              <li id="format" className="flex gap-3 scroll-mt-24">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  <strong>Format:</strong> Sessions are held online via secure video, so you can take part from your own space. Many people find that being in a familiar environment makes it easier to settle into the process and engage with the work. The sessions remain structured and focused, in the same way as they would be in person.
-                </span>
-              </li>
-            </ul>
-            <p className="mt-6 text-stone-700 italic">
-              Hypnosis is used as a brief, focused technique to support cognitive and behavioural strategies - for example, to practise new responses or strengthen helpful coping skills. If you’d like a brief
-              explanation of how it’s used in my practice, you can read more in the <Link href="/faq" className="font-bold">FAQs.</Link>
-            </p>
-
-            <p className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic">
-              The process usually begins with a <Link href="/contact" className="font-bold">free 20-minute initial chat</Link>, allowing us to consider whether this type of structured support is likely to be suitable before arranging a first session.
-            </p>
-          </Card>
-
-          <Card className="bg-[#F7F4EE]/90">
-            <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
-              Confidentiality &amp; Suitability
-            </h2>
-            <p className="text-stone-700 leading-relaxed">
-              What you share in sessions is treated as confidential. In most circumstances, what we discuss stays
-              between us. There are a small number of legal and ethical exceptions to confidentiality — for example, if
-              there is a serious risk of harm to you or someone else. These limits are discussed clearly at the start,
-              so you know where you stand.
-            </p>
-            <p className="text-stone-700 leading-relaxed mt-4">
-              For further details, please refer to my{" "}
-              <Link href="/privacy-policy" className="font-bold italic">
-                Privacy Notice
-              </Link>
-              .
-            </p>
-            <p className="text-stone-700 leading-relaxed mt-4">
-              Different approaches suit different people, and part of the process is making sure this way of working
-              feels like a good fit for you. If you are unsure whether this is right for you, we can discuss it in an
-              initial conversation. Where longer-term or specialist support would be more appropriate, this can also be discussed during the consultation.
-            </p>
-          </Card>
-
-          <Card className="border-[#EEE4DF] !bg-[#FCF5F1] shadow-[0_18px_42px_rgba(112,82,68,0.04)]">
-            <h2 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">Fees</h2>
-
-            <ul className="mt-3 text-stone-700 leading-relaxed max-w-3xl italic space-y-2">
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  Standard sessions <strong>(60 minutes): £60</strong>
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  First session <strong>(90 minutes): £90</strong>
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0" />
-                <span>
-                  Block of 4 sessions: <strong>£220</strong>
-                </span>
-              </li>
-            </ul>
-
-            <p className="mt-4 text-stone-700 leading-relaxed max-w-3xl italic">
-              Fees are payable in advance. Cancellation arrangements are outlined clearly before we begin. For full
-              details, please refer to the <Link href="/fees-cancellation" className="font-bold">Fees &amp; Cancellation Policy.</Link>
-            </p>
-
-          </Card>
+            <section className="border-y border-[#EEE6DB] bg-[#FFFDF9] py-16">
+                <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-2">
+                    <article>
+                        <p className={eyebrowClass}>Confidentiality & suitability</p>
+                        <h2 className={titleClass}>Clear, respectful boundaries.</h2>
+                        <p className={`${textClass} mt-6`}>
+                            What you share in sessions is treated as confidential. In most circumstances, what we discuss
+                            stays between us. There are a small number of legal and ethical exceptions to confidentiality
+                            — for example, if there is a serious risk of harm to you or someone else.
+                        </p>
+                        <p className={`${textClass} mt-5`}>
+                            Different approaches suit different people, and part of the process is making sure this way
+                            of working feels like a good fit for you.
+                        </p>
+                    </article>
+                    <article>
+                        <p className={eyebrowClass}>Fees</p>
+                        <h2 className={titleClass}>Simple session fees.</h2>
+                        <ul className="mt-8 space-y-4 text-[#5B554D]">
+                            <li>Standard sessions (60 minutes): <strong>£60</strong></li>
+                            <li>First session (90 minutes): <strong>£90</strong></li>
+                            <li>Block of 4 sessions: <strong>£220</strong></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
         </div>
-      </section>
-    </>
-  );
+    );
 }
