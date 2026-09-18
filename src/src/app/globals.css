@@ -56,7 +56,6 @@
     }
 }
 
-main .absolute,
 main img[data-nimg="fill"] {
   pointer-events: none;
 }
