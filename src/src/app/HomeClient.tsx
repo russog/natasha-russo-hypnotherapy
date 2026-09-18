@@ -336,7 +336,7 @@ export function HomeClient() {
             </section>
 
             <section className="relative isolate overflow-hidden border-b border-[#EEE6DB] bg-[#FBF8F2]">
-                <div className="absolute inset-y-0 right-0 z-0 hidden w-full opacity-25 md:block md:w-[62%]">
+                <div className="absolute inset-y-0 right-0 z-0 w-full opacity-20 md:block md:w-[62%] md:opacity-25">
                     <Image
                         src="/about-natasha-close-green.jpg"
                         alt=""
@@ -345,6 +345,7 @@ export function HomeClient() {
                         className="object-cover object-center blur-[1px]"
                     />
                 </div>
+                <div className="absolute inset-0 z-10 bg-[#FBF8F2]/78 md:hidden" />
                 <div className="absolute inset-0 z-10 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/92 to-[#FBF8F2]/0 md:block" />
                 <div className="absolute inset-y-0 left-0 z-10 hidden w-2/3 bg-[#FBF8F2]/25 md:block" />
                 <div className="absolute inset-y-0 right-0 z-20 hidden [mask-image:linear-gradient(to_right,transparent_0%,black_22%,black_100%)] md:block md:w-[48%]">

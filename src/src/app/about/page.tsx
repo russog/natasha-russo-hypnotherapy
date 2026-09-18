@@ -24,7 +24,7 @@ export default function About() {
             <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-0 z-0 hidden opacity-100 md:block">
+                <div className="absolute inset-0 z-0 opacity-25 md:opacity-100">
                     <Image
                         src="/about-new.jpg"
                         alt=""
@@ -44,6 +44,8 @@ export default function About() {
                         className="object-cover object-[58%_24%]"
                     />
                 </div>
+                <div className="absolute inset-0 z-20 bg-[#FBF8F2]/72 md:hidden" />
+                <div className="absolute inset-x-0 bottom-0 z-20 h-32 bg-gradient-to-t from-[#EFE7DC] to-transparent md:hidden" />
                 <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/86 to-[#FBF8F2]/12 md:block" />
                 <div className="absolute inset-x-0 bottom-0 z-20 hidden h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[640px] max-w-6xl px-6 py-20 md:grid-cols-[0.52fr_0.48fr] md:items-center">
