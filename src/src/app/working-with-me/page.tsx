@@ -55,14 +55,14 @@ export default function WorkingWithMe() {
             <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-0 z-0 opacity-25 md:opacity-100">
-                    <Image src="/working-with-me-inline.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[68%_20%]" />
+                <div className="absolute inset-y-0 -right-32 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:inset-0 md:w-auto md:[mask-image:none]">
+                    <Image src="/working-with-me-inline.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[86%_20%] md:object-[68%_20%]" />
                 </div>
                 <div className="absolute inset-y-0 right-0 z-30 hidden w-[60%] [mask-image:linear-gradient(to_right,transparent_0%,black_24%,black_100%)] md:block">
                     <Image src="/working-with-me-inline.jpg" alt="Natasha Russo in session" fill priority sizes="60vw" className="object-cover object-[72%_top] contrast-[1.05] saturate-[1.04]" />
                 </div>
-                <div className="absolute inset-0 z-20 bg-[#FBF8F2]/74 md:hidden" />
-                <div className="absolute inset-x-0 bottom-0 z-20 h-32 bg-gradient-to-t from-[#EFE7DC] to-transparent md:hidden" />
+                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/96 to-[#FBF8F2]/16 md:hidden" />
+                <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-gradient-to-t from-[#EFE7DC] via-[#EFE7DC]/86 to-transparent md:hidden" />
                 <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/10 md:block" />
                 <div className="absolute inset-x-0 bottom-0 z-20 hidden h-24 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[580px] max-w-6xl px-6 py-20 md:grid-cols-[0.54fr_0.46fr] md:items-center">
@@ -75,7 +75,7 @@ export default function WorkingWithMe() {
                             This page gives a clear sense of how sessions usually unfold, what the process involves,
                             and how we each contribute to the work.
                         </p>
-                        <div className="relative mt-8 h-72 overflow-hidden rounded-sm [mask-image:linear-gradient(to_bottom,black_84%,transparent_100%)] md:hidden">
+                        <div className="relative mt-8 hidden h-72 overflow-hidden rounded-sm [mask-image:linear-gradient(to_bottom,black_84%,transparent_100%)]">
                             <Image src="/working-with-me-inline.jpg" alt="Natasha Russo in session" fill sizes="100vw" className="object-cover object-[68%_top] contrast-[1.05] saturate-[1.04]" />
                         </div>
                     </div>

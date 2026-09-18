@@ -24,14 +24,14 @@ export default function About() {
             <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-0 z-0 opacity-25 md:opacity-100">
+                <div className="absolute inset-y-0 -right-24 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:inset-0 md:w-auto md:[mask-image:none]">
                     <Image
                         src="/about-new.jpg"
                         alt=""
                         fill
                         priority
                         sizes="100vw"
-                        className="object-cover object-[58%_24%]"
+                        className="object-cover object-[64%_24%] md:object-[58%_24%]"
                     />
                 </div>
                 <div className="absolute inset-y-0 right-0 z-30 hidden w-[58%] [mask-image:linear-gradient(to_right,transparent_0%,black_14%,black_100%)] md:block">
@@ -44,8 +44,8 @@ export default function About() {
                         className="object-cover object-[58%_24%]"
                     />
                 </div>
-                <div className="absolute inset-0 z-20 bg-[#FBF8F2]/72 md:hidden" />
-                <div className="absolute inset-x-0 bottom-0 z-20 h-32 bg-gradient-to-t from-[#EFE7DC] to-transparent md:hidden" />
+                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/96 to-[#FBF8F2]/16 md:hidden" />
+                <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-gradient-to-t from-[#EFE7DC] via-[#EFE7DC]/86 to-transparent md:hidden" />
                 <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/86 to-[#FBF8F2]/12 md:block" />
                 <div className="absolute inset-x-0 bottom-0 z-20 hidden h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[640px] max-w-6xl px-6 py-20 md:grid-cols-[0.52fr_0.48fr] md:items-center">
@@ -61,7 +61,7 @@ export default function About() {
                             I offer a steady, respectful space where you can slow things down, think more clearly,
                             and explore what&apos;s going on without pressure or judgement.
                         </p>
-                        <div className="relative mt-8 h-80 overflow-hidden rounded-sm [mask-image:linear-gradient(to_bottom,black_84%,transparent_100%)] md:hidden">
+                        <div className="relative mt-8 hidden h-80 overflow-hidden rounded-sm [mask-image:linear-gradient(to_bottom,black_84%,transparent_100%)]">
                             <Image
                                 src="/about-new.jpg"
                                 alt="Natasha Russo"
