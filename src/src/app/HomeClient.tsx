@@ -19,23 +19,13 @@ import ExpandableMiniCard from "@/app/components/ExpandableMiniCard";
 
 const familiar = [
     <>
-        You find yourself caught in{" "}
-        <Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">
-            cycles of worry
-        </Link>
-        , what-ifs, or worst-case thinking that are hard to interrupt, and may recognise{" "}
-        <Link href="/blog/why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen" className="underline underline-offset-2 hover:no-underline">
-            why anxiety can feel so convincing
-        </Link>
-        .
+        You find yourself caught in cycles of worry, what-ifs, or worst-case thinking that are hard to
+        interrupt, and may find it difficult to step back from anxious thoughts when they feel so
+        convincing.
     </>,
     <>You notice familiar patterns repeating, even when you understand them logically.</>,
     <>
-        You struggle to fully{" "}
-        <Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">
-            switch off
-        </Link>{" "}
-        or stay present, even when things are going well.
+        You struggle to fully switch off or stay present, even when things are going well.
     </>,
 ];
 
@@ -148,9 +138,9 @@ const supportAreas = [
     { id: "fears", label: <>Managing specific fears</>, icon: FiTarget },
     { id: "habits", label: <>Habits you&apos;d like to change</>, icon: FiRepeat },
     { id: "smoking", label: <>Stopping smoking (<Link href="/smoking-cessation" className="underline underline-offset-2 hover:no-underline">smoking cessation</Link>)</>, icon: FiSlash },
-    { id: "sleep", label: <>Difficulty sleeping or <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">switching off</Link></>, icon: FiMoon },
-    { id: "assertiveness", label: <>Difficulty <Link href="/blog/why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life" className="underline underline-offset-2 hover:no-underline">being assertive</Link>, setting boundaries, or speaking up</>, icon: FiMessageCircle },
-    { id: "stuck", label: <><Link href="/blog/feeling-stuck-even-when-trying-to-move-forward" className="underline underline-offset-2 hover:no-underline">Feeling stuck</Link>, overwhelmed or <Link href="/blog/why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping" className="underline underline-offset-2 hover:no-underline">emotionally drained</Link></>, icon: FiCompass },
+    { id: "sleep", label: <>Difficulty sleeping or switching off</>, icon: FiMoon },
+    { id: "assertiveness", label: <>Difficulty being assertive, setting boundaries, or speaking up</>, icon: FiMessageCircle },
+    { id: "stuck", label: <>Feeling stuck, overwhelmed or emotionally drained</>, icon: FiCompass },
 ];
 
 const testimonials = [
