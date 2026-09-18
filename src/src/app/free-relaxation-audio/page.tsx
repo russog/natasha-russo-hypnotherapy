@@ -45,7 +45,8 @@ export default function FreeRelaxationAudioStylePreview() {
                     </audio>
 
                     <a
-                        href="/api/free-relaxation-audio-download"
+                        href="/audio/natasha-russo-relaxation-audio-louder.mp3"
+                        download
                         className="mt-7 inline-flex items-center gap-2 rounded-sm bg-[#4F5A54] px-5 py-3 text-sm font-semibold text-white no-underline shadow-[0_16px_34px_rgba(48,55,50,0.18)]"
                     >
                         <FiDownload aria-hidden /> Download audio

@@ -233,7 +233,8 @@ export function HomeClient() {
                             Book a free 20-minute chat <FiChevronRight aria-hidden />
                         </Link>
                         <a
-                            href="/api/free-relaxation-audio-download"
+                            href="/audio/natasha-russo-relaxation-audio-louder.mp3"
+                            download
                             className="mt-3 inline-flex items-center gap-2 rounded-sm border border-[#D8D1C6] bg-white/82 px-5 py-3 text-sm font-semibold text-[#3D3932] no-underline shadow-[0_14px_30px_rgba(52,44,35,0.10)] md:hidden"
                         >
                             <FiHeadphones aria-hidden /> Free relaxation audio
@@ -246,7 +247,8 @@ export function HomeClient() {
                 </div>
 
                 <a
-                    href="/api/free-relaxation-audio-download"
+                    href="/audio/natasha-russo-relaxation-audio-louder.mp3"
+                    download
                     className="pointer-events-auto absolute bottom-8 right-8 z-30 hidden w-64 items-center gap-4 rounded-sm border border-white/70 bg-white/88 p-4 text-left no-underline shadow-[0_18px_45px_rgba(52,44,35,0.12)] backdrop-blur-[1px] md:flex"
                 >
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#EFE7DC] text-[#4F5A54]">
