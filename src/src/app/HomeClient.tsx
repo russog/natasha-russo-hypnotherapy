@@ -206,12 +206,12 @@ export function HomeClient() {
                     fill
                     priority
                     sizes="100vw"
-                    className="object-cover object-center"
+                    className="pointer-events-none object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/18" />
-                <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/18" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent" />
 
-                <div className="relative mx-auto grid max-w-6xl px-6 py-20 md:grid-cols-[0.88fr_1.12fr] md:py-28">
+                <div className="relative z-20 mx-auto grid max-w-6xl px-6 py-20 md:grid-cols-[0.88fr_1.12fr] md:py-28">
                     <div>
                         <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#7C766C]">
                             Cognitive behavioural hypnotherapy
@@ -232,6 +232,12 @@ export function HomeClient() {
                         >
                             Book a free 20-minute chat <FiChevronRight aria-hidden />
                         </Link>
+                        <Link
+                            href="/free-relaxation-audio"
+                            className="mt-3 inline-flex items-center gap-2 rounded-sm border border-[#D8D1C6] bg-white/82 px-5 py-3 text-sm font-semibold text-[#3D3932] no-underline shadow-[0_14px_30px_rgba(52,44,35,0.10)] md:hidden"
+                        >
+                            <FiHeadphones aria-hidden /> Free relaxation audio
+                        </Link>
                         <p className="mt-5 max-w-md text-sm leading-6 text-[#615B52]">
                             Based in Putney, South West London, with online sessions available throughout the UK and
                             worldwide.
@@ -241,7 +247,7 @@ export function HomeClient() {
 
                 <Link
                     href="/free-relaxation-audio"
-                    className="absolute bottom-8 right-8 hidden w-64 items-center gap-4 rounded-sm border border-white/70 bg-white/88 p-4 text-left no-underline shadow-[0_18px_45px_rgba(52,44,35,0.12)] backdrop-blur-[1px] md:flex"
+                    className="pointer-events-auto absolute bottom-8 right-8 z-30 hidden w-64 items-center gap-4 rounded-sm border border-white/70 bg-white/88 p-4 text-left no-underline shadow-[0_18px_45px_rgba(52,44,35,0.12)] backdrop-blur-[1px] md:flex"
                 >
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#EFE7DC] text-[#4F5A54]">
                         <FiHeadphones aria-hidden />
