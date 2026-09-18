@@ -4,56 +4,153 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
-    FiActivity,
     FiChevronLeft,
     FiChevronRight,
     FiCompass,
     FiHeadphones,
     FiMessageCircle,
     FiMoon,
-    FiRefreshCw,
     FiRepeat,
     FiSlash,
     FiTarget,
-    FiTrendingUp,
     FiWind,
 } from "react-icons/fi";
+import ExpandableMiniCard from "@/app/components/ExpandableMiniCard";
 
 const familiar = [
-    "You find yourself caught in cycles of worry, what-ifs, or worst-case thinking that are hard to interrupt.",
-    "You notice familiar patterns repeating, even when you understand them logically.",
-    "You struggle to fully switch off or stay present, even when things are going well.",
+    <>
+        You find yourself caught in{" "}
+        <Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">
+            cycles of worry
+        </Link>
+        , what-ifs, or worst-case thinking that are hard to interrupt, and may recognise{" "}
+        <Link href="/blog/why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen" className="underline underline-offset-2 hover:no-underline">
+            why anxiety can feel so convincing
+        </Link>
+        .
+    </>,
+    <>You notice familiar patterns repeating, even when you understand them logically.</>,
+    <>
+        You struggle to fully{" "}
+        <Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">
+            switch off
+        </Link>{" "}
+        or stay present, even when things are going well.
+    </>,
 ];
 
 const helpCards = [
     {
-        number: "01",
         title: "Anxiety",
         text: "Support to reduce ongoing worry, calm your nervous system, and feel more at ease day-to-day.",
-        icon: FiActivity,
+        iconName: "anxiety" as const,
+        details: (
+            <>
+                <p>
+                    Anxiety doesn&apos;t always look dramatic. For many people, it shows up as constant background worry,
+                    tension in the body,{" "}
+                    <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">
+                        difficulty switching off
+                    </Link>
+                    , or a sense that something is always slightly &apos;wrong&apos;, even when life looks fine on the outside.
+                </p>
+                <p className="mt-2">
+                    In my work, anxiety is approached by understanding what&apos;s keeping it going - the patterns of
+                    thought, attention, and response that have developed over time. This can include{" "}
+                    <Link href="/blog/understanding-the-safety-behaviours-that-keep-anxiety-going" className="underline underline-offset-2 hover:no-underline">
+                        safety behaviours that keep anxiety going
+                    </Link>
+                    . We work collaboratively to change how you relate to these patterns, so anxiety has less space to take over.
+                </p>
+            </>
+        ),
     },
     {
-        number: "02",
         title: "Overthinking",
         text: "Help stepping out of mental loops and developing a more flexible relationship with your thoughts.",
-        icon: FiRefreshCw,
+        iconName: "overthinking" as const,
+        details: (
+            <>
+                <p>
+                    Overthinking often isn&apos;t about thinking too much - it&apos;s about feeling stuck in the same thoughts.
+                    You might find your mind constantly analysing, replaying conversations, second-guessing decisions, or
+                    trying to anticipate every possible outcome. Even when you understand something logically, your mind
+                    doesn&apos;t seem to let it go. Rest doesn&apos;t always feel restful, because the thinking carries on in
+                    the background. You can read more in{" "}
+                    <Link href="/blog/when-thinking-becomes-overthinking" className="underline underline-offset-2 hover:no-underline">
+                        When Thinking Becomes Overthinking
+                    </Link>
+                    .
+                </p>
+                <p className="mt-2">
+                    I approach overthinking by understanding how patterns of attention and interpretation develop - and
+                    why the mind gets pulled back into the{" "}
+                    <Link href="/blog/why-overthinking-turns-toward-what-if-scenarios" className="underline underline-offset-2 hover:no-underline">
+                        same overthinking loops
+                    </Link>
+                    . We work collaboratively to change how you relate to your thoughts, so they have less power to pull
+                    you in or run the show. The aim isn&apos;t to stop thinking, but to develop more choice and flexibility
+                    in how you respond.
+                </p>
+            </>
+        ),
     },
     {
-        number: "03",
         title: "Confidence & self-doubt",
         text: "Support to build inner confidence, reduce self-criticism, and trust your own judgement more.",
-        icon: FiTrendingUp,
+        iconName: "confidence" as const,
+        details: (
+            <>
+                <p>
+                    <Link href="/blog/how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing" className="underline underline-offset-2 hover:no-underline">
+                        Confidence
+                    </Link>{" "}
+                    and{" "}
+                    <Link href="/blog/when-you-know-you-can-but-still-feel-unsure" className="underline underline-offset-2 hover:no-underline">
+                        self-doubt
+                    </Link>{" "}
+                    often show up internally rather than on the surface. You might appear capable and functioning, yet
+                    privately question your decisions, downplay your strengths, or feel unsure of yourself even when
+                    things are going well. You may find yourself comparing, over-preparing, or worrying about getting
+                    things &apos;wrong&apos;, while others assume you&apos;re coping just fine.
+                </p>
+                <p className="mt-2">
+                    Many capable people also find themselves overlooking their own progress, quickly moving on from
+                    achievements, or feeling as though what they have done is never quite enough. You can read more about
+                    this in{" "}
+                    <Link href="/blog/why-it-never-feels-like-enough" className="underline underline-offset-2 hover:no-underline">
+                        Why It Never Feels Like Enough
+                    </Link>
+                    .
+                </p>
+                <p className="mt-2">
+                    Here, with me, confidence is not treated as something you either have or don&apos;t have. Instead, we
+                    look at the patterns of thinking, expectation, and self-evaluation that shape how you relate to
+                    yourself. By understanding how self-doubt is maintained, we work on developing a more balanced and
+                    realistic relationship with your thoughts - one that allows confidence to grow gradually, without
+                    pressure to &apos;perform&apos; or push yourself beyond what feels manageable.
+                </p>
+                <p className="mt-2">
+                    If you&apos;ve ever wondered why small everyday experiences can gradually shape confidence and
+                    self-doubt, you may also find{" "}
+                    <Link href="/blog/why-do-we-take-things-so-personally" className="underline underline-offset-2 hover:no-underline">
+                        Why Do We Take Things So Personally?
+                    </Link>{" "}
+                    helpful.
+                </p>
+            </>
+        ),
     },
 ];
 
 const supportAreas = [
-    { label: "Stress and life transitions", icon: FiWind },
-    { label: "Managing specific fears", icon: FiTarget },
-    { label: "Habits you'd like to change", icon: FiRepeat },
-    { label: "Stopping smoking", icon: FiSlash },
-    { label: "Difficulty sleeping or switching off", icon: FiMoon },
-    { label: "Difficulty being assertive, setting boundaries, or speaking up", icon: FiMessageCircle },
-    { label: "Feeling stuck, overwhelmed or emotionally drained", icon: FiCompass },
+    { id: "stress", label: <>Stress and life transitions</>, icon: FiWind },
+    { id: "fears", label: <>Managing specific fears</>, icon: FiTarget },
+    { id: "habits", label: <>Habits you&apos;d like to change</>, icon: FiRepeat },
+    { id: "smoking", label: <>Stopping smoking (<Link href="/smoking-cessation" className="underline underline-offset-2 hover:no-underline">smoking cessation</Link>)</>, icon: FiSlash },
+    { id: "sleep", label: <>Difficulty sleeping or <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">switching off</Link></>, icon: FiMoon },
+    { id: "assertiveness", label: <>Difficulty <Link href="/blog/why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life" className="underline underline-offset-2 hover:no-underline">being assertive</Link>, setting boundaries, or speaking up</>, icon: FiMessageCircle },
+    { id: "stuck", label: <><Link href="/blog/feeling-stuck-even-when-trying-to-move-forward" className="underline underline-offset-2 hover:no-underline">Feeling stuck</Link>, overwhelmed or <Link href="/blog/why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping" className="underline underline-offset-2 hover:no-underline">emotionally drained</Link></>, icon: FiCompass },
 ];
 
 const testimonials = [
@@ -74,6 +171,12 @@ const testimonials = [
         quote:
             "Natasha helped me feel safe, supported, and in control throughout. Her calm, professional approach gave me practical tools and powerful insights that led to real progress.",
         name: "S.C",
+    },
+    {
+        title: "Letting go of guilt and pressure",
+        quote:
+            "I feel much less guilty when I want to relax. Natasha helped me set an achievable, realistic goal and was flexible with exercises, making sure I got the most from each session.",
+        name: "I.D",
     },
 ];
 
@@ -156,8 +259,8 @@ export function HomeClient() {
                         If this resonates, it may be a sign that a different way of responding could help.
                     </h2>
                     <div className="mt-12 grid gap-0 divide-y divide-[#E7DDD2] md:grid-cols-3 md:divide-x md:divide-y-0">
-                        {familiar.map((item) => (
-                            <div key={item} className="px-8 py-4 text-center md:py-0">
+                        {familiar.map((item, index) => (
+                            <div key={index} className="px-8 py-4 text-center md:py-0">
                                 <p className="mx-auto max-w-xs text-sm leading-6 text-[#625C53]">{item}</p>
                             </div>
                         ))}
@@ -175,27 +278,27 @@ export function HomeClient() {
                             Support for thoughts, emotions, and everyday life.
                         </h2>
                     </div>
-                    <p className="text-base leading-7 text-[#5B554D]">
-                        I support adults in managing difficulties that show up in thoughts, emotions, and everyday life,
-                        using practical, evidence-based approaches.
-                    </p>
+                    <div className="space-y-4">
+                        <p className="text-base leading-7 text-[#5B554D]">
+                            I support adults in managing difficulties that show up in thoughts, emotions, and everyday life,
+                            using practical, evidence-based approaches.
+                        </p>
+                        <p className="text-base leading-7 text-[#5B554D]">
+                            These approaches are typically suited to present-day difficulties and focus on helping you
+                            change patterns in how you think and respond, rather than exploring past experiences in depth.
+                        </p>
+                    </div>
                 </div>
                 <div className="mt-10 grid gap-5 md:grid-cols-3">
-                    {helpCards.map((card) => {
-                        const Icon = card.icon;
-
-                        return (
-                        <article
+                    {helpCards.map((card) => (
+                        <ExpandableMiniCard
                             key={card.title}
-                            className="min-h-[250px] rounded-sm border border-[#E6DDD1] bg-[#F5EFE6] p-7 shadow-[0_18px_45px_rgba(52,44,35,0.06)]"
-                        >
-                            <span className="flex h-12 w-12 items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]">
-                                <Icon className="h-6 w-6" aria-hidden="true" />
-                            </span>
-                            <h3 className="mt-5 !font-sans text-3xl font-semibold leading-tight tracking-normal text-[#1F1D19]">{card.title}</h3>
-                            <p className="mt-5 text-sm leading-6 text-[#625C53]">{card.text}</p>
-                        </article>
-                    )})}
+                            title={card.title}
+                            body={card.text}
+                            details={card.details}
+                            iconName={card.iconName}
+                        />
+                    ))}
                 </div>
             </section>
 
@@ -215,8 +318,8 @@ export function HomeClient() {
                             </p>
                         </div>
                         <div className="grid gap-4 sm:grid-cols-2">
-                            {supportAreas.map(({ label, icon: Icon }) => (
-                                <div key={label} className="flex items-center gap-4 border-b border-[#E6DDD1] pb-4">
+                            {supportAreas.map(({ id, label, icon: Icon }) => (
+                                <div key={id} className="flex items-center gap-4 border-b border-[#E6DDD1] pb-4">
                                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#D8D1C6] text-[#4F5A54]">
                                         <Icon aria-hidden />
                                     </span>
@@ -225,11 +328,15 @@ export function HomeClient() {
                             ))}
                         </div>
                     </div>
+                    <p className="mt-8 max-w-3xl text-sm italic leading-6 text-[#5B554D]">
+                        You are welcome to <Link href="/contact" className="font-semibold">get in touch</Link> even if
+                        what you are dealing with doesn&apos;t fit neatly into a box.
+                    </p>
                 </div>
             </section>
 
             <section className="relative isolate overflow-hidden border-b border-[#EEE6DB] bg-[#FBF8F2]">
-                <div className="absolute inset-y-0 right-0 z-0 w-full opacity-25 md:w-[62%]">
+                <div className="absolute inset-y-0 right-0 z-0 hidden w-full opacity-25 md:block md:w-[62%]">
                     <Image
                         src="/about-natasha-close-green.jpg"
                         alt=""
@@ -238,8 +345,8 @@ export function HomeClient() {
                         className="object-cover object-center blur-[1px]"
                     />
                 </div>
-                <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/92 to-[#FBF8F2]/0" />
-                <div className="absolute inset-y-0 left-0 z-10 w-2/3 bg-[#FBF8F2]/25" />
+                <div className="absolute inset-0 z-10 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/92 to-[#FBF8F2]/0 md:block" />
+                <div className="absolute inset-y-0 left-0 z-10 hidden w-2/3 bg-[#FBF8F2]/25 md:block" />
                 <div className="absolute inset-y-0 right-0 z-20 hidden [mask-image:linear-gradient(to_right,transparent_0%,black_22%,black_100%)] md:block md:w-[48%]">
                     <Image
                         src="/about-natasha-close-green.jpg"
@@ -305,6 +412,10 @@ export function HomeClient() {
                             Feel supported, respected, and in control throughout the process.
                         </li>
                     </ul>
+                    <p className="mt-8 max-w-3xl text-sm italic leading-6 text-[#5B554D]">
+                        Hypnotherapy here involves using your own focused attention and imagination in supportive ways -
+                        it is safe, evidence-based, and always led by you and your goals.
+                    </p>
                 </div>
             </section>
 

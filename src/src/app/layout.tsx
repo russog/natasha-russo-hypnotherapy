@@ -1,6 +1,4 @@
 import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
-import "./globals.css";
 import Navbar from "@/app/components/Navbar";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
@@ -18,16 +16,6 @@ const bodyFont = Source_Sans_3({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
     variable: "--font-body",
-});
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
 });
 
 const mainNav = [

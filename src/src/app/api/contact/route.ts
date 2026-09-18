@@ -19,6 +19,17 @@ function logContactSendFailure(details?: { providerCode?: string; statusCode?: n
     });
 }
 
+function getRequestOrigin(req: Request) {
+    const origin = req.headers.get("origin");
+    if (origin) return origin;
+
+    const forwardedProto = req.headers.get("x-forwarded-proto") ?? "https";
+    const forwardedHost = req.headers.get("x-forwarded-host") ?? req.headers.get("host");
+    if (forwardedHost) return `${forwardedProto}://${forwardedHost}`;
+
+    return new URL(req.url).origin;
+}
+
 export async function POST(req: Request) {
     try {
         const RESEND_API_KEY = process.env.RESEND_API_KEY;
@@ -70,7 +81,7 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: contactFormErrorMessage }, { status: 502 });
         }
 
-        const origin = req.headers.get("origin") ?? new URL(req.url).origin;
+        const origin = getRequestOrigin(req);
         return NextResponse.redirect(`${origin}/contact/thanks`, 303);
 
 

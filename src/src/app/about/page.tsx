@@ -13,7 +13,7 @@ const titleClass = "!font-sans text-4xl font-semibold leading-tight tracking-nor
 const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8A8174]";
 const textClass = "text-base leading-7 text-[#5B554D]";
 
-export default function AboutStylePreview() {
+export default function About() {
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
             <script
@@ -24,7 +24,7 @@ export default function AboutStylePreview() {
             <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-0 z-0 opacity-100">
+                <div className="absolute inset-0 z-0 hidden opacity-100 md:block">
                     <Image
                         src="/about-new.jpg"
                         alt=""
@@ -44,8 +44,8 @@ export default function AboutStylePreview() {
                         className="object-cover object-[58%_24%]"
                     />
                 </div>
-                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/86 to-[#FBF8F2]/12" />
-                <div className="absolute inset-x-0 bottom-0 z-20 h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent" />
+                <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/86 to-[#FBF8F2]/12 md:block" />
+                <div className="absolute inset-x-0 bottom-0 z-20 hidden h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[640px] max-w-6xl px-6 py-20 md:grid-cols-[0.52fr_0.48fr] md:items-center">
                     <div>
                         <p className={eyebrowClass}>About me</p>
@@ -135,6 +135,16 @@ export default function AboutStylePreview() {
                             patterns of worry, overthinking, or self-doubt — especially when life feels demanding.
                         </p>
                         <p className={textClass}>
+                            Earlier in my career, working in school settings with neurodivergent children reinforced how
+                            much context, expectations, and environment shape how people cope, and how important it is
+                            that support is flexible, respectful, and led by the individual.
+                        </p>
+                        <p className={textClass}>
+                            Alongside this, experiencing periods of anxiety and everyday stress myself made it clear
+                            that reassurance or advice alone often isn&apos;t enough. Understanding what&apos;s happening and
+                            learning how to respond differently matters.
+                        </p>
+                        <p className={textClass}>
                             Cognitive-behavioural hypnotherapy brought these strands together. It offered an
                             evidence-based, practical way of working with attention, thinking patterns, and responses,
                             without force or pressure — and that&apos;s the framework I work from today.
@@ -152,10 +162,20 @@ export default function AboutStylePreview() {
                         <li className="border-t border-[#D8D1C6] pt-4">MSc Cross-Cultural Psychology (Brunel University)</li>
                         <li className="border-t border-[#D8D1C6] pt-4">Graduate Member of the British Psychological Society (BPS)</li>
                         <li className="border-t border-[#D8D1C6] pt-4">
-                            Level 5 Diploma in Cognitive Behavioural Hypnotherapy.
+                            Level 5 Diploma in Cognitive Behavioural Hypnotherapy (training completed with the UK
+                            College of Hypnosis and Hypnotherapy on a BPS CPD approved programme).
                         </li>
                         <li className="border-t border-[#D8D1C6] pt-4 md:col-span-2">
-                            Member of the National Council of Integrative Psychotherapists (NCIP).
+                            Member of the{" "}
+                            <Link
+                                href="https://www.the-ncip.org/member-of-ncip/natasha-russo?from=badge"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-semibold"
+                            >
+                                National Council of Integrative Psychotherapists
+                            </Link>{" "}
+                            (NCIP).
                         </li>
                     </ul>
                     <p className="mt-10 max-w-xl text-sm italic leading-6 text-[#5B554D]">

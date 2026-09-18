@@ -21,21 +21,48 @@ const steps = [
     ["5) Finishing well", "Endings are planned thoughtfully, with an emphasis on consolidating learning, strengthening confidence, and supporting your independence beyond therapy."],
 ];
 
-export default function WorkingWithMeStylePreview() {
+const formatItems = [
+    {
+        title: "Number of sessions",
+        body: "Many people find that around 5-6 sessions are enough to work through a specific difficulty, though this varies depending on what you are bringing and how you’d like to work.",
+    },
+    {
+        title: "Session length",
+        body: "Standard sessions are 60 minutes.",
+    },
+    {
+        title: "First session",
+        body: "Approximately 90 minutes, allowing time to understand what has been happening for you and agree a clear focus for our work.",
+    },
+    {
+        title: "Frequency",
+        body: "Sessions are often weekly to begin with, as this supports continuity while allowing time to reflect and try things out between meetings.",
+    },
+    {
+        title: "Between-session work",
+        body: "There may be simple things to notice or try between sessions. These are collaborative, manageable, and always agreed together.",
+    },
+    {
+        title: "Format",
+        body: "Sessions are held online via secure video, so you can take part from your own space. Many people find that being in a familiar environment makes it easier to settle into the process and engage with the work. The sessions remain structured and focused, in the same way as they would be in person.",
+    },
+];
+
+export default function WorkingWithMe() {
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
             <script dangerouslySetInnerHTML={{ __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');" }} />
             <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-0 z-0 opacity-100">
+                <div className="absolute inset-0 z-0 hidden opacity-100 md:block">
                     <Image src="/working-with-me-inline.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[68%_20%]" />
                 </div>
                 <div className="absolute inset-y-0 right-0 z-30 hidden w-[60%] [mask-image:linear-gradient(to_right,transparent_0%,black_24%,black_100%)] md:block">
                     <Image src="/working-with-me-inline.jpg" alt="Natasha Russo in session" fill priority sizes="60vw" className="object-cover object-[72%_top] contrast-[1.05] saturate-[1.04]" />
                 </div>
-                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/10" />
-                <div className="absolute inset-x-0 bottom-0 z-20 h-24 bg-gradient-to-t from-[#FBF8F2] to-transparent" />
+                <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/10 md:block" />
+                <div className="absolute inset-x-0 bottom-0 z-20 hidden h-24 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[580px] max-w-6xl px-6 py-20 md:grid-cols-[0.54fr_0.46fr] md:items-center">
                     <div>
                         <p className={eyebrowClass}>Working with me</p>
@@ -89,17 +116,18 @@ export default function WorkingWithMeStylePreview() {
                 <p className={eyebrowClass}>Session format and structure</p>
                 <h2 className={`${titleClass} mt-4 max-w-3xl`}>What to expect practically.</h2>
                 <div className="mt-10 grid gap-5 md:grid-cols-3">
-                    {[
-                        "Number of sessions: Many people find that around 5-6 sessions are enough to work through a specific difficulty.",
-                        "Session length: Standard sessions are 60 minutes.",
-                        "First session: Approximately 90 minutes.",
-                        "Frequency: Sessions are often weekly to begin with.",
-                        "Between-session work: There may be simple things to notice or try between sessions.",
-                        "Format: Sessions are held online via secure video, so you can take part from your own space.",
-                    ].map((item) => (
-                        <p key={item} className="border-t border-[#D8D1C6] pt-4 text-sm leading-6 text-[#5B554D]">{item}</p>
+                    {formatItems.map((item) => (
+                        <p key={item.title} className="border-t border-[#D8D1C6] pt-4 text-sm leading-6 text-[#5B554D]">
+                            <strong>{item.title}:</strong> {item.body}
+                        </p>
                     ))}
                 </div>
+                <p className="mt-8 max-w-3xl text-sm italic leading-6 text-[#5B554D]">
+                    Hypnosis is used as a brief, focused technique to support cognitive and behavioural strategies - for
+                    example, to practise new responses or strengthen helpful coping skills. If you&apos;d like a brief
+                    explanation of how it&apos;s used in my practice, you can read more in the{" "}
+                    <Link href="/faq" className="font-semibold">FAQs</Link>.
+                </p>
                 <p className="mt-10 max-w-3xl text-sm italic leading-6 text-[#5B554D]">
                     The process usually begins with a <Link href="/contact" className="font-semibold">free 20-minute initial chat</Link>, allowing us to consider whether this type of structured support is likely to be suitable before arranging a first session.
                 </p>
@@ -113,11 +141,20 @@ export default function WorkingWithMeStylePreview() {
                         <p className={`${textClass} mt-6`}>
                             What you share in sessions is treated as confidential. In most circumstances, what we discuss
                             stays between us. There are a small number of legal and ethical exceptions to confidentiality
-                            — for example, if there is a serious risk of harm to you or someone else.
+                            — for example, if there is a serious risk of harm to you or someone else. These limits are
+                            discussed clearly at the start, so you know where you stand.
+                        </p>
+                        <p className={`${textClass} mt-5`}>
+                            For further details, please refer to my{" "}
+                            <Link href="/privacy-policy" className="font-semibold">
+                                Privacy Notice
+                            </Link>.
                         </p>
                         <p className={`${textClass} mt-5`}>
                             Different approaches suit different people, and part of the process is making sure this way
-                            of working feels like a good fit for you.
+                            of working feels like a good fit for you. If you are unsure whether this is right for you,
+                            we can discuss it in an initial conversation. Where longer-term or specialist support would
+                            be more appropriate, this can also be discussed during the consultation.
                         </p>
                     </article>
                     <article>
@@ -128,6 +165,13 @@ export default function WorkingWithMeStylePreview() {
                             <li>First session (90 minutes): <strong>£90</strong></li>
                             <li>Block of 4 sessions: <strong>£220</strong></li>
                         </ul>
+                        <p className={`${textClass} mt-6`}>
+                            Fees are payable in advance. Cancellation arrangements are outlined clearly before we begin.
+                            For full details, please refer to the{" "}
+                            <Link href="/fees-cancellation" className="font-semibold">
+                                Fees &amp; Cancellation Policy
+                            </Link>.
+                        </p>
                     </article>
                 </div>
             </section>

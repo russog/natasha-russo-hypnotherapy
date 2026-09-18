@@ -50,11 +50,16 @@ export default function ContactStylePreview() {
                         </p>
                         <p className="mt-3">
                             Email:{" "}
-                            <a href="mailto:contact@natasharussohypnotherapy.co.uk" className="font-semibold no-underline">
+                            <a href="mailto:contact@natasharussohypnotherapy.co.uk" className="break-all font-semibold no-underline">
                                 contact@natasharussohypnotherapy.co.uk
                             </a>
                         </p>
-                        <p className="mt-3">Business phone: +44 7719 695769</p>
+                        <p className="mt-3">
+                            Business phone:{" "}
+                            <a href="tel:+447719695769" className="font-semibold no-underline">
+                                +44 7719 695769
+                            </a>
+                        </p>
                         <p className="mt-3">I usually reply within 1 working day.</p>
                     </div>
                 </div>

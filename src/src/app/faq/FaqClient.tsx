@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 type FAQ = {
     question: string;
@@ -157,6 +157,8 @@ const faqs: FAQ[] = [
     },
 ];
 
+const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8A8174]";
+
 function AccordionItem({
                            question,
                            children,
@@ -168,40 +170,35 @@ function AccordionItem({
     isOpen: boolean;
     onToggle: () => void;
 }) {
-    const innerRef = useRef<HTMLDivElement | null>(null);
-    const [height, setHeight] = useState<number>(0);
-
-    useLayoutEffect(() => {
-        if (!innerRef.current) return;
-        setHeight(isOpen ? innerRef.current.scrollHeight : 0);
-    }, [isOpen, children]);
-
     return (
-        <div className="p-4 sm:p-5">
+        <div className="p-5 sm:p-6">
             <button
                 type="button"
                 aria-expanded={isOpen}
                 onClick={onToggle}
                 className="flex w-full items-start justify-between gap-4 text-left"
             >
-                <span className="text-[17px] font-medium leading-snug text-neutral-800">{question}</span>
+                <span className="!font-sans text-lg font-semibold leading-snug tracking-normal text-[#1F1D19]">{question}</span>
 
                 <span
                     aria-hidden="true"
-                    className="mt-0.5 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full border border-[#DDE8DD] bg-[#F5F8F2] text-[#4F5A54]"
+                    className="mt-0.5 inline-flex h-8 w-8 flex-none items-center justify-center rounded-full border border-[#D8D1C6] bg-[#F5F8F2] text-[#4F5A54]"
                 >
           {isOpen ? '−' : '+'}
         </span>
             </button>
 
-            <div className="overflow-hidden transition-[height] duration-300 ease-out" style={{ height }}>
+            <div
+                className={`grid transition-all duration-300 ease-out ${
+                    isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                }`}
+            >
                 <div
-                    ref={innerRef}
-                    className={`pt-3 text-[15px] leading-relaxed text-stone-700 ${
+                    className={`overflow-hidden text-[15px] leading-relaxed text-[#5B554D] ${
                         isOpen ? 'opacity-100' : 'opacity-0'
                     } transition-opacity duration-200`}
                 >
-                    <div className="space-y-4">{children}</div>
+                    <div className="space-y-4 pt-4">{children}</div>
                 </div>
             </div>
         </div>
@@ -212,11 +209,25 @@ export default function FaqClient() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
-        <section className="relative overflow-hidden">
-            <div className="relative mx-auto max-w-5xl px-4 py-10 text-center sm:py-14">
-                <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">FAQs</h1>
+        <section className="relative overflow-hidden bg-[#FBF8F2] text-[#25231F]">
+            <script dangerouslySetInnerHTML={{ __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');" }} />
+            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
-                <div className="divide-y divide-[#DDE8DD] rounded-lg border border-[#DDE8DD] bg-white/78 text-left shadow-[0_14px_34px_rgba(79,90,84,0.09)] backdrop-blur-[1px]">
+            <div className="border-b border-[#EEE6DB] bg-[#FFFDF9] py-16">
+                <div className="mx-auto max-w-6xl px-6">
+                    <p className={eyebrowClass}>FAQs</p>
+                    <h1 className="mt-5 max-w-4xl !font-sans text-5xl font-semibold leading-[0.98] tracking-normal text-[#1F1D19] sm:text-6xl">
+                        Frequently asked questions.
+                    </h1>
+                    <p className="mt-6 max-w-3xl text-base leading-7 text-[#5B554D]">
+                        Practical answers about cognitive behavioural hypnotherapy, online sessions, suitability, and
+                        what to expect.
+                    </p>
+                </div>
+            </div>
+
+            <div className="relative mx-auto max-w-5xl px-6 py-14">
+                <div className="divide-y divide-[#E6DDD1] rounded-sm border border-[#E6DDD1] bg-[#FFFDF9] text-left shadow-[0_18px_45px_rgba(52,44,35,0.05)]">
                     {faqs.map((faq, index) => (
                         <AccordionItem
                             key={index}
@@ -229,10 +240,10 @@ export default function FaqClient() {
                     ))}
                 </div>
 
-                <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-neutral-700">
+                <p className="mx-auto mt-8 max-w-3xl text-center text-base leading-7 text-[#5B554D]">
                     If you&apos;re unsure whether this approach is right for you, you&apos;re welcome to{' '}
-                    <Link href="/contact" className="italic underline underline-offset-2 hover:no-underline">
-                        Get in touch
+                    <Link href="/contact" className="font-semibold underline underline-offset-2 hover:no-underline">
+                        get in touch
                     </Link>
                     .
                 </p>

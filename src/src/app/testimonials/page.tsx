@@ -8,7 +8,6 @@ export const metadata: Metadata = {
     alternates: { canonical: "/testimonials" },
 };
 
-const titleClass = "!font-sans text-4xl font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-5xl";
 const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8A8174]";
 
 const testimonials = [
