@@ -40,12 +40,12 @@ export default function FreeRelaxationAudioStylePreview() {
                     </div>
 
                     <audio controls preload="none" className="mt-8 w-full" aria-label="Free relaxation audio">
-                        <source src="/audio/natasha-russo-relaxation-audio-louder.m4a" type="audio/mp4" />
+                        <source src="/audio/natasha-russo-relaxation-audio-louder.mp3" type="audio/mpeg" />
                         Your browser does not support the audio player.
                     </audio>
 
                     <a
-                        href="/audio/natasha-russo-relaxation-audio-louder.m4a"
+                        href="/audio/natasha-russo-relaxation-audio-louder.mp3"
                         download
                         className="mt-7 inline-flex items-center gap-2 rounded-sm bg-[#4F5A54] px-5 py-3 text-sm font-semibold text-white no-underline shadow-[0_16px_34px_rgba(48,55,50,0.18)]"
                     >
