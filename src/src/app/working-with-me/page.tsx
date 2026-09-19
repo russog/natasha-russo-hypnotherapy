@@ -55,10 +55,10 @@ export default function WorkingWithMe() {
             <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-y-0 -right-32 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:inset-0 md:w-auto md:[mask-image:none]">
+                <div className="working-hero-background-soft absolute inset-y-0 -right-32 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:inset-0 md:w-auto">
                     <Image src="/working-with-me-inline.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[86%_20%] md:object-[68%_20%]" />
                 </div>
-                <div className="absolute inset-y-0 right-0 z-30 hidden w-[60%] [mask-image:linear-gradient(to_right,transparent_0%,black_24%,black_100%)] md:block">
+                <div className="working-hero-sharp-photo absolute inset-y-0 right-0 z-30 hidden w-[60%] md:block">
                     <Image src="/working-with-me-inline.jpg" alt="Natasha Russo in session" fill priority sizes="60vw" className="object-cover object-[72%_top] contrast-[1.05] saturate-[1.04]" />
                 </div>
                 <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/96 to-[#FBF8F2]/16 md:hidden" />

@@ -91,6 +91,51 @@
                 black 100%
         );
     }
+
+    .working-hero-sharp-photo {
+        -webkit-mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                transparent 5%,
+                rgba(0, 0, 0, 0.18) 14%,
+                rgba(0, 0, 0, 0.72) 26%,
+                black 34%,
+                black 100%
+        );
+        mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                transparent 5%,
+                rgba(0, 0, 0, 0.18) 14%,
+                rgba(0, 0, 0, 0.72) 26%,
+                black 34%,
+                black 100%
+        );
+    }
+
+    @media (min-width: 768px) {
+        .working-hero-background-soft {
+            filter: blur(3px) saturate(0.72);
+            opacity: 0.22;
+            transform: scale(1.015);
+            -webkit-mask-image: linear-gradient(
+                    to right,
+                    black 0%,
+                    rgba(0, 0, 0, 0.7) 34%,
+                    rgba(0, 0, 0, 0.14) 52%,
+                    transparent 72%,
+                    transparent 100%
+            );
+            mask-image: linear-gradient(
+                    to right,
+                    black 0%,
+                    rgba(0, 0, 0, 0.7) 34%,
+                    rgba(0, 0, 0, 0.14) 52%,
+                    transparent 72%,
+                    transparent 100%
+            );
+        }
+    }
 }
 
 main img[data-nimg="fill"] {
