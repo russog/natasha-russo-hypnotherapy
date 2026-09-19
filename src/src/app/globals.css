@@ -37,10 +37,18 @@
 
     .nav-reset a[aria-current="page"] {
         color: var(--green-olive);
-        text-decoration-line: underline;
-        text-decoration-color: var(--green-sage);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 0.35em;
+        position: relative;
+        text-decoration-line: none;
+    }
+
+    .nav-reset a[aria-current="page"]::after {
+        background: var(--green-sage);
+        bottom: -0.28em;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
     }
 }
 
