@@ -50,6 +50,18 @@
         position: absolute;
         width: 100%;
     }
+
+    .nav-reset a.navbar-brand {
+        align-items: center;
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    @media (min-width: 768px) {
+        .nav-reset a.navbar-brand {
+            gap: 1rem;
+        }
+    }
 }
 
 @layer base {

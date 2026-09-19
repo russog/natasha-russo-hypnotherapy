@@ -28,17 +28,18 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="border-b border-[#4F5A54] nav-reset">
-            <div className="px-6 py-4 flex items-center gap-4">
-                <Link href="/" className="flex items-center gap-4">
+        <nav className="sticky top-0 z-50 border-b border-[#4F5A54] bg-[#F7F9F5]/95 backdrop-blur nav-reset md:static md:z-auto md:bg-transparent md:backdrop-blur-none">
+            <div className="px-4 py-1.5 flex items-center gap-3 md:px-6 md:py-4 md:gap-4">
+                <Link href="/" className="navbar-brand flex items-center gap-3 md:gap-4">
                     <Image
                         src="/logo.webp"
                         alt="Natasha Russo Hypnotherapy"
                         width={120}
                         height={120}
                         priority
+                        className="h-12 w-12 md:h-[120px] md:w-[120px]"
                     />
-                    <span className="text-base md:text-lg font-light leading-tight whitespace-nowrap">
+                    <span className="text-sm md:text-lg font-light leading-snug md:leading-tight whitespace-nowrap">
             Natasha Russo<br />Hypnotherapy
           </span>
                 </Link>
