@@ -36,7 +36,7 @@ export default function About() {
                 </div>
                 <div className="about-hero-sharp-photo absolute inset-y-0 right-0 z-30 hidden w-[58%] md:block">
                     <Image
-                        src="/about-new.jpg"
+                        src="/about-new-desktop-sharp.webp"
                         alt="Natasha Russo"
                         fill
                         priority
