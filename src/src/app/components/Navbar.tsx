@@ -3,9 +3,30 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
+const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About me" },
+    { href: "/working-with-me", label: "Working with me" },
+    { href: "/blog", label: "Blog" },
+    { href: "/testimonials", label: "Client Testimonials" },
+    { href: "/faq", label: "FAQ" },
+    { href: "/contact", label: "Contact" },
+];
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+    const pathname = usePathname();
+
+    const isActive = (href: string) => {
+        if (href === "/") {
+            return pathname === "/";
+        }
+
+        return pathname === href || pathname.startsWith(`${href}/`);
+    };
+
     return (
         <nav className="border-b border-[#4F5A54] nav-reset">
             <div className="px-6 py-4 flex items-center gap-4">
@@ -23,13 +44,15 @@ export default function Navbar() {
                 </Link>
 
                 <div className="ml-auto hidden md:flex items-center gap-10 text-lg mr-20">
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About me</Link>
-                    <Link href="/working-with-me">Working with me</Link>
-                    <Link href="/blog">Blog</Link>
-                    <Link href="/testimonials">Client Testimonials</Link>
-                    <Link href="/faq">FAQ</Link>
-                    <Link href="/contact">Contact</Link>
+                    {navItems.map((item) => (
+                        <Link
+                            key={item.href}
+                            href={item.href}
+                            aria-current={isActive(item.href) ? "page" : undefined}
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
                 </div>
 
                 <button
@@ -44,19 +67,16 @@ export default function Navbar() {
 
             {open && (
                 <div className="md:hidden border-t border-[#4F5A54] px-6 py-4 flex flex-col gap-4 text-base">
-                    <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-                    <Link href="/about" onClick={() => setOpen(false)}>About me</Link>
-                    <Link href="/working-with-me" onClick={() => setOpen(false)}>
-                        Working with me
-                    </Link>
-                    <Link href="/blog" onClick={() => setOpen(false)}>
-                        Blog
-                    </Link>
-                    <Link href="/testimonials" onClick={() => setOpen(false)}>
-                        Client Testimonials
-                    </Link>
-                    <Link href="/faq" onClick={() => setOpen(false)}>FAQ</Link>
-                    <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+                    {navItems.map((item) => (
+                        <Link
+                            key={item.href}
+                            href={item.href}
+                            aria-current={isActive(item.href) ? "page" : undefined}
+                            onClick={() => setOpen(false)}
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
                 </div>
             )}
         </nav>

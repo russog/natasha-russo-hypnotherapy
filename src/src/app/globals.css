@@ -34,6 +34,14 @@
         color: inherit;
         font: inherit;
     }
+
+    .nav-reset a[aria-current="page"] {
+        color: var(--green-olive);
+        text-decoration-line: underline;
+        text-decoration-color: var(--green-sage);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.35em;
+    }
 }
 
 @layer base {
