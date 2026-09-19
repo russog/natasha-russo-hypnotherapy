@@ -23,8 +23,6 @@ const approachItems = [
 export default function SmokingCessationStylePreview() {
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
-            <script dangerouslySetInnerHTML={{ __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');" }} />
-            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="border-b border-[#EEE6DB] bg-[#FFFDF9] py-20">
                 <div className="mx-auto max-w-6xl px-6">

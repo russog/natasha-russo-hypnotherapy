@@ -182,13 +182,6 @@ export function HomeClient() {
 
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
-            <script
-                dangerouslySetInnerHTML={{
-                    __html:
-                        "window.localStorage.setItem('natasha-russo-cookie-consent','declined');",
-                }}
-            />
-            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
             <section className="relative min-h-[680px] overflow-hidden border-b border-[#E7DDD2] bg-[#E9DFD2]">
                 <Image
                     src="/home-cosy-table.png"

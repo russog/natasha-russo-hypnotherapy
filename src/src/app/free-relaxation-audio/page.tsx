@@ -16,8 +16,6 @@ const textClass = "text-base leading-7 text-[#5B554D]";
 export default function FreeRelaxationAudioStylePreview() {
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
-            <script dangerouslySetInnerHTML={{ __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');" }} />
-            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[0.42fr_0.58fr] md:items-start">
                 <div>

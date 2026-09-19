@@ -210,8 +210,6 @@ export default function FaqClient() {
 
     return (
         <section className="relative overflow-hidden bg-[#FBF8F2] text-[#25231F]">
-            <script dangerouslySetInnerHTML={{ __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');" }} />
-            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <div className="border-b border-[#EEE6DB] bg-[#FFFDF9] py-16">
                 <div className="mx-auto max-w-6xl px-6">

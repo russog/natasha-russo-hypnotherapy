@@ -16,12 +16,6 @@ const textClass = "text-base leading-7 text-[#5B554D]";
 export default function About() {
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');",
-                }}
-            />
-            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
                 <div className="absolute inset-y-0 -right-24 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:hidden">

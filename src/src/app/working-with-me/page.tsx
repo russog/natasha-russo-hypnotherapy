@@ -51,8 +51,6 @@ const formatItems = [
 export default function WorkingWithMe() {
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
-            <script dangerouslySetInnerHTML={{ __html: "window.localStorage.setItem('natasha-russo-cookie-consent','declined');" }} />
-            <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
                 <div className="working-hero-background-soft absolute inset-y-0 -right-32 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:inset-0 md:w-auto">
