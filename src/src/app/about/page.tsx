@@ -38,8 +38,8 @@ export default function About() {
                         className="object-cover object-[58%_24%]"
                     />
                 </div>
-                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/96 to-[#FBF8F2]/16 md:hidden" />
-                <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-gradient-to-t from-[#EFE7DC] via-[#EFE7DC]/86 to-transparent md:hidden" />
+                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/93 to-[#FBF8F2]/8 md:hidden" />
+                <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-gradient-to-t from-[#EFE7DC] via-[#EFE7DC]/80 to-transparent md:hidden" />
                 <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/86 to-[#FBF8F2]/12 md:block" />
                 <div className="absolute inset-x-0 bottom-0 z-20 hidden h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[640px] max-w-6xl px-6 py-20 md:grid-cols-[0.52fr_0.48fr] md:items-center">
