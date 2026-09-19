@@ -325,7 +325,7 @@ export function HomeClient() {
             </section>
 
             <section className="relative isolate overflow-hidden border-b border-[#EEE6DB] bg-[#FBF8F2]">
-                <div className="absolute inset-y-0 right-0 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:block md:w-[62%] md:opacity-25 md:[mask-image:none]">
+                <div className="absolute inset-y-0 right-0 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_28%,black_50%,black_100%)] md:block md:w-[62%] md:opacity-25 md:[mask-image:none]">
                     <Image
                         src="/about-natasha-close-green.jpg"
                         alt=""
@@ -334,8 +334,8 @@ export function HomeClient() {
                         className="object-cover object-center md:blur-[1px]"
                     />
                 </div>
-                <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/94 to-[#FBF8F2]/12 md:hidden" />
-                <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-[#FBF8F2] via-[#FBF8F2]/86 to-transparent md:hidden" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/90 to-[#FBF8F2]/4 md:hidden" />
+                <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-[#FBF8F2] via-[#FBF8F2]/74 to-transparent md:hidden" />
                 <div className="absolute inset-0 z-10 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/92 to-[#FBF8F2]/0 md:block" />
                 <div className="absolute inset-y-0 left-0 z-10 hidden w-2/3 bg-[#FBF8F2]/25 md:block" />
                 <div className="absolute inset-y-0 right-0 z-20 hidden [mask-image:linear-gradient(to_right,transparent_0%,black_22%,black_100%)] md:block md:w-[48%]">
