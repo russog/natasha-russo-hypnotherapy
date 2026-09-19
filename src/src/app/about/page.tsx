@@ -24,7 +24,7 @@ export default function About() {
             <style>{`[aria-label="Cookie notice"]{display:none!important;}`}</style>
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-y-0 -right-24 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:inset-0 md:w-auto md:[mask-image:none]">
+                <div className="absolute inset-y-0 -right-24 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_34%,black_58%,black_100%)] md:hidden">
                     <Image
                         src="/about-new.jpg"
                         alt=""
@@ -34,7 +34,7 @@ export default function About() {
                         className="object-cover object-[64%_24%] md:object-[58%_24%]"
                     />
                 </div>
-                <div className="absolute inset-y-0 right-0 z-30 hidden w-[58%] [mask-image:linear-gradient(to_right,transparent_0%,black_14%,black_100%)] md:block">
+                <div className="about-hero-sharp-photo absolute inset-y-0 right-0 z-30 hidden w-[58%] md:block">
                     <Image
                         src="/about-new.jpg"
                         alt="Natasha Russo"

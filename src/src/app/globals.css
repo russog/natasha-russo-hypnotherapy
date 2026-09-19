@@ -70,6 +70,27 @@
     .no-link-underline a:hover {
         text-decoration: none;
     }
+
+    .about-hero-sharp-photo {
+        -webkit-mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                transparent 5%,
+                rgba(0, 0, 0, 0.18) 14%,
+                rgba(0, 0, 0, 0.72) 26%,
+                black 34%,
+                black 100%
+        );
+        mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                transparent 5%,
+                rgba(0, 0, 0, 0.18) 14%,
+                rgba(0, 0, 0, 0.72) 26%,
+                black 34%,
+                black 100%
+        );
+    }
 }
 
 main img[data-nimg="fill"] {
