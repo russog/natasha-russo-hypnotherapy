@@ -28,15 +28,15 @@ export default function About() {
                         className="object-cover object-[60%_24%] opacity-90 brightness-[1.18] contrast-[0.74] saturate-[0.92] md:object-[58%_24%]"
                     />
                 </div>
-                <div className="about-hero-sharp-photo absolute inset-y-0 right-0 z-30 hidden w-[58%] md:block">
+                <div className="about-hero-sharp-photo absolute inset-y-0 right-0 z-30 hidden w-[48%] md:block">
                     <Image
                         src="/about-desktop-enhanced.jpg"
                         alt="Natasha Russo"
                         fill
                         priority
                         quality={100}
-                        sizes="58vw"
-                        className="object-cover object-[58%_48%]"
+                        sizes="48vw"
+                        className="object-cover object-[58%_45%]"
                     />
                 </div>
                 <div className="absolute inset-0 z-20 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.84)_17%,rgba(251,248,242,0.08)_34%,rgba(251,248,242,0)_45%)] md:hidden" />
