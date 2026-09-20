@@ -36,7 +36,7 @@ export default function About() {
                         priority
                         quality={100}
                         sizes="58vw"
-                        className="object-cover object-[58%_24%]"
+                        className="object-cover object-[58%_48%]"
                     />
                 </div>
                 <div className="absolute inset-0 z-20 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.84)_17%,rgba(251,248,242,0.08)_34%,rgba(251,248,242,0)_45%)] md:hidden" />
