@@ -355,11 +355,11 @@ export function HomeClient() {
                         <h2 className="mt-4 !font-sans text-4xl font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-5xl">
                             My approach is grounded, practical, and collaborative.
                         </h2>
-                        <p className="mt-5 text-base leading-7 text-[#3F3A33] md:text-[#5B554D]">
+                        <p className="mt-5 text-base font-medium leading-7 text-[#1F1D19] md:font-normal md:text-[#5B554D]">
                             Sessions are structured, thoughtful and shaped around your goals. The work moves at a pace
                             that feels manageable, with no expectation to explore anything before you are ready.
                         </p>
-                        <p className="mt-4 text-base leading-7 text-[#3F3A33] md:text-[#5B554D]">
+                        <p className="mt-4 text-base font-medium leading-7 text-[#1F1D19] md:font-normal md:text-[#5B554D]">
                             The focus is on understanding what&apos;s been going on for you and working together to find
                             ways of responding that feel steadier and more deliberate.
                         </p>
