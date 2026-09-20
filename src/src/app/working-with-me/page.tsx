@@ -69,7 +69,7 @@ export default function WorkingWithMe() {
                         <h1 className="mt-5 max-w-[15rem] !font-sans text-[2rem] font-semibold leading-[1.04] tracking-normal text-[#1F1D19] sm:max-w-2xl sm:text-6xl sm:leading-[0.98]">
                             A structured and collaborative process.
                         </h1>
-                        <p className="mt-6 max-w-xl text-lg leading-7 text-[#524D45]">
+                        <p className="mt-6 max-w-xl text-lg leading-7 text-[#3F3A33] md:text-[#524D45]">
                             This page gives a clear sense of how sessions usually unfold, what the process involves,
                             and how we each contribute to the work.
                         </p>

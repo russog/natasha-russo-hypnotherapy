@@ -48,10 +48,10 @@ export default function About() {
                         <h1 className="mt-5 max-w-xl !font-sans text-5xl font-semibold leading-[0.98] tracking-normal text-[#1F1D19] sm:text-6xl">
                             Meet Natasha.
                         </h1>
-                        <p className="mt-6 max-w-lg text-lg leading-7 text-[#524D45]">
+                        <p className="mt-6 max-w-lg text-lg leading-7 text-[#3F3A33] md:text-[#524D45]">
                             Hi, I&apos;m Natasha — a cognitive behavioural hypnotherapist.
                         </p>
-                        <p className="mt-3 max-w-lg text-base leading-7 text-[#615B52]">
+                        <p className="mt-3 max-w-lg text-base leading-7 text-[#3F3A33] md:text-[#615B52]">
                             I offer a steady, respectful space where you can slow things down, think more clearly,
                             and explore what&apos;s going on without pressure or judgement.
                         </p>
