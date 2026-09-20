@@ -37,7 +37,7 @@ export default function Navbar() {
                         width={120}
                         height={120}
                         priority
-                        className="h-12 w-12 md:h-[120px] md:w-[120px]"
+                        className="h-12 w-12 md:h-[104px] md:w-[104px]"
                     />
                     <span className="text-sm md:text-lg font-light leading-snug md:leading-tight whitespace-nowrap">
             Natasha Russo<br />Hypnotherapy
