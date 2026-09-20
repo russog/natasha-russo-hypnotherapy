@@ -182,50 +182,49 @@ export function HomeClient() {
 
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
-            <section className="relative isolate min-h-[650px] overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC] md:hidden">
-                <div className="absolute inset-y-0 -right-28 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_8%,black_24%,black_100%)] sm:-right-20 md:right-0 md:block md:w-[60%] md:[mask-image:none]">
-                    <Image
-                        src="/about-natasha-close-green.jpg"
-                        alt=""
-                        fill
-                        priority
-                        sizes="(min-width: 768px) 60vw, 100vw"
-                        className="pointer-events-none object-cover object-center md:blur-[1px]"
-                    />
-                </div>
-                <div className="absolute inset-0 z-10 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.88)_20%,rgba(251,248,242,0.14)_38%,rgba(251,248,242,0)_50%)] md:hidden" />
-                <div className="absolute inset-x-0 bottom-0 z-10 h-44 bg-gradient-to-t from-[#FBF8F2] via-[#FBF8F2]/76 to-transparent md:hidden" />
-                <div className="absolute inset-0 z-10 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/90 to-[#FBF8F2]/0 md:block" />
-                <div className="absolute inset-y-0 right-0 z-20 hidden [mask-image:linear-gradient(to_right,transparent_0%,black_23%,black_100%)] md:block md:w-[48%]">
-                    <Image
-                        src="/about-natasha-close-green.jpg"
-                        alt="Natasha Russo"
-                        fill
-                        priority
-                        sizes="(min-width: 768px) 48vw, 100vw"
-                        className="pointer-events-none object-cover object-center"
-                    />
-                </div>
+            <section className="relative min-h-[680px] overflow-hidden border-b border-[#E7DDD2] bg-[#E9DFD2] md:hidden">
+                <Image
+                    src="/home-cosy-table.png"
+                    alt=""
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="pointer-events-none object-cover object-center"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/18" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent" />
 
-                <div className="relative z-30 mx-auto grid max-w-6xl px-6 py-20 md:min-h-[680px] md:grid-cols-[0.62fr_0.38fr] md:items-center md:py-24">
-                    <div className="max-w-2xl">
-                        <p className="max-w-[20rem] text-[10px] font-semibold uppercase tracking-[0.24em] text-[#7C766C] sm:text-[11px] sm:tracking-[0.28em]">
-                            Grounded, practical, collaborative
+                <div className="relative z-20 mx-auto grid max-w-6xl px-6 py-20">
+                    <div>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#7C766C]">
+                            Cognitive behavioural hypnotherapy
                         </p>
-                        <h1 className="mt-5 max-w-[21rem] !font-sans text-[2.6rem] font-semibold leading-[1.02] tracking-normal text-[#1F1D19] sm:max-w-xl sm:text-6xl sm:leading-[0.98]">
+                        <h1 className="mt-5 max-w-xl text-5xl leading-[0.98] text-[#292621]">
                             Support for adults experiencing anxiety, overthinking, or self-doubt.
                         </h1>
                         <p className="mt-6 max-w-lg text-lg leading-7 text-[#524D45]">
-                            Sessions are structured, thoughtful and shaped around your goals. The work moves at a pace
-                            that feels manageable, with no expectation to explore anything before you are ready.
+                            Helping people understand and gradually change the patterns that keep unhelpful cycles going.
                         </p>
                         <p className="mt-3 max-w-lg text-base leading-7 text-[#615B52]">
-                            The focus is on understanding what&apos;s been going on for you and working together to find
-                            ways of responding that feel steadier and more deliberate.
+                            A thoughtful integration of cognitive-behavioural therapy, hypnotherapy, and mindfulness
+                            techniques - supporting clearer, more manageable change.
                         </p>
-                        <Link href="/working-with-me" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold no-underline">
-                            Learn more about how I work <FiChevronRight aria-hidden />
+                        <Link
+                            href="/contact"
+                            className="mt-8 inline-flex items-center gap-2 rounded-sm bg-[#4F5A54] px-5 py-3 text-sm font-semibold text-white no-underline shadow-[0_16px_34px_rgba(48,55,50,0.18)]"
+                        >
+                            Book a free 20-minute chat <FiChevronRight aria-hidden />
                         </Link>
+                        <Link
+                            href="/free-relaxation-audio"
+                            className="mt-3 inline-flex items-center gap-2 rounded-sm border border-[#D8D1C6] bg-white/82 px-5 py-3 text-sm font-semibold text-[#3D3932] no-underline shadow-[0_14px_30px_rgba(52,44,35,0.10)]"
+                        >
+                            <FiHeadphones aria-hidden /> Free relaxation audio
+                        </Link>
+                        <p className="mt-5 max-w-md text-sm leading-6 text-[#615B52]">
+                            Based in Putney, South West London, with online sessions available throughout the UK and
+                            worldwide.
+                        </p>
                     </div>
                 </div>
             </section>
