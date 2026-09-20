@@ -230,7 +230,7 @@ export function HomeClient() {
                 </div>
             </section>
 
-            <section className="relative hidden min-h-[680px] overflow-hidden border-b border-[#E7DDD2] bg-[#E9DFD2] md:block">
+            <section className="relative min-h-[680px] overflow-hidden border-b border-[#E7DDD2] bg-[#E9DFD2] max-md:hidden">
                 <Image
                     src="/home-cosy-table.png"
                     alt=""
@@ -263,6 +263,12 @@ export function HomeClient() {
                         >
                             Book a free 20-minute chat <FiChevronRight aria-hidden />
                         </Link>
+                        <Link
+                            href="/free-relaxation-audio"
+                            className="mt-3 inline-flex items-center gap-2 rounded-sm border border-[#D8D1C6] bg-white/82 px-5 py-3 text-sm font-semibold text-[#3D3932] no-underline shadow-[0_14px_30px_rgba(52,44,35,0.10)] md:hidden"
+                        >
+                            <FiHeadphones aria-hidden /> Free relaxation audio
+                        </Link>
                         <p className="mt-5 max-w-md text-sm leading-6 text-[#615B52]">
                             Based in Putney, South West London, with online sessions available throughout the UK and
                             worldwide.
@@ -272,7 +278,7 @@ export function HomeClient() {
 
                 <Link
                     href="/free-relaxation-audio"
-                    className="pointer-events-auto absolute bottom-8 right-8 z-30 flex w-64 items-center gap-4 rounded-sm border border-white/70 bg-white/88 p-4 text-left no-underline shadow-[0_18px_45px_rgba(52,44,35,0.12)] backdrop-blur-[1px]"
+                    className="pointer-events-auto absolute bottom-8 right-8 z-30 hidden w-64 items-center gap-4 rounded-sm border border-white/70 bg-white/88 p-4 text-left no-underline shadow-[0_18px_45px_rgba(52,44,35,0.12)] backdrop-blur-[1px] md:flex"
                 >
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#EFE7DC] text-[#4F5A54]">
                         <FiHeadphones aria-hidden />
