@@ -184,7 +184,7 @@ export function HomeClient() {
         <div className="bg-[#FBF8F2] text-[#25231F]">
             <section className="relative min-h-[680px] overflow-hidden border-b border-[#E7DDD2] bg-[#E9DFD2] md:hidden">
                 <Image
-                    src="/home-cosy-table.png"
+                    src="/home-cosy-table-mobile.png"
                     alt=""
                     fill
                     priority
