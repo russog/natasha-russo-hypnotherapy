@@ -48,7 +48,7 @@ export default function About() {
                         <h1 className="mt-5 max-w-xl !font-sans text-5xl font-semibold leading-[0.98] tracking-normal text-[#1F1D19] sm:text-6xl">
                             Meet Natasha.
                         </h1>
-                        <p className="mt-6 max-w-lg text-lg font-medium leading-7 text-[#1F1D19] md:font-normal md:text-[#524D45]">
+                        <p className="mt-16 max-w-lg text-lg font-medium leading-7 text-[#1F1D19] md:mt-6 md:font-normal md:text-[#524D45]">
                             Hi, I&apos;m Natasha — a cognitive behavioural hypnotherapist.
                         </p>
                         <p className="mt-3 max-w-lg text-base font-medium leading-7 text-[#1F1D19] md:font-normal md:text-[#615B52]">
