@@ -213,7 +213,7 @@ export function HomeClient() {
                             Grounded, practical, collaborative
                         </p>
                         <h1 className="mt-5 max-w-[21rem] !font-sans text-[2.6rem] font-semibold leading-[1.02] tracking-normal text-[#1F1D19] sm:max-w-xl sm:text-6xl sm:leading-[0.98]">
-                            My approach is grounded, practical, and collaborative.
+                            Support for adults experiencing anxiety, overthinking, or self-doubt.
                         </h1>
                         <p className="mt-6 max-w-lg text-lg leading-7 text-[#524D45]">
                             Sessions are structured, thoughtful and shaped around your goals. The work moves at a pace
