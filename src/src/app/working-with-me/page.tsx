@@ -61,6 +61,7 @@ export default function WorkingWithMe() {
                 </div>
                 <div className="absolute inset-0 z-20 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.86)_22%,rgba(251,248,242,0.08)_39%,rgba(251,248,242,0)_51%)] md:hidden" />
                 <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-gradient-to-t from-[#EFE7DC] via-[#EFE7DC]/74 to-transparent md:hidden" />
+                <div className="absolute inset-x-0 bottom-0 z-20 h-[58%] bg-[linear-gradient(to_top,rgba(251,248,242,0.92)_0%,rgba(251,248,242,0.66)_38%,rgba(251,248,242,0)_100%)] md:hidden" />
                 <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/10 md:block" />
                 <div className="absolute inset-x-0 bottom-0 z-20 hidden h-24 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[580px] max-w-6xl px-6 py-20 md:grid-cols-[0.54fr_0.46fr] md:items-center">
