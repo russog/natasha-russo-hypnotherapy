@@ -53,20 +53,20 @@ export default function WorkingWithMe() {
         <div className="bg-[#FBF8F2] text-[#25231F]">
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="working-hero-background-soft absolute inset-y-0 -right-20 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_20%,black_44%,black_100%)] md:inset-0 md:w-auto">
-                    <Image src="/working-with-me-inline.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[74%_20%] md:object-[68%_20%]" />
+                <div className="working-hero-background-soft absolute inset-y-0 -right-28 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_5%,black_18%,black_100%)] sm:-right-20 md:inset-0 md:w-auto">
+                    <Image src="/working-with-me-inline.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[74%_18%] md:object-[68%_20%]" />
                 </div>
                 <div className="working-hero-sharp-photo absolute inset-y-0 right-0 z-30 hidden w-[60%] md:block">
                     <Image src="/working-with-me-inline.jpg" alt="Natasha Russo in session" fill priority sizes="60vw" className="object-cover object-[72%_top] contrast-[1.05] saturate-[1.04]" />
                 </div>
-                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/86 to-[#FBF8F2]/0 md:hidden" />
+                <div className="absolute inset-0 z-20 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.86)_22%,rgba(251,248,242,0.08)_39%,rgba(251,248,242,0)_51%)] md:hidden" />
                 <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-gradient-to-t from-[#EFE7DC] via-[#EFE7DC]/74 to-transparent md:hidden" />
                 <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/88 to-[#FBF8F2]/10 md:block" />
                 <div className="absolute inset-x-0 bottom-0 z-20 hidden h-24 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />
                 <div className="relative z-40 mx-auto grid min-h-[580px] max-w-6xl px-6 py-20 md:grid-cols-[0.54fr_0.46fr] md:items-center">
                     <div>
                         <p className={eyebrowClass}>Working with me</p>
-                        <h1 className="mt-5 max-w-2xl !font-sans text-5xl font-semibold leading-[0.98] tracking-normal text-[#1F1D19] sm:text-6xl">
+                        <h1 className="mt-5 max-w-[15rem] !font-sans text-[2rem] font-semibold leading-[1.04] tracking-normal text-[#1F1D19] sm:max-w-2xl sm:text-6xl">
                             A structured and collaborative process.
                         </h1>
                         <p className="mt-6 max-w-xl text-lg leading-7 text-[#524D45]">

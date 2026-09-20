@@ -18,14 +18,14 @@ export default function About() {
         <div className="bg-[#FBF8F2] text-[#25231F]">
 
             <section className="relative isolate overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC]">
-                <div className="absolute inset-y-0 -right-24 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_30%,black_54%,black_100%)] md:hidden">
+                <div className="absolute inset-y-0 -right-20 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_6%,black_21%,black_100%)] md:hidden">
                     <Image
                         src="/about-new.jpg"
                         alt=""
                         fill
                         priority
                         sizes="100vw"
-                        className="object-cover object-[64%_24%] md:object-[58%_24%]"
+                        className="object-cover object-[60%_24%] opacity-90 brightness-[1.18] contrast-[0.74] saturate-[0.92] md:object-[58%_24%]"
                     />
                 </div>
                 <div className="about-hero-sharp-photo absolute inset-y-0 right-0 z-30 hidden w-[58%] md:block">
@@ -38,7 +38,7 @@ export default function About() {
                         className="object-cover object-[58%_24%]"
                     />
                 </div>
-                <div className="absolute inset-0 z-20 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/90 to-[#FBF8F2]/4 md:hidden" />
+                <div className="absolute inset-0 z-20 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.84)_17%,rgba(251,248,242,0.08)_34%,rgba(251,248,242,0)_45%)] md:hidden" />
                 <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-gradient-to-t from-[#EFE7DC] via-[#EFE7DC]/74 to-transparent md:hidden" />
                 <div className="absolute inset-0 z-20 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/86 to-[#FBF8F2]/12 md:block" />
                 <div className="absolute inset-x-0 bottom-0 z-20 hidden h-28 bg-gradient-to-t from-[#FBF8F2] to-transparent md:block" />

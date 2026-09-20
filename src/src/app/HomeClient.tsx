@@ -182,7 +182,55 @@ export function HomeClient() {
 
     return (
         <div className="bg-[#FBF8F2] text-[#25231F]">
-            <section className="relative min-h-[680px] overflow-hidden border-b border-[#E7DDD2] bg-[#E9DFD2]">
+            <section className="relative isolate min-h-[650px] overflow-hidden border-b border-[#E7DDD2] bg-[#EFE7DC] md:hidden">
+                <div className="absolute inset-y-0 -right-28 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_8%,black_24%,black_100%)] sm:-right-20 md:right-0 md:block md:w-[60%] md:[mask-image:none]">
+                    <Image
+                        src="/about-natasha-close-green.jpg"
+                        alt=""
+                        fill
+                        priority
+                        sizes="(min-width: 768px) 60vw, 100vw"
+                        className="pointer-events-none object-cover object-center md:blur-[1px]"
+                    />
+                </div>
+                <div className="absolute inset-0 z-10 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.88)_20%,rgba(251,248,242,0.14)_38%,rgba(251,248,242,0)_50%)] md:hidden" />
+                <div className="absolute inset-x-0 bottom-0 z-10 h-44 bg-gradient-to-t from-[#FBF8F2] via-[#FBF8F2]/76 to-transparent md:hidden" />
+                <div className="absolute inset-0 z-10 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/90 to-[#FBF8F2]/0 md:block" />
+                <div className="absolute inset-y-0 right-0 z-20 hidden [mask-image:linear-gradient(to_right,transparent_0%,black_23%,black_100%)] md:block md:w-[48%]">
+                    <Image
+                        src="/about-natasha-close-green.jpg"
+                        alt="Natasha Russo"
+                        fill
+                        priority
+                        sizes="(min-width: 768px) 48vw, 100vw"
+                        className="pointer-events-none object-cover object-center"
+                    />
+                </div>
+
+                <div className="relative z-30 mx-auto grid max-w-6xl px-6 py-20 md:min-h-[680px] md:grid-cols-[0.62fr_0.38fr] md:items-center md:py-24">
+                    <div className="max-w-2xl">
+                        <p className="max-w-[20rem] text-[10px] font-semibold uppercase tracking-[0.24em] text-[#7C766C] sm:text-[11px] sm:tracking-[0.28em]">
+                            Grounded, practical, collaborative
+                        </p>
+                        <h1 className="mt-5 max-w-[21rem] !font-sans text-[2.6rem] font-semibold leading-[1.02] tracking-normal text-[#1F1D19] sm:max-w-xl sm:text-6xl sm:leading-[0.98]">
+                            My approach is grounded, practical, and collaborative.
+                        </h1>
+                        <p className="mt-6 max-w-lg text-lg leading-7 text-[#524D45]">
+                            Sessions are structured, thoughtful and shaped around your goals. The work moves at a pace
+                            that feels manageable, with no expectation to explore anything before you are ready.
+                        </p>
+                        <p className="mt-3 max-w-lg text-base leading-7 text-[#615B52]">
+                            The focus is on understanding what&apos;s been going on for you and working together to find
+                            ways of responding that feel steadier and more deliberate.
+                        </p>
+                        <Link href="/working-with-me" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold no-underline">
+                            Learn more about how I work <FiChevronRight aria-hidden />
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className="relative hidden min-h-[680px] overflow-hidden border-b border-[#E7DDD2] bg-[#E9DFD2] md:block">
                 <Image
                     src="/home-cosy-table.png"
                     alt=""
@@ -215,12 +263,6 @@ export function HomeClient() {
                         >
                             Book a free 20-minute chat <FiChevronRight aria-hidden />
                         </Link>
-                        <Link
-                            href="/free-relaxation-audio"
-                            className="mt-3 inline-flex items-center gap-2 rounded-sm border border-[#D8D1C6] bg-white/82 px-5 py-3 text-sm font-semibold text-[#3D3932] no-underline shadow-[0_14px_30px_rgba(52,44,35,0.10)] md:hidden"
-                        >
-                            <FiHeadphones aria-hidden /> Free relaxation audio
-                        </Link>
                         <p className="mt-5 max-w-md text-sm leading-6 text-[#615B52]">
                             Based in Putney, South West London, with online sessions available throughout the UK and
                             worldwide.
@@ -230,7 +272,7 @@ export function HomeClient() {
 
                 <Link
                     href="/free-relaxation-audio"
-                    className="pointer-events-auto absolute bottom-8 right-8 z-30 hidden w-64 items-center gap-4 rounded-sm border border-white/70 bg-white/88 p-4 text-left no-underline shadow-[0_18px_45px_rgba(52,44,35,0.12)] backdrop-blur-[1px] md:flex"
+                    className="pointer-events-auto absolute bottom-8 right-8 z-30 flex w-64 items-center gap-4 rounded-sm border border-white/70 bg-white/88 p-4 text-left no-underline shadow-[0_18px_45px_rgba(52,44,35,0.12)] backdrop-blur-[1px]"
                 >
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#EFE7DC] text-[#4F5A54]">
                         <FiHeadphones aria-hidden />
@@ -325,7 +367,7 @@ export function HomeClient() {
             </section>
 
             <section className="relative isolate overflow-hidden border-b border-[#EEE6DB] bg-[#FBF8F2]">
-                <div className="absolute inset-y-0 right-0 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_28%,black_50%,black_100%)] md:block md:w-[62%] md:opacity-25 md:[mask-image:none]">
+                <div className="absolute inset-y-0 -right-36 z-0 w-full opacity-100 [mask-image:linear-gradient(to_right,transparent_0%,transparent_9%,black_25%,black_100%)] md:right-0 md:block md:w-[62%] md:opacity-25 md:[mask-image:none]">
                     <Image
                         src="/about-natasha-close-green.jpg"
                         alt=""
@@ -334,7 +376,7 @@ export function HomeClient() {
                         className="object-cover object-center md:blur-[1px]"
                     />
                 </div>
-                <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/90 to-[#FBF8F2]/4 md:hidden" />
+                <div className="absolute inset-0 z-10 bg-[linear-gradient(to_right,rgba(251,248,242,1)_0%,rgba(251,248,242,0.86)_18%,rgba(251,248,242,0.04)_34%,rgba(251,248,242,0)_43%)] md:hidden" />
                 <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-[#FBF8F2] via-[#FBF8F2]/74 to-transparent md:hidden" />
                 <div className="absolute inset-0 z-10 hidden bg-gradient-to-r from-[#FBF8F2] via-[#FBF8F2]/92 to-[#FBF8F2]/0 md:block" />
                 <div className="absolute inset-y-0 left-0 z-10 hidden w-2/3 bg-[#FBF8F2]/25 md:block" />
