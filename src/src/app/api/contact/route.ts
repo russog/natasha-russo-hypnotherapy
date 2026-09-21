@@ -76,11 +76,11 @@ function silentlyAccept(req: Request) {
     return NextResponse.redirect(`${origin}/contact/thanks`, 303);
 }
 
-function isFastSubmission(formStartedAt: FormDataEntryValue | null, now: number) {
-    if (!formStartedAt) return false;
+function failsSubmitTimingCheck(formStartedAt: FormDataEntryValue | null, now: number) {
+    if (!formStartedAt) return true;
 
     const startedAt = Number(formStartedAt);
-    if (!Number.isFinite(startedAt)) return false;
+    if (!Number.isFinite(startedAt)) return true;
 
     return now - startedAt < minimumSubmitTimeMs;
 }
@@ -162,7 +162,7 @@ export async function POST(req: Request) {
         }
 
         if (
-            isFastSubmission(formData.get("formStartedAt"), now) ||
+            failsSubmitTimingCheck(formData.get("formStartedAt"), now) ||
             isRateLimited(ip, now) ||
             isConservativeDuplicateSpam({ email: email.toLowerCase(), ip, messageKey, now })
         ) {
