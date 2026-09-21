@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 const contactFormErrorMessage =
     "We’re sorry, your message could not be sent. Please try again, or contact Natasha directly by email.";
 
-const contactApiVersion = "review-route-2026-09-21";
+const contactApiVersion = "deliver-complete-submissions-2026-09-21";
 const minimumSubmitTimeMs = 2500;
 const rateLimitWindowMs = 15 * 60 * 1000;
 const rateLimitMaxSubmissions = 5;
@@ -147,15 +147,15 @@ export async function POST(req: Request) {
         const now = Date.now();
         const ip = getRequestIp(req);
 
-        if (formData.get("company") || formData.get("website")) {
-            return silentlyAccept(req);
-        }
-
         const name = String(formData.get("name") ?? "").trim();
         const email = String(formData.get("email") ?? "").trim();
         const phone = String(formData.get("phone") ?? "").trim();
         const message = String(formData.get("message") ?? "").trim();
         const messageKey = normalizeMessage(message);
+
+        if ((formData.get("company") || formData.get("website")) && (!name || !email || !message)) {
+            return silentlyAccept(req);
+        }
 
         if (!name || !email || !message) {
             return NextResponse.json(
@@ -165,6 +165,8 @@ export async function POST(req: Request) {
         }
 
         const spamSignals = [
+            formData.get("company") ? "Hidden company field was filled" : null,
+            formData.get("website") ? "Hidden website field was filled" : null,
             getSubmitTimingSignal(formData.get("formStartedAt"), now),
             isRateLimited(ip, now) ? "High number of recent submissions from this IP" : null,
             isConservativeDuplicateSpam({ email: email.toLowerCase(), ip, messageKey, now })
