@@ -7,6 +7,7 @@ export const dynamic = "force-dynamic";
 const contactFormErrorMessage =
     "We’re sorry, your message could not be sent. Please try again, or contact Natasha directly by email.";
 
+const contactApiVersion = "review-route-2026-09-21";
 const minimumSubmitTimeMs = 2500;
 const rateLimitWindowMs = 15 * 60 * 1000;
 const rateLimitMaxSubmissions = 5;
@@ -24,7 +25,7 @@ const submissionsByMessage = new Map<string, SubmissionRecord[]>();
 
 export async function GET() {
     // Visit /api/contact in the browser. If you don't see this, your route isn't deployed/running.
-    return NextResponse.json({ ok: true, route: "contact", runtime: "nodejs" });
+    return NextResponse.json({ ok: true, route: "contact", runtime: "nodejs", version: contactApiVersion });
 }
 
 function logContactSendFailure(details?: { providerCode?: string; statusCode?: number | null }) {
