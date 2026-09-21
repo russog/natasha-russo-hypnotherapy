@@ -76,13 +76,15 @@ function silentlyAccept(req: Request) {
     return NextResponse.redirect(`${origin}/contact/thanks`, 303);
 }
 
-function failsSubmitTimingCheck(formStartedAt: FormDataEntryValue | null, now: number) {
-    if (!formStartedAt) return true;
+function getSubmitTimingSignal(formStartedAt: FormDataEntryValue | null, now: number) {
+    if (!formStartedAt) return "Missing form timestamp";
 
     const startedAt = Number(formStartedAt);
-    if (!Number.isFinite(startedAt)) return true;
+    if (!Number.isFinite(startedAt)) return "Invalid form timestamp";
 
-    return now - startedAt < minimumSubmitTimeMs;
+    if (now - startedAt < minimumSubmitTimeMs) return "Submitted unusually quickly";
+
+    return null;
 }
 
 function isRateLimited(ip: string, now: number) {
@@ -161,13 +163,13 @@ export async function POST(req: Request) {
             );
         }
 
-        if (
-            failsSubmitTimingCheck(formData.get("formStartedAt"), now) ||
-            isRateLimited(ip, now) ||
+        const spamSignals = [
+            getSubmitTimingSignal(formData.get("formStartedAt"), now),
+            isRateLimited(ip, now) ? "High number of recent submissions from this IP" : null,
             isConservativeDuplicateSpam({ email: email.toLowerCase(), ip, messageKey, now })
-        ) {
-            return silentlyAccept(req);
-        }
+                ? "Repeated matching message pattern"
+                : null,
+        ].filter((signal): signal is string => Boolean(signal));
 
         const RESEND_API_KEY = process.env.RESEND_API_KEY;
         const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL;
@@ -182,12 +184,17 @@ export async function POST(req: Request) {
         }
 
         const resend = new Resend(RESEND_API_KEY);
+        const isReviewMessage = spamSignals.length > 0;
 
         const result = await resend.emails.send({
             from: "Website Contact <onboarding@resend.dev>",
             to: CONTACT_TO_EMAIL,
-            subject: `New contact form message from ${name}`,
-            text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
+            subject: isReviewMessage
+                ? `[Review possible spam] Contact form message from ${name}`
+                : `New contact form message from ${name}`,
+            text: `${isReviewMessage
+                ? `Possible spam review signals:\n${spamSignals.map((signal) => `- ${signal}`).join("\n")}\n\n`
+                : ""}Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\n\nMessage:\n${message}`,
         });
 
         if (result.error || !result.data?.id) {
