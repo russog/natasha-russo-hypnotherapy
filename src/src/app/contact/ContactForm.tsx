@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const contactFormErrorMessage =
     "We’re sorry, your message could not be sent. Please try again, or contact Natasha directly by email.";
@@ -9,6 +9,11 @@ const contactFormErrorMessage =
 export function ContactForm() {
     const [error, setError] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [formStartedAt, setFormStartedAt] = useState("");
+
+    useEffect(() => {
+        setFormStartedAt(String(Date.now()));
+    }, []);
 
     async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
@@ -44,9 +49,24 @@ export function ContactForm() {
             <input
                 type="text"
                 name="company"
-                className="hidden"
+                className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden opacity-0"
                 tabIndex={-1}
                 autoComplete="off"
+                aria-hidden="true"
+            />
+            <input
+                type="url"
+                name="website"
+                className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden opacity-0"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+            />
+            <input
+                type="hidden"
+                name="formStartedAt"
+                value={formStartedAt}
+                readOnly
             />
             <Field label="Name">
                 <Input name="name" autoComplete="name" required />
