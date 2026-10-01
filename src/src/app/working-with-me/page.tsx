@@ -44,7 +44,7 @@ const formatItems = [
     },
     {
         title: "Format",
-        body: "Sessions are held online via secure video, so you can take part from your own space. Many people find that being in a familiar environment makes it easier to settle into the process and engage with the work. The sessions remain structured and focused, in the same way as they would be in person.",
+        body: "Sessions are available face-to-face in Putney, South West London, or online via secure video. Both formats offer the same structured and collaborative approach, so you can choose the option that works best for you.",
     },
 ];
 
