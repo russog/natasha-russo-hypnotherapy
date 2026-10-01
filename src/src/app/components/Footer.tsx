@@ -13,8 +13,7 @@ export default function Footer() {
                         <div className="space-y-1">
                             <p className="font-medium">Natasha Russo Hypnotherapy</p>
                             <p>Cognitive Behavioural Hypnotherapist</p>
-                            <p>Based in Putney, South West London</p>
-                            <p>Online sessions throughout the UK and worldwide</p>
+                            <p>Face-to-face sessions in Putney • Online sessions throughout the UK and worldwide</p>
                             <p>
                                 <Link
                                     href="mailto:contact@natasharussohypnotherapy.co.uk"

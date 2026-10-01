@@ -222,8 +222,8 @@ export function HomeClient() {
                             <FiHeadphones aria-hidden /> Free relaxation audio
                         </Link>
                         <p className="mt-5 max-w-md text-sm leading-6 text-[#615B52]">
-                            Based in Putney, South West London, with online sessions available throughout the UK and
-                            worldwide.
+                            Based in Putney, South West London, offering face-to-face sessions locally and online
+                            sessions throughout the UK and worldwide.
                         </p>
                     </div>
                 </div>
