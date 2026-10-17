@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About me | Natasha Russo",
+    title: { absolute: "About Natasha Russo | Cognitive Behavioural Hypnotherapist" },
     description:
-        "Meet Natasha Russo, Cognitive Behavioural Hypnotherapist. Learn about her background, approach, and therapeutic style.",
+        "Learn about Natasha Russo’s psychology background, professional training and calm, collaborative approach to Cognitive Behavioural Hypnotherapy.",
     alternates: { canonical: "/about" },
 };
 
