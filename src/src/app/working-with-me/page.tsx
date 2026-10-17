@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Working with me",
+    title: { absolute: "Hypnotherapy Sessions in Putney & Online | Natasha Russo" },
     description:
-        "Learn how sessions work, what to expect, confidentiality, format and fees for cognitive behavioural hypnotherapy.",
+        "Find out what to expect from Cognitive Behavioural Hypnotherapy, including how sessions work, fees, and face-to-face appointments in Putney or online in the UK and internationally.",
     alternates: { canonical: "/working-with-me" },
 };
 
