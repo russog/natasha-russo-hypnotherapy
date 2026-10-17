@@ -3,9 +3,9 @@ import { ContactForm } from "@/app/contact/ContactForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Contact",
+    title: { absolute: "Contact Natasha Russo | Free 20-Minute Introductory Chat" },
     description:
-        "Get in touch with Natasha Russo Hypnotherapy. Free 20-minute initial chat available. Online sessions and confidential support.",
+        "Contact Natasha Russo to ask questions or arrange a free 20-minute introductory chat about Cognitive Behavioural Hypnotherapy, available in Putney and online.",
     alternates: { canonical: "/contact" },
 };
 
