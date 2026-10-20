@@ -14,11 +14,11 @@ const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text
 const textClass = "text-base leading-7 text-[#5B554D]";
 
 const steps = [
-    ["1) Initial contact", "You’re welcome to get in touch by email or book a brief introductory conversation. This is a chance to ask questions, get a sense of how I work, and decide whether it feels like a good fit — with no pressure to commit."],
-    ["2) First session: understanding and focus", "The first session is slightly longer and gives us time to understand what has been happening for you, what you would like help with, and how we might work together. We begin shaping a clear focus at a pace that feels manageable."],
-    ["3) Ongoing sessions: working with patterns", "Subsequent sessions focus on actively working with thoughts, emotions, and behavioural responses. We use practical, evidence-based methods, both in session and, where helpful, through small reflections or experiments between sessions."],
-    ["4) Reviewing and adjusting", "We regularly pause to review how the work is going — what is helping, what feels less useful, and whether anything needs adjusting. The process remains collaborative and responsive to you."],
-    ["5) Finishing well", "Endings are planned thoughtfully, with an emphasis on consolidating learning, strengthening confidence, and supporting your independence beyond therapy."],
+    ["1. Initial contact", "You’re welcome to get in touch by email or book a brief introductory conversation. This is a chance to ask questions, get a sense of how I work, and decide whether it feels like a good fit — with no pressure to commit."],
+    ["2. First session: understanding and focus", "The first session is slightly longer and gives us time to understand what has been happening for you, what you would like help with, and how we might work together. We begin shaping a clear focus at a pace that feels manageable."],
+    ["3. Ongoing sessions: working with patterns", "Subsequent sessions focus on actively working with thoughts, emotions, and behavioural responses. We use practical, evidence-based methods, both in session and, where helpful, through small reflections or experiments between sessions."],
+    ["4. Reviewing and adjusting", "We regularly pause to review how the work is going — what is helping, what feels less useful, and whether anything needs adjusting. The process remains collaborative and responsive to you."],
+    ["5. Finishing well", "Endings are planned thoughtfully, with an emphasis on consolidating learning, strengthening confidence, and supporting your independence beyond therapy."],
 ];
 
 const formatItems = [
