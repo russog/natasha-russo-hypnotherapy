@@ -14,6 +14,7 @@ export default function sitemap() {
         { url: `${site.url}/faq`, lastModified: now },
         { url: `${site.url}/contact`, lastModified: now },
         { url: `${site.url}/fees-cancellation`, lastModified: now },
+        { url: `${site.url}/concerns-and-complaints`, lastModified: now },
         { url: `${site.url}/privacy-policy`, lastModified: now },
     ];
 

@@ -32,6 +32,10 @@ export default function Footer() {
                             <Link href="/fees-cancellation" className="font-bold hover:underline">
                                 Fees &amp; Cancellation Policy
                             </Link>
+                            <span aria-hidden>•</span>
+                            <Link href="/concerns-and-complaints" className="font-bold hover:underline">
+                                Concerns and Complaints
+                            </Link>
                         </div>
                     </div>
 
