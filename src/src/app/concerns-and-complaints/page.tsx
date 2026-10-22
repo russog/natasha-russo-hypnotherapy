@@ -16,7 +16,7 @@ export default function ConcernsAndComplaintsPage() {
                     <h1 className="mb-6 text-2xl font-medium leading-snug text-neutral-800 sm:text-3xl">
                         Concerns and Complaints
                     </h1>
-                    <p className="mx-auto mt-6 max-w-3xl text-left text-xl leading-relaxed text-neutral-600 sm:text-2xl">
+                    <p className="mx-auto mt-6 max-w-5xl px-2 text-left text-xl leading-relaxed text-neutral-600 sm:text-2xl">
                         I aim to provide a professional, respectful and supportive therapeutic service. Your experience
                         matters, and I welcome feedback about any aspect of the service you receive.
                     </p>
