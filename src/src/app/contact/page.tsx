@@ -59,6 +59,21 @@ export default function ContactStylePreview() {
                     <p className={eyebrowClass}>Send a message</p>
                     <h2 className={`${titleClass} mt-4 mb-8`}>Start with a conversation.</h2>
                     <ContactForm />
+                    <section className="mt-8 border-t border-[#D8D1C6] pt-6" aria-labelledby="urgent-support-heading">
+                        <h3 id="urgent-support-heading" className="text-base font-semibold text-[#3D3932]">
+                            Urgent support
+                        </h3>
+                        <div className="mt-3 space-y-3 text-sm leading-6 text-[#625C53]">
+                            <p>
+                                My practice does not provide emergency or crisis support. If you need urgent mental health
+                                assistance in the UK, please contact NHS 111 and select the mental health option. If you or
+                                someone else is in immediate danger, call 999 or attend your nearest A&amp;E department.
+                            </p>
+                            <p>
+                                If you are outside the UK, please contact your local emergency or crisis support services.
+                            </p>
+                        </div>
+                    </section>
                 </div>
             </section>
         </div>
