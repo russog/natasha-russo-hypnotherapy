@@ -161,9 +161,9 @@ export default function WorkingWithMe() {
                     <article>
                         <p className={eyebrowClass}>Fees</p>
                         <h2 className={titleClass}>Simple session fees.</h2>
-                        <ul className="mt-8 space-y-4 text-[#5B554D]">
-                            <li><span className="font-normal text-black">Initial assessment (90 minutes):</span> Online <strong className="text-black">£90</strong> · In person in Putney <strong className="text-black">£100</strong></li>
-                            <li><span className="font-normal text-black">Follow-up sessions (60 minutes):</span> Online <strong className="text-black">£60</strong> · In person in Putney <strong className="text-black">£70</strong></li>
+                        <ul className="mt-8 space-y-4 text-[#5B554D] [&_strong]:text-[#25231F]">
+                            <li><strong>Initial assessment (90 minutes):</strong> Online <strong>£90</strong> · In person in Putney <strong>£100</strong></li>
+                            <li><strong>Follow-up sessions (60 minutes):</strong> Online <strong>£60</strong> · In person in Putney <strong>£70</strong></li>
                         </ul>
                         <p className={`${textClass} mt-6`}>
                             In person appointments take place in Putney, South West London. Fees are payable in advance.
