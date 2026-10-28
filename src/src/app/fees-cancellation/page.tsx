@@ -17,8 +17,8 @@ const sections = [
     {
         title: "Session fees",
         body: [
-            <>The initial assessment lasts approximately <strong>90 minutes</strong> and is charged at <strong>£90 online</strong> or <strong>£100 in person in Putney, South West London</strong>, allowing additional time for assessment and conceptualisation.</>,
-            <>Follow-up Cognitive Behavioural Hypnotherapy sessions usually last approximately <strong>60 minutes</strong> and are charged at <strong>£60 online</strong> or <strong>£70 in person in Putney, South West London</strong>.</>,
+            <><strong>The initial assessment</strong> lasts approximately <strong>90 minutes</strong> and is charged at <strong>£90 online</strong> or <strong>£100 in person in Putney, South West London</strong>, allowing additional time for assessment and conceptualisation.</>,
+            <><strong>Follow-up Cognitive Behavioural Hypnotherapy sessions</strong> usually last approximately <strong>60 minutes</strong> and are charged at <strong>£60 online</strong> or <strong>£70 in person in Putney, South West London</strong>.</>,
             <>Fees may be reviewed periodically. Any changes to fees will apply to new clients and will not affect the fee already agreed with you for your current course of therapy.</>,
         ],
     },
