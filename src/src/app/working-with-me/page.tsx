@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: { absolute: "Hypnotherapy Sessions in Putney & Online | Natasha Russo" },
     description:
-        "Find out what to expect from Cognitive Behavioural Hypnotherapy, including how sessions work, fees, and face-to-face appointments in Putney or online in the UK and internationally.",
+        "Find out what to expect from Cognitive Behavioural Hypnotherapy, including how sessions work, fees, and appointments in person in Putney or online in the UK and internationally.",
     alternates: { canonical: "/working-with-me" },
 };
 
@@ -44,7 +44,7 @@ const formatItems = [
     },
     {
         title: "Format",
-        body: "Sessions are available face-to-face in Putney, South West London, or online via secure video. Both formats offer the same structured and collaborative approach, so you can choose the option that works best for you.",
+        body: "Sessions are available in person in Putney, South West London, or online via secure video. Both formats offer the same structured and collaborative approach, so you can choose the option that works best for you.",
     },
 ];
 
@@ -161,12 +161,12 @@ export default function WorkingWithMe() {
                     <article>
                         <p className={eyebrowClass}>Fees</p>
                         <h2 className={titleClass}>Simple session fees.</h2>
-                        <ul className="mt-8 space-y-4 text-[#5B554D] [&_strong]:text-[#25231F]">
-                            <li><strong>Initial assessment (90 minutes):</strong> Online <strong>£90</strong> · Face-to-face in Putney <strong>£100</strong></li>
-                            <li><strong>Follow-up session (60 minutes):</strong> Online <strong>£60</strong> · Face-to-face in Putney <strong>£70</strong></li>
+                        <ul className="mt-8 space-y-4 text-[#5B554D]">
+                            <li>Initial assessment (90 minutes): Online £90 · In person in Putney £100</li>
+                            <li>Follow-up sessions (60 minutes): Online £60 · In person in Putney £70</li>
                         </ul>
                         <p className={`${textClass} mt-6`}>
-                            Face-to-face appointments take place in Putney, South West London. Fees are payable in advance.
+                            In person appointments take place in Putney, South West London. Fees are payable in advance.
                             Cancellation arrangements are outlined clearly before we begin.
                             For full details, please refer to the{" "}
                             <Link href="/fees-cancellation" className="font-semibold">

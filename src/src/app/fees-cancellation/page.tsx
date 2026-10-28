@@ -11,14 +11,13 @@ export const metadata: Metadata = {
 const titleClass = "!font-sans text-4xl font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-5xl";
 const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8A8174]";
 const textClass = "text-base leading-7 text-[#5B554D]";
-const feeTextClass = "text-base leading-7 text-[#5B554D] [&_strong]:text-[#25231F]";
 
 const sections = [
     {
         title: "Session fees",
         body: [
-            <>The initial assessment lasts approximately <strong>90 minutes</strong> and is charged at <strong>£90 online</strong> or <strong>£100 face-to-face in Putney, South West London</strong>, allowing additional time for assessment and conceptualisation.</>,
-            <>Follow-up Cognitive Behavioural Hypnotherapy sessions usually last approximately <strong>60 minutes</strong> and are charged at <strong>£60 online</strong> or <strong>£70 face-to-face in Putney, South West London</strong>.</>,
+            "The initial assessment lasts approximately 90 minutes and is charged at £90 online or £100 in person in Putney, South West London, allowing additional time for assessment and conceptualisation.",
+            "Follow-up Cognitive Behavioural Hypnotherapy sessions usually last approximately 60 minutes and are charged at £60 online or £70 in person in Putney, South West London.",
             <>Fees may be reviewed periodically. Any changes to fees will apply to new clients and will not affect the fee already agreed with you for your current course of therapy.</>,
         ],
     },
@@ -69,7 +68,7 @@ export default function FeesCancellationStylePreview() {
                             <h2 className={`${titleClass} text-3xl sm:text-4xl`}>{section.title}.</h2>
                             <div className="mt-5 space-y-4">
                                 {section.body.map((paragraph, index) => (
-                                    <p key={index} className={section.title === "Session fees" ? feeTextClass : textClass}>
+                                    <p key={index} className={textClass}>
                                         {paragraph}
                                     </p>
                                 ))}
