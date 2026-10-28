@@ -161,11 +161,11 @@ export default function WorkingWithMe() {
                     <article>
                         <p className={eyebrowClass}>Fees</p>
                         <h2 className={titleClass}>Simple session fees.</h2>
-                        <ul className="mt-8 space-y-4 text-[#5B554D]">
+                        <ul className="mt-8 space-y-4 text-[#25231F]">
                             <li><strong>Initial assessment (90 minutes):</strong> Online <strong>£90</strong> · Face-to-face in Putney <strong>£100</strong></li>
                             <li><strong>Follow-up session (60 minutes):</strong> Online <strong>£60</strong> · Face-to-face in Putney <strong>£70</strong></li>
                         </ul>
-                        <p className={`${textClass} mt-6`}>
+                        <p className="mt-6 text-base leading-7 text-[#25231F]">
                             Face-to-face appointments take place in Putney, South West London. Fees are payable in advance.
                             Cancellation arrangements are outlined clearly before we begin.
                             For full details, please refer to the{" "}
