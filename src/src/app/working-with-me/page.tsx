@@ -162,12 +162,12 @@ export default function WorkingWithMe() {
                         <p className={eyebrowClass}>Fees</p>
                         <h2 className={titleClass}>Simple session fees.</h2>
                         <ul className="mt-8 space-y-4 text-[#5B554D]">
-                            <li>Standard sessions (60 minutes): <strong>£60</strong></li>
-                            <li>First session (90 minutes): <strong>£90</strong></li>
-                            <li>Block of 4 sessions: <strong>£220</strong></li>
+                            <li><strong>Initial assessment (90 minutes):</strong> Online <strong>£90</strong> · Face-to-face in Putney <strong>£100</strong></li>
+                            <li><strong>Follow-up session (60 minutes):</strong> Online <strong>£60</strong> · Face-to-face in Putney <strong>£70</strong></li>
                         </ul>
                         <p className={`${textClass} mt-6`}>
-                            Fees are payable in advance. Cancellation arrangements are outlined clearly before we begin.
+                            Face-to-face appointments take place in Putney, South West London. Fees are payable in advance.
+                            Cancellation arrangements are outlined clearly before we begin.
                             For full details, please refer to the{" "}
                             <Link href="/fees-cancellation" className="font-semibold">
                                 Fees &amp; Cancellation Policy

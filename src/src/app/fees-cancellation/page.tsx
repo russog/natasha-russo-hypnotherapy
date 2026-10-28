@@ -16,9 +16,8 @@ const sections = [
     {
         title: "Session fees",
         body: [
-            <>Standard Cognitive Behavioural Hypnotherapy sessions usually last approximately <strong>60</strong> minutes and are charged at <strong>£60</strong> per session.</>,
-            <>The first session usually lasts approximately <strong>90</strong> minutes and is charged at <strong>£90</strong>, allowing additional time for assessment and conceptualisation.</>,
-            <>A block of four standard 60-minute sessions is available for <strong>£220</strong>.</>,
+            <>The initial assessment lasts approximately <strong>90 minutes</strong> and is charged at <strong>£90 online</strong> or <strong>£100 face-to-face in Putney, South West London</strong>, allowing additional time for assessment and conceptualisation.</>,
+            <>Follow-up Cognitive Behavioural Hypnotherapy sessions usually last approximately <strong>60 minutes</strong> and are charged at <strong>£60 online</strong> or <strong>£70 face-to-face in Putney, South West London</strong>.</>,
             <>Fees may be reviewed periodically. Any changes to fees will apply to new clients and will not affect the fee already agreed with you for your current course of therapy.</>,
         ],
     },
@@ -91,7 +90,7 @@ export default function FeesCancellationStylePreview() {
                     <p className={`${textClass} mt-4 max-w-3xl`}>
                         Transparency is important, and I&apos;m happy to clarify anything before we begin.
                     </p>
-                    <p className="mt-4 text-sm text-[#8A8174]">Last updated: 02.09.2026</p>
+                    <p className="mt-4 text-sm text-[#8A8174]">Last updated: 28.10.2026</p>
                 </section>
             </section>
         </div>
