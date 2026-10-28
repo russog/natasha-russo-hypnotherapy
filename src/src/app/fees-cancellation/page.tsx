@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const titleClass = "!font-sans text-4xl font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-5xl";
 const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8A8174]";
 const textClass = "text-base leading-7 text-[#5B554D]";
-const darkTextClass = "text-base leading-7 text-[#25231F]";
+const feeTextClass = "text-base leading-7 text-[#5B554D] [&_strong]:text-[#25231F]";
 
 const sections = [
     {
@@ -69,7 +69,7 @@ export default function FeesCancellationStylePreview() {
                             <h2 className={`${titleClass} text-3xl sm:text-4xl`}>{section.title}.</h2>
                             <div className="mt-5 space-y-4">
                                 {section.body.map((paragraph, index) => (
-                                    <p key={index} className={section.title === "Session fees" ? darkTextClass : textClass}>
+                                    <p key={index} className={section.title === "Session fees" ? feeTextClass : textClass}>
                                         {paragraph}
                                     </p>
                                 ))}
