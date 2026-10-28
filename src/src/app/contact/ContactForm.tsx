@@ -1,18 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import {useRouter} from "next/navigation";
+import React, { useEffect, useRef, useState } from "react";
 
 const contactFormErrorMessage =
     "We’re sorry, your message could not be sent. Please try again, or contact Natasha directly by email.";
 
 export function ContactForm() {
+    const router = useRouter();
     const [error, setError] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [formStartedAt, setFormStartedAt] = useState("");
+    const formStartedAtRef = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
-        setFormStartedAt(String(Date.now()));
+        if (formStartedAtRef.current) {
+            formStartedAtRef.current.value = String(Date.now());
+        }
     }, []);
 
     async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -27,7 +31,7 @@ export function ContactForm() {
             });
 
             if (response.redirected && new URL(response.url).pathname === "/contact/thanks") {
-                window.location.assign("/contact/thanks");
+                router.push("/contact/thanks");
                 return;
             }
 
@@ -36,7 +40,7 @@ export function ContactForm() {
                 return;
             }
 
-            window.location.assign("/contact/thanks");
+            router.push("/contact/thanks");
         } catch {
             setError(contactFormErrorMessage);
         } finally {
@@ -63,10 +67,9 @@ export function ContactForm() {
                 aria-hidden="true"
             />
             <input
+                ref={formStartedAtRef}
                 type="hidden"
                 name="formStartedAt"
-                value={formStartedAt}
-                readOnly
             />
             <Field label="Name">
                 <Input name="name" autoComplete="name" required />
