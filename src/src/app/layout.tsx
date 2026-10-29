@@ -22,7 +22,7 @@ const mainNav = [
     { name: "Home", url: `${site.url}/` },
     { name: "About me", url: `${site.url}/about` },
     { name: "Working with me", url: `${site.url}/working-with-me` },
-    { name: "Blog", url: `${site.url}/blog` },
+    { name: "Blog & Articles", url: `${site.url}/blog` },
     { name: "Client Testimonials", url: `${site.url}/testimonials` },
     { name: "FAQ", url: `${site.url}/faq` },
     { name: "Contact", url: `${site.url}/contact` },

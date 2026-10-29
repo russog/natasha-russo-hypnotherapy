@@ -6,13 +6,13 @@ import type { Metadata } from "next";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-    title: "Blog",
-    description: "Articles on hypnotherapy, anxiety, habits, confidence and evidence-based change.",
+    title: "Blog & Articles",
+    description: "Blog posts and published articles on hypnotherapy, anxiety, habits, confidence and evidence-based change.",
     alternates: { canonical: "/blog" },
     openGraph: {
-        title: `Blog | ${site.name}`,
+        title: `Blog & Articles | ${site.name}`,
         description:
-            "Articles on hypnotherapy, anxiety, habits, confidence and evidence-based change.",
+            "Blog posts and published articles on hypnotherapy, anxiety, habits, confidence and evidence-based change.",
         url: "/blog",
         type: "website",
     },
@@ -20,6 +20,27 @@ export const metadata: Metadata = {
 
 const titleClass = "!font-sans text-4xl font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-5xl";
 const eyebrowClass = "text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8A8174]";
+
+const directoryArticles = [
+    {
+        title: "Why Understanding Your Behaviour Isn’t Always Enough",
+        description:
+            "Understanding our behaviour can be an important step towards change. But why doesn’t insight always make it easier to respond differently?",
+        href: "https://www.hypnotherapy-directory.org.uk/articles/why-understanding-your-behaviour-isnt-always-enough",
+    },
+    {
+        title: "Why Do We Stop Trusting Our Own Judgement?",
+        description:
+            "Exploring how uncertainty, second-guessing and the pressure to make the right decision can affect our confidence in our own judgement.",
+        href: "https://www.hypnotherapy-directory.org.uk/articles/why-do-we-stop-trusting-our-own-judgement",
+    },
+    {
+        title: "Why Do Some Thoughts Feel So Convincing?",
+        description:
+            "Why certain thoughts can feel so believable, and how we can develop greater flexibility in the way we respond to them.",
+        href: "https://www.hypnotherapy-directory.org.uk/articles/why-do-some-thoughts-feel-so-convincing",
+    },
+];
 
 function formatDate(dateStr: string) {
     const d = new Date(dateStr);
@@ -85,8 +106,46 @@ export default function BlogStylePreview() {
                     ))}
                 </div>
 
+                <section
+                    aria-labelledby="directory-articles-heading"
+                    className="mt-16 border-y border-[#D8D1C6] py-10"
+                >
+                    <div className="max-w-3xl">
+                        <h2
+                            id="directory-articles-heading"
+                            className="!font-sans text-2xl font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-3xl"
+                        >
+                            Also published on Hypnotherapy Directory
+                        </h2>
+                        <p className="mt-4 text-sm leading-6 text-[#5B554D] sm:text-base sm:leading-7">
+                            I’ve also contributed articles to Hypnotherapy Directory, exploring different aspects of how we think, feel and respond. You can read them using the links below.
+                        </p>
+                    </div>
+
+                    <div className="mt-8 divide-y divide-[#D8D1C6] border-y border-[#D8D1C6]">
+                        {directoryArticles.map((article) => (
+                            <article key={article.href} className="py-7">
+                                <h3 className="!font-sans text-[22px] font-semibold leading-tight tracking-normal text-[#1F1D19] sm:text-2xl">
+                                    {article.title}
+                                </h3>
+                                <p className="mt-3 max-w-3xl text-sm leading-6 text-[#5B554D] sm:text-base sm:leading-7">
+                                    {article.description}
+                                </p>
+                                <a
+                                    href={article.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mt-4 inline-block text-sm font-semibold text-[#1F1D19] underline decoration-[#8A8174] underline-offset-4 transition hover:text-[#4F5A54]"
+                                >
+                                    Read on Hypnotherapy Directory ↗
+                                </a>
+                            </article>
+                        ))}
+                    </div>
+                </section>
+
                 <div className="mt-14 border-t border-[#D8D1C6] pt-8">
-                    <p className={eyebrowClass}>More articles</p>
+                    <p className={eyebrowClass}>More from my blog</p>
                     <div className="mt-8 grid gap-x-8 gap-y-6 md:grid-cols-2">
                         {remainingPosts.map((post) => (
                             <Link
