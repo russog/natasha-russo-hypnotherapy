@@ -63,7 +63,7 @@ export async function generateMetadata(
         return {};
     }
 
-    const title = post.frontmatter.title;
+    const title = post.frontmatter.seoTitle ?? post.frontmatter.title;
     const description = post.frontmatter.seoDescription ?? post.frontmatter.excerpt;
     const url = `${site.url}/blog/${slug}`;
     const image = post.frontmatter.coverImage

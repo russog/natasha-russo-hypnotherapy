@@ -6,6 +6,7 @@ import matter from "gray-matter";
 
 export type PostFrontmatter = {
     title: string;
+    seoTitle?: string;
     date: string;
     excerpt: string;
     seoDescription?: string;
