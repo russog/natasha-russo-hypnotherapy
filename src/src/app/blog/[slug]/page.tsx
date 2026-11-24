@@ -64,7 +64,7 @@ export async function generateMetadata(
     }
 
     const title = post.frontmatter.title;
-    const description = post.frontmatter.excerpt;
+    const description = post.frontmatter.seoDescription ?? post.frontmatter.excerpt;
     const url = `${site.url}/blog/${slug}`;
     const image = post.frontmatter.coverImage
         ? new URL(post.frontmatter.coverImage, site.url).toString()
@@ -113,7 +113,7 @@ export default async function BlogPostPage({
         "@context": "https://schema.org",
         "@type": "Article",
         headline: post.frontmatter.title,
-        description: post.frontmatter.excerpt,
+        description: post.frontmatter.seoDescription ?? post.frontmatter.excerpt,
         datePublished: post.frontmatter.date,
         dateModified: post.frontmatter.date,
         author: [{"@type": "Person", name: "Natasha Russo"}],

@@ -8,6 +8,7 @@ export type PostFrontmatter = {
     title: string;
     date: string;
     excerpt: string;
+    seoDescription?: string;
     coverImage?: string;
     tags?: string[];
     featured?: boolean;
