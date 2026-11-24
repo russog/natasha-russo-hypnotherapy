@@ -86,7 +86,7 @@ export default function BlogStylePreview() {
                                 <Link
                                     key={post.slug}
                                     href={`/blog/${post.slug}`}
-                                    className="group block overflow-hidden rounded-sm border border-[#E6DDD1] bg-[#FFFDF9] no-underline shadow-[0_18px_45px_rgba(52,44,35,0.05)]"
+                                    className="group block overflow-hidden rounded-sm border border-[#E6DDD1] bg-[#FFFDF9] !no-underline shadow-[0_18px_45px_rgba(52,44,35,0.05)] hover:!no-underline"
                                 >
                                     {post.frontmatter.coverImage ? (
                                         <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#EFE7DC]">
