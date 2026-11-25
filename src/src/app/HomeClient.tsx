@@ -89,14 +89,7 @@ const helpCards = [
         details: (
             <>
                 <p>
-                    <Link href="/blog/how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing" className="underline underline-offset-2 hover:no-underline">
-                        Confidence
-                    </Link>{" "}
-                    and{" "}
-                    <Link href="/blog/why-do-we-take-things-so-personally" className="underline underline-offset-2 hover:no-underline">
-                        self-doubt
-                    </Link>{" "}
-                    often show up internally rather than on the surface. You might appear capable and functioning, yet
+                    Confidence and self-doubt often show up internally rather than on the surface. You might appear capable and functioning, yet
                     privately question your decisions, downplay your strengths, or feel unsure of yourself even when
                     things are going well. You may find yourself comparing, over-preparing, or worrying about getting
                     things &apos;wrong&apos;, while others assume you&apos;re coping just fine.
