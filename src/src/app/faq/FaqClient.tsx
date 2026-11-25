@@ -18,7 +18,7 @@ const faqs: FAQ[] = [
                     unhelpful patterns of thoughts, feelings, and behaviour.
                 </p>
                 <p>
-                    In this context, hypnosis is used to support practical cognitive and behavioural strategies, rather than explore past experiences. If useful, you can read more in <Link href="/blog/making-sense-of-hypnotherapy" className="underline underline-offset-2 hover:no-underline">Making Sense of Hypnotherapy</Link>.
+                    In this context, hypnosis is used to support practical cognitive and behavioural strategies, rather than explore past experiences. If useful, you can read more in <Link href="/blog/making-sense-of-hypnotherapy" className="underline underline-offset-2 hover:no-underline">Making Sense of Hypnotherapy: What It Is and How It Works</Link>.
                 </p>
             </>
         ),
@@ -109,10 +109,10 @@ const faqs: FAQ[] = [
                 <p>I work with adults experiencing things like:</p>
                 <ul className="list-disc pl-5">
                     <li><Link href="/blog/why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it" className="underline underline-offset-2 hover:no-underline">Anxiety and worry</Link></li>
-                    <li><Link href="/blog/when-thinking-becomes-overthinking" className="underline underline-offset-2 hover:no-underline">Overthinking</Link></li>
+                    <li><Link href="/blog/why-overthinking-is-so-hard-to-stop" className="underline underline-offset-2 hover:no-underline">Overthinking</Link></li>
                     <li><Link href="/blog/feeling-stuck-even-when-trying-to-move-forward" className="underline underline-offset-2 hover:no-underline">Stress and emotional overwhelm</Link></li>
-                    <li><Link href="/blog/how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing" className="underline underline-offset-2 hover:no-underline">Confidence</Link> and <Link href="/blog/when-you-know-you-can-but-still-feel-unsure" className="underline underline-offset-2 hover:no-underline">self-doubt</Link></li>
-                    <li><Link href="/blog/when-everything-feels-like-it-needs-your-attention" className="underline underline-offset-2 hover:no-underline">Difficulty switching off</Link> / <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">sleep-related mental overactivity</Link></li>
+                    <li><Link href="/blog/how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing" className="underline underline-offset-2 hover:no-underline">Confidence</Link> and <Link href="/blog/why-do-we-take-things-so-personally" className="underline underline-offset-2 hover:no-underline">self-doubt</Link></li>
+                    <li><Link href="/blog/does-rest-feel-uncomfortable-even-when-you-desperately-need-it" className="underline underline-offset-2 hover:no-underline">Difficulty switching off</Link> / <Link href="/blog/why-switching-off-at-night-Is-harder-than-it-should-be" className="underline underline-offset-2 hover:no-underline">sleep-related mental overactivity</Link></li>
                     <li><Link href="/blog/why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life" className="underline underline-offset-2 hover:no-underline">Assertiveness</Link> and boundaries</li>
                     <li>Habits you’d like to change</li>
                     <li>Managing specific fears</li>

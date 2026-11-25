@@ -34,7 +34,7 @@ const relatedPostSlugs: Record<string, RelatedPostRef[]> = {
     "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it": [
         "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
         "why-switching-off-at-night-Is-harder-than-it-should-be",
-        "when-everything-feels-like-it-needs-your-attention",
+        "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
     ],
     "why-switching-off-at-night-Is-harder-than-it-should-be": [
         "does-rest-feel-uncomfortable-even-when-you-desperately-need-it",
@@ -46,20 +46,10 @@ const relatedPostSlugs: Record<string, RelatedPostRef[]> = {
         "does-rest-feel-uncomfortable-even-when-you-desperately-need-it",
         "why-it-never-feels-like-enough",
     ],
-    "when-thinking-becomes-overthinking": [
-        "why-overthinking-is-so-hard-to-stop",
-        "why-overthinking-turns-toward-what-if-scenarios",
-        "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
-    ],
     "why-overthinking-is-so-hard-to-stop": [
-        "when-thinking-becomes-overthinking",
-        "why-overthinking-turns-toward-what-if-scenarios",
-        "understanding-the-safety-behaviours-that-keep-anxiety-going",
-    ],
-    "why-overthinking-turns-toward-what-if-scenarios": [
-        "why-overthinking-is-so-hard-to-stop",
-        "understanding-the-safety-behaviours-that-keep-anxiety-going",
         "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
+        "feeling-stuck-even-when-trying-to-move-forward",
+        "understanding-the-safety-behaviours-that-keep-anxiety-going",
     ],
     "understanding-the-safety-behaviours-that-keep-anxiety-going": [
         "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
@@ -76,52 +66,36 @@ const relatedPostSlugs: Record<string, RelatedPostRef[]> = {
         "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
         "why-it-never-feels-like-enough",
     ],
-    "when-everything-feels-like-it-needs-your-attention": [
-        "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",
-        "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
-        "why-it-never-feels-like-enough",
-    ],
     "why-it-never-feels-like-enough": [
-        {
-            slug: "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
-            title: "How Confidence Actually Builds",
-        },
-        "when-you-know-you-can-but-still-feel-unsure",
-        "feeling-stuck-even-when-trying-to-move-forward",
-        "when-everything-feels-like-it-needs-your-attention",
-    ],
-    "when-you-know-you-can-but-still-feel-unsure": [
         "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
+        "why-do-we-take-things-so-personally",
         "feeling-stuck-even-when-trying-to-move-forward",
-        "when-conversations-start-feeling-too-self-conscious",
+        "why-do-capable-people-feel-mentally-exhausted-even-when-they-are-coping",
     ],
     "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing": [
-        "when-you-know-you-can-but-still-feel-unsure",
+        "why-it-never-feels-like-enough",
         "feeling-stuck-even-when-trying-to-move-forward",
         "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life",
     ],
     "why-do-we-take-things-so-personally": [
-        "when-thinking-becomes-overthinking",
+        "why-it-never-feels-like-enough",
         "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
-        {
-            slug: "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
-            title: "How Confidence Actually Builds (and Why It Doesn’t Start with Feeling Confident)",
-        },
+        "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
     ],
     "feeling-stuck-even-when-trying-to-move-forward": [
         "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
-        "when-you-know-you-can-but-still-feel-unsure",
+        "why-it-never-feels-like-enough",
         "why-overthinking-is-so-hard-to-stop",
     ],
     "when-conversations-start-feeling-too-self-conscious": [
         "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life",
-        "when-you-know-you-can-but-still-feel-unsure",
-        "why-overthinking-turns-toward-what-if-scenarios",
+        "why-do-we-take-things-so-personally",
+        "why-anxiety-feels-so-convincing-and-how-it-starts-to-loosen",
     ],
     "why-it-is-sometimes-hard-to-say-or-do-what-you-want-assertiveness-in-everyday-life": [
         "when-conversations-start-feeling-too-self-conscious",
         "how-confidence-actually-builds-what-changes-when-you-stop-waiting-and-start-doing",
-        "when-you-know-you-can-but-still-feel-unsure",
+        "why-do-we-take-things-so-personally",
     ],
     "making-sense-of-hypnotherapy": [
         "why-anxiety-can-stay-stuck-even-when-you-are-trying-to-manage-it",

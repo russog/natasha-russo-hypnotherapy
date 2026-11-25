@@ -67,18 +67,15 @@ const helpCards = [
                     trying to anticipate every possible outcome. Even when you understand something logically, your mind
                     doesn&apos;t seem to let it go. Rest doesn&apos;t always feel restful, because the thinking carries on in
                     the background. You can read more in{" "}
-                    <Link href="/blog/when-thinking-becomes-overthinking" className="underline underline-offset-2 hover:no-underline">
-                        When Thinking Becomes Overthinking
+                    <Link href="/blog/why-overthinking-is-so-hard-to-stop" className="underline underline-offset-2 hover:no-underline">
+                        Why Overthinking Is So Hard to Stop
                     </Link>
                     .
                 </p>
                 <p className="mt-2">
                     I approach overthinking by understanding how patterns of attention and interpretation develop - and
-                    why the mind gets pulled back into the{" "}
-                    <Link href="/blog/why-overthinking-turns-toward-what-if-scenarios" className="underline underline-offset-2 hover:no-underline">
-                        same overthinking loops
-                    </Link>
-                    . We work collaboratively to change how you relate to your thoughts, so they have less power to pull
+                    why the mind gets pulled back into the same overthinking loops. We work collaboratively to change how
+                    you relate to your thoughts, so they have less power to pull
                     you in or run the show. The aim isn&apos;t to stop thinking, but to develop more choice and flexibility
                     in how you respond.
                 </p>
@@ -96,7 +93,7 @@ const helpCards = [
                         Confidence
                     </Link>{" "}
                     and{" "}
-                    <Link href="/blog/when-you-know-you-can-but-still-feel-unsure" className="underline underline-offset-2 hover:no-underline">
+                    <Link href="/blog/why-do-we-take-things-so-personally" className="underline underline-offset-2 hover:no-underline">
                         self-doubt
                     </Link>{" "}
                     often show up internally rather than on the surface. You might appear capable and functioning, yet
@@ -124,7 +121,7 @@ const helpCards = [
                     If you&apos;ve ever wondered why small everyday experiences can gradually shape confidence and
                     self-doubt, you may also find{" "}
                     <Link href="/blog/why-do-we-take-things-so-personally" className="underline underline-offset-2 hover:no-underline">
-                        Why Do We Take Things So Personally?
+                        How Everyday Experiences Shape Your Confidence
                     </Link>{" "}
                     helpful.
                 </p>
